@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.loading {
+  margin-left: 4vw;
+  font-size: 26px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+/* fixed width for dots (no movement) */
+.dots {
+  display: inline-block;
+  width: 3ch;
+}
+
+/* dot animation */
+.dots::after {
+  content: '...';
+  animation: dots 3s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '';
+  }
+}
+
+/* image styling */
+.image {
+  width: 60vw; /* 60% of screen width */
+  max-width: 400px; /* never too big */
+  min-width: 150px; /* never too small */
+  height: auto;
+}
