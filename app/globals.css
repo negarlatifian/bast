@@ -1,21 +1,35 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Mosk';
+  src: url('/fonts/Mosk_Light_300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: 'Mosk';
+  src: url('/fonts/Mosk_Medium_500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-  }
+@font-face {
+  font-family: 'Mosk';
+  src: url('/fonts/Mosk_Semi_Bold_600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mosk';
+  src: url('/fonts/Mosk_Bold_700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
+  margin: 0;
+  font-family: 'Mosk', sans-serif;
+  background: rgb(245, 240, 237);
 }

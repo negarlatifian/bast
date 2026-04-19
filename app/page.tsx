@@ -1,12 +1,9 @@
-import { UnderConstruction } from '@/components/UnderConstruction';
-import Image from 'next/image';
+import MainLayout from '@/components/MainLayout';
 
-export default function Home() {
+export default function Page() {
   return (
-    <div>
-      <main style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
-        <UnderConstruction />
-      </main>
-    </div>
+    <MainLayout>
+      <div>Repository content</div>
+    </MainLayout>
   );
 }
