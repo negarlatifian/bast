@@ -1,6 +1,5 @@
 {
   "slug": "mapping-karimkhan",
-
   "1. Basic Information": {
     "Project Title": "Mapping Karimkhan",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -20,11 +19,10 @@
       "alt": "Mapping Karimkhan"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "Mapping Karimkhan; Mapping the Cultural and Artistic Changes in the Heart of Tehran is a participatory project that took shape with a focus on the cultural, social, and artistic changes in the Karimkhan Street area.",
         "This project is inspired by the idea of expanded mapping; an approach that views the map not just as a physical representation of space, but as a ground for recording narratives, lived experiences, and informal knowledge.",
@@ -36,7 +34,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The project was executed in the space of New Media Projects, an independent, artist-run, and non-institutional space that provided the possibility of activities outside the official structures of power.",
         "The choice of this space was due to its semi-public nature; a place where free conversations, voluntary participation, and the collective production of knowledge could be shaped.",
@@ -47,7 +45,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "The main motivation of the project was the need to understand the changes that had occurred and were still occurring in the Karimkhan area.",
         "The project raised questions, including: How exactly did these cultural and artistic changes take shape?",
@@ -61,7 +59,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The project faced multiple resistances and tensions along its path.",
         "Some artists and cultural activists believed that gentrification in the Karimkhan area was not happening at a serious pace, and it was not enough to raise more attention to the issue.",
@@ -75,7 +73,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "Collaborators / Participating Institutions:",
         "In collaboration with Rokhdad-e-Tazeh Mostanad (Rokhdad-e-Taze Documentary)",
@@ -85,12 +83,14 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
-      "paragraphs": ["#mappingkarimkhan, 9 years on"]
+      "title": "Re-readings",
+      "paragraphs": [
+        "#mappingkarimkhan, 9 years on"
+      ]
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": [
         "Articles published in Tazarv Magazine Issue No 5.",
         "A series of posts published on the Modaakheleh (Intervention) platform",
@@ -99,7 +99,7 @@
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "New Media Society is an independent, non-commercial, and research-oriented collective in Tehran that began its activities in June/July 2014 (Tir 1393).",
         "Functioning as an archive, library, and project space, this center focused on supporting media arts and fresh ideas.",
@@ -109,8 +109,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -138,18 +137,53 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" }
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      }
     ]
   }
 }

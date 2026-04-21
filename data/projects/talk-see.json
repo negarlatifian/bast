@@ -1,6 +1,5 @@
 {
   "slug": "talk-see-taxi-project",
-
   "1. Basic Information": {
     "Project Title": "Talk-See (Taxi) Project",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -16,15 +15,14 @@
       "text": "From 2017 to the present"
     },
     "Featured Project Image": {
-      "url": "",
+      "url": "/images/talk-see/thumb.webp",
       "alt": ""
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "Talk-See is a mobile art space that has been formed inside a passenger car (Samand) as a small gallery.",
         "In this space, small paintings - drawn on one-thousand Toman banknotes -  are displayed either framed or as postcards on a handmade stand, replacing the front passenger seat.",
@@ -36,7 +34,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "Set within the urban space in motion, the project takes place inside a personal car temporarily transformed into a gallery circulating through the city streets.",
         "This space creates a kind of intermediary state between public and private: an enclosed environment, yet situated in the heart of everyday life.",
@@ -47,7 +45,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "At its core, the project grows out of a desire to step beyond the limited circle of gallery audiences.",
         "This project seeks to test the possibility of presenting and even selling artwork among people who do not normally engage with such spaces.",
@@ -59,7 +57,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The project was realised without any institutional financial support and is entirely funded by personal resources, which, despite the limitations, has created a sense of practical independence.",
         "So far, no specific obstacles in the form of censorship have been reported, though economic conditions alongside social and urban structures have influenced its development.",
@@ -69,17 +67,19 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
-      "paragraphs": ["The project is self-organized and funded by the artist."]
+      "title": "Fundings & Partners",
+      "paragraphs": [
+        "The project is self-organized and funded by the artist."
+      ]
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
+      "title": "Re-readings",
       "paragraphs": []
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": [
         "(Links, article names, reviews)",
         "Fatemeh Attaran",
@@ -88,7 +88,7 @@
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Bio:",
         "Ali Moammery (born 1981, Bojnourd) is a graphics graduate, painter, and art instructor with over two decades of artistic experience.",
@@ -102,8 +102,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -121,8 +120,7 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": []
   }
 }

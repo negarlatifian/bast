@@ -1,6 +1,5 @@
 {
   "slug": "printing-machine-dastgah-e-chap",
-
   "1. Basic Information": {
     "Project Title": "Printing Machine (Dastgah-e Chap)",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -16,15 +15,14 @@
       "text": "Nowrouz 1403 - Rasht (March 2023) Nowrouz 1404 - Rasht (March 2024) Bazar Art Books 2025 - Didar Art Gallery (October 2025)"
     },
     "Featured Project Image": {
-      "url": "",
-      "alt": ""
+      "url": "/images/printing-machine/thumb.webp",
+      "alt": "Printing Machine"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "The Amaanatdaari’s Printing Machine was a simple and efficient mechanical device placed in the outdoor area of the Amaanatdaari Space in the Saadi Bazaar of Rasht, Guilan Province, during the Nowruz holidays.",
         "It was accessible to audiences and passersby at any hour of the day or night.",
@@ -43,7 +41,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The project was executed in the outdoor space of Amaanatdaari within an urban context.",
         "It was presented during Nowruz at the Saadi Bazaar in Rasht and at the Bazar Art Books, an artist book fair in Tehran.",
@@ -52,7 +50,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "The initial motivation stemmed from Amaanatdaari's unique location in a bazaar near Rasht's Municipality (Shahrdari) Square— a popular area filled with people and tourists during Nowruz.",
         "Its proximity to one of the few public restrooms in the area meant many people passed by simply to use that facility without necessarily intending to engage with the space.",
@@ -64,7 +62,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The most significant constraint was the lack of financial support, which impacted development and maintenance.",
         "Additionally, because the machines were in public spaces and used constantly, they occasionally suffered damage or malfunctions.",
@@ -75,7 +73,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "Financial Supporters: The project is self-funded by Amaanatdaari in Rasht.",
         "During the participation at Bazar Art Books 2025, posters and prints were offered in exchange for a small contribution by the visitor to cover the cost of shipping and production."
@@ -83,19 +81,21 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
+      "title": "Re-readings",
       "paragraphs": [
         "(This section is listed in the document but contains no additional text.)"
       ]
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
-      "paragraphs": ["(Links, article names, critiques)"]
+      "title": "Other references & Resources",
+      "paragraphs": [
+        "(Links, article names, critiques)"
+      ]
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Amaanatdaari is an independent, artist-run space located in one of the local bazaars of Rasht.",
         "It has been active for over two years, focusing on exhibiting alternative and experimental projects.",
@@ -105,8 +105,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -118,8 +117,7 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
       {
         "type": "video",

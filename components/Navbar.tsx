@@ -2,10 +2,11 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import SearchForm from './SearchForm';
 
 const navItems = [
   { label: 'Repository', href: '/repository' },
-  { label: 'Readings', href: '/readings' },
+  { label: 'Re-reading', href: '/readings' },
   { label: 'Library', href: '/library-page' },
   { label: 'Map', href: '/map' },
   { label: 'About Bast', href: '/aboutbast' },
@@ -51,6 +52,7 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
+          <SearchForm />
         </div>
 
         {/* hamburger (mobile only) */}
@@ -118,6 +120,7 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
+            <SearchForm onSearch={() => setOpen(false)} />
           </nav>
         </div>
       )}

@@ -1,6 +1,5 @@
 {
   "slug": "workers-dont-go-to-the-factory",
-
   "1. Basic Information": {
     "Project Title": "Workers Don't Go to the Factory",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -20,11 +19,10 @@
       "alt": ""
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "Workers Don't Go to the Factory is a collective narrative of the history, everyday life, and resistance of the residents of the Deh Vanak neighborhood against official trends of demolition, appropriation, and Gentrification-Induced Displacement.",
         "This project was formed on December 9, 2018, in collaboration with a group of artists, social activists, and neighborhood residents, and was realised in the urban space of the workers' quarter of Deh Vanak.",
@@ -35,7 +33,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The project was executed in an urban setting and living context of the Deh Vanak neighborhood, a neighborhood entangled in a long-standing legal land dispute between the residents and Alzahra University.",
         "This dispute began in 2002, with its roots tracing back to the history of the neighborhood's formation.",
@@ -49,7 +47,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "This local exhibition was formed in response to the growing trend of house demolitions in the area, which was a continuation of the same long-standing dispute over the ownership of the workers' houses in this region.",
         "At that time, public attention was mainly focused on the material dimension of land and property, but a group of artists and activists decided to address another aspect of the story: the human, psychological, and identity dimension of this neighborhood and its residents.",
@@ -59,7 +57,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "This project was formed completely independently and without any institutional or official financial support.",
         "Its implementers were a group of artists and social activists who held the exhibition in public space, relying on personal capabilities and the collective solidarity of some residents.",
@@ -74,7 +72,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "Collaborators / Participating Institutions:",
         "None",
@@ -83,12 +81,14 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
-      "paragraphs": ["(No text provided under this heading)"]
+      "title": "Re-readings",
+      "paragraphs": [
+        "(No text provided under this heading)"
+      ]
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": [
         "Shervin Taheri, \"Art Outside the Gallery: A Look at the Collective Artistic Participation of Artists in Defense of the Right to Housing named 'Workers Don't Go to the Factory' in the Deh Vanak Neighborhood\", Tandis, Issue 380, January 1, 2019.",
         "IRNA 24 Report",
@@ -102,14 +102,13 @@
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "The project was formed by a group of artists and social activists, with the direct participation of the residents of Deh Vanak"
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -127,8 +126,7 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
       {
         "type": "photo",

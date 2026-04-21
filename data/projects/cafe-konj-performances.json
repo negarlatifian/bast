@@ -1,6 +1,5 @@
 {
   "slug": "cafe-konj-performances",
-
   "1. Basic Information": {
     "Project Title": "Cafe Konj Performances",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -16,15 +15,14 @@
       "text": "2003–2004, Seven consecutive months, on the 7th day of each month, 10 AM–10 PM."
     },
     "Featured Project Image": {
-      "url": "/images/cafe-konj/thumb.webp ",
+      "url": "/images/cafe-konj/thumb.webp",
       "alt": "Cafe Konj"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "Cafe Konj was a series of long-duration performances in the public space of a cafe in central Tehran.",
         "Created to establish direct communication with an audience outside the realm of art.",
@@ -35,7 +33,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "This series was performed in a small cafe in downtown Tehran (near Keshavarz Boulevard and Valiasr Square); a space that at the time was located outside the popular artistic neighborhoods, and its audience primarily consisted of passersby and returning regulars.",
         "In 2003, Tehran’s city center lacked spaces such as galleries and cultural cafes, and such spaces were mostly concentrated in northern Tehran.",
@@ -44,7 +42,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "This project took shape during a period when \"conceptual art\" was being consolidated with the support of official institutions, and new structures of control and direction in Iranian contemporary art were gradually forming.",
         "For Jinoos Taghizadeh, \"Cafe Konj Performances\" was an effort to distance herself from this atmosphere and to move towards direct communication with the general public, a public that existed outside the official art system.",
@@ -54,7 +52,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "These performances were conducted without obtaining official permits and outside of institutional structures.",
         "After a few performances, some signs of security surveillance emerged, but there was no clear mechanism/procedure to obtain a permit anyway, as such a medium was fundamentally undefined within the administrative structure.",
@@ -65,7 +63,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "With the collaboration and trust of the cafe owners (Sattar Afshar and Maryam Monjezi).",
         "The project was self-funded."
@@ -73,7 +71,7 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
+      "title": "Re-readings",
       "paragraphs": [
         "Artist's writing on \"Cafe Konj Performances\".",
         "Jinoos Taghizadeh’s Notes on Cafe Konj Performances"
@@ -81,12 +79,14 @@
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
-      "paragraphs": ["https://jinoostaghizadeh.ca/cafe-konj-performances/"]
+      "title": "Other references & Resources",
+      "paragraphs": [
+        "https://jinoostaghizadeh.ca/cafe-konj-performances/"
+      ]
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Bio:",
         "Jinoos Taghizadeh (born 1971, Tehran) is a multimedia artist.",
@@ -102,8 +102,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -122,19 +121,58 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" },
-      { "type": "photo", "src": "", "description": "" }
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "",
+        "description": ""
+      }
     ]
   }
 }

@@ -1,6 +1,5 @@
 {
   "slug": "book-reading-in-sanandaj-park",
-
   "1. Basic Information": {
     "Project Title": "Book Reading in Sanandaj Park",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -20,11 +19,10 @@
       "alt": "Book Reading in Sanandaj Park"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "The \"Book Reading\" project was a participatory experience in an urban public space, created with the aim of establishing a simple collective setting for reading.",
         "Through a public call, the project invited citizens to bring a book with them on Sunday evenings and read in silence in the park for two hours.",
@@ -35,7 +33,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The project was carried out in a public urban space.",
         "The choice of IT Park in Sanandaj was deliberate and based on the specific context of this area.",
@@ -46,7 +44,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "The primary motivation for the project stemmed from the low per capita reading rate in Iran.",
         "The organizers sought to create a simple yet effective intervention that could: strengthen the reading culture, bring cultural activities back to public spaces, and create shared moments of focus, tranquility, and collective experience.",
@@ -56,7 +54,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The project faced institutional and security limitations.",
         "After a few sessions, the atmosphere in the park gradually became under surveillance of security agents, and on the last Sunday of July, police officers asked people not to gather again.",
@@ -68,7 +66,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "Collaborators / Participating Institutions:",
         "The project was executed independently and without any institutional collaboration.",
@@ -77,17 +75,17 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
+      "title": "Re-readings",
       "paragraphs": ["(This section is left blank in the document.)"]
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": ["(Links, article titles, reviews)"]
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Bio:",
         "San Art is a collective of independent artists, including Shilan Borhani, Arash Zaman, and Shima Farhadi, whose activities are shaped in the fields of participatory art, social art, and intervention in public space.",
@@ -98,8 +96,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -118,78 +115,122 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
       {
         "type": "photo",
-        "src": "",
+        "src": "/images/sanandaj-reading/01.webp",
         "description": "Photos of reading sessions in IT Park"
       },
       {
         "type": "photo",
-        "src": "",
+        "src": "/images/sanandaj-reading/02.webp",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/03.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/04.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/05.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/06.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/07.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/08.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/09.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/10.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/11.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/12.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/13.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/14.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/15.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/16.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/17.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/18.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/19.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/20.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/21.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/22.webp",
+        "description": "Photos of reading sessions in IT Park"
+      },
+      {
+        "type": "photo",
+        "src": "/images/sanandaj-reading/23.webp",
         "description": "Poster for Project’s Open Call"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Photos of reading sessions in IT Park"
       }
     ]
   }

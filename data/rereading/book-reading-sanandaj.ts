@@ -1,27 +1,36 @@
 export const sanandajReadingText = {
   slug: 'book-reading-sanandaj',
-  title: 'Reading Together: The Temporary Formation of the Common',
+  title: 'Reading together: The temporary formation of the common',
   author: 'Nastaran Saremi',
+  credit: 'Written by Nastaran Saremi,',
+  role: 'Art Critic',
+  year: '2026',
 
   content: `
-Collective reading can be understood as a form of performance.
+Collective reading can perhaps be considered a performance. The social production of an extended practice, the production of a collective gesture, the elevation of an action from the private to the public sphere, and its transformation into a coming-together.
 
-This project emerged from a simple question: what happens when a private act—reading—is brought into public space?
+The artists of this project asked themselves what would happen if they took this very activity, which a few of them did each time in the house of one of the members of the group, into public space. What if others also read books simultaneously with them?
 
-Rather than forming a structured collective, the gathering remained plural and open. Participants did not read the same texts, follow a shared rhythm, or engage in directed discussion.
+Shortly before the project took shape, news reports had noted that Sanandaj ranked, statistically, as the city with the highest reading rate per capita in Iran. The artists, who had long kept a private book club and watched films together, asked: "What if this time we read with the people of the city?"
 
-Instead, what emerged was a condition of co-presence.
+For the group, it was clear from the very beginning that they did not want to lead the reading of their fellow residents. They had no intention of establishing a book club, recommending books to others, or acting as facilitators so that people might learn better from what they read. The matter was not about teaching. The idea of collective reading was not supposed to be built upon the premise of inequality and a hierarchy of transmission. The group published a call on Instagram, simply inviting their fellow citizens to gather for reading on Sunday at IT Park in Mubarakabad, Sanandaj. The group anticipated that only a small number of people would come to the park. However, the citizens' response surprised them; the park became filled with people who had arrived with their books. Just like those who had issued the invitation, they did not expect to be guided. Everyone began to read. The artists, anonymous and cautious, watched. Some individuals came to the park, grew curious, left, and returned shortly after with a book in hand.
 
-Individuals gathered, each engaged in their own reading, yet aware of others doing the same. This produced a distributed and situational form of participation.
+Weekly collective reading continued for several consecutive weeks. People came with their mats, read, and conversed with each other. The artists observed that among all types of books, novels, stories, and literary works were the most popular. History and philosophy also had many readers. Sporadic discussions arose among participants, revolving around literary, aesthetic, philosophical, and sometimes political topics. The age range of participants was diverse, from children of 7 to adults in their seventies, with women making up the largest share of those present. The success and continuation of this gathering naturally prompted the police to intervene, and after about three months of weekly collective readings — from May to July — it was shut down.
 
-The artists deliberately avoided hierarchy, instruction, and visibility. The call was simple: come and read.
+The spontaneity of the act is striking. The founding group, in a tradition familiar to most of us, had a habit of gathering to read, watch, and converse alongside each other — an act that arose out of real needs: "We read books and watch movies together and talk about various subjects. Because we need it: we need to give meaning to our being next to each other. We need to read together. We need to read from each other. We need to show things to one another. We need to hear what others think about what we are enthusiastic about, and what we fear. We need to hear that they, too, have heard, seen, and read it. They, too, are afraid. They too are hopeful. They, too, are sometimes buried in the pit of darkness."
 
-What formed was not a unified collective body, but a dispersed gathering held together by proximity, repetition, and shared attention.
+What shapes this space is not a single, centralized action — these individuals do not read the same book, do not read in the same way, and do not necessarily have structured conversations with each other about what they have read. This is a pluralistic gathering. A shared presence and a contagious action, which at the same time cannot be reduced to a single instruction or voice. Nor does this multiplicity surrender to the "exchange for the sake of exchange" logic of the information age. People are present with their bodies and faces. Their presence is accompanied by a kind of intentionality — and a simple yet meaningful effort: leaving home and gathering together.
 
-Participation here is not based on coordination, but on coexistence.
+Before the gatherings were brought to a close, the artists were invited by official institutions to participate in setting up a building that had long been intended to become a library. They declined: "We did not want to enter the process of institution-building initiated by the government. We were merely reading books. Perhaps this could be considered a collective performance. We didn't know them. We weren't intervening. We were observers and a part of that collective body."
 
-The project demonstrates how an everyday act can be transformed through public presence, becoming a shared yet non-unified experience.
+In my opinion, this form of participation cannot be explained by concepts such as spectatorship, performance, or classic collective action. What this artistic call brings about is a type of action-based participation — scattered, situational, and uncoordinated. Individuals are invited to a public park to read, without it being clear what they should read, how they should read, or whether they should read together at all. The artists do not have an overt presence. The source of the call remains in the background, and no single rhythm or coordination is imposed on bodies and times. What happens takes shape from within the act of reading itself — an individual act performed in the proximity of others, but not in extension or unity with them.
 
-Ultimately, this was not about producing a collective identity, but about creating the conditions for a temporary common space—fluid, open, and reversible.
+What ultimately emerges is not a collective body, but a pluralistic gathering: one formed neither through simultaneity nor shared intention, but through co-presence and a free, shared action. Reading remains an individual act, but in public space — in the awareness of others each engaged in the same act in their own way — it takes on a different quality. Sometimes short, spontaneous conversations form in small groups and return to silence again, without turning into a stable or binding structure.
+
+From this perspective, this form of participation can be considered distributed participation: a participation that begins with a shared call, but then branches off into individual paths and, instead of coordination, derives meaning through proximity. At the same time, this is a situational participation, because space, time, and the conditions of others' presence play a decisive role in shaping the experience. Most importantly, it can be considered an action-based participation, where individuals engage not as the audience of a work, but through the performance of a shared act.
+
+In this gathering, we are faced with a kind of non-simultaneous and non-theatrical co-existence: an open, fluid, and reversible presence. Individuals can enter, stay, read, pause, have a short conversation, or leave the space, without the overall cohesion being lost. What holds this group together is neither unity of action nor a collective voice, but a kind of shared presence alongside one another — a presence in which public space becomes a ground for quiet, scattered, and pluralistic participation. A temporary arrangement for experience, or for elevating everyday experiences to a public and shareable level.
+
+Perhaps most important of all is that the very possibility of the experience can open new paths for participants — paths that do not necessarily form along the continuation or stabilization of a single action, but can emerge through repetition, contagion, or even a leap into other spaces and arenas.
   `,
 };

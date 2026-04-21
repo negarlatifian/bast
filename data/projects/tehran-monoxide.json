@@ -1,6 +1,5 @@
 {
   "slug": "tehran-monoxide",
-
   "1. Basic Information": {
     "Project Title": "Tehran Monoxide",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -20,11 +19,10 @@
       "alt": "Tehran Monoxide"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "Tehran Monoxide is a project for ideation, consultation, and interaction with the citizens of Tehran using cultural, artistic, scientific, and educational tools to create sensitivity and awareness regarding the air pollution crisis.",
         "This project started in 2010 and was formed as a long-term, multi-stage process in collaboration with a large number of artists, children, adolescents, students, and fellow citizens.",
@@ -36,7 +34,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The project was executed in diverse contexts, including urban spaces, exhibitions, and workshops.",
         "These contexts included schools, pharmacies, streets, gardens, galleries, educational platforms, and green spaces.",
@@ -51,7 +49,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "The project originated from Farajiani's personal concern regarding Tehran's air pollution and its impact on her son's health.",
         "She wanted to see, \"As an artist, mother, and citizen, how far can my agency go?\"",
@@ -64,7 +62,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The project faced numerous obstacles: Lack of institutional support, mandatory supervision from the Ministry of Education, political sensitivities toward environmental activities, and social pessimism regarding artistic work.",
         "Even some parents criticized her presence in the school, saying \"We send our kids to learn math\".",
@@ -76,7 +74,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "In collaboration with Manzoumeh Kherad Complex, Kherad Art House, Doorbin Company, Derang Bahar Framing, Borna Nature Lovers Association, Children's Mehr House, Darvazeh Ghar Work, Parhoon Framing, Zohreh-No Pharmacy, Zibaloon Advertising Company, KAF Foundation, Book Garden Children's Cafe, Aaeen-e Mehr 2 School, Ra Studio, Mahforouz Ceramic Workshop, Biloba Greenhouse, Talaei Farm, Archikid Education Platform, Persbook, Yazd Visual Arts Association, Mersi-Si Eco-tourism, Inverse School (Phase 2: photo printing), Tat Bank / Mohsen Gallery (Phase 1:‌Booklet printing).",
         "This project was formed using the artist's personal financial resources, alongside the support of project collaborators.",
@@ -90,12 +88,12 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
+      "title": "Re-readings",
       "paragraphs": []
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": [
         "\"Tehran Monoxide\", Sarkhoshi.",
         "Interview by Mehrdad Mirzaei with Negar Farajiani.",
@@ -106,7 +104,7 @@
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Email: nfarajiani@gmail.com",
         "Instagram: @negar.farajiani",
@@ -120,8 +118,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -145,8 +142,7 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": []
   }
 }

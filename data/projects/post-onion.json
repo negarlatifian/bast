@@ -1,6 +1,5 @@
 {
   "slug": "post-onion",
-
   "1. Basic Information": {
     "Project Title": "Post-Onion",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -16,15 +15,14 @@
       "text": "1395 (2015)"
     },
     "Featured Project Image": {
-      "url": "/images/post-onion/thumb.png",
+      "url": "/images/post-onion/thumb.webp",
       "alt": ""
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "Post-Onion is a participatory, dialogue-based performance that took place in a gallery and a theater black box.",
         "The performance space was pre-designed: the audience would enter a hall where the floor was covered with a white cloth.",
@@ -38,7 +36,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The project was performed in a gallery and a black box theater space.",
         "The selection of this space was made to create an atmosphere different from the traditional/known function of art galleries, which are usually based on exhibition, sales, and the art market.",
@@ -47,7 +45,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "The main motivation for the project was the necessity of dialogue in a closed society and the transfer of ideas under the pretext of an artwork.",
         "The project sought to create a platform, however temporary, for dialogue and the exchange of views; a space that is less feasible in official art platforms due to the over-commercialization/commodification of art.",
@@ -56,14 +54,14 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The most significant obstacle in executing the project was the administrative complexities and the necessity of obtaining permits from authorities to perform any cultural programs."
       ]
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "In collaboration with Jahangir Sayani, Mohammad Saybani, Ehsan Rezaei",
         "The project was funded by the artist himself."
@@ -71,17 +69,22 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
-      "paragraphs": ["Reza Dabirinejad", "Fatemeh Bardal"]
+      "title": "Re-readings",
+      "paragraphs": [
+        "Reza Dabirinejad",
+        "Fatemeh Bardal"
+      ]
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
-      "paragraphs": ["https://ak.blogsky.com/1398/06/27/post-152/-Post-Onion-"]
+      "title": "Other references & Resources",
+      "paragraphs": [
+        "https://ak.blogsky.com/1398/06/27/post-152/-Post-Onion-"
+      ]
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Ahmadali Kargaran (born 1973, Bandar Abbas) is a multidisciplinary artist whose works, while paying special attention to the environment, are often inspired by the nature and indigenous culture of his habitat.",
         "Alongside painting in his studio, Ahmad focuses on site-specific art installations, especially in public spaces, as well as performance art.",
@@ -92,8 +95,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -123,8 +125,7 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
       {
         "type": "photo",

@@ -1,6 +1,5 @@
 {
   "slug": "white-cubes",
-
   "1. Basic Information": {
     "Project Title": "White Cubes",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -20,11 +19,10 @@
       "alt": "white cubes"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "White Cubes was a site-specific installation that took shape on the interconnected rooftops of Yazd's historical neighbourhood.",
         "By reviving white mosquito nets, as a construct that was part of the summer and nightlife rhythm for the locals during her childhood, Fazael Ardakani brought a collective experience to a new level and raised new questions about the private space of mosquito nets.",
@@ -37,7 +35,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The connected rooftops of the houses in Yazd were not only an architectural setting but also a part of the past collective life of the city.",
         "The project was executed in this very space at the invitation of Persbook 8 Festival, a space that is simultaneously private and public, and provided the possibility of a direct experience of the urban fabric and lived traditions."
@@ -45,7 +43,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "Relying on the simplicity of form and the cultural weight of the material, the installation posed a contemporary question: How can a possibility for participation, dialogue, and confrontation with the city be created from an everyday element?",
         "How do private and public boundaries shift in urban life?",
@@ -56,7 +54,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The main tension of the project was the institutional reaction to a photo capturing “a kiss”, inside one of the mosquito nets.",
         "When this photo was shared on social media by the artist and some other artists, a member of the Persbook team requested its removal and to make sure it wouldn’t be displayed on any platform.",
@@ -65,7 +63,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "In collaboration with “Re-texture”, The 8th Persbook Contemporary Art Annual of Iran (Curator Neda Darzi and Co-curator Negar Farajiani), with the support of the Yazd Visual Arts Association.",
         "The project was self-funded.",
@@ -75,12 +73,14 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
-      "paragraphs": ["Vahid Zebarjadi - Executive Secretary of Persbook 8"]
+      "title": "Re-readings",
+      "paragraphs": [
+        "Vahid Zebarjadi - Executive Secretary of Persbook 8"
+      ]
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": [
         "– In Alternative Iran: Contemporary Art and Critical Spatial Practice by Pamela Karimi",
         "– Reyhaneh Mirjahani, “Re-texture: Traces of Tradition and Contemporary Concerns,” in Konesh magazine https://www.konesh.space/post/retexture-traces-of-tradition-and-contemporary-concerns-in-collaboration"
@@ -88,7 +88,7 @@
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Bio: Fatemeh Fazael Ardakani is an artist who lives and works between Tehran and Ardakan.",
         "This constant commuting between two distinct spaces has shaped her perspective on the notion of space and time.",
@@ -104,8 +104,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -131,8 +130,7 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
       {
         "type": "photo",

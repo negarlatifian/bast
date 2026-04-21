@@ -1,13 +1,27 @@
 'use client';
 
 import Link from 'next/link';
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, Suspense } from 'react';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
-export default function MainLayout({ children }: PropsWithChildren) {
+type MainLayoutProps = PropsWithChildren<{
+  variant?: 'default' | 'reading';
+}>;
+
+export default function MainLayout({
+  children,
+  variant = 'default',
+}: MainLayoutProps) {
   const [scrolled, setScrolled] = useState(false);
+  const isReadingVariant = variant === 'reading';
+  const backgroundClassName = isReadingVariant
+    ? 'bg-[#8a8c84]'
+    : 'bg-[rgb(248,248,246)]';
+  const headerClassName = isReadingVariant
+    ? 'bg-[#8a8c84]/95'
+    : 'bg-[rgb(248,248,246)]/95';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,12 +33,14 @@ export default function MainLayout({ children }: PropsWithChildren) {
   }, []);
 
   return (
-    <>
+    <div className={`min-h-dvh ${backgroundClassName}`}>
       {/* ---------- Header ---------- */}
-      <header className='sticky top-0 z-30 bg-[rgb(248,248,246)]/95 backdrop-blur-md'>
-        <div className='mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8'>
+      <header
+        className={`sticky top-0 z-30 ${headerClassName} backdrop-blur-md`}
+      >
+        <div className='mx-auto flex w-full max-w-none items-center justify-between px-2 py-2 sm:px-3 lg:px-4'>
           <Link
-            href='/'
+            href='/repository'
             className='logo-wrapper text-[0.95rem] font-semibold text-black sm:text-xl'
             aria-label='Bast home'
           >
@@ -47,14 +63,16 @@ export default function MainLayout({ children }: PropsWithChildren) {
             />
           </Link>
 
-          <Navbar />
+          <Suspense fallback={null}>
+            <Navbar />
+          </Suspense>
         </div>
       </header>
 
       {/* ---------- Main content ---------- */}
-      <main className='mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8'>
+      <main className='mx-auto w-full max-w-none px-2 sm:px-3 lg:px-4'>
         {children}
       </main>
-    </>
+    </div>
   );
 }

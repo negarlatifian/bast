@@ -1,8 +1,7 @@
 {
   "slug": "knockout-tournament-ping-pong",
-
   "1. Basic Information": {
-    "Project Title": "Knockout Tournament: Conversations over a Ping-pong Tabl",
+    "Project Title": "Knockout Tournament: Conversations over a Ping-pong Table",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
       "New Media Society"
     ],
@@ -16,15 +15,14 @@
       "text": "January 4-11, 2019, concurrent with the \"Teer Art\" art week"
     },
     "Featured Project Image": {
-      "url": "",
-      "alt": ""
+      "url": "/images/knock-out/thumb.webp",
+      "alt": "Knockout Tournament"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "This project was designed and executed concurrently with the \"Teer Art\" art week and functioned as a \"Counter-event\" against the dominant flow of the art market.",
         "The initial idea was based on the symbolic confrontation between gallery-affiliated artists and independent artists, but subsequently, by opening participation to the public, the conventional hierarchical structures were challenged.",
@@ -37,7 +35,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The interior space of \"New Media Projects\", through a temporary change of use, was transformed into an interactive sports space.",
         "The space was designed in such a way that by eliminating classical exhibition arrangements, it removed the usual hierarchies (artist/audience or master/student) and placed everyone on the equal level of a \"game.\""
@@ -45,7 +43,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "The primary objective of the project was to establish fresh conversations and connections among the artistic community and to raise real issues of artistic life in an informal and non-hierarchical format.",
         "The crisis of \"livelihood and independence\" was brought up as the central focus of the discussions.",
@@ -60,7 +58,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The main obstacles included mental and structural challenges in defining the artist's identity (the tension between independent artists and gallery-affiliated artists), as well as the physical limitations of the space to host a sports-art event.",
         "The primary strategy involved \"change of use\" and \"shifting concepts\"; turning a sports competition into a critical and educational platform, and opening participation to the public to dismantle the hypothetical, elite-centric boundaries between artists and other societal classes."
@@ -68,7 +66,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "Collaborators / Participating Institutions: -",
         "Financial Sponsors: This project was organized completely independently, and its only financial source was the participants' entrance fee (20,000 Tomans), which was entirely spent on purchasing the symbolic championship cup."
@@ -76,21 +74,21 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
+      "title": "Re-readings",
       "paragraphs": [
         "Reading of the Knockout Tournament, Conversations over a Ping-pong Table - Amirali Ghasemi"
       ]
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": [
         "Report on the Knockout Tournament matches written by Bahar Ahmadifard: https://newmediasoc.com/fa/project/%d8%a2%d8%b1%d8%b4%db%8c%d9%88-%d9%be%d8%b1%d9%88%da%98%d9%87%e2%80%8c%d9%87%d8%a7/%d8%ac%d8%a7%d9%85-%d8%ad%d8%b0%d9%81%db%8c-%da%af%d9%be-%d9%88-%da%af%d9%81%d8%aa-%d8%af%d9%88%d8%b1-%db%8c%da%a9-%d9%85%db%8c%d8%b2-%d9%be%db%8c%d9%86%da%af%e2%80%8c%d9%be%d9%8f%d9%86%da%af/"
       ]
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Bio: New Media Society was an independent, non-commercial, and research-oriented initiative in Tehran that began its activities in July 2014 (Tir 1393).",
         "This center, functioning as an archive, library, and project space, focused on supporting media arts and fresh ideas.",
@@ -100,8 +98,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -115,8 +112,7 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
       {
         "type": "photo",

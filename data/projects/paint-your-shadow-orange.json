@@ -1,6 +1,5 @@
 {
   "slug": "paint-your-shadow-orange",
-
   "1. Basic Information": {
     "Project Title": "Paint Your Shadow Orange",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -16,15 +15,14 @@
       "text": "2023-ongoing"
     },
     "Featured Project Image": {
-      "url": "",
-      "alt": ""
+      "url": "/images/paint-shadow/thumb.webp",
+      "alt": "Paint your shadow Orange"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "Paint Your Shadow Orange is a participatory project shaped by participants ranging from age 4 to 70, documented across video, image, and audio.",
         "Centered around the concept of freedom, this project creates a space where each participant can present their own interpretation of the narrative.",
@@ -35,7 +33,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The project has been executed in diverse settings;",
         "From the space of the local and rural communities to an exhibition space at the Abie Boland Gallery in the city of Sari (Mazandaran Province), as well as in the format of exhibitions and workshops in other cities.",
@@ -44,7 +42,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "This project was formed simultaneously with the publication of a story book and in relation to the social situation in Iran.",
         "It was initiated from the urge to create a safe space for dialogue and hearing different narratives.",
@@ -57,7 +55,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "Considering the subject of freedom as a central pillar to the project, there have been limitations in more public settings, and therefore no institutional support was possible.",
         "In response to these conditions, the project initially began in a safer circle—including closed circles and the community around the Abie Boland Gallery — and later on has gradually expanded toward a wider public.",
@@ -66,7 +64,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "In collaboration with Abie Boland Gallery, Sepideh Pourreza, Solmaz Esmaeili, Afsaneh Sadeghi.",
         "The project was initially funded and sponsored by the artist herself.",
@@ -75,19 +73,19 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
+      "title": "Re-readings",
       "paragraphs": []
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": [
         "Negareh Research and Educational Institute Instagram page: @negareinstitute https://www.instagram.com/p/DCKAUAttZ1z/"
       ]
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Bio: Shima Raeeatparvar (born 1366, Sari) is an architecture graduate, researcher, and art instructor for children and adolescents based in Sari.",
         "She is also a painter and a designer, Shima has been active in the field of visual arts for many years, and has participated in numerous group exhibitions.After establishing the Abie Boland Art Academy and Gallery, she has been working in her hometown with a focus on children and adolescents, designing and executing numerous projects in this context.",
@@ -96,8 +94,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -111,8 +108,7 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
       {
         "type": "photo",

@@ -4,6 +4,11 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Bast work',
   description: 'A digital archival website for Bast materials and collections.',
+  icons: {
+    icon: '/small.svg',
+    shortcut: '/small.svg',
+    apple: '/small.svg',
+  },
 };
 
 export default function RootLayout({

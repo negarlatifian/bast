@@ -1,9 +1,75 @@
 import MainLayout from '@/components/MainLayout';
+import RepositoryMasonry from '@/components/RepositoryMasonry';
 import { getProjectImage, projects } from '@/lib/projects';
-import Image from 'next/image';
-import Link from 'next/link';
 
-export default function Page() {
+export const dynamic = 'force-dynamic';
+
+function shuffleProjects<T>(items: T[], seed: number) {
+  const shuffledItems = [...items];
+  let randomState = seed;
+
+  const nextRandom = () => {
+    randomState = (randomState * 1664525 + 1013904223) % 4294967296;
+    return randomState / 4294967296;
+  };
+
+  for (let index = shuffledItems.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(nextRandom() * (index + 1));
+    [shuffledItems[index], shuffledItems[randomIndex]] = [
+      shuffledItems[randomIndex],
+      shuffledItems[index],
+    ];
+  }
+
+  return shuffledItems;
+}
+
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}) {
+  const { q } = await searchParams;
+  const searchQuery = q?.trim().toLowerCase() ?? '';
+  const repositoryProjects = projects.map((project) => {
+    const basicInformation = project['1. Basic Information'];
+    const title = basicInformation['Project Title'];
+    const artists =
+      basicInformation[
+        'Artist / Group / Collective / Organizer / Supervisor / Initiator'
+      ];
+    const location = basicInformation.Location.text;
+    const year = basicInformation['Year / Time Period'].text;
+    const sectionText = project.sections
+      .flatMap((section) => [section.title, ...section.paragraphs])
+      .join(' ');
+    const processText =
+      project['Participation & Process']?.subsections
+        ?.flatMap((subsection) => [
+          subsection.title,
+          ...subsection.paragraphs,
+        ])
+        .join(' ') ?? '';
+
+    return {
+      slug: project.slug,
+      title,
+      artists,
+      searchText: [title, artists.join(' '), location, year, sectionText, processText]
+        .join(' ')
+        .toLowerCase(),
+      imageAlt: basicInformation['Featured Project Image'].alt || title,
+      imageSrc: getProjectImage(project),
+    };
+  });
+  const layoutSeed = Math.floor(Math.random() * 4294967296);
+  const filteredProjects = searchQuery
+    ? repositoryProjects.filter((project) =>
+        project.searchText.includes(searchQuery)
+      )
+    : repositoryProjects;
+  const visibleProjects = shuffleProjects(filteredProjects, layoutSeed);
+
   return (
     <MainLayout>
       <article className='mt-6 flex flex-col gap-4 sm:mt-8'>
@@ -12,8 +78,8 @@ export default function Page() {
           that have taken place in Iran. Each project/work is presented through
           multiple layers of documentation, including basic information,
           archival materials, and conversations with the artists. In some cases,
-          projects are further expanded through a commissioned reading written
-          by another practitioner, researcher, or cultural worker. These
+          projects are further expanded through a commissioned re-reading
+          written by another practitioner, researcher, or cultural worker. These
           additional perspectives open space for interpretation, critique, and
           reflection, allowing the projects to be revisited from different
           positions.
@@ -28,60 +94,21 @@ export default function Page() {
           engagement, and collective action.
         </p>
         <p className='text-base leading-7 sm:text-[1.2rem] sm:leading-8'>
-          As the platform develops, new projects, materials, and readings may be
-          added, allowing the repository to grow over time and remain open to
-          further contributions and interpretations. You are invited to suggest
-          a participatory art project here.
+          As the platform develops, new projects, materials, and re-readings may
+          be added, allowing the repository to grow over time and remain open to
+          further contributions and interpretations. You are invited to suggest a
+          participatory art project here.
         </p>
       </article>
 
-      <section className='mt-10 columns-1 gap-5 pb-16 sm:mt-12 sm:columns-2 lg:columns-3'>
-        {projects.map((project, index) => {
-          const basicInformation = project['1. Basic Information'];
-          const title = basicInformation['Project Title'];
-          const artists =
-            basicInformation[
-              'Artist / Group / Collective / Organizer / Supervisor / Initiator'
-            ];
-          const imageAlt =
-            basicInformation['Featured Project Image'].alt || title;
-          const aspectClass =
-            index % 5 === 0
-              ? 'aspect-[4/5]'
-              : index % 3 === 0
-                ? 'aspect-[1/1]'
-                : 'aspect-[5/4]';
+      {searchQuery && (
+        <p className='mt-8 text-base leading-6 text-[#4f4a43]'>
+          {filteredProjects.length} result
+          {filteredProjects.length === 1 ? '' : 's'} for &ldquo;{q}&rdquo;
+        </p>
+      )}
 
-          return (
-            <Link
-              key={project.slug}
-              href={`/repository/${project.slug}`}
-              className='group mb-5 block break-inside-avoid overflow-hidden'
-            >
-              <div className={`relative w-full ${aspectClass}`}>
-                <Image
-                  src={getProjectImage(project)}
-                  alt={imageAlt}
-                  fill
-                  sizes='(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw'
-                  className='object-cover transition duration-500 group-hover:scale-[1.03]'
-                />
-                <div className='absolute inset-0 bg-[#d67878]/20 transition-colors duration-500 group-hover:bg-[#d67878]/72' />
-                <div className='absolute inset-0 flex flex-col justify-end gap-1 p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100'>
-                  <h2 className='text-[1.15rem] font-semibold leading-6 text-white'>
-                    {title}
-                  </h2>
-                  {artists.length > 0 && (
-                    <p className='text-[0.92rem] leading-5 text-white/90'>
-                      {artists.join(', ')}
-                    </p>
-                  )}
-                </div>
-              </div>
-            </Link>
-          );
-        })}
-      </section>
+      <RepositoryMasonry projects={visibleProjects} layoutSeed={layoutSeed} />
     </MainLayout>
   );
 }

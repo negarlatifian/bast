@@ -1,6 +1,5 @@
 {
   "slug": "an-equivalence-of-our-distance",
-
   "1. Basic Information": {
     "Project Title": "An Equivalence of Our Distance",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -20,11 +19,10 @@
       "alt": "An Equivalence of Our Distance"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "An Equivalence of Our Distance was created during the post-COVID-19 pandemic era, a time when many people had not been able to hug, put their arms around each other, or even have their clothes touched for ten months.",
         "The experience of distance and the lack of physical contact was the starting point of the project.",
@@ -43,7 +41,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The project was carried out in a temporary workshop in the work and presentation room of Rooberoo Mansion, a room without a fixed use, which was usually a place for dialogue and project presentation.",
         "Due to its flexibility and informality, this space was suitable for executing a project revolving around physical presence, collective process, and participation of the audience.",
@@ -55,7 +53,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "The main motivation for the project stems from the experience of distance and the lack of human contact during the COVID-19 pandemic.",
         "The project addresses the issue of \"presence in absence\": What takes the place of the other in their absence, and how distance can be defined through objects and collective processes.",
@@ -68,7 +66,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The most important obstacle was the common perception in the visual arts scene, the concern of galleries and curators about the direct participation of the audience in the work.",
         "This led the artist to collaborate with an off-stage theater space, a place where it was possible to execute projects of an installation and participatory nature.",
@@ -77,7 +75,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "In collaboration with Ahmad Ali Kadivar, Ahmad Jafari, Maral Eshghvari, Parastoo Sadeghi, Setareh Arashloo, and Ehsan Abdifar - Rooberoo Mansion.",
         "Financial Sponsors: All project collaborators and the artist herself worked without receiving any fee.",
@@ -88,12 +86,12 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
+      "title": "Re-readings",
       "paragraphs": ["Written by Awva Jalali"]
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": [
         "Artist's website:",
         "https://golrokhnafisi.home.blog/2021/04/28/%d9%82%d8%af%d9%81%d8%a7%d8%b5%d9%84%d9%87/",
@@ -103,7 +101,7 @@
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Golrokh Nafisi ((born 1981, Isfahan) is an illustrator, puppet maker, and visual artist whose works are often influenced by the political and social events of the world around her.",
         "The direct participation of the audience in interacting with the artwork, and travel as an opportunity to create new calendars and maps, are two main axes in her artistic practice.",
@@ -111,8 +109,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "",
@@ -130,58 +127,62 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
       {
         "type": "photo",
-        "src": "",
-        "description": "Ripping the seams by the participants using a seam ripper"
-      },
-      {
-        "type": "photo",
-        "src": "",
+        "src": "/images/equivalance/01.webp",
         "description": ""
       },
       {
         "type": "photo",
-        "src": "",
+        "src": "/images/equivalance/02.webp",
         "description": ""
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "While the attendees were carrying the clothes and raising them on the coat hanger, three local Naqareh and Karna musicians accompanied the ceremony. These musicians played pieces called Sahar Avazi (which is usually played early in the morning after sunrise in the village, at wedding ceremonies), Jang Nameh, and Haleh-jeh (local nomadic music from Fars province, Iran)."
-      },
-      {
-        "type": "photo",
-        "src": "",
+        "src": "/images/equivalance/03.webp",
         "description": ""
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "The received clothes are registered on-site by photographing their final appearance as a complete piece and receiving an identification number."
+        "src": "/images/equivalance/04.webp",
+        "description": ""
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "The hung Coat"
+        "src": "/images/equivalance/05.webp",
+        "description": ""
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "The letter that was sent to the friends, relatives, and acquaintances of the organizing team."
+        "src": "/images/equivalance/06.webp",
+        "description": ""
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "‘An Equivalence of Our Distance’ Poster, designed by Golrokh Nafisi, 2021."
+        "src": "/images/equivalance/07.webp",
+        "description": ""
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "Illustration by Golrokh Nafisi from the stages of the project"
+        "src": "/images/equivalance/08.webp",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "/images/equivalance/09.webp",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "/images/equivalance/10.webp",
+        "description": ""
+      },
+      {
+        "type": "photo",
+        "src": "/images/equivalance/11.webp",
+        "description": ""
       }
     ]
   }

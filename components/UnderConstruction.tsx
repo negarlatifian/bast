@@ -9,7 +9,7 @@ export const UnderConstruction = () => {
       </p>
 
       <Image
-        src='/under-construction.png'
+        src='/under-construction.webp'
         alt='Under construction'
         width={400}
         height={300}

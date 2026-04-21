@@ -1,6 +1,8 @@
 import MainLayout from '@/components/MainLayout';
-import { getProjectBySlug, getProjectImage, projects } from '@/lib/projects';
-import Image from 'next/image';
+import ProjectMediaStrip from '@/components/ProjectMediaStrip';
+import { getProjectReReading } from '@/data/rereading';
+import { getProjectBySlug, getProjectMedia, projects } from '@/lib/projects';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export function generateStaticParams() {
@@ -29,32 +31,23 @@ export default async function Page({
     ];
   const location = basicInformation.Location.text;
   const year = basicInformation['Year / Time Period'].text;
-  const imageAlt = basicInformation['Featured Project Image'].alt || title;
-  const documentationItems =
-    project['7. Project Documentation and Images']?.items?.filter(
-      (item) => item.type === 'photo' && item.src.trim().startsWith('/')
-    ) ?? [];
-  const openingSections = project.sections.filter((section) =>
-    ['2', '3'].includes(section.id)
+  const mediaItems = getProjectMedia(project);
+  const reReading = getProjectReReading(project.slug);
+  const introductionSection = project.sections.find(
+    (section) => section.id === '2'
+  );
+  const openingSections = project.sections.filter(
+    (section) => section.id === '3'
   );
   const remainingSections = project.sections.filter(
-    (section) => !['2', '3'].includes(section.id)
+    (section) =>
+      !['2', '3'].includes(section.id) &&
+      section.title.toLowerCase() !== 're-readings'
   );
 
   return (
     <MainLayout>
       <article className='mt-6 pb-16 sm:mt-8'>
-        <div className='relative mb-8 aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10]'>
-          <Image
-            src={getProjectImage(project)}
-            alt={imageAlt}
-            fill
-            priority
-            sizes='(min-width: 1024px) 1024px, 100vw'
-            className='object-cover'
-          />
-        </div>
-
         <header className='mb-10 flex flex-col gap-3'>
           <h1 className='text-3xl font-semibold leading-tight text-black sm:text-4xl'>
             {title}
@@ -72,14 +65,34 @@ export default async function Page({
         </header>
 
         <div className='flex flex-col gap-10'>
+          {introductionSection && (
+            <section className='flex flex-col gap-4'>
+              <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
+                {introductionSection.title}
+              </h2>
+              {introductionSection.paragraphs.map((paragraph, index) => (
+                <p
+                  key={`${introductionSection.id}-${index}`}
+                  className='text-base leading-7 text-[#24211d] sm:text-[1.08rem] sm:leading-8'
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </section>
+          )}
+
+          {mediaItems.length > 0 && (
+            <ProjectMediaStrip mediaItems={mediaItems} title={title} />
+          )}
+
           {openingSections.map((section) => (
             <section key={section.id} className='flex flex-col gap-4'>
               <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
                 {section.title}
               </h2>
-              {section.paragraphs.map((paragraph) => (
+              {section.paragraphs.map((paragraph, index) => (
                 <p
-                  key={paragraph}
+                  key={`${section.id}-${index}`}
                   className='text-base leading-7 text-[#24211d] sm:text-[1.08rem] sm:leading-8'
                 >
                   {paragraph}
@@ -88,7 +101,7 @@ export default async function Page({
             </section>
           ))}
 
-          {project['4. Participation & Process']?.subsections?.map(
+          {project['Participation & Process']?.subsections?.map(
             (subsection, index) => (
               <section
                 key={`${subsection.title}-${index}`}
@@ -102,9 +115,9 @@ export default async function Page({
                     {subsection.title}
                   </h3>
                 )}
-                {subsection.paragraphs.map((paragraph) => (
+                {subsection.paragraphs.map((paragraph, paragraphIndex) => (
                   <p
-                    key={paragraph}
+                    key={`${subsection.title}-${index}-${paragraphIndex}`}
                     className='text-base leading-7 text-[#24211d] sm:text-[1.08rem] sm:leading-8'
                   >
                     {paragraph}
@@ -114,14 +127,36 @@ export default async function Page({
             )
           )}
 
+          {reReading && (
+            <section id='re-reading' className='flex flex-col gap-4'>
+              <div className='flex flex-col gap-2'>
+                <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
+                  Re-reading
+                </h2>
+                <h3 className='text-lg font-medium leading-7 text-[#4f4a43] sm:text-xl'>
+                  {reReading.title}
+                </h3>
+                <p className='text-base leading-6 text-[#777066]'>
+                  {reReading.author}
+                </p>
+              </div>
+              <Link
+                href={`/readings/${project.slug}`}
+                className='w-fit text-base font-medium leading-6 text-[#A24E4F] underline decoration-[#A24E4F]/40 underline-offset-4 transition-colors hover:text-black'
+              >
+                Read the re-reading
+              </Link>
+            </section>
+          )}
+
           {remainingSections.map((section) => (
             <section key={section.id} className='flex flex-col gap-4'>
               <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
                 {section.title}
               </h2>
-              {section.paragraphs.map((paragraph) => (
+              {section.paragraphs.map((paragraph, index) => (
                 <p
-                  key={paragraph}
+                  key={`${section.id}-${index}`}
                   className='text-base leading-7 text-[#24211d] sm:text-[1.08rem] sm:leading-8'
                 >
                   {paragraph}
@@ -129,37 +164,6 @@ export default async function Page({
               ))}
             </section>
           ))}
-
-          {documentationItems.length > 0 && (
-            <section className='flex flex-col gap-5'>
-              <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
-                7. Project Documentation and Images
-              </h2>
-              <div className='columns-1 gap-5 sm:columns-2'>
-                {documentationItems.map((item) => (
-                  <figure
-                    key={item.src}
-                    className='mb-5 break-inside-avoid overflow-hidden bg-white/30'
-                  >
-                    <div className='relative aspect-[5/4] w-full'>
-                      <Image
-                        src={item.src.trim()}
-                        alt={item.description || title}
-                        fill
-                        sizes='(min-width: 1024px) 500px, 100vw'
-                        className='object-cover'
-                      />
-                    </div>
-                    {item.description && (
-                      <figcaption className='px-3 py-2 text-sm leading-5 text-[#777066]'>
-                        {item.description}
-                      </figcaption>
-                    )}
-                  </figure>
-                ))}
-              </div>
-            </section>
-          )}
         </div>
       </article>
     </MainLayout>

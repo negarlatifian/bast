@@ -1,6 +1,5 @@
 {
   "slug": "daab",
-
   "1. Basic Information": {
     "Project Title": "Daab",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -21,11 +20,10 @@
       "alt": "Daab"
     }
   },
-
   "sections": [
     {
       "id": "2",
-      "title": "2. Short Project Introduction",
+      "title": "Introduction",
       "paragraphs": [
         "Daab was an interactive performance formed over the course of six months in a participatory process, during the non-competitive section of \"New Voices Theater Festival”.",
         "This festival was dedicated to the youth aged 15 to 25 and is inspired by Noel Greig's methods in intercultural artistic exchange.",
@@ -49,7 +47,7 @@
     },
     {
       "id": "3",
-      "title": "3. Context & Site",
+      "title": "Context & Site",
       "paragraphs": [
         "The performance as a “drama of process” did not start from a pre-written text or play, but rather was formed from group exercises, improvisation, and exchange with the paired group in the festival.",
         "Weekly 3 to 4 hour rehearsals initially took place in a rented rehearsal room, but due to financial and time constraints, some rehearsals were moved to public spaces like the Laleh Park open-air amphitheater.",
@@ -65,7 +63,7 @@
     },
     {
       "id": "5",
-      "title": "5. Motivations & Questions",
+      "title": "Motivations & Questions",
       "paragraphs": [
         "The project was the first formal and serious experience of the supervisor as an artist/educator/facilitator of creative processes.",
         "The core idea was based on the belief that \"theater is a rehearsal for life\" and the participatory process of making theater can act like a \"microcosm\"; a space for practicing alternative ways of being together and experimenting with other forms of power structure and care in a safe environment.",
@@ -77,7 +75,7 @@
     },
     {
       "id": "6",
-      "title": "6. Constraints & Strategies",
+      "title": "Constraints & Strategies",
       "paragraphs": [
         "The most important challenge was the internal dynamics of the group and how male and female teenagers confronted each other.",
         "The separation of members and conflicts related to psychological safety determined part of the project's formation path.",
@@ -92,7 +90,7 @@
     },
     {
       "id": "8",
-      "title": "8. Financial Resources / Sponsors",
+      "title": "Fundings & Partners",
       "paragraphs": [
         "In collaboration with New Voices Theater Festival, 84 Theater Group, Mohsen Gallery, Darbast Platform, Jes Cafe.",
         "The cost of renting the rehearsal studio was divided among the group members.",
@@ -102,19 +100,19 @@
     },
     {
       "id": "9",
-      "title": "9. Reading / Interpretation",
+      "title": "Re-readings",
       "paragraphs": [
         "Daab, After Daab: Re-reading a Participatory Experience through Dialogue - compiled by Reyhaneh Mirjahani"
       ]
     },
     {
       "id": "10",
-      "title": "10. Writings and Resources about the Project",
+      "title": "Other references & Resources",
       "paragraphs": []
     },
     {
       "id": "11",
-      "title": "11. About the Artist",
+      "title": "About the Artist",
       "paragraphs": [
         "Navid Ghavidel is an artist, facilitator, and designer of participatory processes based in Rasht.",
         "He holds a Master’s degree in the Philosophy of Art from the Tehran University of Art.",
@@ -137,8 +135,7 @@
       ]
     }
   ],
-
-  "4. Participation & Process": {
+  "Participation & Process": {
     "subsections": [
       {
         "title": "A) Within the group",
@@ -163,48 +160,127 @@
       }
     ]
   },
-
-  "7. Project Documentation and Images": {
+  "Visual Documentation": {
     "items": [
       {
         "type": "photo",
-        "src": "",
-        "description": "Performance in Jes Cafe"
-      },
-      {
-        "type": "video",
-        "src": "https://www.youtube.com/watch?v=6aDDyNZS61I&t=448s",
-        "description": ""
+        "src": "/images/daab/01.webp",
+        "description": " "
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "Performance in Jes Cafe"
+        "src": "/images/daab/02.webp",
+        "description": " "
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "Performance at Darbast Platform"
+        "src": "/images/daab/03.webp",
+        "description": " "
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "Performance in Jes Cafe"
+        "src": "/images/daab/04.webp",
+        "description": " "
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "Performance at Darbast Platform"
+        "src": "/images/daab/05.webp",
+        "description": " "
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "Performance at Darbast Platform"
+        "src": "/images/daab/06.webp",
+        "description": " "
       },
       {
         "type": "photo",
-        "src": "",
-        "description": "Performance at Darbast Platform"
+        "src": "/images/daab/07.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/08.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/09.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/10.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/11.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/12.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/13.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/14.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/15.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/16.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/17.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/18.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/19.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/20.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/21.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/22.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/23.webp",
+        "description": " "
+      },
+      {
+        "type": "photo",
+        "src": "/images/daab/24.webp",
+        "description": " "
       }
     ]
   }
