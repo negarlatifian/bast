@@ -16,19 +16,19 @@ type HomeRepositoryPreviewProps = {
 };
 
 const desktopPositions = [
-  { x: 47, y: 12, w: 17, a: 'aspect-[4/5]', z: 9 },
-  { x: 62, y: 7, w: 15, a: 'aspect-[5/4]', z: 7 },
-  { x: 75, y: 15, w: 18, a: 'aspect-[1/1]', z: 8 },
-  { x: 55, y: 38, w: 16, a: 'aspect-[5/4]', z: 10 },
-  { x: 67, y: 34, w: 15, a: 'aspect-[4/5]', z: 11 },
-  { x: 81, y: 38, w: 17, a: 'aspect-[5/4]', z: 9 },
-  { x: 46, y: 63, w: 15, a: 'aspect-[1/1]', z: 6 },
-  { x: 59, y: 66, w: 18, a: 'aspect-[5/4]', z: 12 },
-  { x: 76, y: 62, w: 16, a: 'aspect-[4/5]', z: 7 },
-  { x: 88, y: 60, w: 13, a: 'aspect-[1/1]', z: 10 },
-  { x: 66, y: 20, w: 12, a: 'aspect-[1/1]', z: 13 },
-  { x: 83, y: 7, w: 14, a: 'aspect-[4/5]', z: 6 },
-  { x: 50, y: 27, w: 14, a: 'aspect-[5/4]', z: 14 },
+  { x: 61, y: 12, w: 13, a: 'aspect-[4/5]', z: 9 },
+  { x: 72, y: 7, w: 12, a: 'aspect-[5/4]', z: 7 },
+  { x: 83, y: 15, w: 14, a: 'aspect-[1/1]', z: 8 },
+  { x: 64, y: 38, w: 12, a: 'aspect-[5/4]', z: 10 },
+  { x: 74, y: 34, w: 12, a: 'aspect-[4/5]', z: 11 },
+  { x: 88, y: 38, w: 12, a: 'aspect-[5/4]', z: 9 },
+  { x: 60, y: 63, w: 12, a: 'aspect-[1/1]', z: 6 },
+  { x: 70, y: 66, w: 14, a: 'aspect-[5/4]', z: 12 },
+  { x: 82, y: 62, w: 12, a: 'aspect-[4/5]', z: 7 },
+  { x: 91, y: 60, w: 10, a: 'aspect-[1/1]', z: 10 },
+  { x: 76, y: 20, w: 10, a: 'aspect-[1/1]', z: 13 },
+  { x: 90, y: 7, w: 10, a: 'aspect-[4/5]', z: 6 },
+  { x: 62, y: 27, w: 11, a: 'aspect-[5/4]', z: 14 },
 ];
 
 const mobilePositions = [
@@ -208,7 +208,7 @@ export default function HomeRepositoryPreview({
       >
         <g
           fill='none'
-          stroke='#7f242a'
+          stroke='black'
           strokeLinecap='round'
           strokeLinejoin='round'
           strokeWidth='0.18'
@@ -257,7 +257,7 @@ export default function HomeRepositoryPreview({
               className='object-cover'
               draggable={false}
             />
-            <div className='absolute inset-0 bg-[#7f242a]/72' />
+            <div className='absolute inset-0 bg-[#d67878]/72' />
           </div>
         );
       })}

@@ -184,7 +184,7 @@ export default function RepositoryMasonry({
                   sizes='(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw'
                   className='object-cover transition duration-500 group-hover:scale-[1.03] group-hover:brightness-110'
                 />
-                <div className='absolute inset-0 bg-[#7f242a]/72 transition-colors duration-500 group-hover:bg-[#f8f8f6]/88' />
+                <div className='absolute inset-0 bg-[#d67878]/72 transition-colors duration-500 group-hover:bg-[#f8f8f6]/88' />
                 <div className='absolute inset-0 flex flex-col justify-end gap-2 p-4'>
                   <h2 className='text-[1.15rem] font-semibold leading-6 text-white transition-colors duration-500 group-hover:text-[#7f242a]'>
                     {project.title}
