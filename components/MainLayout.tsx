@@ -38,7 +38,7 @@ export default function MainLayout({
       <header
         className={`sticky top-0 z-30 ${headerClassName} backdrop-blur-md`}
       >
-        <div className='mx-auto flex w-full max-w-none items-center justify-between px-5 py-2 sm:px-[30px]'>
+        <div className='mx-auto flex w-full max-w-none items-center justify-between px-6 py-2 sm:px-10'>
           <Link
             href='/'
             className='logo-wrapper text-[0.95rem] font-semibold text-black sm:text-xl'
@@ -70,7 +70,7 @@ export default function MainLayout({
       </header>
 
       {/* ---------- Main content ---------- */}
-      <main className='mx-auto w-full max-w-none px-5 sm:px-[30px]'>
+      <main className='mx-auto w-full max-w-none px-6 sm:px-10'>
         {children}
       </main>
     </div>
