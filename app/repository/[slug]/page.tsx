@@ -155,7 +155,7 @@ export default async function Page({
                 className='flex flex-col gap-3'
               >
                 <h2 className='text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
-                  4. Participation & Process
+                  Participation & Process
                 </h2>
                 {subsection.title && (
                   <h3 className='text-base font-medium leading-6 text-[#4f4a43] sm:text-lg'>
