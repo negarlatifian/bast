@@ -16,19 +16,19 @@ type HomeRepositoryPreviewProps = {
 };
 
 const desktopPositions = [
-  { x: 61, y: 12, w: 13, a: 'aspect-[4/5]', z: 9 },
-  { x: 72, y: 7, w: 12, a: 'aspect-[5/4]', z: 7 },
-  { x: 83, y: 15, w: 14, a: 'aspect-[1/1]', z: 8 },
-  { x: 64, y: 38, w: 12, a: 'aspect-[5/4]', z: 10 },
-  { x: 74, y: 34, w: 12, a: 'aspect-[4/5]', z: 11 },
-  { x: 88, y: 38, w: 12, a: 'aspect-[5/4]', z: 9 },
-  { x: 60, y: 63, w: 12, a: 'aspect-[1/1]', z: 6 },
-  { x: 70, y: 66, w: 14, a: 'aspect-[5/4]', z: 12 },
-  { x: 82, y: 62, w: 12, a: 'aspect-[4/5]', z: 7 },
-  { x: 91, y: 60, w: 10, a: 'aspect-[1/1]', z: 10 },
-  { x: 76, y: 20, w: 10, a: 'aspect-[1/1]', z: 13 },
-  { x: 90, y: 7, w: 10, a: 'aspect-[4/5]', z: 6 },
-  { x: 62, y: 27, w: 11, a: 'aspect-[5/4]', z: 14 },
+  { x: 56, y: 12, w: 14, a: 'aspect-[4/5]', z: 9 },
+  { x: 68, y: 7, w: 13, a: 'aspect-[5/4]', z: 7 },
+  { x: 79, y: 15, w: 15, a: 'aspect-[1/1]', z: 8 },
+  { x: 59, y: 38, w: 13, a: 'aspect-[5/4]', z: 10 },
+  { x: 70, y: 34, w: 13, a: 'aspect-[4/5]', z: 11 },
+  { x: 84, y: 38, w: 13, a: 'aspect-[5/4]', z: 9 },
+  { x: 55, y: 63, w: 13, a: 'aspect-[1/1]', z: 6 },
+  { x: 66, y: 66, w: 15, a: 'aspect-[5/4]', z: 12 },
+  { x: 78, y: 62, w: 13, a: 'aspect-[4/5]', z: 7 },
+  { x: 88, y: 60, w: 11, a: 'aspect-[1/1]', z: 10 },
+  { x: 72, y: 20, w: 11, a: 'aspect-[1/1]', z: 13 },
+  { x: 86, y: 7, w: 11, a: 'aspect-[4/5]', z: 6 },
+  { x: 57, y: 27, w: 12, a: 'aspect-[5/4]', z: 14 },
 ];
 
 const mobilePositions = [
@@ -208,7 +208,7 @@ export default function HomeRepositoryPreview({
       >
         <g
           fill='none'
-          stroke='black'
+          stroke='#7f242a'
           strokeLinecap='round'
           strokeLinejoin='round'
           strokeWidth='0.18'
@@ -241,7 +241,7 @@ export default function HomeRepositoryPreview({
             onPointerCancel={() => {
               dragStateRef.current = null;
             }}
-            className={`absolute ${position.a} cursor-grab touch-none select-none transition-transform duration-500 active:cursor-grabbing group-hover:scale-[1.025]`}
+            className={`absolute ${position.a} cursor-grab touch-none select-none transition-transform duration-500 hover:scale-[1.045] active:cursor-grabbing group-hover:scale-[1.025]`}
             style={{
               left: `${position.x}%`,
               top: `${position.y}%`,
@@ -257,7 +257,17 @@ export default function HomeRepositoryPreview({
               className='object-cover'
               draggable={false}
             />
-            <div className='absolute inset-0 bg-[#d67878]/72' />
+            <div className='absolute inset-0 bg-[#d67878]/68 mix-blend-multiply' />
+            <div className='absolute inset-0 bg-black/20 mix-blend-color-burn' />
+            <div
+              aria-hidden='true'
+              className='absolute inset-0 opacity-25 mix-blend-multiply'
+              style={{
+                backgroundImage:
+                  'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.45) 1px, transparent 0)',
+                backgroundSize: '4px 4px',
+              }}
+            />
           </div>
         );
       })}
