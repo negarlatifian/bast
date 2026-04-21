@@ -45,7 +45,7 @@ export default async function Page({
             {project && (
               <Link
                 href={`/repository/${project.slug}`}
-                className='w-fit text-[#A24E4F] underline decoration-[#A24E4F]/40 underline-offset-4 transition-colors hover:text-black'
+                className='w-fit text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black'
               >
                 {project['1. Basic Information']['Project Title']}
               </Link>

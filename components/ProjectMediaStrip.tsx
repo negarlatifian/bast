@@ -96,7 +96,7 @@ export default function ProjectMediaStrip({
                   ) : item.type === 'link' ? (
                     <a
                       href={item.src}
-                      className='flex h-full w-full items-center justify-center bg-white/40 p-6 text-center text-base leading-6 text-[#24211d] underline decoration-[#b33f3f] underline-offset-4'
+                      className='flex h-full w-full items-center justify-center bg-white/40 p-6 text-center text-base leading-6 text-[#24211d] underline decoration-[#7f242a] underline-offset-4'
                       target='_blank'
                       rel='noreferrer'
                     >

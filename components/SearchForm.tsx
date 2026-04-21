@@ -57,7 +57,7 @@ function SearchFormFields({
       />
       <button
         type='submit'
-        className='h-7 w-7 cursor-pointer text-black/70 transition-colors hover:text-[#A24E4F]'
+        className='h-7 w-7 cursor-pointer text-black/70 transition-colors hover:text-[#7f242a]'
         aria-label='Submit search'
       >
         <svg

@@ -142,7 +142,7 @@ export default async function Page({
               </div>
               <Link
                 href={`/readings/${project.slug}`}
-                className='w-fit text-base font-medium leading-6 text-[#A24E4F] underline decoration-[#A24E4F]/40 underline-offset-4 transition-colors hover:text-black'
+                className='w-fit text-base font-medium leading-6 text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black'
               >
                 Read the re-reading
               </Link>

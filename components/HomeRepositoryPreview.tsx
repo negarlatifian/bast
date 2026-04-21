@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { PointerEvent, useMemo, useRef, useState } from 'react';
+import type { PointerEvent } from 'react';
+import { useMemo, useRef, useState } from 'react';
 
 type HomePreviewProject = {
   slug: string;
@@ -15,19 +16,19 @@ type HomeRepositoryPreviewProps = {
 };
 
 const positions = [
-  { x: 6, y: 14, w: 30, a: 'aspect-[4/5]', z: 9 },
-  { x: 29, y: 7, w: 25, a: 'aspect-[5/4]', z: 7 },
-  { x: 50, y: 15, w: 32, a: 'aspect-[1/1]', z: 8 },
-  { x: 18, y: 39, w: 28, a: 'aspect-[5/4]', z: 10 },
-  { x: 41, y: 35, w: 26, a: 'aspect-[4/5]', z: 11 },
-  { x: 63, y: 38, w: 29, a: 'aspect-[5/4]', z: 9 },
-  { x: 4, y: 64, w: 26, a: 'aspect-[1/1]', z: 6 },
-  { x: 25, y: 67, w: 31, a: 'aspect-[5/4]', z: 12 },
-  { x: 54, y: 63, w: 27, a: 'aspect-[4/5]', z: 7 },
-  { x: 73, y: 61, w: 23, a: 'aspect-[1/1]', z: 10 },
-  { x: 35, y: 20, w: 21, a: 'aspect-[1/1]', z: 13 },
-  { x: 66, y: 7, w: 24, a: 'aspect-[4/5]', z: 6 },
-  { x: 11, y: 26, w: 23, a: 'aspect-[5/4]', z: 14 },
+  { x: 47, y: 12, w: 17, a: 'aspect-[4/5]', z: 9 },
+  { x: 62, y: 7, w: 15, a: 'aspect-[5/4]', z: 7 },
+  { x: 75, y: 15, w: 18, a: 'aspect-[1/1]', z: 8 },
+  { x: 55, y: 38, w: 16, a: 'aspect-[5/4]', z: 10 },
+  { x: 67, y: 34, w: 15, a: 'aspect-[4/5]', z: 11 },
+  { x: 81, y: 38, w: 17, a: 'aspect-[5/4]', z: 9 },
+  { x: 46, y: 63, w: 15, a: 'aspect-[1/1]', z: 6 },
+  { x: 59, y: 66, w: 18, a: 'aspect-[5/4]', z: 12 },
+  { x: 76, y: 62, w: 16, a: 'aspect-[4/5]', z: 7 },
+  { x: 88, y: 60, w: 13, a: 'aspect-[1/1]', z: 10 },
+  { x: 66, y: 20, w: 12, a: 'aspect-[1/1]', z: 13 },
+  { x: 83, y: 7, w: 14, a: 'aspect-[4/5]', z: 6 },
+  { x: 50, y: 27, w: 14, a: 'aspect-[5/4]', z: 14 },
 ];
 
 type PreviewPosition = (typeof positions)[number];
@@ -123,8 +124,8 @@ export default function HomeRepositoryPreview({
 
         return {
           ...position,
-          x: Math.min(92 - position.w * 0.3, Math.max(-position.w * 0.15, dragState.startX + deltaX)),
-          y: Math.min(88, Math.max(0, dragState.startY + deltaY)),
+          x: Math.min(100 - position.w * 0.3, Math.max(-position.w * 0.7, dragState.startX + deltaX)),
+          y: Math.min(98, Math.max(-position.w * 0.55, dragState.startY + deltaY)),
         };
       })
     );
@@ -162,7 +163,7 @@ export default function HomeRepositoryPreview({
           openRepository();
         }
       }}
-      className='group relative min-h-[32rem] overflow-hidden bg-[#f8f8f6] outline-none sm:min-h-[38rem] lg:min-h-[calc(100dvh-9rem)]'
+      className='group absolute inset-0 z-20 cursor-pointer overflow-hidden outline-none'
     >
       <svg
         aria-hidden='true'
@@ -172,7 +173,7 @@ export default function HomeRepositoryPreview({
       >
         <g
           fill='none'
-          stroke='#b33f3f'
+          stroke='#7f242a'
           strokeLinecap='round'
           strokeLinejoin='round'
           strokeWidth='0.18'
@@ -221,7 +222,7 @@ export default function HomeRepositoryPreview({
               className='object-cover'
               draggable={false}
             />
-            <div className='absolute inset-0 bg-[#d67878]/72' />
+            <div className='absolute inset-0 bg-[#7f242a]/72' />
           </div>
         );
       })}

@@ -33,7 +33,7 @@ export default function Page() {
           <Link
             key={reReading.slug}
             href={`/readings/${reReading.slug}`}
-            className='flex flex-col gap-2 border-t border-[#d9d2c7] pt-4 text-black transition-colors hover:text-[#A24E4F]'
+            className='flex flex-col gap-2 border-t border-[#d9d2c7] pt-4 text-black transition-colors hover:text-[#7f242a]'
           >
             <h2 className='text-xl font-semibold leading-7'>
               {reReading.title}

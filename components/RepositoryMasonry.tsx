@@ -170,7 +170,7 @@ export default function RepositoryMasonry({
               }`}
             >
               <span
-                className='absolute z-30 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#b33f3f]'
+                className='absolute z-30 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#7f242a]'
                 style={{
                   left: `${anchor.xPercent}%`,
                   top: `${anchor.yPercent}%`,
@@ -184,17 +184,17 @@ export default function RepositoryMasonry({
                   sizes='(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw'
                   className='object-cover transition duration-500 group-hover:scale-[1.03] group-hover:brightness-110'
                 />
-                <div className='absolute inset-0 bg-[#d67878]/72 transition-colors duration-500 group-hover:bg-[#f8f8f6]/88' />
+                <div className='absolute inset-0 bg-[#7f242a]/72 transition-colors duration-500 group-hover:bg-[#f8f8f6]/88' />
                 <div className='absolute inset-0 flex flex-col justify-end gap-2 p-4'>
-                  <h2 className='text-[1.15rem] font-semibold leading-6 text-white transition-colors duration-500 group-hover:text-[#A24E4F]'>
+                  <h2 className='text-[1.15rem] font-semibold leading-6 text-white transition-colors duration-500 group-hover:text-[#7f242a]'>
                     {project.title}
                   </h2>
                   {project.artists.length > 0 && (
-                    <p className='text-[0.92rem] leading-5 text-white/90 transition-colors duration-500 group-hover:text-[#A24E4F]'>
+                    <p className='text-[0.92rem] leading-5 text-white/90 transition-colors duration-500 group-hover:text-[#7f242a]'>
                       {project.artists.join(', ')}
                     </p>
                   )}
-                  <span className='mt-2 inline-flex items-center gap-2 text-[0.92rem] font-medium leading-5 text-[#A24E4F] opacity-0 transition-opacity duration-500 group-hover:opacity-100'>
+                  <span className='mt-2 inline-flex items-center gap-2 text-[0.92rem] font-medium leading-5 text-[#7f242a] opacity-0 transition-opacity duration-500 group-hover:opacity-100'>
                     Read more
                     <span aria-hidden='true'>→</span>
                   </span>
@@ -211,7 +211,7 @@ export default function RepositoryMasonry({
       >
         <g
           fill='none'
-          stroke='#b33f3f'
+          stroke='#7f242a'
           strokeLinecap='round'
           strokeLinejoin='round'
           strokeWidth='1'

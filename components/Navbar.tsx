@@ -29,16 +29,16 @@ export default function Navbar() {
          ? 'font-semibold text-[#7f786cbf]'
          : 'text-[rgb(54,54,54)]'
      }
-     hover:text-[#A24E4F]`;
+     hover:text-[#7f242a]`;
 
   const mobileLinkClass = (href: string) =>
     `block py-3 text-2xl transition-colors
      ${
        pathname === href
-         ? 'font-semibold text-[#A24E4F]'
+        ? 'font-semibold text-[#7f242a]'
          : 'text-[rgb(54,54,54)]'
      }
-     hover:text-[#A24E4F]`;
+     hover:text-[#7f242a]`;
 
   return (
     <nav className='relative z-30 w-fit'>

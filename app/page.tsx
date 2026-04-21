@@ -15,8 +15,8 @@ export default function Page() {
 
   return (
     <MainLayout>
-      <section className='grid min-h-[calc(100dvh-7rem)] gap-8 py-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch lg:gap-10 lg:py-10'>
-        <div className='flex items-start p-5 sm:p-7 lg:p-8'>
+      <section className='relative min-h-[calc(100dvh-7rem)] overflow-hidden py-8 lg:py-10'>
+        <div className='pointer-events-none relative z-10 flex max-w-[48rem] items-start p-5 sm:p-7 lg:p-8'>
           <h1 className='max-w-3xl text-4xl font-semibold leading-tight tracking-normal text-black sm:text-5xl sm:leading-tight lg:text-6xl'>
             Bast is a curatorial platform dedicated to the study, rethinking,
             and documentation of participatory art in Iran.
