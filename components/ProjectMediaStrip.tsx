@@ -14,6 +14,7 @@ export default function ProjectMediaStrip({
   title,
 }: ProjectMediaStripProps) {
   const [activePhotoIndex, setActivePhotoIndex] = useState<number | null>(null);
+  const [imageRatios, setImageRatios] = useState<Record<string, number>>({});
   const photoItems = useMemo(
     () => mediaItems.filter((item) => item.type === 'photo'),
     [mediaItems]
@@ -40,6 +41,16 @@ export default function ProjectMediaStrip({
       return (currentIndex + 1) % photoItems.length;
     });
   }, [photoItems.length]);
+  const updateImageRatio = useCallback((src: string, width: number, height: number) => {
+    if (height === 0) {
+      return;
+    }
+
+    setImageRatios((currentRatios) => ({
+      ...currentRatios,
+      [src]: width / height,
+    }));
+  }, []);
 
   useEffect(() => {
     if (!activePhoto) {
@@ -75,18 +86,23 @@ export default function ProjectMediaStrip({
         aria-label='Visual Documentation'
         className='no-scrollbar -mx-7 overflow-x-auto sm:-mx-12 lg:-mx-16'
       >
-        <div className='flex w-max gap-4 pb-3'>
+        <div className='flex w-max items-start gap-4 pb-3'>
           {mediaItems.map((item) => {
             const photoIndex = photoItems.findIndex(
               (photo) => photo.src === item.src
             );
+            const imageRatio = imageRatios[item.src];
+            const mediaWidth = imageRatio
+              ? `clamp(12rem, ${Math.min(imageRatio * 24, 34).toFixed(2)}rem, 34rem)`
+              : undefined;
 
             return (
               <figure
                 key={item.src}
-                className='w-[78vw] max-w-[34rem] shrink-0 sm:w-[28rem]'
+                className='shrink-0'
+                style={mediaWidth ? { width: mediaWidth } : undefined}
               >
-                <div className='relative aspect-[4/3] w-full overflow-hidden bg-black/5'>
+                <div className='relative h-72 w-full overflow-hidden bg-black/5 sm:h-80 lg:h-96'>
                   {item.type === 'video' ? (
                     <video
                       src={item.src}
@@ -114,7 +130,14 @@ export default function ProjectMediaStrip({
                         alt={item.description || title}
                         fill
                         sizes='(min-width: 1024px) 544px, 78vw'
-                        className='object-cover'
+                        className='object-contain'
+                        onLoadingComplete={(image) =>
+                          updateImageRatio(
+                            item.src,
+                            image.naturalWidth,
+                            image.naturalHeight
+                          )
+                        }
                       />
                     </button>
                   )}
