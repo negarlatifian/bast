@@ -1,0 +1,83 @@
+{
+  "slug": "",
+
+  "1. Basic Information": {
+    "Project Title": "",
+    "Artist / Group / Collective / Organizer / Supervisor / Initiator": [],
+    "Location": {
+      "text": "",
+      "city": "",
+      "country": "",
+      "venue": ""
+    },
+    "Year / Time Period": {
+      "text": ""
+    },
+    "Featured Project Image": {
+      "url": "",
+      "alt": ""
+    }
+  },
+
+  "sections": [
+    {
+      "id": "2",
+      "title": "2. Short Project Introduction",
+      "paragraphs": []
+    },
+    {
+      "id": "3",
+      "title": "3. Context & Site",
+      "paragraphs": []
+    },
+    {
+      "id": "5",
+      "title": "5. Motivations & Questions",
+      "paragraphs": []
+    },
+    {
+      "id": "6",
+      "title": "6. Constraints & Strategies",
+      "paragraphs": []
+    },
+    {
+      "id": "8",
+      "title": "8. Financial Resources / Sponsors",
+      "paragraphs": []
+    },
+    {
+      "id": "9",
+      "title": "9. Reading / Interpretation",
+      "paragraphs": []
+    },
+    {
+      "id": "10",
+      "title": "10. Writings and Resources about the Project",
+      "paragraphs": []
+    },
+    {
+      "id": "11",
+      "title": "11. About the Artist",
+      "paragraphs": []
+    }
+  ],
+
+  "4. Participation & Process": {
+    "subsections": [
+      {
+        "title": "",
+        "paragraphs": []
+      }
+    ]
+  },
+
+  "7. Project Documentation and Images": {
+    "items": [
+      {
+        "type": "photo | video",
+        "src": "",
+        "description": ""
+      }
+    ]
+  }
+}

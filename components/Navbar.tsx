@@ -1,16 +1,14 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-// import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 
 const navItems = [
-  { label: 'The Project', href: '/theproject' },
-  { label: 'Contributions', href: '/contributions' },
+  { label: 'Repository', href: '/repository' },
+  { label: 'Readings', href: '/readings' },
+  { label: 'Library', href: '/library-page' },
   { label: 'Map', href: '/map' },
-  { label: 'Discussions', href: '/discussions' },
-  { label: 'Public Displays', href: '/publicdisplays' },
-  { label: 'About Us', href: '/aboutus' },
+  { label: 'About Bast', href: '/aboutbast' },
 ];
 
 export default function Navbar() {
@@ -23,26 +21,33 @@ export default function Navbar() {
     return () => document.body.classList.remove('overflow-hidden');
   }, [open]);
 
-  const linkClass = (href: string) =>
-    `block py-4 text-[0.75rem] transition-colors
+  const desktopLinkClass = (href: string) =>
+    `block py-4 text-[0.95rem] transition-colors
      ${
        pathname === href
-         ? 'font-semibold text-[rgb(186,186,186)]'
+         ? 'font-semibold text-[#7f786cbf]'
          : 'text-[rgb(54,54,54)]'
      }
-     hover:text-[rgb(254,206,7)]`;
+     hover:text-[#A24E4F]`;
+
+  const mobileLinkClass = (href: string) =>
+    `block py-3 text-2xl transition-colors
+     ${
+       pathname === href
+         ? 'font-semibold text-[#A24E4F]'
+         : 'text-[rgb(54,54,54)]'
+     }
+     hover:text-[#A24E4F]`;
 
   return (
-    <nav className={`  relative z-30 w-fit`}>
+    <nav className='relative z-30 w-fit'>
       {/* ───── Top bar ───── */}
-      <div
-        className='mx-auto flex max-w-5xl items-center justify-between
-                      px-2 py-2 sm:px-6 '
-      >
+
+      <div className='mx-auto flex items-center justify-between py-2'>
         {/* desktop links */}
-        <div className='hidden gap-2 sm:flex sm:gap-8'>
+        <div className='hidden items-center gap-5 md:flex lg:gap-8'>
           {navItems.map(({ label, href }) => (
-            <Link key={href} href={href} className={linkClass(href)}>
+            <Link key={href} href={href} className={desktopLinkClass(href)}>
               {label}
             </Link>
           ))}
@@ -51,8 +56,9 @@ export default function Navbar() {
         {/* hamburger (mobile only) */}
         <button
           aria-label='Toggle navigation'
+          aria-expanded={open}
           onClick={() => setOpen(!open)}
-          className='sm:hidden'
+          className='p-2 md:hidden'
         >
           <svg
             className='h-6 w-6 stroke-gray-800'
@@ -77,7 +83,7 @@ export default function Navbar() {
       {open && (
         <div
           /* absolute root-level sheet */
-          className='fixed inset-0 z-[60] w-screen h-screen bg-white sm:hidden'
+          className='fixed inset-0 z-[60] min-h-dvh w-screen bg-[rgb(245,240,237)] md:hidden'
         >
           {/*   close (X)   */}
           <button
@@ -107,7 +113,7 @@ export default function Navbar() {
                 key={href}
                 href={href}
                 onClick={() => setOpen(false)}
-                className={linkClass(href)}
+                className={mobileLinkClass(href)}
               >
                 {label}
               </Link>
