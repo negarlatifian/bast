@@ -33,11 +33,11 @@ export default async function Page({
     <MainLayout variant='reading'>
       <article className='mx-auto mt-8 flex w-full max-w-4xl flex-col gap-6 bg-[#f8f8f6] px-5 py-8 sm:mt-12 sm:px-10 sm:py-12 lg:px-16'>
         <header className='flex flex-col gap-3'>
-          <p className='text-base leading-6 text-[#777066]'>Re-reading</p>
+          <p className='text-sm leading-6 text-[#777066]'>Re-reading</p>
           <h1 className='text-3xl font-semibold leading-tight text-black sm:text-4xl'>
             {reReading.title}
           </h1>
-          <div className='flex flex-col gap-1 text-base leading-6 text-[#4f4a43] sm:text-lg'>
+          <div className='flex flex-col gap-1 text-sm leading-6 text-[#4f4a43] sm:text-base'>
             <p>{reReading.credit ?? reReading.author}</p>
             {reReading.role && <p>{reReading.role}</p>}
             {reReading.source && <p>{reReading.source}</p>}
@@ -61,7 +61,7 @@ export default async function Page({
             return (
               <p
                 key={`reading-paragraph-${index}`}
-                className={`whitespace-pre-line text-base leading-7 text-[#24211d] sm:text-[1.08rem] sm:leading-8 ${
+                className={`whitespace-pre-line text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7 ${
                   isBoldParagraph ? 'font-semibold' : ''
                 }`}
               >

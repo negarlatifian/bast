@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 
 function Paragraph({ children }: { children: ReactNode }) {
   return (
-    <p className='text-base leading-7 tracking-normal text-black sm:text-[1.2rem] sm:leading-8'>
+    <p className='text-sm leading-6 tracking-normal text-black sm:text-[1.08rem] sm:leading-7'>
       {children}
     </p>
   );
@@ -11,7 +11,7 @@ function Paragraph({ children }: { children: ReactNode }) {
 
 function SectionTitle({ children }: { children: ReactNode }) {
   return (
-    <h2 className='mt-6 text-2xl font-semibold leading-tight tracking-normal text-black sm:mt-8 sm:text-3xl'>
+    <h2 className='mt-6 text-xl font-semibold leading-tight tracking-normal text-black sm:mt-8 sm:text-2xl'>
       {children}
     </h2>
   );
@@ -19,7 +19,7 @@ function SectionTitle({ children }: { children: ReactNode }) {
 
 function SubTitle({ children }: { children: ReactNode }) {
   return (
-    <h3 className='mt-4 text-xl font-semibold leading-8 tracking-normal text-black sm:mt-5 sm:text-2xl'>
+    <h3 className='mt-4 text-lg font-semibold leading-7 tracking-normal text-black sm:mt-5 sm:text-xl'>
       {children}
     </h3>
   );
@@ -53,7 +53,7 @@ export default function Page() {
           </div>
         </header>
 
-        <p className='text-base font-semibold leading-7 tracking-normal text-black sm:text-[1.2rem] sm:leading-8'>
+        <p className='text-sm font-semibold leading-6 tracking-normal text-black sm:text-[1.08rem] sm:leading-7'>
           How and why has participatory art in Iran emerged under conditions of
           institutional, social, and political constraints? What patterns of
           interaction, collaboration, and creative action does it propose, and
@@ -214,7 +214,7 @@ export default function Page() {
           projects in the Bast repository.
         </Paragraph>
         <Paragraph>Two main approaches are pursued in this phase:</Paragraph>
-        <ul className='ml-6 list-disc space-y-3 text-base leading-7 tracking-normal text-black sm:ml-12 sm:text-[1.2rem] sm:leading-8'>
+        <ul className='ml-6 list-disc space-y-3 text-sm leading-6 tracking-normal text-black sm:ml-12 sm:text-[1.08rem] sm:leading-7'>
           <li>
             <strong>Parallel writing and annotation:</strong> the production of
             interpretive, experiential, or theoretical texts that accompany the

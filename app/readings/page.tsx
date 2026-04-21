@@ -21,7 +21,7 @@ export default function Page() {
         {introParagraphs.map((paragraph, index) => (
           <p
             key={`re-reading-intro-${index}`}
-            className='text-base leading-7 sm:text-[1.2rem] sm:leading-8'
+            className='text-sm leading-6 sm:text-[1.08rem] sm:leading-7'
           >
             {paragraph}
           </p>
@@ -38,7 +38,7 @@ export default function Page() {
             <h2 className='text-xl font-semibold leading-7'>
               {reReading.title}
             </h2>
-            <p className='text-base leading-6 text-[#777066]'>
+            <p className='text-sm leading-6 text-[#777066]'>
               {reReading.author}
             </p>
           </Link>

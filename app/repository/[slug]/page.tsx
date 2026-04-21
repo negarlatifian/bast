@@ -53,12 +53,12 @@ export default async function Page({
             {title}
           </h1>
           {artists.length > 0 && (
-            <p className='text-base leading-7 text-[#4f4a43] sm:text-lg'>
+            <p className='text-sm leading-6 text-[#4f4a43] sm:text-base'>
               {artists.join(', ')}
             </p>
           )}
           {(location || year) && (
-            <p className='text-base leading-6 text-[#777066]'>
+            <p className='text-sm leading-6 text-[#777066]'>
               {[location, year].filter(Boolean).join(' / ')}
             </p>
           )}
@@ -67,13 +67,13 @@ export default async function Page({
         <div className='flex flex-col gap-10'>
           {introductionSection && (
             <section className='flex flex-col gap-3'>
-              <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
+              <h2 className='text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
                 {introductionSection.title}
               </h2>
               {introductionSection.paragraphs.map((paragraph, index) => (
                 <p
                   key={`${introductionSection.id}-${index}`}
-                  className='text-base leading-7 text-[#24211d] sm:text-[1.08rem] sm:leading-8'
+                  className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'
                 >
                   {paragraph}
                 </p>
@@ -87,13 +87,13 @@ export default async function Page({
 
           {openingSections.map((section) => (
             <section key={section.id} className='flex flex-col gap-3'>
-              <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
+              <h2 className='text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
                 {section.title}
               </h2>
               {section.paragraphs.map((paragraph, index) => (
                 <p
                   key={`${section.id}-${index}`}
-                  className='text-base leading-7 text-[#24211d] sm:text-[1.08rem] sm:leading-8'
+                  className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'
                 >
                   {paragraph}
                 </p>
@@ -107,18 +107,18 @@ export default async function Page({
                 key={`${subsection.title}-${index}`}
                 className='flex flex-col gap-3'
               >
-                <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
+                <h2 className='text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
                   4. Participation & Process
                 </h2>
                 {subsection.title && (
-                  <h3 className='text-lg font-medium leading-7 text-[#4f4a43] sm:text-xl'>
+                  <h3 className='text-base font-medium leading-6 text-[#4f4a43] sm:text-lg'>
                     {subsection.title}
                   </h3>
                 )}
                 {subsection.paragraphs.map((paragraph, paragraphIndex) => (
                   <p
                     key={`${subsection.title}-${index}-${paragraphIndex}`}
-                    className='text-base leading-7 text-[#24211d] sm:text-[1.08rem] sm:leading-8'
+                    className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'
                   >
                     {paragraph}
                   </p>
@@ -130,13 +130,13 @@ export default async function Page({
           {reReading && (
             <section id='re-reading' className='flex flex-col gap-3'>
               <div className='flex flex-col gap-2'>
-                <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
+                <h2 className='text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
                   Re-reading
                 </h2>
-                <h3 className='text-lg font-medium leading-7 text-[#4f4a43] sm:text-xl'>
+                <h3 className='text-base font-medium leading-6 text-[#4f4a43] sm:text-lg'>
                   {reReading.title}
                 </h3>
-                <p className='text-base leading-6 text-[#777066]'>
+                <p className='text-sm leading-6 text-[#777066]'>
                   {reReading.author}
                 </p>
               </div>
@@ -151,13 +151,13 @@ export default async function Page({
 
           {remainingSections.map((section) => (
             <section key={section.id} className='flex flex-col gap-3'>
-              <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
+              <h2 className='text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
                 {section.title}
               </h2>
               {section.paragraphs.map((paragraph, index) => (
                 <p
                   key={`${section.id}-${index}`}
-                  className='text-base leading-7 text-[#24211d] sm:text-[1.08rem] sm:leading-8'
+                  className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'
                 >
                   {paragraph}
                 </p>

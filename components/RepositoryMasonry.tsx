@@ -137,7 +137,7 @@ export default function RepositoryMasonry({
 
   if (projects.length === 0) {
     return (
-      <p className='mt-10 pb-16 text-base leading-7 text-[#777066]'>
+      <p className='mt-10 pb-16 text-sm leading-6 text-[#777066]'>
         No projects found.
       </p>
     );
@@ -149,14 +149,12 @@ export default function RepositoryMasonry({
         {projects.map((project, index) => {
           const layoutIndex =
             (index * 7 + layoutSeed) % scatterClasses.length;
-          const anchorIndex = getAnchorIndex(index, layoutSeed);
           const aspectClass =
             layoutIndex % 5 === 0
               ? 'aspect-[4/5]'
               : layoutIndex % 3 === 0
                 ? 'aspect-[1/1]'
                 : 'aspect-[5/4]';
-          const anchor = anchorPoints[anchorIndex];
 
           return (
             <Link
@@ -169,13 +167,6 @@ export default function RepositoryMasonry({
                 scatterClasses[layoutIndex]
               }`}
             >
-              <span
-                className='absolute z-30 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#7f242a]'
-                style={{
-                  left: `${anchor.xPercent}%`,
-                  top: `${anchor.yPercent}%`,
-                }}
-              />
               <div className={`relative w-full ${aspectClass}`}>
                 <Image
                   src={project.imageSrc}
@@ -184,7 +175,17 @@ export default function RepositoryMasonry({
                   sizes='(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw'
                   className='object-cover transition duration-500 group-hover:scale-[1.03] group-hover:brightness-110'
                 />
-                <div className='absolute inset-0 bg-[#d67878]/72 transition-colors duration-500 group-hover:bg-[#f8f8f6]/88' />
+                <div className='absolute inset-0 bg-[#d67878]/68 mix-blend-multiply transition-colors duration-500 group-hover:bg-[#f8f8f6]/88 group-hover:mix-blend-normal' />
+                <div className='absolute inset-0 bg-black/20 mix-blend-color-burn transition-opacity duration-500 group-hover:opacity-0' />
+                <div
+                  aria-hidden='true'
+                  className='absolute inset-0 opacity-25 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0'
+                  style={{
+                    backgroundImage:
+                      'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.45) 1px, transparent 0)',
+                    backgroundSize: '4px 4px',
+                  }}
+                />
                 <div className='absolute inset-0 flex flex-col justify-end gap-2 p-4'>
                   <h2 className='text-[1.15rem] font-semibold leading-6 text-white transition-colors duration-500 group-hover:text-[#7f242a]'>
                     {project.title}

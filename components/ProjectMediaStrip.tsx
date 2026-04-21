@@ -73,7 +73,7 @@ export default function ProjectMediaStrip({
     <>
       <section
         aria-label='Visual Documentation'
-        className='no-scrollbar -mx-5 overflow-x-auto px-5 sm:-mx-8 sm:px-8 lg:-mx-12 lg:px-12'
+        className='no-scrollbar -mx-5 overflow-x-auto px-5 sm:-mx-[30px] sm:px-[30px]'
       >
         <div className='flex w-max gap-4 pb-3'>
           {mediaItems.map((item) => {
@@ -96,7 +96,7 @@ export default function ProjectMediaStrip({
                   ) : item.type === 'link' ? (
                     <a
                       href={item.src}
-                      className='flex h-full w-full items-center justify-center bg-white/40 p-6 text-center text-base leading-6 text-[#24211d] underline decoration-[#7f242a] underline-offset-4'
+                      className='flex h-full w-full items-center justify-center bg-white/40 p-6 text-center text-sm leading-6 text-[#24211d] underline decoration-[#7f242a] underline-offset-4'
                       target='_blank'
                       rel='noreferrer'
                     >

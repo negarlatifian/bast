@@ -120,7 +120,6 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
-            <SearchForm onSearch={() => setOpen(false)} />
           </nav>
         </div>
       )}

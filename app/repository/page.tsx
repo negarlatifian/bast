@@ -95,7 +95,7 @@ export default async function Page({
   return (
     <MainLayout>
       <article className='mt-6 flex flex-col gap-3 sm:mt-8'>
-        <p className='text-base leading-7 sm:text-[1.2rem] sm:leading-8'>
+        <p className='text-sm leading-6 sm:text-[1.08rem] sm:leading-7'>
           Bast Repository is a growing collection of participatory art projects
           that have taken place in Iran. Each project/work is presented through
           multiple layers of documentation, including basic information,
@@ -106,7 +106,7 @@ export default async function Page({
           reflection, allowing the projects to be revisited from different
           positions.
         </p>
-        <p className='text-base leading-7 sm:text-[1.2rem] sm:leading-8'>
+        <p className='text-sm leading-6 sm:text-[1.08rem] sm:leading-7'>
           The repository does not aim to establish a definitive history of
           participatory art in Iran. Instead, it brings together diverse
           examples that reflect the variety of ways participation has been
@@ -115,7 +115,7 @@ export default async function Page({
           urgencies, and reveal different approaches to collaboration,
           engagement, and collective action.
         </p>
-        <p className='text-base leading-7 sm:text-[1.2rem] sm:leading-8'>
+        <p className='text-sm leading-6 sm:text-[1.08rem] sm:leading-7'>
           As the platform develops, new projects, materials, and re-readings may
           be added, allowing the repository to grow over time and remain open to
           further contributions and interpretations. You are invited to suggest a
@@ -124,7 +124,7 @@ export default async function Page({
       </article>
 
       {searchQuery && (
-        <p className='mt-8 text-base leading-6 text-[#4f4a43]'>
+        <p className='mt-8 text-sm leading-6 text-[#4f4a43]'>
           {filteredProjects.length} result
           {filteredProjects.length === 1 ? '' : 's'} for &ldquo;{q}&rdquo;
         </p>

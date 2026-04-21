@@ -211,7 +211,7 @@ export default function HomeRepositoryPreview({
           stroke='#7f242a'
           strokeLinecap='round'
           strokeLinejoin='round'
-          strokeWidth='0.18'
+          strokeWidth='0.12'
           vectorEffect='non-scaling-stroke'
         >
           {path && <path d={path} />}
