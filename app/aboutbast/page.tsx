@@ -178,7 +178,7 @@ export default function Page() {
 
         <SectionTitle>Research Process</SectionTitle>
 
-        <SubTitle>1. Collection, Selection, and Initial Documentation</SubTitle>
+        <SubTitle>Collection, Selection, and Initial Documentation</SubTitle>
         <Paragraph>
           In this phase, participatory art projects are identified and collected
           from various contexts. This stage is not limited to gathering primary
@@ -191,7 +191,7 @@ export default function Page() {
           of participatory art in contemporary Iran.
         </Paragraph>
 
-        <SubTitle>2. Conversation with the Artist / Project Initiator</SubTitle>
+        <SubTitle>Conversation with the Artist or Project Initiator</SubTitle>
         <Paragraph>
           Before any interpretation or re-reading takes place, a conversation is
           conducted with the creator of the project. Depending on accessibility
@@ -204,7 +204,7 @@ export default function Page() {
         </Paragraph>
 
         <SubTitle>
-          3. Re-readings, Parallel Writing, and Creative Mediation
+          Re-readings, Parallel Writing, and Creative Mediation
         </SubTitle>
         <Paragraph>
           The collected projects and conversations with artists become the basis
