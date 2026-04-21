@@ -4,11 +4,64 @@ import { getProjectReReading } from '@/data/rereading';
 import { getProjectBySlug, getProjectMedia, projects } from '@/lib/projects';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import type { ReactNode } from 'react';
 
 export function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.slug,
   }));
+}
+
+const linkPattern = /(https?:\/\/[^\s,]+|www\.[^\s,]+)/g;
+
+function normalizeProjectParagraph(paragraph: string) {
+  return paragraph.replace(/^bio:\s*/i, '');
+}
+
+function getLinkHref(url: string) {
+  return url.startsWith('www.') ? `https://${url}` : url;
+}
+
+function ProjectParagraph({
+  children,
+}: {
+  children: string;
+}) {
+  const paragraph = normalizeProjectParagraph(children);
+  const parts: ReactNode[] = [];
+  let lastIndex = 0;
+
+  for (const match of paragraph.matchAll(linkPattern)) {
+    const url = match[0];
+    const index = match.index ?? 0;
+
+    if (index > lastIndex) {
+      parts.push(paragraph.slice(lastIndex, index));
+    }
+
+    parts.push(
+      <a
+        key={`${url}-${index}`}
+        href={getLinkHref(url)}
+        target='_blank'
+        rel='noreferrer'
+        className='text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black'
+      >
+        {url}
+      </a>
+    );
+    lastIndex = index + url.length;
+  }
+
+  if (lastIndex < paragraph.length) {
+    parts.push(paragraph.slice(lastIndex));
+  }
+
+  return (
+    <p className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'>
+      {parts.length > 0 ? parts : paragraph}
+    </p>
+  );
 }
 
 export default async function Page({
@@ -71,12 +124,9 @@ export default async function Page({
                 {introductionSection.title}
               </h2>
               {introductionSection.paragraphs.map((paragraph, index) => (
-                <p
-                  key={`${introductionSection.id}-${index}`}
-                  className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'
-                >
+                <ProjectParagraph key={`${introductionSection.id}-${index}`}>
                   {paragraph}
-                </p>
+                </ProjectParagraph>
               ))}
             </section>
           )}
@@ -91,12 +141,9 @@ export default async function Page({
                 {section.title}
               </h2>
               {section.paragraphs.map((paragraph, index) => (
-                <p
-                  key={`${section.id}-${index}`}
-                  className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'
-                >
+                <ProjectParagraph key={`${section.id}-${index}`}>
                   {paragraph}
-                </p>
+                </ProjectParagraph>
               ))}
             </section>
           ))}
@@ -116,12 +163,11 @@ export default async function Page({
                   </h3>
                 )}
                 {subsection.paragraphs.map((paragraph, paragraphIndex) => (
-                  <p
+                  <ProjectParagraph
                     key={`${subsection.title}-${index}-${paragraphIndex}`}
-                    className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'
                   >
                     {paragraph}
-                  </p>
+                  </ProjectParagraph>
                 ))}
               </section>
             )
@@ -155,12 +201,9 @@ export default async function Page({
                 {section.title}
               </h2>
               {section.paragraphs.map((paragraph, index) => (
-                <p
-                  key={`${section.id}-${index}`}
-                  className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'
-                >
+                <ProjectParagraph key={`${section.id}-${index}`}>
                   {paragraph}
-                </p>
+                </ProjectParagraph>
               ))}
             </section>
           ))}
