@@ -73,7 +73,7 @@ export default function ProjectMediaStrip({
     <>
       <section
         aria-label='Visual Documentation'
-        className='no-scrollbar -mx-6 overflow-x-auto px-6 sm:-mx-10 sm:px-10'
+        className='no-scrollbar -mx-7 overflow-x-auto px-7 sm:-mx-12 sm:px-12 lg:-mx-16 lg:px-16'
       >
         <div className='flex w-max gap-4 pb-3'>
           {mediaItems.map((item) => {
