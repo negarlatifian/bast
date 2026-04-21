@@ -40,7 +40,7 @@ export default function MainLayout({
       >
         <div className='mx-auto flex w-full max-w-none items-center justify-between px-2 py-2 sm:px-3 lg:px-4'>
           <Link
-            href='/repository'
+            href='/'
             className='logo-wrapper text-[0.95rem] font-semibold text-black sm:text-xl'
             aria-label='Bast home'
           >

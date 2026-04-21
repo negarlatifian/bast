@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { PointerEvent, useMemo, useRef, useState } from 'react';
 
 type HomePreviewProject = {
   slug: string;
@@ -27,34 +30,139 @@ const positions = [
   { x: 11, y: 26, w: 23, a: 'aspect-[5/4]', z: 14 },
 ];
 
-function getPosition(index: number) {
+type PreviewPosition = (typeof positions)[number];
+
+type DragState = {
+  index: number;
+  pointerId: number;
+  startClientX: number;
+  startClientY: number;
+  startX: number;
+  startY: number;
+  moved: boolean;
+};
+
+function getInitialPosition(index: number) {
   return positions[index % positions.length];
 }
 
-function getNodePoint(index: number) {
-  const position = getPosition(index);
+function getNodePoint(position: PreviewPosition) {
+  const aspectHeightMultiplier =
+    position.a === 'aspect-[4/5]' ? 1.25 : position.a === 'aspect-[1/1]' ? 1 : 0.8;
 
   return {
     x: position.x + position.w * 0.58,
-    y: position.y + position.w * 0.38,
+    y: position.y + position.w * aspectHeightMultiplier * 0.38,
   };
 }
 
 export default function HomeRepositoryPreview({
   projects,
 }: HomeRepositoryPreviewProps) {
+  const router = useRouter();
+  const containerRef = useRef<HTMLDivElement>(null);
+  const dragStateRef = useRef<DragState | null>(null);
+  const [previewPositions, setPreviewPositions] = useState<PreviewPosition[]>(
+    () => projects.map((_, index) => getInitialPosition(index))
+  );
+  const points = useMemo(
+    () => previewPositions.map((position) => getNodePoint(position)),
+    [previewPositions]
+  );
   const path = projects
     .map((_, index) => {
-      const point = getNodePoint(index);
+      const point = points[index];
       return `${index === 0 ? 'M' : 'L'} ${point.x} ${point.y}`;
     })
     .join(' ');
 
+  const openRepository = () => {
+    router.push('/repository');
+  };
+
+  const handlePointerDown = (
+    event: PointerEvent<HTMLDivElement>,
+    index: number
+  ) => {
+    const position = previewPositions[index];
+
+    dragStateRef.current = {
+      index,
+      pointerId: event.pointerId,
+      startClientX: event.clientX,
+      startClientY: event.clientY,
+      startX: position.x,
+      startY: position.y,
+      moved: false,
+    };
+
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+
+  const handlePointerMove = (event: PointerEvent<HTMLDivElement>) => {
+    const dragState = dragStateRef.current;
+    const container = containerRef.current;
+
+    if (!dragState || dragState.pointerId !== event.pointerId || !container) {
+      return;
+    }
+
+    const containerRect = container.getBoundingClientRect();
+    const deltaX = ((event.clientX - dragState.startClientX) / containerRect.width) * 100;
+    const deltaY = ((event.clientY - dragState.startClientY) / containerRect.height) * 100;
+
+    if (Math.abs(deltaX) > 0.35 || Math.abs(deltaY) > 0.35) {
+      dragState.moved = true;
+    }
+
+    setPreviewPositions((currentPositions) =>
+      currentPositions.map((position, index) => {
+        if (index !== dragState.index) {
+          return position;
+        }
+
+        return {
+          ...position,
+          x: Math.min(92 - position.w * 0.3, Math.max(-position.w * 0.15, dragState.startX + deltaX)),
+          y: Math.min(88, Math.max(0, dragState.startY + deltaY)),
+        };
+      })
+    );
+  };
+
+  const handlePointerUp = (event: PointerEvent<HTMLDivElement>) => {
+    const dragState = dragStateRef.current;
+
+    if (!dragState || dragState.pointerId !== event.pointerId) {
+      return;
+    }
+
+    dragStateRef.current = null;
+    event.currentTarget.releasePointerCapture(event.pointerId);
+
+    if (!dragState.moved) {
+      openRepository();
+    }
+  };
+
   return (
-    <Link
-      href='/repository'
+    <div
+      ref={containerRef}
+      role='link'
+      tabIndex={0}
       aria-label='Open Bast repository'
-      className='group relative block min-h-[32rem] overflow-hidden border border-black/10 bg-[#f8f8f6] sm:min-h-[38rem] lg:min-h-[calc(100dvh-9rem)]'
+      onClick={(event) => {
+        if (event.target === event.currentTarget) {
+          openRepository();
+        }
+      }}
+      onKeyDown={(event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openRepository();
+        }
+      }}
+      className='group relative min-h-[32rem] overflow-hidden bg-[#f8f8f6] outline-none sm:min-h-[38rem] lg:min-h-[calc(100dvh-9rem)]'
     >
       <svg
         aria-hidden='true'
@@ -72,8 +180,8 @@ export default function HomeRepositoryPreview({
         >
           {path && <path d={path} />}
           {projects.slice(0, -2).map((_, index) => {
-            const firstPoint = getNodePoint(index);
-            const secondPoint = getNodePoint(index + 2);
+            const firstPoint = points[index];
+            const secondPoint = points[index + 2];
 
             return (
               <path
@@ -86,13 +194,18 @@ export default function HomeRepositoryPreview({
       </svg>
 
       {projects.map((project, index) => {
-        const position = getPosition(index);
-        const point = getNodePoint(index);
+        const position = previewPositions[index];
 
         return (
           <div
             key={project.slug}
-            className={`absolute ${position.a} transition-transform duration-500 group-hover:scale-[1.025]`}
+            onPointerDown={(event) => handlePointerDown(event, index)}
+            onPointerMove={handlePointerMove}
+            onPointerUp={handlePointerUp}
+            onPointerCancel={() => {
+              dragStateRef.current = null;
+            }}
+            className={`absolute ${position.a} cursor-grab touch-none select-none transition-transform duration-500 active:cursor-grabbing group-hover:scale-[1.025]`}
             style={{
               left: `${position.x}%`,
               top: `${position.y}%`,
@@ -106,18 +219,12 @@ export default function HomeRepositoryPreview({
               fill
               sizes='(min-width: 1024px) 24vw, 44vw'
               className='object-cover'
+              draggable={false}
             />
             <div className='absolute inset-0 bg-[#d67878]/72' />
-            <span
-              className='absolute z-40 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#b33f3f]'
-              style={{
-                left: `${((point.x - position.x) / position.w) * 100}%`,
-                top: `${((point.y - position.y) / position.w) * 100}%`,
-              }}
-            />
           </div>
         );
       })}
-    </Link>
+    </div>
   );
 }
