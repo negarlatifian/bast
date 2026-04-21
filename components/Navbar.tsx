@@ -83,7 +83,7 @@ export default function Navbar() {
       {open && (
         <div
           /* absolute root-level sheet */
-          className='fixed inset-0 z-[60] min-h-dvh w-screen bg-[rgb(245,240,237)] md:hidden'
+          className='fixed inset-0 z-[60] min-h-dvh w-screen bg-[rgb(248,248,246)] md:hidden'
         >
           {/*   close (X)   */}
           <button

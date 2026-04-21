@@ -21,7 +21,7 @@ export default function MainLayout({ children }: PropsWithChildren) {
   return (
     <>
       {/* ---------- Header ---------- */}
-      <header className='sticky top-0 z-30 bg-[rgb(245,240,237)]/95 backdrop-blur-md'>
+      <header className='sticky top-0 z-30 bg-[rgb(248,248,246)]/95 backdrop-blur-md'>
         <div className='mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8'>
           <Link
             href='/'
