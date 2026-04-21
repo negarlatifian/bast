@@ -81,7 +81,7 @@ const projectMediaFolders: Record<string, string> = {
   'book-reading-in-sanandaj-park': 'sanandaj-reading',
   'cafe-konj-performances': 'cafe-konj',
   daab: 'daab',
-  'an-equivalence-of-our-distance': 'equivalance',
+  'an-equivalence-of-our-distance': 'equivalence',
   'mapping-karimkhan': 'karimkhan',
   'knockout-tournament-ping-pong': 'knock-out',
   'paint-your-shadow-orange': 'paint-shadow',
