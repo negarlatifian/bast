@@ -1,6 +1,7 @@
 import MainLayout from '@/components/MainLayout';
 import RepositoryMasonry from '@/components/RepositoryMasonry';
 import { getProjectImage, projects } from '@/lib/projects';
+import { headers } from 'next/headers';
 
 export const dynamic = 'force-dynamic';
 
@@ -24,12 +25,33 @@ function shuffleProjects<T>(items: T[], seed: number) {
   return shuffledItems;
 }
 
+function getSeedFromRequestHeader(value: string) {
+  let seed = 2166136261;
+
+  for (let index = 0; index < value.length; index += 1) {
+    seed ^= value.charCodeAt(index);
+    seed = Math.imul(seed, 16777619);
+  }
+
+  return seed >>> 0;
+}
+
 export default async function Page({
   searchParams,
 }: {
   searchParams: Promise<{ q?: string }>;
 }) {
   const { q } = await searchParams;
+  const headersList = await headers();
+  const seedSource = [
+    headersList.get('x-vercel-id'),
+    headersList.get('x-forwarded-for'),
+    headersList.get('user-agent'),
+    headersList.get('accept-language'),
+    headersList.get('date'),
+  ]
+    .filter(Boolean)
+    .join('|');
   const searchQuery = q?.trim().toLowerCase() ?? '';
   const repositoryProjects = projects.map((project) => {
     const basicInformation = project['1. Basic Information'];
@@ -62,7 +84,7 @@ export default async function Page({
       imageSrc: getProjectImage(project),
     };
   });
-  const layoutSeed = Math.floor(Math.random() * 4294967296);
+  const layoutSeed = getSeedFromRequestHeader(seedSource);
   const filteredProjects = searchQuery
     ? repositoryProjects.filter((project) =>
         project.searchText.includes(searchQuery)

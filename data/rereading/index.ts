@@ -18,7 +18,7 @@ export type ProjectReReading = {
   content: string;
 };
 
-const reReadings = [
+const reReadings: ProjectReReading[] = [
   {
     ...sanandajReadingText,
     slug: 'book-reading-in-sanandaj-park',
@@ -32,7 +32,7 @@ const reReadings = [
   knockoutTournamentReading,
   mappingKarimkhanReading,
   whiteCubesReading,
-] satisfies ProjectReReading[];
+];
 
 export function getProjectReReading(slug: string) {
   return reReadings.find((reReading) => reReading.slug === slug);
