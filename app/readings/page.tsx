@@ -13,7 +13,7 @@ export default function Page() {
 
   return (
     <MainLayout>
-      <article className='mt-6 flex flex-col gap-4 sm:mt-8'>
+      <article className='mt-6 flex flex-col gap-3 sm:mt-8'>
         {/* <h1 className='text-3xl font-semibold leading-tight tracking-normal text-black sm:text-4xl'>
           - Re-readings
         </h1> */}

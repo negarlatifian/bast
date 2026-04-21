@@ -94,7 +94,7 @@ export default async function Page({
 
   return (
     <MainLayout>
-      <article className='mt-6 flex flex-col gap-4 sm:mt-8'>
+      <article className='mt-6 flex flex-col gap-3 sm:mt-8'>
         <p className='text-base leading-7 sm:text-[1.2rem] sm:leading-8'>
           Bast Repository is a growing collection of participatory art projects
           that have taken place in Iran. Each project/work is presented through

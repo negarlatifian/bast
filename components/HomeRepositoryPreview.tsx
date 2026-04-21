@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import type { PointerEvent } from 'react';
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 type HomePreviewProject = {
   slug: string;
@@ -15,7 +15,7 @@ type HomeRepositoryPreviewProps = {
   projects: HomePreviewProject[];
 };
 
-const positions = [
+const desktopPositions = [
   { x: 47, y: 12, w: 17, a: 'aspect-[4/5]', z: 9 },
   { x: 62, y: 7, w: 15, a: 'aspect-[5/4]', z: 7 },
   { x: 75, y: 15, w: 18, a: 'aspect-[1/1]', z: 8 },
@@ -31,7 +31,23 @@ const positions = [
   { x: 50, y: 27, w: 14, a: 'aspect-[5/4]', z: 14 },
 ];
 
-type PreviewPosition = (typeof positions)[number];
+const mobilePositions = [
+  { x: 2, y: 8, w: 42, a: 'aspect-[4/5]', z: 9 },
+  { x: 33, y: 3, w: 37, a: 'aspect-[5/4]', z: 7 },
+  { x: 58, y: 13, w: 40, a: 'aspect-[1/1]', z: 8 },
+  { x: 6, y: 34, w: 39, a: 'aspect-[5/4]', z: 10 },
+  { x: 40, y: 31, w: 36, a: 'aspect-[4/5]', z: 11 },
+  { x: 66, y: 39, w: 34, a: 'aspect-[5/4]', z: 9 },
+  { x: 0, y: 62, w: 35, a: 'aspect-[1/1]', z: 6 },
+  { x: 30, y: 68, w: 42, a: 'aspect-[5/4]', z: 12 },
+  { x: 58, y: 62, w: 37, a: 'aspect-[4/5]', z: 7 },
+  { x: 4, y: 78, w: 34, a: 'aspect-[1/1]', z: 10 },
+  { x: 34, y: 20, w: 31, a: 'aspect-[1/1]', z: 13 },
+  { x: 72, y: 4, w: 30, a: 'aspect-[4/5]', z: 6 },
+  { x: 10, y: 22, w: 36, a: 'aspect-[5/4]', z: 14 },
+];
+
+type PreviewPosition = (typeof desktopPositions)[number];
 
 type DragState = {
   index: number;
@@ -43,8 +59,13 @@ type DragState = {
   moved: boolean;
 };
 
-function getInitialPosition(index: number) {
-  return positions[index % positions.length];
+function getInitialPositions(count: number, isDesktop: boolean) {
+  const sourcePositions = isDesktop ? desktopPositions : mobilePositions;
+
+  return Array.from(
+    { length: count },
+    (_, index) => sourcePositions[index % sourcePositions.length]
+  );
 }
 
 function getNodePoint(position: PreviewPosition) {
@@ -64,8 +85,22 @@ export default function HomeRepositoryPreview({
   const containerRef = useRef<HTMLDivElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
   const [previewPositions, setPreviewPositions] = useState<PreviewPosition[]>(
-    () => projects.map((_, index) => getInitialPosition(index))
+    () => getInitialPositions(projects.length, true)
   );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+    const syncPositions = () => {
+      setPreviewPositions(getInitialPositions(projects.length, mediaQuery.matches));
+    };
+
+    syncPositions();
+    mediaQuery.addEventListener('change', syncPositions);
+
+    return () => {
+      mediaQuery.removeEventListener('change', syncPositions);
+    };
+  }, [projects.length]);
   const points = useMemo(
     () => previewPositions.map((position) => getNodePoint(position)),
     [previewPositions]
@@ -163,7 +198,7 @@ export default function HomeRepositoryPreview({
           openRepository();
         }
       }}
-      className='group absolute inset-0 z-20 cursor-pointer overflow-hidden outline-none'
+      className='group relative z-20 mt-6 min-h-[34rem] cursor-pointer overflow-hidden outline-none sm:min-h-[42rem] lg:absolute lg:inset-0 lg:mt-0 lg:min-h-0'
     >
       <svg
         aria-hidden='true'
@@ -218,7 +253,7 @@ export default function HomeRepositoryPreview({
               src={project.imageSrc}
               alt={project.imageAlt}
               fill
-              sizes='(min-width: 1024px) 24vw, 44vw'
+              sizes='(min-width: 1024px) 18vw, 48vw'
               className='object-cover'
               draggable={false}
             />

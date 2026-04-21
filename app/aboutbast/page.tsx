@@ -28,13 +28,13 @@ function SubTitle({ children }: { children: ReactNode }) {
 export default function Page() {
   return (
     <MainLayout>
-      <article className='mt-6 flex flex-col gap-4 pb-32 sm:mt-8 sm:pb-40'>
-        <header className='flex flex-col gap-4'>
+      <article className='mt-6 flex flex-col gap-3 pb-32 sm:mt-8 sm:pb-40'>
+        <header className='flex flex-col gap-3'>
           {/* <h1 className='text-3xl font-semibold leading-tight tracking-normal text-black sm:text-4xl'>
             - About Bast
           </h1> */}
 
-          <div className='flex flex-col gap-4 sm:gap-5'>
+          <div className='flex flex-col gap-3 sm:gap-4'>
             <Paragraph>
               BAST (بسط in Persian, from the Arabic root meaning{' '}
               <em>to expand</em> or <em>to articulate</em>)
@@ -214,7 +214,7 @@ export default function Page() {
           projects in the Bast repository.
         </Paragraph>
         <Paragraph>Two main approaches are pursued in this phase:</Paragraph>
-        <ul className='ml-6 list-disc space-y-4 text-base leading-7 tracking-normal text-black sm:ml-12 sm:text-[1.2rem] sm:leading-8'>
+        <ul className='ml-6 list-disc space-y-3 text-base leading-7 tracking-normal text-black sm:ml-12 sm:text-[1.2rem] sm:leading-8'>
           <li>
             <strong>Parallel writing and annotation:</strong> the production of
             interpretive, experiential, or theoretical texts that accompany the

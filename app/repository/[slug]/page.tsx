@@ -66,7 +66,7 @@ export default async function Page({
 
         <div className='flex flex-col gap-10'>
           {introductionSection && (
-            <section className='flex flex-col gap-4'>
+            <section className='flex flex-col gap-3'>
               <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
                 {introductionSection.title}
               </h2>
@@ -86,7 +86,7 @@ export default async function Page({
           )}
 
           {openingSections.map((section) => (
-            <section key={section.id} className='flex flex-col gap-4'>
+            <section key={section.id} className='flex flex-col gap-3'>
               <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
                 {section.title}
               </h2>
@@ -105,7 +105,7 @@ export default async function Page({
             (subsection, index) => (
               <section
                 key={`${subsection.title}-${index}`}
-                className='flex flex-col gap-4'
+                className='flex flex-col gap-3'
               >
                 <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
                   4. Participation & Process
@@ -128,7 +128,7 @@ export default async function Page({
           )}
 
           {reReading && (
-            <section id='re-reading' className='flex flex-col gap-4'>
+            <section id='re-reading' className='flex flex-col gap-3'>
               <div className='flex flex-col gap-2'>
                 <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
                   Re-reading
@@ -150,7 +150,7 @@ export default async function Page({
           )}
 
           {remainingSections.map((section) => (
-            <section key={section.id} className='flex flex-col gap-4'>
+            <section key={section.id} className='flex flex-col gap-3'>
               <h2 className='text-xl font-semibold leading-7 text-black sm:text-2xl sm:leading-8'>
                 {section.title}
               </h2>

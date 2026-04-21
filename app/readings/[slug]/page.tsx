@@ -31,8 +31,8 @@ export default async function Page({
 
   return (
     <MainLayout variant='reading'>
-      <article className='mx-auto mt-8 flex w-full max-w-4xl flex-col gap-8 bg-[#f8f8f6] px-5 py-8 sm:mt-12 sm:px-10 sm:py-12 lg:px-16'>
-        <header className='flex flex-col gap-4'>
+      <article className='mx-auto mt-8 flex w-full max-w-4xl flex-col gap-6 bg-[#f8f8f6] px-5 py-8 sm:mt-12 sm:px-10 sm:py-12 lg:px-16'>
+        <header className='flex flex-col gap-3'>
           <p className='text-base leading-6 text-[#777066]'>Re-reading</p>
           <h1 className='text-3xl font-semibold leading-tight text-black sm:text-4xl'>
             {reReading.title}
@@ -53,7 +53,7 @@ export default async function Page({
           </div>
         </header>
 
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-4'>
           {paragraphs.map((paragraph, index) => {
             const isBoldParagraph =
               reReading.boldParagraphs?.includes(paragraph) ?? false;

@@ -3,7 +3,7 @@ import MainLayout from '@/components/MainLayout';
 export default function Page() {
   return (
     <MainLayout>
-      <article className='mt-6 flex flex-col gap-4 sm:mt-8'>
+      <article className='mt-6 flex flex-col gap-3 sm:mt-8'>
         <p className='text-base leading-7 sm:text-[1.2rem] sm:leading-8'>
           The Bast Library is a growing collection of resources related to
           participatory art. This section includes books, articles, interviews,
