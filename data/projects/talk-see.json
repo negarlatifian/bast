@@ -52,14 +52,15 @@
     {
       "id": "8",
       "title": "Fundings & Partners",
-      "paragraphs": ["The project is self-organized and funded by the artist."]
+      "paragraphs": [
+        "The project is self-organized and funded by the artist."
+      ]
     },
     {
       "id": "9",
       "title": "Re-readings",
       "paragraphs": []
     },
-
     {
       "id": "11",
       "title": "About the Artist",
