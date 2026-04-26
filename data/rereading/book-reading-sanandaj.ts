@@ -1,7 +1,7 @@
 export const sanandajReadingText = {
   slug: 'book-reading-sanandaj',
   title: 'Reading together: The temporary formation of the common',
-  author: 'Nastaran Saremi',
+  author: 'Nastaran Saremy',
   credit: 'Written by Nastaran Saremi,',
   role: 'Art Critic',
   year: '2026',
