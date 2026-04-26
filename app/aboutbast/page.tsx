@@ -296,15 +296,14 @@ export default function Page() {
           For collaborations, research inquiries, or general questions, please
           contact us through the form below or via email.
         </Paragraph>
-        <Paragraph>
-          Email:{' '}
+        <div>
           <a
-            className='underline underline-offset-2'
+            className='w-fit text-sm font-medium leading-6 text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black sm:text-[1.08rem] sm:leading-7'
             href='mailto:bast.work.team@gmail.com'
           >
-            bast.work.team@gmail.com
+            Email us
           </a>
-        </Paragraph>
+        </div>
       </article>
     </MainLayout>
   );
