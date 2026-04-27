@@ -294,15 +294,51 @@ export default function Page() {
         </Paragraph>
         <Paragraph>
           For collaborations, research inquiries, or general questions, please
-          contact us through the form below or via email.
+          contact us through email.
         </Paragraph>
-        <div>
+        <Paragraph>
+          Email:{' '}
           <a
-            className='w-fit text-sm font-medium leading-6 text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black sm:text-[1.08rem] sm:leading-7'
+            className='font-medium underline decoration-[#7f242a]/45 underline-offset-4 transition-colors hover:text-[#7f242a]'
             href='mailto:bast.work.team@gmail.com'
           >
-            Email us
+            Email Us
           </a>
+        </Paragraph>
+        <div className='mt-8 flex flex-col gap-2 text-sm leading-6 tracking-normal text-black sm:mt-10 sm:text-[1.08rem] sm:leading-7'>
+          <p>
+            <span className='font-semibold'>Bast is co-initiated by: </span>
+            <a
+              className='font-medium underline decoration-[#7f242a]/45 underline-offset-4 transition-colors hover:text-[#7f242a]'
+              href='https://www.reyhanehmirjahani.com/'
+              rel='noreferrer'
+              target='_blank'
+            >
+              Reyhaneh Mirjahani
+            </a>{' '}
+            <span className='text-black/60'>&amp;</span>{' '}
+            <a
+              className='font-medium underline decoration-[#7f242a]/45 underline-offset-4 transition-colors hover:text-[#7f242a]'
+              href='https://amiralighasemi.org/'
+              rel='noreferrer'
+              target='_blank'
+            >
+              Amirali Ghasemi
+            </a>
+          </p>
+          <p>
+            <span className='font-semibold'>
+              Platform Design &amp; Development By:{' '}
+            </span>
+            <a
+              className='font-medium underline decoration-[#7f242a]/45 underline-offset-4 transition-colors hover:text-[#7f242a]'
+              href='https://www.negarlatifian.com/'
+              rel='noreferrer'
+              target='_blank'
+            >
+              Negar Latifian
+            </a>
+          </p>
         </div>
       </article>
     </MainLayout>
