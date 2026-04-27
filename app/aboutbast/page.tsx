@@ -328,7 +328,7 @@ export default function Page() {
           </p>
           <p>
             <span className='font-semibold'>
-              Platform Design &amp; Development By:{' '}
+              Platform Design &amp; Development by:{' '}
             </span>
             <a
               className='font-medium underline decoration-[#7f242a]/45 underline-offset-4 transition-colors hover:text-[#7f242a]'
