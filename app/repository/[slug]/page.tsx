@@ -22,11 +22,7 @@ function getLinkHref(url: string) {
   return url.startsWith('www.') ? `https://${url}` : url;
 }
 
-function ProjectParagraph({
-  children,
-}: {
-  children: string;
-}) {
+function ProjectParagraph({ children }: { children: string }) {
   const paragraph = normalizeProjectParagraph(children);
   const parts: ReactNode[] = [];
   let lastIndex = 0;
@@ -48,7 +44,7 @@ function ProjectParagraph({
         className='text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black'
       >
         {url}
-      </a>
+      </a>,
     );
     lastIndex = index + url.length;
   }
@@ -87,15 +83,15 @@ export default async function Page({
   const mediaItems = getProjectMedia(project);
   const reReading = getProjectReReading(project.slug);
   const introductionSection = project.sections.find(
-    (section) => section.id === '2'
+    (section) => section.id === '2',
   );
   const openingSections = project.sections.filter(
-    (section) => section.id === '3'
+    (section) => section.id === '3',
   );
   const remainingSections = project.sections.filter(
     (section) =>
       !['2', '3'].includes(section.id) &&
-      section.title.toLowerCase() !== 're-readings'
+      section.title.toLowerCase() !== 're-readings',
   );
 
   return (
@@ -170,7 +166,7 @@ export default async function Page({
                   </ProjectParagraph>
                 ))}
               </section>
-            )
+            ),
           )}
 
           {reReading && (
