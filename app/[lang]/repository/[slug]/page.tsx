@@ -549,20 +549,19 @@ export default async function Page({
                           backgroundSize: '4px 4px',
                         }}
                       />
-                      <div className='relative flex flex-col gap-3'>
+                      <div className='relative flex flex-col gap-2'>
                         <h2 className='text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
                           {dict.common.reReading}
                         </h2>
-                        <p className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'>
-                          {reReading.title} — {reReading.author}.
-                        </p>
                         <Link
                           href={localizeHref(lang, `/readings/${project.slug}`)}
-                          className='inline-flex w-fit items-center gap-2 text-base font-semibold leading-6 text-black transition-colors hover:text-[#7f242a]'
+                          className='w-fit text-base font-medium leading-6 text-black transition-colors hover:text-[#7f242a] sm:text-lg'
                         >
-                          {dict.common.readReReading}
-                          <span aria-hidden='true'>{lang === 'fa' ? '←' : '→'}</span>
+                          {reReading.title}
                         </Link>
+                        <p className='text-sm leading-6 text-[#777066] sm:text-base'>
+                          {reReading.author}
+                        </p>
                       </div>
                     </div>
                   </section>
