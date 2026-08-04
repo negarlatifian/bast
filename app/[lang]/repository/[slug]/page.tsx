@@ -311,10 +311,14 @@ export default async function Page({
   const remainingSections = project.sections.filter(
     (section) =>
       !['2', '3'].includes(section.id) &&
-      section.title.toLowerCase() !== 're-readings',
+      !section.title.trim().toLowerCase().startsWith('re-reading'),
   );
 
   const hasMetadata = Boolean(year || location || tags.length > 0);
+  const editorialNotes =
+    project['Editorial Notes'] && project['Editorial Notes'].length > 0
+      ? project['Editorial Notes']
+      : [dict.project.editorialNote];
 
   return (
     <MainLayout>
@@ -635,9 +639,16 @@ export default async function Page({
               />
               <div className='flex min-w-0 flex-1 flex-col gap-10'>
                 {navSections.map((section) => section.content)}
-                <p className='text-xs leading-5 text-[#777066] italic sm:text-sm'>
-                  {dict.project.editorialNote}
-                </p>
+                <div className='flex flex-col gap-1'>
+                  {editorialNotes.map((note, index) => (
+                    <p
+                      key={`editorial-note-${index}`}
+                      className='text-xs leading-5 text-[#777066] italic sm:text-sm'
+                    >
+                      {note}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
           );

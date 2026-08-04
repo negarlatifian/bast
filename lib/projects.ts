@@ -60,6 +60,11 @@ export type Project = {
     }[];
   };
   /**
+   * Closing attribution line(s) shown at the end of the project page. When
+   * absent, a generic fallback is used instead (see dict.project.editorialNote).
+   */
+  'Editorial Notes'?: string[];
+  /**
    * Optional Farsi translation. Any field left empty falls back to English,
    * so this block can be filled in gradually. Sections are matched by `id`
    * and participation subsections by their position in the English array.
@@ -83,6 +88,7 @@ export type Project = {
         paragraphs?: string[];
       }[];
     };
+    'Editorial Notes'?: string[];
   };
 };
 
@@ -244,6 +250,9 @@ export function localizeProject(project: Project, locale: Locale): Project {
           ),
         }
       : project['Participation & Process'],
+    'Editorial Notes': project['Editorial Notes']
+      ? pickArray(project['Editorial Notes'], fa['Editorial Notes'])
+      : project['Editorial Notes'],
   };
 }
 
