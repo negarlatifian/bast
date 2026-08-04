@@ -5,6 +5,8 @@ import { PropsWithChildren, Suspense } from 'react';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { useLocale } from './LocaleProvider';
+import { localizeHref } from '@/lib/i18n';
 
 type MainLayoutProps = PropsWithChildren<{
   variant?: 'default' | 'reading';
@@ -15,6 +17,7 @@ export default function MainLayout({
   variant = 'default',
 }: MainLayoutProps) {
   const [scrolled, setScrolled] = useState(false);
+  const { lang, dict } = useLocale();
   const isReadingVariant = variant === 'reading';
   const backgroundClassName = isReadingVariant
     ? 'bg-[#8a8c84]'
@@ -38,11 +41,11 @@ export default function MainLayout({
       <header
         className={`sticky top-0 z-30 ${headerClassName} backdrop-blur-md`}
       >
-        <div className='mx-auto flex w-full max-w-none items-center justify-between px-7 py-2 sm:px-12 lg:px-16'>
+        <div className='mx-auto flex w-full max-w-none items-center justify-between px-8 py-2 sm:px-16 lg:px-24'>
           <Link
-            href='/'
+            href={localizeHref(lang, '/')}
             className='logo-wrapper text-[0.95rem] font-semibold text-black sm:text-xl'
-            aria-label='Bast home'
+            aria-label={dict.common.homeAriaLabel}
           >
             {/* LOGO 1 */}
             <Image
@@ -70,7 +73,7 @@ export default function MainLayout({
       </header>
 
       {/* ---------- Main content ---------- */}
-      <main className='mx-auto w-full max-w-none px-7 sm:px-12 lg:px-16'>
+      <main className='mx-auto w-full max-w-none px-8 sm:px-16 lg:px-24'>
         {children}
       </main>
     </div>

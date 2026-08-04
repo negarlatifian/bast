@@ -2,6 +2,8 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { FormEvent, useState } from 'react';
+import { useLocale } from './LocaleProvider';
+import { localizeHref } from '@/lib/i18n';
 
 type SearchFormProps = {
   onSearch?: () => void;
@@ -27,6 +29,7 @@ function SearchFormFields({
   initialQuery: string;
 }) {
   const router = useRouter();
+  const { lang, dict } = useLocale();
   const [query, setQuery] = useState(initialQuery);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -34,8 +37,8 @@ function SearchFormFields({
 
     const trimmedQuery = query.trim();
     const href = trimmedQuery
-      ? `/repository?q=${encodeURIComponent(trimmedQuery)}`
-      : '/repository';
+      ? localizeHref(lang, `/repository?q=${encodeURIComponent(trimmedQuery)}`)
+      : localizeHref(lang, '/repository');
 
     router.push(href);
     onSearch?.();
@@ -51,14 +54,14 @@ function SearchFormFields({
         type='search'
         value={query}
         onChange={(event) => setQuery(event.target.value)}
-        placeholder='Search'
-        aria-label='Search website'
+        placeholder={dict.search.placeholder}
+        aria-label={dict.search.inputLabel}
         className='w-28 bg-transparent py-1 text-[0.95rem] text-black outline-none placeholder:text-black/45 sm:w-32 lg:w-40'
       />
       <button
         type='submit'
         className='h-7 w-7 cursor-pointer text-black/70 transition-colors hover:text-[#7f242a]'
-        aria-label='Submit search'
+        aria-label={dict.search.submitLabel}
       >
         <svg
           aria-hidden='true'

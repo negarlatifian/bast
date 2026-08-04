@@ -1,5 +1,92 @@
 {
   "slug": "daab",
+  "fa": {
+    "1. Basic Information": {
+      "Project Title": "داب",
+      "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+        "نوید قاویدل",
+        "گروه تئاتر ققنوس"
+      ],
+      "Location": { "text": "تهران — کافه جس؛ گالری داربست" },
+      "Year / Time Period": { "text": "۱۳۹۷–۱۳۹۸ (۲۰۱۹)" },
+      "Featured Project Image": { "alt": "داب" }
+    },
+    "sections": [
+      {
+        "id": "2",
+        "title": "مروری بر پروژه",
+        "paragraphs": [
+          "داب — واژه‌ای فارسی به معنای عادت، رسم یا خوی — یک اجرای تئاترِ تعاملی بود که در طول شش ماه توسطِ ققنوس، گروهِ تئاترِ نوجوانانی از دانش‌آموزانِ دبیرستانی و دانشجویانِ سالِ اولِ پانزده تا بیست‌ساله، شکل گرفت. این اثر از دلِ تمرین‌های هفتگی، بداهه‌پردازی و گفت‌وگو بیرون آمد و در چارچوبِ جشنواره‌ی غیررقابتیِ تئاترِ «صداهای نو» ساخته شد؛ جشنواره‌ای که گروه‌های شرکت‌کننده را برای همکاریِ مبتنی بر تبادلِ گسترده جفت می‌کرد.",
+          "این اجرا داستانِ شش جوان را به صحنه می‌برد که یک مسابقه‌ی استعدادیابی آن‌ها را برای ساختنِ اثری جمعی گرد هم آورده است و همکاری‌شان زیرِ فشارِ رقابت رفته‌رفته از هم می‌پاشد. در لحظه‌ای بحرانی، درست پیش از آنکه گسست قطعی شود، یکی از اجراگران روایت را متوقف می‌کند و رو به تماشاگران می‌کند و آن‌ها را دعوت می‌کند تا مداخله کنند و به یافتنِ راهی مشترک یاری رسانند. از آن لحظه به بعد، مرزِ میانِ اجرا و فرایند به‌عمد گشوده نگه داشته می‌شود و تماشاگر به مشارکت‌کننده‌ای در اثر بدل می‌شود."
+        ]
+      },
+      {
+        "id": "3",
+        "title": "بستر و مکان",
+        "paragraphs": [
+          "داب در میانِ سه گونه فضا در حرکت بود. تمرین‌های هفتگیِ سه تا چهار ساعته در یک استودیوی تمرینِ اجاره‌ای آغاز شد، اما محدودیت‌های مالی به‌زودی بخش‌هایی از کار را به فضای باز کشاند، به آمفی‌تئاترِ روبازِ پارکِ لاله. وقتی اثر برای تماشاگر آماده شد، گروه آگاهانه تصمیم گرفت آن را در محلِ گالریِ جشنواره رونمایی نکند. آن‌ها نخست آن را در کافه جس، کافه‌ای کوچک در مرکزِ تهران، اجرا کردند — بخشی به‌عنوانِ بسترِ آزمایشی و بخشی برای مواجهه با تماشاگر از فاصله‌ای نزدیک‌تر پیش از گام‌گذاشتن به بسترِ رسمی‌تر.",
+          "ارائه‌ی نهایی در گالری داربست، به‌عنوانِ خروجیِ رسمیِ جشنواره‌ی صداهای نو، برگزار شد. این دو مکان تماشاگرانِ متفاوت و کیفیت‌های متفاوتی از مواجهه پدید آوردند و گروه بعدها بازتاب داده است که در تجربه‌ی آن‌ها، اجرای کافه موفق‌ترِ این دو بوده است. فاصله‌ی فیزیکی و نمادینِ میانِ اجراگر و تماشاگر آنجا کمتر بود و تماشاگران بیشتر احساس می‌کردند که می‌توانند وارد شوند.",
+          "یک صحنه‌آراییِ دایره‌ای اثر را در هر دو مکان نگه می‌داشت: اجراگران در مرکز، و تماشاگران در حلقه‌ای پیرامونِ آن‌ها نشسته. این چیدمان مرزِ میانِ صحنه و صندلی را کاهش می‌داد و هر تماشاگر را برای بقیه‌ی اتاق مرئی می‌کرد؛ چیزی که به بخشی از استدلالِ پروژه درباره‌ی چگونگیِ گردِ هم آمدنِ یک عموم برای اندیشیدنِ بلندبلند بدل شد."
+        ]
+      },
+      {
+        "id": "5",
+        "title": "انگیزه‌ها و پرسش‌ها",
+        "paragraphs": [
+          "داب نخستین کارِ جدیِ نوید قاویدل به‌عنوانِ هنرمند، آموزگار و میانجیِ فرایندهای خلاقانه بود و هم‌زمان با پژوهشِ کارشناسی‌ارشدِ او درباره‌ی تئاترِ فوروم و نظام‌های تربیتِ بازیگر پیش رفت. این پروژه تا حدی تلاشی بود برای آزمودنِ عملیِ آنچه پژوهش به آن می‌اندیشید. گروه از اصلی کار می‌کرد که قاویدل در آغازِ هر تمرین تکرار می‌کرد — هر تمرین یک اجراست، هر اجرا یک تمرین — و از این باور که فرایندِ مشارکتیِ ساختنِ تئاتر می‌تواند همچون یک خُردجهان عمل کند: مقیاسی امن و آزمایشی که بر آن می‌توان شیوه‌های دیگرِ با هم بودن را تمرین کرد.",
+          "دغدغه‌هایی که قاویدل در روایتش از داب به آن‌ها بازمی‌گردد را می‌توان همچون پرسش‌هایی صورت‌بندی کرد:",
+          "تصمیم به کار در بیرونِ قابِ صحنه‌ی جعبه‌ای تنها عملی نبود؛ سیاسی بود. گروه احساس می‌کرد که جامعه‌ای که در آن همه‌چیز در خانه، مدرسه و شهر از بالا دیکته می‌شود، به تئاتری نیاز دارد که «چیزِ درست» را برای دریافتِ تماشاگر به صحنه نبرد، بلکه پرسش‌هایی را بگشاید که تماشاگر به آن‌ها وارد شود. آن‌ها کاری انتقادی و پرسشگر می‌خواستند بدونِ ژستِ داناترْبودن و بدونِ پیام یا درسِ اخلاقی. سنتِ بوآلیِ تئاترِ فوروم روشی برای طراحیِ دعوت به مداخله پیش نهاد؛ ققنوس همه‌ی تکنیک‌های کلاسیکِ آن را بازتولید نکرد، اما گزاره‌ی محوریِ آن را برگرفت که تماشاگر می‌تواند صحنه را تغییر دهد.",
+          "این اثر در چارچوبِ صداهای نو ساخته شد، جشنواره‌ای غیررقابتی برای پانزده‌ تا بیست‌وپنج‌ساله‌ها که از روش‌های نوئل گریگ برای تبادلِ هنریِ بینافرهنگی بهره می‌گیرد. هر گروهِ شرکت‌کننده با گروهِ دیگری جفت می‌شد و ملزم بود از چند مرحله‌ی تبادل و گفت‌وگو بگذرد، و ققنوس با گروهِ ۸۴ جفت شد. ساختارِ تبادلیِ جشنواره به همان اندازه که بر قابِ اثر، بر محتوای آن نیز اثر گذاشت."
+        ]
+      },
+      {
+        "id": "6",
+        "title": "شرایط و مذاکره‌ها",
+        "paragraphs": [
+          "زمان شرطی همیشگی بود. حجمِ درس‌های مدرسه به این معنا بود که گروه نمی‌توانست تمرین‌های چندروزه برگزار کند؛ ریتمِ عملی یک جلسه‌ی هفتگیِ سه تا چهار ساعته بود، و در فصلِ امتحاناتِ خرداد تمرین‌ها تقریباً به‌کلی متوقف می‌شد. چارچوبِ غیررسمیِ جشنواره و اجرای کافه پروژه را از نظارتِ مستقیمِ دولتی محافظت می‌کرد، هرچند شکل‌های دیگری از فشار به‌هرحال سر برآوردند. صحنه‌هایی که شاملِ اجرای رپ توسطِ یکی از دخترانِ گروه بود، و صحنه‌های دیگری که رقص داشتند، حسِ گروه را نسبت به آنچه می‌توانستند به خطر بیندازند شکل دادند، حتی اگر آن زمان این فشارها را سانسور ننامیدند.",
+          "اما دشوارترین شرط درونی بود. گروه با هفت دختر و سه پسر آغاز شده بود. دو دختر در ماهِ نخست، با اشاره به فشارهای خانوادگی و تنش‌های درونی، رفتند. بعدتر، پنج دخترِ باقی‌مانده از سه پسر خواستند که بروند، چون احساس می‌کردند تعهدِ پسران به کار ناهموار است و رفتارشان حسِ امنیتِ روانیِ گروه را مخدوش می‌کند. با این حال، در هفته‌های پایانی یک پسر به‌عنوانِ بازیگرِ کمکی دعوت شد.",
+          "پاسخِ گروه این بود که دشواری را دوباره به درونِ روش تا بزند. شعارِ رایجِ تئاتریِ «نمایش باید ادامه یابد» به «اجراگر باید ادامه یابد» بازنویسی شد: بهزیستی و یادگیریِ افرادِ گروه بالاتر از موفقیتِ هر محصولِ نهایی قرار گرفت. گروه به‌جای پنهان‌کردنِ کشمکش‌ها و شکنندگیِ همکاری، این شرایط را به موضوعِ خودِ اثر بدل کرد و فروپاشیِ یک پروژه‌ی جمعی را به صحنه برد و از تماشاگر خواست تا به یافتنِ راهی یاری رساند."
+        ]
+      },
+      {
+        "id": "8",
+        "title": "همکاران و پشتیبانی",
+        "paragraphs": [
+          "داب توسطِ گروهِ تئاترِ ققنوس ساخته شد، به سرپرستی و میانجی‌گریِ نوید قاویدل، با صبا معمار به‌عنوانِ نویسنده و اعضای گروه مهسا محمداصغری، یاسمین اردبیلی، نیکا سیدی، آوا فقیهی، هلیا میرشکار و فرشید رشیدی. این اثر در چارچوبِ جشنواره‌ی تئاترِ صداهای نو، به کیوریتوریِ علی‌اکبر علیزاد، ساخته شد و در آن ققنوس با گروهِ ۸۴ جفت شد. اجرای کافه را کافه جس میزبانی کرد و ارائه‌ی نهاییِ جشنواره را گالری داربست / پلتفرمِ داربست.",
+          "داب بدونِ بودجه‌ی بیرونی انجام شد. هزینه‌های اجاره‌ی استودیوی تمرین به‌تساوی میانِ اعضای گروه تقسیم شد، و خانواده‌های نوجوانان، به تعبیرِ خودِ گروه، بزرگ‌ترین پشتیبانانِ پروژه بودند. صحنه و لوازم در تناسب با امکاناتِ واقعیِ گروه انتخاب شد — قوطی‌های گواش، چسب، کاغذِ رنگی — و لباس‌های اجراگران از کمدِ لباسِ خودشان آمد. درآمدِ فروشِ بلیت در کافه میانِ کافه و گروه تقسیم می‌شد و سهمِ گروه سپس به‌تساوی میانِ اعضایش تقسیم می‌شد."
+        ]
+      },
+      {
+        "id": "10",
+        "title": "منابع بیشتر",
+        "paragraphs": [
+          "ضبطِ ویدئوییِ کاملِ داب، آرشیوشده در یوتیوب (به فارسی)"
+        ]
+      },
+      {
+        "id": "11",
+        "title": "درباره‌ی هنرمند",
+        "paragraphs": [
+          "**نوید قاویدل** هنرمند، میانجی و طراحِ فرایندهای مشارکتیِ ساکنِ رشت است، با کارشناسی‌ارشدِ فلسفه‌ی هنر از دانشگاهِ هنرِ تهران. کارِ او در تقاطعِ تئاتر، آموزشِ هنر، مستند و آفرینشِ جمعیِ گفت‌وگومحور قرار دارد، اغلب با نوجوانان و گروه‌های به‌حاشیه‌رانده‌شده. او در پروژه‌های مختلف، اجرا، بداهه‌پردازی، روایت، نگارشِ جمعی، آرشیو و کارِ میدانی را ترکیب می‌کند تا تجربه‌ی زیسته، حافظه، کشمکش و مشارکت را به موادِ هنری بدل کند. تمرکزِ او بر فرایندهایی است که از طریقِ آن‌ها می‌توان نسبتِ میانِ هنر، آموزش، نهادها و زندگیِ اجتماعی را به پرسش گشود، تا بر یک محصولِ پرداخته‌شده.",
+          "**گروهِ تئاترِ ققنوس** مجموعه‌ای از نوجوانان و جوانان بود که از اسفندِ ۱۳۹۷ تا شهریورِ ۱۳۹۸ (مارس – سپتامبرِ ۲۰۱۹) فعال بود. بیشترِ اعضا در کلاس‌های تئاترِ کانونِ فرهنگیِ ارسباران با هم آشنا شده بودند و پیش از تشکیلِ رسمیِ گروه حدودِ یک سال با هم تمرین کرده بودند. کارِ آن‌ها از رهگذرِ تمرین‌های گروهی، بداهه‌پردازی، گفت‌وگو و آفرینشِ جمعی پیش می‌رفت، زیرِ اصلِ کاریِ «تئاتر تمرینی برای زندگی است». داب گسترده‌ترین کارِ گروه بود که بدونِ فیلم‌نامه‌ی از پیش نوشته‌شده و از رهگذرِ تمرین، تبادل، آزمون‌وخطا و تنش‌های درونیِ خودِ گروه پرورده شد."
+        ]
+      }
+    ],
+    "Participation & Process": {
+      "subsections": [
+        {
+          "title": "",
+          "paragraphs": [
+            "مشارکت در داب در دو سطح طراحی شده بود: درونِ گروه و درونِ اجرا.",
+            "درونِ گروه، کار از رهگذرِ درامِ فرایندی ساخته می‌شد، بدونِ فیلم‌نامه‌ی از پیش نوشته‌شده و بدونِ کارگردانیِ سلسله‌مراتبی. اعضا مضامین و صحنه‌ها را از طریقِ بازی، بداهه‌پردازی و گفت‌وگو پیشنهاد و بازبینی می‌کردند، و تبادل با گروهِ جفتِ ققنوس در جشنواره، گروهِ ۸۴، در حینِ شکل‌گیریِ محتوا و فرم به آن بازخورد می‌داد.",
+            "درونِ اجرا، تماشاگر به دو شیوه واردِ اثر می‌شد. در سراسرِ چهل دقیقه‌ی نخست، لحظه‌های تعاملیِ کوتاهی در روایت تعبیه شده بود: اجراگران از تماشاگران سهم‌های کوچکی برای خریدِ لوازمِ هنریِ شخصیت‌ها می‌خواستند؛ چند تماشاگر را به شرکت در یک مسابقه‌ی نمایشیِ کوتاهِ روی صحنه دعوت می‌کردند؛ و پرسش‌هایی مستقیم را به اتاق طرح می‌کردند. این لحظه‌ها همچون تمرین‌هایی تدریجی عمل می‌کردند و تماشاگر را برای مداخله‌ی بزرگ‌ترِ در راه آماده می‌ساختند. پس از حدودِ چهل دقیقه، یکی از اجراگران روایت را متوقف می‌کرد و رو به تماشاگران می‌کرد و از آن‌ها می‌خواست به شخصیت‌ها یاری رسانند تا راه‌های دیگری برای رویارویی با فروپاشیِ همکاری‌شان بیابند. تماشاگران می‌توانستند به‌جای هر یک از شخصیت‌ها وارد شوند و صحنه‌ای را به‌گونه‌ای دیگر بازی کنند؛ یا نشسته بمانند و پیشنهاد، اعتراض یا راهی ممکن ارائه دهند.",
+            "داوطلبانه‌بودن همچون اصلی حفظ می‌شد، و شکل‌های مشارکت می‌توانست از یک جمله تا اجرای کاملِ یک موقعیت را دربر بگیرد. بازیگران از پیش نگران بودند که کسی مداخله نکند و صحنه سرد بماند. در عمل، شمارِ چشمگیری از افراد وارد شدند، با میلِ به هم‌رساندنِ مواضعِ خود درباره‌ی کارِ گروهی، رقابت و آنچه همکاری را کنارِ هم نگه می‌دارد.",
+            "نقشِ قاویدل به‌عنوانِ سرپرستِ گروه در طولِ شش ماه دگرگون شد: او با آموزشِ تمرین‌های تئاتری و مبانیِ بازیگریِ صحنه به گروه آغاز کرد، با شکل‌گرفتنِ کار به‌سوی میانجی‌گری حرکت کرد، و در پایانِ فرایند نقشِ خود را نزدیک‌تر به کیوریتوریِ موادِ خودِ گروه توصیف می‌کند تا کارگردانی به معنای مرسومِ آن."
+          ]
+        }
+      ]
+    }
+  },
   "1. Basic Information": {
     "Project Title": "Daab",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -7,216 +94,146 @@
       "Phoenix Theatre Group"
     ],
     "Location": {
-      "text": "Jes Cafe and Darbast Platform (Mohsen Gallery), Tehran",
-      "city": "Tehran",
-      "country": "Iran",
-      "venue": "Jes Cafe and Darbast Platform (Mohsen Gallery)"
+      "text": "Tehran —  Café Jes; Darbast Gallery",
+      "city": "",
+      "country": "",
+      "venue": ""
     },
     "Year / Time Period": {
-      "text": "March-September 2019 (Esfand 1397 to Shahrivar 1398)"
+      "text": "2019"
     },
+    "Thematic Tags": [
+      "forum theater",
+      "youth",
+      "pedagogy",
+      "dialogical",
+      "process-based",
+      "collective making",
+      "performance"
+    ],
     "Featured Project Image": {
       "url": "/images/daab/thumb.webp",
-      "alt": "Daab"
+      "alt": ""
     }
   },
   "sections": [
     {
       "id": "2",
-      "title": "Introduction",
+      "title": "Project Overview",
       "paragraphs": [
-        "Daab was an interactive performance formed over the course of six months in a participatory process, during the non-competitive section of \"New Voices Theater Festival\". This festival was dedicated to the youth aged 15 to 25 and is inspired by Noel Greig's methods in intercultural artistic exchange. In the festival's structure, each participant group was paired with another group and took part in several stages of exchanges and dialogues; a process that was going to lead to an independent performance at the end reflecting the process itself.",
-        "The \"Phoenix youth theater group\" was formed with 11 young participants, mostly students or university freshmen. During the initial months of the project some changes took place: Five members withdrew or were voted out by the rest of the group. The initial gender composition included seven girls and three boys. Two of the female members left in the first month, and later, the five girls of the group demanded to end collaboration with the three male members. In the final weeks, another boy joined the group as an auxiliary actor. In the final weeks before the public performance, the group lacked a unified thematic line or shared language.",
-        "The pressure to present a performance in such circumstances had created a feeling of failure and a dead end. In response to this situation, the group decided that in addition to the content of their work, the festival's structure and the internal dynamics of the group should also be critically examined. This rethinking became the conceptual foundation of the Daab performance; a word that refers to habit, custom, and disposition. The final performance consisted of the narrative of six youths who have gathered in the format of a talent show to create a collective work. The competitive aspect of this process gradually creates a rift between them and leads to the termination of the collaboration contract. At a moment before collapse, one of the performers stops the narrative and invites the audience to intervene to find a solution. Thus, the boundary between performance and a creation process becomes blurred.",
-        "Writer: Saba Memar",
-        "Group Members: Mahsa Mohammad Asghari, Yasaman Ardabili, Nika Seyyedi, Ava Faghihi, Helia Mirshekar, Farshid Rashidi"
+        "*Daab* (داب) — a Persian word meaning habit, custom, or disposition — was an interactive theater performance developed over six months by Ghoghnoos, a youth theater group of high-school and first-year university students aged fifteen to twenty. The piece grew out of weekly rehearsals, improvisation, and dialogue, and was made within the non-competitive *New Voices* (صداهای نو) theater festival, which paired participating groups for extended exchange-based collaboration.",
+        "The performance staged the story of six young people brought together by a talent competition to make a collective work, whose collaboration begins to break down under the pressures of rivalry. At a critical moment, just before the rupture becomes final, one of the performers stops the narrative and turns to the audience, inviting them to intervene and to help find a shared way through. From that point on, the line between performance and process is held deliberately open, and the audience becomes a participant in the work."
       ]
     },
     {
       "id": "3",
       "title": "Context & Site",
       "paragraphs": [
-        "The performance as a \"drama of process\" did not start from a pre-written text or play, but rather was formed from group exercises, improvisation, and exchange with the paired group in the festival. Weekly 3 to 4 hour rehearsals initially took place in a rented rehearsal room, but due to financial and time constraints, some rehearsals were moved to public spaces like the Laleh Park open-air amphitheater. After the initial version was ready, the performance was first staged at Jess Cafe as a semi-public and semi private space to measure the quality of interaction with the audience and reduce the fear of official performance on stage. Then the final version was presented at Darbast Platform, within the framework of the festival. The project took shape in three spatial levels: 1- Rehearsal Spaces (Rehearsal Room and Park) 2- Cafe place in the city as a testing ground 3- Festival Venue as the official presentation setting. The stage layout was designed in a circular shape; actors in the center and the audience sitting in a ring around them. This layout reduced the physical and symbolic distance, allowed for improvisation tailored to the crowd's reaction, and also made the audience's bodies part of the visual fabric of the stage."
+        "*Daab* moved across three kinds of space. Weekly rehearsals of three to four hours began in a rented rehearsal studio, but financial constraints soon pushed parts of the work outdoors, to the open-air amphitheatre in Laleh Park. When the piece was ready for an audience, the group made a deliberate choice not to debut it at the festival's gallery venue. They presented it first at Café Jes, a small cafe in central Tehran — partly as an experimental test bed, and partly to encounter the audience at closer range before stepping into the more formal context.",
+        "The final presentation took place at Darbast Gallery, as the official output of the *New Voices* festival. The two venues produced different audiences and different qualities of encounter, and the group has reflected since that the cafe performance was, in their experience, the more successful of the two. The physical and symbolic distance between performer and spectator was smaller there, and audiences felt more able to step in.",
+        "A circular staging held the work across both sites: performers in the centre, audience seated in a ring around them. The setup reduced the boundary between stage and seat and made each spectator visible to the rest of the room, which became part of the project's argument about how a public might come together to think aloud."
       ]
     },
     {
       "id": "5",
       "title": "Motivations & Questions",
       "paragraphs": [
-        "The project was the first formal and serious experience of the supervisor as an artist/educator/facilitator of creative processes. The core idea was based on the belief that \"theater is a rehearsal for life\" and the participatory process of making theater can act like a \"microcosm\"; a space for practicing alternative ways of being together and experimenting with other forms of power structure and care in a safe environment. At the beginning of each rehearsal, the phrase \"every rehearsal is a performance, every performance is a rehearsal\" was repeated. The project sought to show how teenagers aged 15 to 20, when faced with competitive and hierarchical structures, can learn a common language and the experience of participation through art, and construct a different narrative of group work. The goal was to create critical and questioning art without assuming the position of an omniscient narrator and without transmitting a direct message. An equal relationship with the spectators was intended, in which the issue is put up for discussion, rather than providing a predetermined answer."
+        "*Daab* was Navid Ghavidel's first serious work as an artist, educator, and facilitator of creative processes, and it ran alongside his graduate research on forum theater and actor-training systems. The project was, in part, an effort to test in practice what the research had been thinking through. The group worked from a principle Ghavidel repeated at the start of each rehearsal — every rehearsal is a performance, every performance is a rehearsal — and from the conviction that the participatory process of making theater can function as a microcosm: a safe, experimental scale on which other ways of being together can be practised.",
+        "The concerns Ghavidel returns to in his account of *Daab* might be set out as questions:",
+        "The decision to work outside the proscenium frame was not only practical; it was political. The group felt that a society in which everything at home, at school, and in the city is dictated top-down required a theater that did not stage \"the right thing\" for an audience to receive, but opened questions for the audience to enter. They wanted critical and questioning work without the posture of knowing better, and without messages or moral lessons. The Boalian tradition of forum theater offered a method for designing an invitation to intervention; Ghoghnoos did not reproduce all of its classical techniques, but took from it the core proposition that the audience can change the scene.",
+        "The work was made within *New Voices*, a non-competitive festival for fifteen-to-twenty-five-year-olds that draws on Noël Greig's methods for intercultural artistic exchange. Each participating group was paired with another and obliged to move through several stages of exchange and dialogue, and Ghoghnoos was paired with Group 84. The festival's exchange structure shaped the work's content as much as its frame."
+      ],
+      "quotes": [
+        {
+          "text": "How can fifteen-to-twenty-year-olds, growing up inside competitive and hierarchical structures, learn through art a shared language and the experience of participation? And what would it mean to place the audience as an interlocutor rather than as someone to be admired or persuaded?",
+          "attribution": "Navid Ghavidel"
+        }
       ]
     },
     {
       "id": "6",
-      "title": "Constraints & Strategies",
+      "title": "Conditions & Negotiations",
       "paragraphs": [
-        "The most important challenge was the internal dynamics of the group and how male and female teenagers confronted each other. The separation of members and conflicts related to psychological safety determined part of the project's formation path. School pressure and the volume of homework limited the possibility of regular, multi-day rehearsals, and the process was practically reduced to weekly sessions. In terms of official oversight, due to the more informal framework of the festival and cafe performance, the project did not face direct censorship; however, a rap performance by one of the girls and dancing scene raised some internal concerns and affected the group's perception of risk-taking. In the face of limitations, the project's approach was to turn the limitation into part of the working method. The phrase \"the performer must go on\" replaced \"the show must go on,\" and the health condition and chance to learn for each individual were prioritized over the success of the final product/output. Instead of producing an expensive play, the focus was placed on bodies, voices, and lived experiences. Stage design and props were designed with minimal resources: gouache containers, glue, colored paper, and the actors' personal clothes. The conflicts and fragility of group work also became the subject of the performance; both at the process level and the way the moment of the collapse, and breach of the contract is narrated which leads to the scene where they invite the audience to find a solution."
+        "Time was a constant condition. School workloads meant the group could not hold multi-day rehearsals; the practical rhythm was a single weekly session of three to four hours, and during exam seasons in June, rehearsals stopped almost entirely. The festival's informal frame and the cafe run protected the project from direct state oversight, though other forms of pressure surfaced anyway. Scenes that included rap performed by one of the young women, and others that included dancing, shaped the group's sense of what they could risk, even if they did not name these pressures as censorship at the time.",
+        "The most demanding condition, however, was internal. The group had begun with seven young women and three young men. Two of the women left in the first month, citing family pressures and internal tensions. Later, the remaining five women asked the three men to leave, feeling that the men's commitment to the work was uneven and that their behavior compromised the group's sense of psychological safety. But a young man was invited in the final weeks as a supporting actor.",
+        "The group's response was to fold the difficulty back into the method. The common theatrical slogan the show must go on was rewritten as the performer must go on: the wellbeing and learning of the people in the group were placed above the success of any final product. Rather than masking the conflicts and the fragility of collaboration, the group made these conditions the subject of the work itself, staging a collective project breaking down and asking the audience to help find a way through."
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Documentation",
+      "paragraphs": [],
+      "items": [
+        { "type": "photo", "src": "/images/daab/01.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/02.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/03.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/04.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/05.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/06.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/07.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/08.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/09.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/10.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/11.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/12.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/13.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/14.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/15.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/16.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/17.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/18.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/19.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/20.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/21.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/22.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/23.webp", "description": " " },
+        { "type": "photo", "src": "/images/daab/24.webp", "description": " " }
       ]
     },
     {
       "id": "8",
-      "title": "Fundings & Partners",
+      "title": "Collaborators & Support",
       "paragraphs": [
-        "In collaboration with New Voices Theater Festival, 84 Theater Group, Mohsen Gallery, Darbast Platform, Jes Cafe.",
-        "The cost of renting the rehearsal studio was divided among the group members. The families of the teenage members were the main sponsors of the project. The revenue from ticket sales at the cafe Jes was split, 50% going to the cafe and the other 50% divided equally among the group members."
+        "*Daab* was made by the Ghoghnoos (ققنوس) Theater Group, led and facilitated by Navid Ghavidel, with Saba Memar as writer and group members Mahsa Mohammad Asghari, Yasamin Ardabili, Nika Seyedi, Ava Faghihi, Helia Mirshekar, and Farshid Rashidi. The work was made within the *New Voices* theater festival, curated by Ali-Akbar Alizad, in which Ghoghnoos was paired with Group 84. The cafe run was hosted by Café Jes, and the final festival presentation by Darbast Gallery / Darbast Platform.",
+        "*Daab* was carried out without external funding. Rental costs for the rehearsal studio were divided equally among the group's members, and the teenagers' families were, in the group's own framing, the largest supporters of the project. Set and props were chosen against the group's actual means — cans of gouache, glue, coloured paper — and performers' costumes came from their own wardrobes. Income from ticket sales at the cafe was split between the cafe and the group, the group's share then divided equally among its members."
       ]
     },
     {
-      "id": "9",
-      "title": "Re-readings",
+      "id": "10",
+      "title": "Further Resources",
       "paragraphs": [
-        "Daab, After Daab: Re-reading a Participatory Experience through Dialogue - compiled by Reyhaneh Mirjahani"
+        "Full video recording of *Dāb*, archived on [YouTube](https://www.youtube.com/watch?v=6aDDyNZS61I&t=448s) (in Persian)"
       ]
     },
     {
       "id": "11",
       "title": "About the Artist",
       "paragraphs": [
-        "Navid Ghavidel is an artist, facilitator, and designer of participatory processes based in Rasht. He holds a Master's degree in the Philosophy of Art from the Tehran University of Art. His work resides at the intersection of theatre, arts pedagogy, documentary, and dialogue-driven, collective methods of creation. In his projects, art is not merely a tool for producing a performance, but a platform for collective learning, rethinking relationships, and experimenting with alternative forms of \"being together.\"",
-        "A significant portion of his work involves teenagers and marginalized groups, focusing on the connection between social imagination, care, collective agency, and the critical re-reading of power. In projects such as Daab, Manam-Bazi, Safe Zone, Ham-Ghesseh, Passing the Role, Live Archive, Mapping an Imminent Archive, Undercurrents of Partnership, and Ham-Risheh, Ghavidel employs a combination of performance, improvisation, narrative, collective writing, archiving, and fieldwork. He uses these to create situations where lived experience, memory, conflict, and participation are transformed into artistic material. Rather than focusing on a \"final product\" in the traditional sense, his focus is on the processes through which the relationship between art, education, institutions, and social life can be questioned. Consequently, his projects typically offer opportunities for dialogue, intervention, and collective reflection instead of providing definitive answers.",
-        "Phoenix Theatre Group was a collective of teenagers and young adults supervised by Navid Ghavidel. It operated through the collective participation of its members from March 2019 to September 2019 (Esfand 1397 to Shahrivar 1398). Most members had met in theatre classes at the Arasbaran Cultural Center and had practiced together for about a year before Phoenix was officially formed. The group's path was defined by group exercises, improvisation, dialogue, and collective creation. Their core philosophy during that period was \"theatre is a rehearsal for life,\" meaning the collective process of making theatre is not just about a final performance, but an opportunity to test alternative forms of relationship, decision-making, care, conflict, and togetherness. The group's most significant experience was the Daab project-an interactive performance developed over several months for the \"New Voices\" festival. Their work did not start from a pre-written script; instead, it evolved through practice, exchange, trial and error, and confronting the group's internal tensions and deadlocks. Through this journey, Phoenix understood and practiced theatre not just as an artistic output, but as a space for experiencing collective labor, rethinking relationships, and testing participatory modes of performance.",
-        "Contact: Instagram/Telegram: @tamrinschool Instagram: @navidghavidel21"
+        "**Navid Ghavidel** is an artist, facilitator, and designer of participatory processes based in Rasht, with an MA in the Philosophy of Art from Tehran University of Art. His work sits at the intersection of theater, arts pedagogy, documentary, and dialogue-driven collective creation, often with teenagers and marginalised groups. Across projects, he combines performance, improvisation, narrative, collective writing, archiving, and fieldwork to turn lived experience, memory, conflict, and participation into artistic material. His focus is on the processes through which the relationship between art, education, institutions, and social life can be opened to question, rather than on a finished product.",
+        "**Phoenix Theater Group** was a collective of teenagers and young adults active from Esfand 1397 to Shahrivar 1398 (March – September 2019). Most members had met in theater classes at the Arasbaran Cultural Center and had practised together for about a year before the group was formally constituted. Their work moved through group exercises, improvisation, dialogue, and collective creation, under the working principle that theater is a rehearsal for life. *Daab* was the group's most extended undertaking, developed without a pre-written script through practice, exchange, trial and error, and the group's own internal tensions."
+      ],
+      "contact": [
+        { "platform": "telegram", "handle": "@tamrinschool", "url": "https://t.me/tamrinschool" },
+        { "platform": "instagram", "handle": "@tamrinschool", "url": "https://instagram.com/tamrinschool" },
+        { "platform": "instagram", "handle": "@navidghavidel21", "url": "https://instagram.com/navidghavidel21" }
       ]
     }
   ],
   "Participation & Process": {
     "subsections": [
       {
-        "title": "A) Within the group",
+        "title": "",
         "paragraphs": [
-          "The process of producing the work was based on devised drama; without a pre-written text and without hierarchical directing. Group members proposed and reviewed themes and scenes through games, theater exercises, improvisation, and dialogue. The members of the two paired groups in the festival also engaged in creative exchanges and drew inspiration from each other's viewpoints. The group supervisor's role included forming the group, artistic training, acting as a liaison between the group and the festival's executive team, and facilitating internal dynamics without becoming a director in the traditional sense. As the process progressed, this role shifted closer to artistic curation."
-        ]
-      },
-      {
-        "title": "B) At the performance level",
-        "paragraphs": [
-          "The roughly 40-minute performance, initially kicks off with a confrontational phase. Then, one of the actors would stop the performance and ask the audience to enter the stage to find alternative ways to face the issue or to offer suggestions. Spectators could enter the stage in place of any character and play their role differently, or simply provide their perspective and feedback. Participation was entirely optional. To prepare for this intervention, short interactive situations were designed throughout the performance; including asking for financial help to buy art supplies or inviting a few spectators to participate in a theatrical contest. Project participants were diverse including: group members, supervisor, a writer who was added at the end of the project, festival organizers, other youth theater groups present at the festival, students' families as financial supporters, and the audience of each performance."
+          "Participation in *Daab* was designed at two levels: inside the group and inside the performance.",
+          "Inside the group, the work was made through process drama, without a pre-written script and without hierarchical direction. Members proposed and revised themes and scenes through games, improvisation, and dialogue, and the exchange with Ghoghnoos's paired group at the festival, Group 84, fed back into the content and form as it took shape.",
+          "Inside the performance, the audience entered the work in two ways. Throughout the first forty minutes, short interactive moments were embedded into the narrative: performers asked the audience for small contributions to buy art supplies for the characters; invited a few spectators to take part in a brief on-stage play competition; and put direct questions to the room. These moments worked as gradual rehearsals, preparing the audience for the larger intervention that was to come. After about forty minutes, one of the performers stopped the narrative and turned to the audience, asking them to help the characters find different ways to face the breakdown of their collaboration. Spectators could step in for any of the characters and play a scene differently; they could also stay seated and offer a suggestion, an objection, or a possible way through.",
+          "Voluntariness was held as a principle, and forms of participation could range from a single sentence to playing out a full situation. The actors had worried in advance that no one would intervene and that the stage would go cold. In practice, a substantial number of people stepped in, wanting to share their own positions on group work, on competition, and on what holds collaboration together.",
+          "Ghavidel's role as a group lead shifted across the six months: he began by teaching the group theatrical exercises and the fundamentals of stage acting, moved toward facilitation as the work began to find its form, and by the end of the process describes his role as closer to that of a curator of the group's own material than to a director in the conventional sense."
         ]
       }
     ]
   },
-  "Visual Documentation": {
-    "items": [
-      {
-        "type": "photo",
-        "src": "/images/daab/01.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/02.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/03.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/04.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/05.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/06.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/07.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/08.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/09.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/10.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/11.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/12.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/13.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/14.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/15.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/16.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/17.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/18.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/19.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/20.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/21.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/22.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/23.webp",
-        "description": " "
-      },
-      {
-        "type": "photo",
-        "src": "/images/daab/24.webp",
-        "description": " "
-      }
-    ]
-  }
+  "Editorial Notes": [
+    "This entry was prepared based on the artist's account and accompanying project materials."
+  ]
 }

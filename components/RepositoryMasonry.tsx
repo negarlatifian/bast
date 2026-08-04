@@ -3,11 +3,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { useLocale } from './LocaleProvider';
+import { localizeHref } from '@/lib/i18n';
 
 type RepositoryCard = {
   slug: string;
   title: string;
   artists: string[];
+  previewText: string;
   imageAlt: string;
   imageSrc: string;
 };
@@ -60,6 +63,7 @@ export default function RepositoryMasonry({
   projects,
   layoutSeed,
 }: RepositoryMasonryProps) {
+  const { lang, dict } = useLocale();
   const containerRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<(HTMLAnchorElement | null)[]>([]);
   const [threadPoints, setThreadPoints] = useState<ThreadPoint[]>([]);
@@ -138,7 +142,7 @@ export default function RepositoryMasonry({
   if (projects.length === 0) {
     return (
       <p className='mt-10 pb-16 text-sm leading-6 text-[#777066]'>
-        No projects found.
+        {dict.common.noProjects}
       </p>
     );
   }
@@ -162,7 +166,7 @@ export default function RepositoryMasonry({
               ref={(element) => {
                 cardRefs.current[index] = element;
               }}
-              href={`/repository/${project.slug}`}
+              href={localizeHref(lang, `/repository/${project.slug}`)}
               className={`group relative block shrink-0 overflow-hidden ${
                 scatterClasses[layoutIndex]
               }`}
@@ -195,10 +199,11 @@ export default function RepositoryMasonry({
                       {project.artists.join(', ')}
                     </p>
                   )}
-                  <span className='mt-2 inline-flex items-center gap-2 text-[0.92rem] font-medium leading-5 text-[#7f242a] opacity-0 transition-opacity duration-500 group-hover:opacity-100'>
-                    Read more
-                    <span aria-hidden='true'>→</span>
-                  </span>
+                  {project.previewText && (
+                    <p className='mt-1 line-clamp-2 text-[0.85rem] leading-5 text-white/90 opacity-0 transition duration-500 group-hover:opacity-100 group-hover:text-[#7f242a]'>
+                      {project.previewText}
+                    </p>
+                  )}
                 </div>
               </div>
             </Link>

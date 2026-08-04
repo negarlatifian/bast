@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import type { PointerEvent } from 'react';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { useLocale } from './LocaleProvider';
+import { getDirection, localizeHref } from '@/lib/i18n';
 
 type HomePreviewProject = {
   slug: string;
@@ -59,13 +61,21 @@ type DragState = {
   moved: boolean;
 };
 
-function getInitialPositions(count: number, isDesktop: boolean) {
+// The image cluster is anchored to the right (x 55-88%) so it sits beside
+// left-aligned hero text. Under RTL the hero text flips to the right (it
+// uses logical `items-start` alignment), so the cluster must mirror to the
+// left to avoid covering it.
+function mirrorPosition(position: PreviewPosition): PreviewPosition {
+  return { ...position, x: 100 - position.x - position.w };
+}
+
+function getInitialPositions(count: number, isDesktop: boolean, mirror: boolean) {
   const sourcePositions = isDesktop ? desktopPositions : mobilePositions;
 
-  return Array.from(
-    { length: count },
-    (_, index) => sourcePositions[index % sourcePositions.length]
-  );
+  return Array.from({ length: count }, (_, index) => {
+    const position = sourcePositions[index % sourcePositions.length];
+    return mirror ? mirrorPosition(position) : position;
+  });
 }
 
 function getNodePoint(position: PreviewPosition) {
@@ -82,16 +92,20 @@ export default function HomeRepositoryPreview({
   projects,
 }: HomeRepositoryPreviewProps) {
   const router = useRouter();
+  const { lang, dict } = useLocale();
+  const isRtl = getDirection(lang) === 'rtl';
   const containerRef = useRef<HTMLDivElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
   const [previewPositions, setPreviewPositions] = useState<PreviewPosition[]>(
-    () => getInitialPositions(projects.length, true)
+    () => getInitialPositions(projects.length, true, isRtl)
   );
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
     const syncPositions = () => {
-      setPreviewPositions(getInitialPositions(projects.length, mediaQuery.matches));
+      setPreviewPositions(
+        getInitialPositions(projects.length, mediaQuery.matches, isRtl)
+      );
     };
 
     syncPositions();
@@ -100,7 +114,7 @@ export default function HomeRepositoryPreview({
     return () => {
       mediaQuery.removeEventListener('change', syncPositions);
     };
-  }, [projects.length]);
+  }, [projects.length, isRtl]);
   const points = useMemo(
     () => previewPositions.map((position) => getNodePoint(position)),
     [previewPositions]
@@ -113,7 +127,7 @@ export default function HomeRepositoryPreview({
     .join(' ');
 
   const openRepository = () => {
-    router.push('/repository');
+    router.push(localizeHref(lang, '/repository'));
   };
 
   const handlePointerDown = (
@@ -186,7 +200,7 @@ export default function HomeRepositoryPreview({
       ref={containerRef}
       role='link'
       tabIndex={0}
-      aria-label='Open Bast repository'
+      aria-label={dict.common.openRepository}
       onClick={(event) => {
         if (event.target === event.currentTarget) {
           openRepository();

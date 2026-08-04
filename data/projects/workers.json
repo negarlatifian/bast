@@ -3,17 +3,24 @@
   "1. Basic Information": {
     "Project Title": "Workers Don't Go to the Factory",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
-      "A group of artists and social activists, with the direct participation of Deh Vanak residents"
+      "A collective of artists and social activists"
     ],
     "Location": {
-      "text": "Shahamati Alley, East side of Alzahra University, Deh Vanak, Tehran",
+      "text": "Shahamati alley, Deh-Vanak, Tehran",
       "city": "",
       "country": "",
       "venue": ""
     },
     "Year / Time Period": {
-      "text": "December 9, 2018 (One-day event)"
+      "text": "9 December 2018"
     },
+    "Thematic Tags": [
+      "urban intervention",
+      "public space",
+      "collective making",
+      "memory",
+      "site-specific"
+    ],
     "Featured Project Image": {
       "url": "/images/kargaran/thumb.webp",
       "alt": ""
@@ -22,67 +29,80 @@
   "sections": [
     {
       "id": "2",
-      "title": "Introduction",
+      "title": "Project Overview",
       "paragraphs": [
-        "Workers Don't Go to the Factory is a collective narrative of the history, everyday life, and resistance of the residents of the Deh Vanak neighborhood against official trends of demolition, appropriation, and Gentrification-Induced Displacement. This project was formed on December 9, 2018, in collaboration with a group of artists, social activists, and neighborhood residents, and was realised in the urban space of the workers' quarter of Deh Vanak. The event included a collection of photographs, photo-collages, installations, local maps, video art, musical performances using found objects from the demolished houses, and an open tribune. All these components were created with the direct participation of the neighborhood's people and were exhibited in the Shahamati dead-end alley. The project sought to collectively represent the lived experience of the residents, the collective memory of the neighborhood, and their resistance against physical and symbolic erasure from the city, directly in the residents' own living space."
+        "Workers Don't Go to the Factory is a collective narrative of the history, everyday life, and resistance of the residents of the Deh Vanak neighborhood against official trends of demolition, appropriation, and Gentrification-Induced Displacement. This project was formed on December 9, 2018, in collaboration with a group of artists, social activists, and neighborhood residents, and was realised in the urban space Deh Vanak neighborhood. The event included a collection of photographs, photo-collages, installations, local maps, video art, musical performances using found objects from the demolished houses, and an open tribune.",
+        "The exhibition was held against the backdrop of an active and escalating dispute over the demolition of the workers' houses in the area, and was framed as a collective narrative of the history, life, and resistance of the residents in the face of urban displacement."
       ]
     },
     {
       "id": "3",
       "title": "Context & Site",
       "paragraphs": [
-        "The project was executed in an urban setting and living context of the Deh Vanak neighborhood, a neighborhood entangled in a long-standing legal land dispute between the residents and Alzahra University. This dispute began in 2002, with its roots tracing back to the history of the neighborhood's formation. In 1938, with the establishment of Vanak Factory No. 5, a group of workers settled in company houses around the factory. Over time, and with the agreement of the factory manager, these workers expanded their homes, and their families remained in this area generation after generation. After the factory was relocated, the workers and their children remained in the area and considered themselves to have the right of residence. In the following decades, with the expansion of the city and the establishment of Alzahra University near this area, the conflict over the ownership of lands and houses intensified. In the summer of 2018, the sudden demolition of several houses by the university was a turning point in this dispute. The project Workers Don't Go to the Factory took shape in the midst of these tensions and as a cultural and collective reaction to this process."
+        "The site of the exhibition was in Shahmati Alley in Deh-Vanak, a neighbourhood whose history stretches back to 1938, when Factory No. 5 of Vanak was established and a group of workers was housed in organisational dwellings nearby. With the factory manager's agreement, the workers expanded their homes over time, and their families remained in the area generation after generation. The factory itself was later relocated, but the community stayed. In the decades that followed, the surrounding landscape changed. The Higher School for Girls — later renamed Al-Zahra University — was founded in 1964 on land that had previously been a cemetery. In 2003, when the building of the Railway Higher Education Centre (the former Factory No. 5) was annexed to the university as part of a development plan, the registration plates of the workers' organisational houses and the factory were treated as one, and a dispute between the residents and the university began. The conflict has continued since the mid-2000s. In the summer of 2018, the university abruptly demolished several houses with bulldozers, and residents began to make their situation public through media and through contact with urban activists. The exhibition emerged within this moment."
       ]
     },
     {
       "id": "5",
-      "title": "Motivations & Questions",
+      "title": "Motivations & Questions.",
       "paragraphs": [
-        "This local exhibition was formed in response to the growing trend of house demolitions in the area, which was a continuation of the same long-standing dispute over the ownership of the workers' houses in this region. At that time, public attention was mainly focused on the material dimension of land and property, but a group of artists and activists decided to address another aspect of the story: the human, psychological, and identity dimension of this neighborhood and its residents. The project aimed to depict the lived experience of the inhabitants with a critical yet empathetic look. For this reason, this project was not merely a documentary of an urban event, but an attempt to revive the collective memory and show the symbolic value of the home as a shelter, memory, and identity."
+        "The exhibition took shape in response to the escalating demolition of houses in the area, and within the long-running dispute over the ownership of the workers' houses of this part of Deh-Vanak. The motivation, as articulated in the project materials, was to address a dimension of the situation that public attention was not focused on:",
+        "The exhibition tried to convey its narrative through creative artistic tools, without turning into a slogan or a direct political position. The main strategy of the project was living in the moment, the temporary occupation of space, and the creation of indirect discourse through artistic form."
+      ],
+      "quotes": [
+        {
+          "text": "At that moment, public attention was mostly focused on the material dimension of land and property. A group of artists and activists decided to address another aspect of the matter: the human, psychological, and identity dimension of this neighbourhood and its residents. The aim became to depict the lived experience of the local residents with a critical yet empathetic gaze. For this reason, the process was not merely the documentation of an urban event, but an attempt to revive collective memory and to show the symbolic value of the home as shelter, memory, and identity.",
+          "attribution": "Ali Shahamati, one of the residents of Deh Vanak"
+        }
       ]
     },
     {
       "id": "6",
-      "title": "Constraints & Strategies",
+      "title": "Conditions & Negotiations",
       "paragraphs": [
-        "This project was formed completely independently and without any institutional or official financial support. Its implementers were a group of artists and social activists who held the exhibition in public space, relying on personal capabilities and the collective solidarity of some residents. For example, residents provided catering, supplies, and drinks, and the projector and execution equipment were obtained through friendship networks. The focus of the works was on human narratives, memory, and the lived experience of the residents, and the project tried to convey the narrative without it turning into a slogan or direct political stance. However, shortly after the start of the exhibition, police and security forces entered the site and tried to stop the continuation of the work; there was pressure to disperse the crowd. During that same day and afterwards, diverse cultural and social reactions took shape even among different groups of residents: debates about the clothing and behavior of the women present at the event, and even the type of philosophical/political references in the artworks. According to some residents, immediately after the exhibition, the local people were divided into two different groups. On the other hand, some activists also joined this event for the interests and strategies of their own group or person. Furthermore, after the exhibition was held, Alzahra University announced that it intended to file a complaint for trespassing, as it considered the land where the exhibition was held to belong to the university."
+        "The project was fully independent and was carried out without any form of institutional or financial backing. The artists and activists relied on their own resources and on the collective solidarity of the residents, who supplied catering, materials, and refreshments; the projector and the rest of the execution equipment were assembled through friendship networks. Shortly after the exhibition began, police and security forces arrived at the site and pressed to disperse the gathering.",
+        "Other reactions surfaced over the course of the day. Debates emerged around clothing, the behaviour of the women present, and the philosophical references in some of the works (including an invocation of Nietzsche) — registering a cultural and intellectual gap between different groups inside the neighbourhood and the participating artists. According to some residents, the local community divided into two camps in the immediate aftermath. Al-Zahra University announced afterwards that it intended to file a legal complaint, on the grounds that the land where the exhibition took place was university property."
       ]
     },
     {
+      "id": "7",
+      "title": "Documentation",
+      "paragraphs": []
+    },
+    {
       "id": "8",
-      "title": "Fundings & Partners",
+      "title": "Collaborators & Support",
       "paragraphs": [
-        "Collaborators / Participating Institutions:",
-        "None",
-        "Financial Sponsors: No official financial support; catering and some facilities were provided by the residents."
+        "The project was developed and carried out by a collective of artists and social activists in collaboration with residents of the Workers' Quarter of Deh-Vanak; no individual curator, named collaborators, or participating institutions are listed in the project materials. There was no official financial support and no production budget; catering and a portion of the on-site facilities were provided by the residents themselves, and the rest came together through informal lending."
       ]
     },
     {
       "id": "9",
-      "title": "Re-readings",
+      "title": "Re-reading",
       "paragraphs": [
-        "(No text provided under this heading)"
+        "A re-reading for this project has not yet been written. If you would like to propose a re-reading, please contact us."
       ]
     },
     {
       "id": "10",
-      "title": "Other references & Resources",
+      "title": "Further Resources",
       "paragraphs": [
+        "[in Farsi:]",
         "Shervin Taheri, \"Art Outside the Gallery: A Look at the Collective Artistic Participation of Artists in Defense of the Right to Housing named 'Workers Don't Go to the Factory' in the Deh Vanak Neighborhood\", Tandis, Issue 380, January 1, 2019.",
         "IRNA 24 Report",
         "\"Other City\" (Shahr-e Digar) Report: http://shahredigar.ir/expropriation-mapping",
         "Amir Yaghoubali, \"A University That Is Not a University\", Meydan",
         "Atefeh Rangriz and Hamzeh Alipayam, \"Shelter is Our Right\", Meydan",
         "Majid Ebrahimpour, \"Deh Vanak: A Collective Issue for the Right to Life\", Meydan",
-        "Mahsa Aadollahnejad, \"Deh Vanak and the State\"",
-        "Amirali Ghasemi, \"The Epic of Deh Vanak on an Autumn Evening\", Sarkhoshi"
+        "Mahsa Asadollahnejad, \"Deh-Vanak and the State,\" Modakhele.",
+        "Amirali Ghasemi, \"The Epic of Deh-Vanak on an Autumn Evening,\" Sarkhoshi."
       ]
     },
     {
       "id": "11",
       "title": "About the Artist",
       "paragraphs": [
-        "The project was formed by a group of artists and social activists, with the direct participation of the residents of Deh Vanak"
+        "Workers Don't Go to the Factory was a collective project carried out by a group of artists and social activists together with the residents of the Workers' Quarter of Deh-Vanak. Individual names are not attributed in the project materials."
       ]
     }
   ],
@@ -91,58 +111,18 @@
       {
         "title": "",
         "paragraphs": [
-          "In the project Workers Don't Go to the Factory, the neighborhood residents simultaneously played the roles of audience and creators, and actively participated in various stages of the project. Their participation included gathering narratives, family photos, and personal items, collaborating in shaping the installations, and attending the open tribune. Artists and social activists went to the homes of Deh Vanak residents, spoke with them, and explained the idea of the exhibition. Photos, personal objects, and nostalgic items related to their lives and homes enriched the archival materials for the project. A part of the artworks took shape from within the ruins and demolished spaces; objects collected from the ruins became raw materials for creating the artwork. This included musical performances with dishes and remaining objects from the houses, installing photos of residents on the local walls, and holding a collective reading and discussion in the same space. Visitors directly encountered the installations, photos, and videos by walking through the Shahamati Alley, and they joined a collective experience and face-to-face dialogue with the residents. Thus, audience interaction took shape in the form of direct participation, conversation, and physical presence in the shared urban space. In this project, the boundary between the audience and the participant disappeared, and the residents were simultaneously the subject, narrator, and viewer of the work."
+          "In the project Workers Don't Go to the Factory, the neighborhood residents simultaneously played the roles of audience and creators, and actively participated in various stages of the work. The work was built outward from the homes themselves. Artists and activists after visiting and being in conversation with the residents a few times, went to the houses of Deh-Vanak residents, spoke with them, and explained the idea of the exhibition. Photographs, personal objects, and items carrying the memory of their lives in the neighbourhood enriched the archival material of the exhibition idea.",
+          "A portion of the works emerged directly from the rubble. Objects retrieved from the demolished houses were used as raw material: a musical performance was made from dishes and items left behind in the ruins; photographs of residents were installed on the local walls; collective readings and conversations took place in the same space. The exhibition itself opened onto a free tribune, and visitors who walked into the Shahamati dead-end alley encountered the installations, photographs, and videos directly, often in face-to-face conversation with the residents themselves.",
+          "The line between audience and participant did not hold inside the project. The residents were simultaneously subjects, narrators, and viewers of the work. Visitors from outside the neighbourhood — many of them students, some from other parts of the city — entered into the same shared space."
         ]
       }
     ]
   },
   "Visual Documentation": {
-    "items": [
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Poster of the event"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Event Description"
-      },
-      {
-        "type": "video",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "video",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "video",
-        "src": "",
-        "description": "Ilna New Agency Report of demolishing houses in Deh Vanak"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "video",
-        "src": "",
-        "description": "Ilna New Agency Report of the event"
-      }
-    ]
-  }
+    "items": []
+  },
+  "Editorial Notes": [
+    "This entry was prepared based on a conversation with locals, together with existing resources.",
+    "This entry was prepared based on the artist's account and accompanying project materials, and edited in collaboration with the artist."
+  ]
 }

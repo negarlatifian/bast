@@ -1,6 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+import type { Locale } from './i18n';
+import { pickArray, pickString } from './merge';
+
 import bookReadingSanandaj from '@/data/projects/book-reading-sanandaj.json';
 import cafeKonjPerformances from '@/data/projects/cafe-konj-performances.json';
 import daab from '@/data/projects/daab.json';
@@ -30,11 +33,18 @@ export type Project = {
       url: string;
       alt: string;
     };
+    'Thematic Tags'?: string[];
   };
   sections: {
     id: string;
     title: string;
     paragraphs: string[];
+    quotes?: { text: string; attribution?: string }[];
+    contact?: {
+      platform: string;
+      handle: string;
+      url: string;
+    }[];
   }[];
   'Participation & Process'?: {
     subsections?: {
@@ -48,6 +58,31 @@ export type Project = {
       src: string;
       description: string;
     }[];
+  };
+  /**
+   * Optional Farsi translation. Any field left empty falls back to English,
+   * so this block can be filled in gradually. Sections are matched by `id`
+   * and participation subsections by their position in the English array.
+   */
+  fa?: {
+    '1. Basic Information'?: {
+      'Project Title'?: string;
+      'Artist / Group / Collective / Organizer / Supervisor / Initiator'?: string[];
+      Location?: { text?: string };
+      'Year / Time Period'?: { text?: string };
+      'Featured Project Image'?: { alt?: string };
+    };
+    sections?: {
+      id: string;
+      title?: string;
+      paragraphs?: string[];
+    }[];
+    'Participation & Process'?: {
+      subsections?: {
+        title?: string;
+        paragraphs?: string[];
+      }[];
+    };
   };
 };
 
@@ -96,6 +131,21 @@ const projectMediaFolders: Record<string, string> = {
 const photoExtensions = new Set(['.avif', '.jpg', '.jpeg', '.png', '.webp']);
 const videoExtensions = new Set(['.mov', '.mp4', '.webm']);
 
+/**
+ * Short excerpt for repository card hover previews: the first paragraph of
+ * the introduction section (id "2"), falling back to the first section with
+ * any paragraph text.
+ */
+export function getProjectPreviewText(project: Project): string {
+  const introSection = project.sections.find((section) => section.id === '2');
+  const firstParagraph =
+    introSection?.paragraphs[0] ??
+    project.sections.find((section) => section.paragraphs.length > 0)
+      ?.paragraphs[0];
+
+  return firstParagraph ?? '';
+}
+
 export function getProjectImage(project: Project) {
   const featuredImage =
     project['1. Basic Information']['Featured Project Image'].url.trim();
@@ -114,6 +164,87 @@ export function getProjectImage(project: Project) {
 
 export function getProjectBySlug(slug: string) {
   return projects.find((project) => project.slug === slug);
+}
+
+/**
+ * Return a copy of the project with its Farsi translation applied where
+ * available, falling back to English field by field. For English (or any
+ * project without a `fa` block) the project is returned unchanged.
+ */
+export function localizeProject(project: Project, locale: Locale): Project {
+  const fa = project.fa;
+
+  if (locale === 'en' || !fa) {
+    return project;
+  }
+
+  const basic = project['1. Basic Information'];
+  const faBasic = fa['1. Basic Information'];
+
+  return {
+    ...project,
+    '1. Basic Information': {
+      ...basic,
+      'Project Title': pickString(
+        basic['Project Title'],
+        faBasic?.['Project Title'],
+      ),
+      'Artist / Group / Collective / Organizer / Supervisor / Initiator':
+        pickArray(
+          basic[
+            'Artist / Group / Collective / Organizer / Supervisor / Initiator'
+          ],
+          faBasic?.[
+            'Artist / Group / Collective / Organizer / Supervisor / Initiator'
+          ],
+        ),
+      Location: {
+        ...basic.Location,
+        text: pickString(basic.Location.text, faBasic?.Location?.text),
+      },
+      'Year / Time Period': {
+        ...basic['Year / Time Period'],
+        text: pickString(
+          basic['Year / Time Period'].text,
+          faBasic?.['Year / Time Period']?.text,
+        ),
+      },
+      'Featured Project Image': {
+        ...basic['Featured Project Image'],
+        alt: pickString(
+          basic['Featured Project Image'].alt,
+          faBasic?.['Featured Project Image']?.alt,
+        ),
+      },
+    },
+    sections: project.sections.map((section) => {
+      const faSection = fa.sections?.find((item) => item.id === section.id);
+      return {
+        ...section,
+        title: pickString(section.title, faSection?.title),
+        paragraphs: pickArray(section.paragraphs, faSection?.paragraphs),
+      };
+    }),
+    'Participation & Process': project['Participation & Process']
+      ? {
+          ...project['Participation & Process'],
+          subsections: project['Participation & Process']?.subsections?.map(
+            (subsection, index) => {
+              const faSubsection =
+                fa['Participation & Process']?.subsections?.[index];
+              return {
+                ...subsection,
+                title: pickString(subsection.title, faSubsection?.title),
+                paragraphs: pickArray(
+                  subsection.paragraphs,
+                  faSubsection?.paragraphs,
+                ),
+              };
+            },
+          ),
+        }
+      : project['Participation & Process'],
+  };
 }
 
 function getMediaType(src: string): ProjectMedia['type'] {

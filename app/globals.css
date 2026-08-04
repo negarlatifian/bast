@@ -35,6 +35,22 @@ body {
   overflow-x: hidden;
 }
 
+/*
+ * Farsi typography. The "Mosk" family is Latin-only, so Persian text falls
+ * back to a Persian-capable stack. To use Vazirmatn, drop a woff2 into
+ * /public/fonts and add an @font-face for it above, then it will be picked up
+ * automatically as the first choice below.
+ */
+:lang(fa),
+[dir='rtl'] {
+  font-family: 'Vazirmatn', 'Mosk', Tahoma, 'Segoe UI', sans-serif;
+}
+
+/* Persian digits / punctuation read better with slightly looser leading. */
+[dir='rtl'] {
+  line-height: 1.9;
+}
+
 img,
 svg,
 video,

@@ -1,7 +1,16 @@
 import MainLayout from '@/components/MainLayout';
 import RepositoryMasonry from '@/components/RepositoryMasonry';
-import { getProjectImage, projects } from '@/lib/projects';
+import {
+  getProjectImage,
+  getProjectPreviewText,
+  localizeProject,
+  projects,
+} from '@/lib/projects';
+import { getDictionary } from '@/lib/dictionaries';
+import { isLocale, localizeHref } from '@/lib/i18n';
 import { headers } from 'next/headers';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 export const dynamic = 'force-dynamic';
 
@@ -37,10 +46,19 @@ function getSeedFromRequestHeader(value: string) {
 }
 
 export default async function Page({
+  params,
   searchParams,
 }: {
+  params: Promise<{ lang: string }>;
   searchParams: Promise<{ q?: string }>;
 }) {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    notFound();
+  }
+
+  const dict = getDictionary(lang);
   const { q } = await searchParams;
   const headersList = await headers();
   const seedSource = [
@@ -53,7 +71,8 @@ export default async function Page({
     .filter(Boolean)
     .join('|');
   const searchQuery = q?.trim().toLowerCase() ?? '';
-  const repositoryProjects = projects.map((project) => {
+  const repositoryProjects = projects.map((rawProject) => {
+    const project = localizeProject(rawProject, lang);
     const basicInformation = project['1. Basic Information'];
     const title = basicInformation['Project Title'];
     const artists =
@@ -77,6 +96,7 @@ export default async function Page({
       slug: project.slug,
       title,
       artists,
+      previewText: getProjectPreviewText(project),
       searchText: [title, artists.join(' '), location, year, sectionText, processText]
         .join(' ')
         .toLowerCase(),
@@ -95,38 +115,30 @@ export default async function Page({
   return (
     <MainLayout>
       <article className='mt-6 flex flex-col gap-3 sm:mt-8'>
-        <p className='text-sm leading-6 sm:text-[1.08rem] sm:leading-7'>
-          Bast Repository is a growing collection of participatory art projects
-          that have taken place in Iran. Each project/work is presented through
-          multiple layers of documentation, including basic information,
-          archival materials, and conversations with the artists. In some cases,
-          projects are further expanded through a commissioned re-reading
-          written by another practitioner, researcher, or cultural worker. These
-          additional perspectives open space for interpretation, critique, and
-          reflection, allowing the projects to be revisited from different
-          positions.
-        </p>
-        <p className='text-sm leading-6 sm:text-[1.08rem] sm:leading-7'>
-          The repository does not aim to establish a definitive history of
-          participatory art in Iran. Instead, it brings together diverse
-          examples that reflect the variety of ways participation has been
-          practiced across artistic, social, and spatial contexts. Many of the
-          projects included respond to specific constraints, conditions, and
-          urgencies, and reveal different approaches to collaboration,
-          engagement, and collective action.
-        </p>
-        <p className='text-sm leading-6 sm:text-[1.08rem] sm:leading-7'>
-          As the platform develops, new projects, materials, and re-readings may
-          be added, allowing the repository to grow over time and remain open to
-          further contributions and interpretations. You are invited to suggest a
-          participatory art project here.
-        </p>
+        {dict.repository.intro.map((paragraph, index) => (
+          <p
+            key={`repository-intro-${index}`}
+            className='text-sm leading-6 sm:text-[1.08rem] sm:leading-7'
+          >
+            {paragraph}
+          </p>
+        ))}
+        <Link
+          href={localizeHref(lang, '/suggest-a-project')}
+          className='mt-2 inline-flex w-fit items-center gap-2 text-sm font-medium leading-6 text-[#7f242a] transition-colors hover:text-black sm:text-[1.08rem] sm:leading-7'
+        >
+          {dict.repository.suggestProject}
+          <span aria-hidden='true'>{lang === 'fa' ? '←' : '→'}</span>
+        </Link>
       </article>
 
       {searchQuery && (
         <p className='mt-8 text-sm leading-6 text-[#4f4a43]'>
-          {filteredProjects.length} result
-          {filteredProjects.length === 1 ? '' : 's'} for &ldquo;{q}&rdquo;
+          {filteredProjects.length}{' '}
+          {filteredProjects.length === 1
+            ? dict.search.resultsFor
+            : dict.search.resultsForPlural}{' '}
+          &ldquo;{q}&rdquo;
         </p>
       )}
 

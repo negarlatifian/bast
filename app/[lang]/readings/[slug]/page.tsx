@@ -4,36 +4,50 @@ import {
   getProjectReReadings,
   getReReadingParagraphs,
 } from '@/data/rereading';
-import { getProjectBySlug } from '@/lib/projects';
+import { getProjectBySlug, localizeProject } from '@/lib/projects';
+import { getDictionary } from '@/lib/dictionaries';
+import { isLocale, localizeHref, locales } from '@/lib/i18n';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export function generateStaticParams() {
-  return getProjectReReadings().map((reReading) => ({
-    slug: reReading.slug,
-  }));
+  return locales.flatMap((lang) =>
+    getProjectReReadings().map((reReading) => ({
+      lang,
+      slug: reReading.slug,
+    })),
+  );
 }
 
 export default async function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { lang, slug } = await params;
+
+  if (!isLocale(lang)) {
+    notFound();
+  }
+
+  const dict = getDictionary(lang);
   const reReading = getProjectReReading(slug);
 
   if (!reReading) {
     notFound();
   }
 
-  const project = getProjectBySlug(reReading.slug);
+  const rawProject = getProjectBySlug(reReading.slug);
+  const project = rawProject ? localizeProject(rawProject, lang) : undefined;
   const paragraphs = getReReadingParagraphs(reReading);
 
   return (
     <MainLayout variant='reading'>
       <article className='mx-auto mt-8 flex w-full max-w-4xl flex-col gap-6 bg-[#f8f8f6] px-5 py-8 sm:mt-12 sm:px-10 sm:py-12 lg:px-16'>
         <header className='flex flex-col gap-3'>
-          <p className='text-sm leading-6 text-[#777066]'>Re-reading</p>
+          <p className='text-sm leading-6 text-[#777066]'>
+            {dict.common.reReading}
+          </p>
           <h1 className='text-3xl font-semibold leading-tight text-black sm:text-4xl'>
             {reReading.title}
           </h1>
@@ -44,7 +58,7 @@ export default async function Page({
             {reReading.year && <p>{reReading.year}</p>}
             {project && (
               <Link
-                href={`/repository/${project.slug}`}
+                href={localizeHref(lang, `/repository/${project.slug}`)}
                 className='w-fit text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black'
               >
                 {project['1. Basic Information']['Project Title']}

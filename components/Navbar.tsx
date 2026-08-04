@@ -3,18 +3,22 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import SearchForm from './SearchForm';
-
-const navItems = [
-  { label: 'Repository', href: '/repository' },
-  { label: 'Re-reading', href: '/readings' },
-  { label: 'Library', href: '/library-page' },
-  { label: 'Map', href: '/map' },
-  { label: 'About Bast', href: '/aboutbast' },
-];
+import LanguageSwitcher from './LanguageSwitcher';
+import { useLocale } from './LocaleProvider';
+import { localizeHref } from '@/lib/i18n';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const { lang, dict } = useLocale();
+
+  const navItems = [
+    { label: dict.nav.repository, href: '/repository' },
+    { label: dict.nav.rereading, href: '/readings' },
+    { label: dict.nav.library, href: '/library-page' },
+    { label: dict.nav.map, href: '/map' },
+    { label: dict.nav.about, href: '/aboutbast' },
+  ].map((item) => ({ ...item, href: localizeHref(lang, item.href) }));
 
   /* lock body-scroll while menu is open */
   useEffect(() => {
@@ -53,11 +57,12 @@ export default function Navbar() {
             </Link>
           ))}
           <SearchForm />
+          <LanguageSwitcher />
         </div>
 
         {/* hamburger (mobile only) */}
         <button
-          aria-label='Toggle navigation'
+          aria-label={dict.common.toggleNav}
           aria-expanded={open}
           onClick={() => setOpen(!open)}
           className='p-2 md:hidden'
@@ -89,9 +94,9 @@ export default function Navbar() {
         >
           {/*   close (X)   */}
           <button
-            aria-label='Close navigation'
+            aria-label={dict.common.closeNav}
             onClick={() => setOpen(false)}
-            className='absolute top-4 right-4 rounded-md p-2
+            className='absolute top-4 end-4 rounded-md p-2
                  transition-colors hover:bg-gray-100 active:scale-95'
           >
             <svg
@@ -120,6 +125,9 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
+            <div className='mt-4 text-xl'>
+              <LanguageSwitcher />
+            </div>
           </nav>
         </div>
       )}

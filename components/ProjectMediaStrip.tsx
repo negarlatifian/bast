@@ -84,7 +84,7 @@ export default function ProjectMediaStrip({
     <>
       <section
         aria-label='Visual Documentation'
-        className='no-scrollbar -mx-7 overflow-x-auto sm:-mx-12 lg:-mx-16'
+        className='no-scrollbar -me-8 overflow-x-auto sm:-me-16 lg:-me-24'
       >
         <div className='flex w-max items-start gap-4 pb-3'>
           {mediaItems.map((item) => {
@@ -130,7 +130,7 @@ export default function ProjectMediaStrip({
                         alt={item.description || title}
                         fill
                         sizes='(min-width: 1024px) 544px, 78vw'
-                        className='object-contain'
+                        className='object-cover'
                         onLoadingComplete={(image) =>
                           updateImageRatio(
                             item.src,

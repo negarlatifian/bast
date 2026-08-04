@@ -1,10 +1,9 @@
 export const daabReading = {
   slug: 'daab',
   title:
-    'Daab, After Daab: Rereading a Participatory Experience Through Conversation',
-  author: 'Reyhaneh Mirjahani',
-  credit:
-    'Daab, After Daab: Rereading a Participatory Experience Through Conversation Compiler Reyhaneh Mirjahani',
+    'Dāb, After Dāb: Re-reading a Participatory Experience Through Dialogue',
+  author: 'Rayhaneh Mirjahani',
+  credit: 'Compiled by Rayhaneh Mirjahani',
   boldParagraphs: ['1.', '2.', '3.', '4.', '5.', '6.'],
   content: `
 Daab was a performance that took shape within the context of the "New Voices" festival in September 2019 over a six-month process. It was a project that began with games, improvisation, and exchange among groups, ultimately making its way to the stage to present the narrative of a group's collapse. At a decisive moment, it asked the audience to enter the stage and prevent the group's rupture.
