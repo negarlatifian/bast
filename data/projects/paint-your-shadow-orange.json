@@ -1,83 +1,186 @@
 {
   "slug": "paint-your-shadow-orange",
+  "fa": {
+    "1. Basic Information": {
+      "Project Title": "سایه‌ات را نارنجی کن",
+      "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+        "شیما رعیت‌پرور"
+      ],
+      "Location": { "text": "گالری آبی بلند، روستای طالقانی‌محله، ساری؛ و بعدتر در تهران، رشت و قائم‌شهر" },
+      "Year / Time Period": { "text": "۱۴۰۲ تا کنون" },
+      "Featured Project Image": { "alt": "سایه‌ات را نارنجی کن" }
+    },
+    "sections": [
+      {
+        "id": "2",
+        "title": "مروری بر پروژه",
+        "paragraphs": [
+          "«سایه‌ات را نارنجی کن» پروژه‌ای مشارکتی و ادامه‌دار است که از یک بستر روستایی در مازندران آغاز شد و از آن زمان، در قالب کارگاه‌ها و چیدمان‌هایی در سه شهر دیگر نیز راه یافته است. این اثر در پی انتشار کتاب کودک «نارنجی، گربه‌ی آزاد» نوشتهٔ ناصر یوسفی شکل گرفت و بر پایهٔ پرسشی پیرامون مفهوم آزادی که در کتاب مطرح می‌شود، بسط می‌یابد. از هر مشارکت‌کننده دعوت می‌شود تا با شیوه و بیان خود — از طریق صحبت کردن، نوشتن، تصویرسازی یا دوخت‌ودوز — وارد داستان شود. قطعات به‌دست‌آمده درنهایت از طریق سوزن‌دوزی و تکه‌دوزی روی بومی پارچه‌ای کنار هم قرار می‌گیرند تا شبکه‌ای از روایت‌ها را شکل دهند که هیچ مؤلف واحدی ندارد.",
+          "این پروژه به‌صورت یک چیدمان تعاملی و کارگاهی اجرا می‌شود که خود را با هر محیطی که به آن وارد می‌شود تطبیق می‌دهد و مشارکت‌کنندگانی در ردهٔ سنی چهار تا هفتاد سال را در بر می‌گیرد. این پروژه در طول اجراهای مختلف خود، از طریق ویدئو، تصویر و صدا مستند شده است."
+        ]
+      },
+      {
+        "id": "3",
+        "title": "بستر و مکان",
+        "paragraphs": [
+          "پروژه در گالری «آبی بلند» آغاز شد؛ آموزشگاه هنر و گالری‌ای که شیما رعیت‌پرور آن را در روستای دوران کودکی‌اش (طالقانی‌محله) در حومهٔ ساری تأسیس کرد. استقرار گالری در یک بستر روستایی و پیوند آن با جامعهٔ محلی، به‌جای فضای هنری یک کلان‌شهر، شکل‌دهندهٔ نوع مشارکتی است که این پروژه به آن دعوت می‌کند. نخستین دورهم‌جمع‌شدن‌ها در حلقهٔ خانوادگی شکل گرفت و سپس به زنان و کودکان روستا گسترش یافت؛ جایی که خیاطی و کار با پارچه، پیش از آنکه بخشی از واژگان تخصصی هنر باشد، به امور روزمره و خانگی تعلق دارد.",
+          "با انتقال پروژه به شهرهای دیگر، این رابطه نیز به بسترهای جدید کشیده شد. پروژه در تهران و رشت، در قالب کارگاه‌ها و نمایشگاهی ادامه یافت و تازه‌ترین اجرای آن در قائم‌شهر نیز به میزبانی مجموعهٔ موسیقی اردیبهشت برگزار شد. بستر اجرای پروژه میان فضاهای خانگی، عمومی و غیررسمی در نوسان بوده است. به گفتهٔ هنرمند، او این پروژه را به‌جای محدود کردن به مکانی خاص، در هر فضایی که امکان حضور جمعی در آن فراهم بوده، اجرا کرده است."
+        ]
+      },
+      {
+        "id": "5",
+        "title": "انگیزه‌ها و پرسش‌ها",
+        "paragraphs": [
+          "این پروژه در واکنش به دو موقعیت هم‌زمان کلید خورد: نخست، انتشار کتاب «نارنجی، گربه آزاد» نوشتهٔ ناصر یوسفی، و دوم، وضعیت اجتماعی ایران که در آن، نیاز به فضاهای امن برای گفت‌وگو و شنیدن روایت‌های زندگی یکدیگر به ضرورتی مبرم بدل شده بود. از همان آغاز، دغدغهٔ اصلی این اثر ساختنِ یک اثر با استانداردهای زیبایی‌شناسانه نبود، بلکه ارتباط و تبادلی بود که می‌توانست پیرامونِ فرآیندِ ساختِ آن شکل بگیرد.",
+          "بستر گسترده‌تری که پروژه به آن واکنش نشان می‌دهد، فقدان فضاهای عمومی در دسترس برای بیان آزادانه، گفت‌وگو و شنیده شدن است. در سال‌های اخیر، شرایط اجتماعی و سیاسی باعث شده تا فضای بستهٔ استودیو یا گالری، به‌عنوان مکانی برای کار هنری ناکافی به نظر برسد و هنرمندان را به‌سوی کنش‌هایی سوق دهد که در دل گفت‌وگوی مستقیم با مخاطبان شکل می‌گیرند. «سایه‌ات را نارنجی کن» درست در همین کانون قرار می‌گیرد: اثری که گفت‌وگوی روادارانه — رها از پیش‌داوری، قضاوت و خشونت — را هم به‌مثابه روش خود و هم به‌مثابه هدف خود مطرح می‌کند."
+        ],
+        "quotes": [
+          {
+            "text": "بُعد زیبایی‌شناسانهٔ این پروژه‌ها اغلب چیزی نیست که برای من اهمیت دارد. آنچه مهم است، فرآیند و گفت‌وگوهای روادارانه‌ای است که در دل آن شکل می‌گیرند؛ گفت‌وگوهایی که فراتر از مفاهیم محوری داستان، از درون زندگی مردم می‌جوشند.",
+            "attribution": "شیما رعیت‌پرور"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "title": "شرایط و مذاکره‌ها",
+        "paragraphs": [
+          "از آنجا که محوریت موضوع آزادی در پروژه، محدودیت‌هایی برای اجرای عمومی‌تر آن به همراه داشته، هیچ‌گونه حمایت نهادی نیز صورت نگرفته است. در پاسخ به این شرایط، پروژه معمولاً در ابتدا در درون یک حلقهٔ امن‌تر — شامل دایرهٔ نزدیک هنرمند و جامعهٔ پیرامون گالری آبی بلند — آغاز می‌شود و به‌تدریج گسترش می‌یابد. همچنین حضور کودکان و نوجوانان در پروژه، که در کنار بزرگسالان مشارکت می‌کنند، خود همواره به شکل‌گیری راهبردهای خلاقانه در پیشبرد آن کمک کرده است."
+        ]
+      },
+      {
+        "id": "8",
+        "title": "همکاران و پشتیبانی",
+        "paragraphs": [
+          "«سایه‌ات را نارنجی کن» با ایده‌پردازی و تسهیل‌گری شیما رعیت‌پرور از طریق گالری آبی بلند و با همکاری سپیده پورّرضا، سولماز اسماعیلی و افسانه صادقی انجام شده است. مشارکت‌کنندگان در اجراهای مختلف پروژه شامل حلقهٔ خانوادگی هنرمند، زنان و کودکان روستای طالقانی‌محله، و شرکت‌کنندگان کارگاه‌ها در تهران، رشت و قائم‌شهر بوده‌اند.",
+          "این پروژه در سال نخستِ خود توسط شخص هنرمند تأمین مالی شد. در تازه‌ترین اجرای آن در قائم‌شهر، مجموعهٔ موسیقی اردیبهشت میزبان کارگاه بود و به‌عنوان حامی مالی مشارکت کرد."
+        ]
+      },
+      {
+        "id": "10",
+        "title": "منابع بیشتر",
+        "paragraphs": [
+          "ناصر یوسفی، نارنجی، گربه آزاد (کتاب کودک؛ نقطهٔ آغاز پروژه).",
+          "مؤسسهٔ پژوهشی و آموزشی نگره، [ویدئویی دربارهٔ سایه‌ات را نارنجی کن](https://www.instagram.com/p/DCKAUAttZ1z/)."
+        ]
+      },
+      {
+        "id": "11",
+        "title": "درباره‌ی هنرمند",
+        "paragraphs": [
+          "شیما رعیت‌پرور در راستای کار مستمر خود با کودکان، نوجوانان و جوامع محلی در شمال ایران، ایده‌پردازی پروژهٔ «سایه‌ات را نارنجی کن» را بر عهده داشته و همچنان تسهیل‌گر آن است. او متولد ۱۳۶۶ در ساری، فارغ‌التحصیل معماری، پژوهشگر و مربی هنر کودک و نوجوان است. وی به‌عنوان نقاش و طراح، سال‌ها در حوزهٔ هنرهای تجسمی فعالیت داشته و در نمایشگاه‌های گروهی متعددی شرکت کرده است. او پس از تأسیس آموزشگاه هنر و گالری «آبی بلند» در روستای دوران کودکی‌اش (طالقانی‌محله)، با تمرکز بر کودکان، نوجوانان و جامعهٔ محلی، پروژه‌های متعددی را در این بستر طراحی و اجرا کرده است.",
+          "اینستاگرام: shima.raeeatparvar@ / abie_boland_artacademy@"
+        ]
+      }
+    ],
+    "Participation & Process": {
+      "subsections": [
+        {
+          "title": "",
+          "paragraphs": [
+            "مشارکت در «سایه‌ات را نارنجی کن» از طریق چیدمان تعاملی، پرفورمنس و گفت‌وگو شکل می‌گیرد. داستان «نارنجی، گربه آزاد» به‌عنوان نقطهٔ شروع ارائه می‌شود، اما تفسیر آن باز گذاشته می‌شود تا مشارکت‌کنندگان خوانش‌های خود را با محوریت مفهوم آزادی بسازند. افراد از هر نقطه‌ای که برایشان مناسب باشد وارد پروژه می‌شوند. برخی به گفت‌وگو می‌پیوندند، برخی می‌نویسند، برخی تصویرسازی می‌کنند و برخی دیگر سوزن و نخ به دست می‌گیرند و مستقیماً روی پارچه کار می‌کنند. انتخاب کار با پارچه به‌عنوان مادهٔ اصلی، آگاهانه و به زمینهٔ فرهنگی و جغرافیایی شمال ایران گره‌خورده است: دوخت و تکه‌دوزی پیوندی نزدیک با زندگی روزمرهٔ زنان و خانواده‌های مشارکت‌کننده دارد و همین قرابت، موانع مشارکت را از میان برمی‌دارد و آسان‌تر می‌کند. با پیوند خوردن تدریجی این قطعات، یک بومِ پارچه‌ای مشترک شکل می‌گیرد؛ فرمی که خودِ ایدهٔ این اثر است: یک سطحِ جمعی که از دست‌های بسیار برآمده است.",
+            "شیما رعیت‌پرور جایگاه خود را نه به‌عنوان مؤلف، بلکه به‌عنوان یک تسهیل‌گر توصیف می‌کند. او از تلاش برای ایجاد شرایطی می‌گوید که در آن مشارکت‌کننده بتواند آزادانه در آن مشارکت کند و خود را گره‌ای در درون شبکه می‌بیند، نه آفرینندهٔ تنهای آن. حضور کودکان و نوجوانان یکی از ویژگی‌های ثابت این پروژه در تمام اجراهای آن بوده و اغلب جهت‌گیری مسیر و راهبردهای آن را شکل داده است."
+          ]
+        }
+      ]
+    },
+    "Editorial Notes": [
+      "این مدخل بر اساس روایت هنرمند و مطالب همراه پروژه تهیه شده است."
+    ]
+  },
   "1. Basic Information": {
     "Project Title": "Paint Your Shadow Orange",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
       "Shima Raeeatparvar"
     ],
     "Location": {
-      "text": "Multi-location - Sari (Taleghani Mahalleh village), Tehran, Rasht, and Qaem Shahr",
+      "text": "Abie Boland Gallery, Taleghani Mahalleh village, Sari; later in Tehran, Rasht, and Qaem Shahr",
       "city": "",
       "country": "",
       "venue": ""
     },
     "Year / Time Period": {
-      "text": "2023-ongoing"
+      "text": "2023—ongoing"
     },
+    "Thematic Tags": [
+      "dialogical",
+      "collective making",
+      "process-based",
+      "durational",
+      "workshop",
+      "youth",
+      "pedagogy"
+    ],
     "Featured Project Image": {
       "url": "/images/paint-shadow/thumb.webp",
-      "alt": "Paint your shadow Orange"
+      "alt": "Paint Your Shadow Orange"
     }
   },
   "sections": [
     {
       "id": "2",
-      "title": "Introduction",
+      "title": "Project Overview",
       "paragraphs": [
-        "Paint Your Shadow Orange is a participatory project shaped by participants ranging from age 4 to 70, documented across video, image, and audio. Centered around the concept of freedom, this project creates a space where each participant can present their own interpretation of the narrative. This process leads to the formation of a collection of pluralistic actions and narratives that, alongside one another, form a narrative network. Subsequently, these narratives are gathered in the form of a fabric canvas through needlework and patchwork. This result is formed collectively and does not have a single creator; all participants, including the artist, are considered part of this network."
+        "*Paint Your Shadow Orange* is an ongoing participatory project that began in a rural setting in Mazandaran and has since travelled through workshops and installations in three other cities. The work was prompted by the publication of the children's book *Narenji, the Free Cat* (نارنجی، گربه‌ی آزاد) by Nasser Yousefi, and proceeds from the question of freedom that the book opens. Each participant is invited to enter the story on their own terms, through speaking, writing, illustration, or sewing, and the resulting fragments are gathered onto a fabric canvas using needlework and patchwork, forming a network of narratives that has no single author.",
+        "It takes the form of an interactive installation and a workshop that adapts to each setting it enters, with participants ranging in age from four to seventy. Across its iterations the project has been documented through video, image, and audio."
       ]
     },
     {
       "id": "3",
       "title": "Context & Site",
       "paragraphs": [
-        "The project has been executed in diverse settings; From the space of the local and rural communities to an exhibition space at the Abie Boland Gallery in the city of Sari (Mazandaran Province), as well as in the format of exhibitions and workshops in other cities. This project has also taken shape in domestic, public, and informal spaces and has been tried in any location where collective presence was possible."
+        "The project began at Abie Boland Gallery, an art academy and gallery Shima Raeeatparvar founded in her childhood village of Taleghani Mahalleh, on the outskirts of Sari. The gallery's location in a rural setting, embedded in a local community rather than a metropolitan art scene, shapes the kind of participation the project invites. The first gatherings took place inside a family circle and then expanded to women and children of the village, where sewing and fabric work belong to everyday domestic practice rather than to a specialist artistic vocabulary.",
+        "As the project travelled, it carried this relationship to each context. In Tehran and Rasht it continued in workshop and exhibition formats; in Qaem Shahr its most recent iteration was hosted at the Ordibehesht Music Complex. The settings have shifted between domestic, public, and informal spaces. The artist has spoken of running the project wherever a collective presence was possible, rather than restricting it to a single kind of venue."
       ]
     },
     {
       "id": "5",
       "title": "Motivations & Questions",
       "paragraphs": [
-        "This project was formed simultaneously with the publication of a story book and in relation to the social situation in Iran. It was initiated from the urge to create a safe space for dialogue and hearing different narratives.",
-        "The project focuses on the process and the formation of peaceful dialogues within it, not on the final result or aesthetic concerns. Among the main goals of the project, one was to create a connection with the audience and hearing the life narratives of individuals, especially in connection with the general public.",
-        "The project took shape in response to conditions in which crises such as Covid-19 and social and political turmoil had increased the need for reconnection and communal space. Furthermore, the limitations of meeting in closed and formal spaces have driven artists towards creating other forms of interaction.",
-        "The lack of public spaces for free expression and dialogue was also among the influential factors in the formation of this project."
+        "The project was initiated in response to two coinciding conditions: the publication of Naser Yousefi's *Narenji, the Free Cat*, and the social situation in Iran at the time, in which the need for safe spaces for dialogue and for hearing one another's life narratives felt urgent. From the beginning, the work was concerned less with producing an aesthetic object than with the kinds of exchange that could happen around its making.",
+        "The broader context the project responds to is the absence of accessible public spaces for free expression, dialogue, and being heard. In recent years, social and political conditions have made the closed studio or gallery feel insufficient as a place for artistic work, and have pushed artists toward forms of practice that take shape in direct conversation with audiences. *Paint Your Shadow Orange* sits within that shift: a work that proposes peaceful dialogue — free of judgement, prejudgement, and violence, as both its method and its goal."
+      ],
+      "quotes": [
+        {
+          "text": "The aesthetic dimension of these projects is often not what matters to me. What matters is the process, and the peaceful dialogues that form within it. Dialogues that, beyond the central concepts of the story, come from inside people's lives.",
+          "attribution": "Shima Raeeatparvar"
+        }
       ]
     },
     {
       "id": "6",
-      "title": "Constraints & Strategies",
+      "title": "Conditions & Negotiations",
       "paragraphs": [
-        "Considering the subject of freedom as a central pillar to the project, there have been limitations in more public settings, and therefore no institutional support was possible. In response to these conditions, the project initially began in a safer circle - including closed circles and the community around the Abie Boland Gallery - and later on has gradually expanded toward a wider public. Moreover, the presence of children and adolescents in the project has significantly helped in shaping creative strategies along the way."
+        "Because the central thread of the project is freedom, it has encountered limits on where it can be staged publicly, and no institutional support has been available. In response, the project usually begins inside a safer circle, the artist's close circle and the community around Abie Boland Gallery, and only gradually expands outward as the group grows. The presence of children and adolescents, who participate alongside adults, has consistently introduced creative strategies of its own and shaped how the project moves into new settings."
       ]
     },
     {
-      "id": "8",
-      "title": "Fundings & Partners",
-      "paragraphs": [
-        "In collaboration with Abie Boland Gallery, Sepideh Pourreza, Solmaz Esmaeili, Afsaneh Sadeghi.",
-        "The project was initially funded and sponsored by the artist herself. In later stages, during the final workshop in Qaem Shahr, the Ordibehesht Music Complex collaborated as a financial sponsor."
-      ]
-    },
-    {
-      "id": "9",
-      "title": "Re-readings",
+      "id": "7",
+      "title": "Documentation",
       "paragraphs": []
     },
     {
-      "id": "10",
-      "title": "Other references & Resources",
+      "id": "8",
+      "title": "Collaborators & Support",
       "paragraphs": [
-        "Negareh Research and Educational Institute Instagram page: @negareinstitute https://www.instagram.com/p/DCKAUAttZ1z/"
+        "*Paint Your Shadow Orange* was conceived and is facilitated by Shima Raeeatparvar through Abie Boland Gallery, in collaboration with Sepideh Pourreza, Solmaz Esmaeili, and Afsaneh Sadeghi. Participants across the project's iterations have included the artist's family circle, women and children of Taleghani Mahalleh village, and workshop participants in Tehran, Rasht, and Qaem Shahr.",
+        "For its first year the project was funded by Raeeatparvar herself. In its most recent iteration in Qaem Shahr, the Ordibehesht Music Complex hosted the workshop and acted as financial sponsor."
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Further Resources",
+      "paragraphs": [
+        "Naser Yousefi, *Narenji, the Free Cat* (children's book; the project's starting point) (in Persian).",
+        "Negareh Research and Education Institute, [a post on *Make Your Shadow Orange*](https://www.instagram.com/p/DCKAUAttZ1z/) (in Persian)."
       ]
     },
     {
       "id": "11",
       "title": "About the Artist",
       "paragraphs": [
-        "Bio: Shima Raeeatparvar (born 1366, Sari) is an architecture graduate, researcher, and art instructor for children and adolescents based in Sari. She is also a painter and a designer, Shima has been active in the field of visual arts for many years, and has participated in numerous group exhibitions.After establishing the Abie Boland Art Academy and Gallery, she has been working in her hometown with a focus on children and adolescents, designing and executing numerous projects in this context.",
-        "Website/Telegram:",
-        "Instagram: shima.raeeatparvar / abie_boland_artacademy"
+        "**Shima Raeeatparvar** conceived and continues to facilitate *Paint Your Shadow Orange* as part of her ongoing work with children, adolescents, and local communities in northern Iran. Born in Sari in 1366 (1987), she is an architecture graduate, researcher, and art instructor for children and adolescents. A painter and designer, she has been active in the visual arts for many years and has taken part in numerous group exhibitions. Since founding Abie Boland (آبی بلند) Art Academy and Gallery in her childhood village of Taleghani Mahalleh, she has focused on children, adolescents, and the local community, designing and carrying out numerous projects in this context.",
+        "Instagram: @shima.raeeatparvar / @abie_boland_artacademy"
       ]
     }
   ],
@@ -86,63 +189,16 @@
       {
         "title": "",
         "paragraphs": [
-          "Participation in this project has taken shape interactively and in the form of performance and installation. Audiences could participate in the process according to their interest and inclination, from engaging in conversation and the process of writing & illustrating to participating in the sewing process and working directly with fabric. The choice of the medium (sewing and working with fabric) was made in connection with the cultural and local context of the project. Because of the proximity of these practices to the daily lives of the participants, it enhanced the chance of involving more active players. The audience had a determining role in shaping the course of the project, and the artist acts more as a facilitator, working to provide conditions where participation can take place freely and without limitations."
+          "Participation in *Paint Your Shadow Orange* takes shape through interactive installation, performance, and conversation. The story of *Narenji, the Free Cat* is offered as a starting point, but the interpretation is left open, so that participants build their own readings around the central theme of freedom. People enter the project at whichever point suits them. Some join the conversation, some write, some illustrate, and some take up needle and thread and work directly on the fabric. The choice of textile work as the primary material is deliberate, and tied to the cultural and geographical context of northern Iran: sewing and patchwork sit close to the daily lives of the women and families the project has gathered, and that proximity lowers the threshold for active involvement. Over time, the individual pieces are stitched together into a shared fabric canvas, so that the form of the work mirrors its proposition — a collective surface assembled from many hands.",
+          "Shima Raeeatparvar describes her own position as a facilitator rather than an author. She has spoken of trying to create conditions where the participant can engage freely, and of seeing herself as one node within the network rather than as its single creator. The presence of children and adolescents has been a consistent feature across iterations and has often shaped the directions the project takes."
         ]
       }
     ]
   },
   "Visual Documentation": {
-    "items": [
-      {
-        "type": "photo",
-        "src": "",
-        "description": "The beginning of the project from a family gathering"
-      },
-      {
-        "type": "video",
-        "src": "InShot_20241004_161523721",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Local community and village women"
-      },
-      {
-        "type": "video",
-        "src": "IMG_9518 (2)",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Participation of village women in sewing patchwork"
-      },
-      {
-        "type": "video",
-        "src": "InShot_20241004_162746276",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Performance at Ordibehesht Music Academy - Qaem Shahr"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Performance at Ordibehesht Music Academy - Qaem Shahr"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Performance at Ordibehesht Music Academy - Qaem Shahr"
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": "Performance at Ordibehesht Music Academy - Qaem Shahr"
-      }
-    ]
-  }
+    "items": []
+  },
+  "Editorial Notes": [
+    "This entry was prepared based on materials and texts shared by the artist, and edited in collaboration with the artist."
+  ]
 }

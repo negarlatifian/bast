@@ -1,12 +1,149 @@
 {
   "slug": "tehran-monoxide",
+  "fa": {
+    "1. Basic Information": {
+      "Project Title": "تهران مونوکسید",
+      "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+        "نگار فرجیانی"
+      ],
+      "Location": { "text": "تهران؛ فاز پنجم در بم و درزی‌کلا" },
+      "Year / Time Period": { "text": "۱۳۸۹ تا ۱۳۹۹" },
+      "Featured Project Image": { "alt": "تهران مونوکسید" }
+    },
+    "sections": [
+      {
+        "id": "2",
+        "title": "مروری بر پروژه",
+        "paragraphs": [
+          "«مونوکسید تهران» یک پروژهٔ مشارکتی بلندمدت است که در سال ۱۳۸۹ توسط نگار فرجیانی پیرامون بحران آلودگی هوای تهران آغاز شد. این پروژه طی پنج فاز، از میان مدارس، داروخانه‌ها، فضاهای شهری و سبز، گالری‌ها و کارگاه‌های روستایی عبور کرد و هنرمندان، کودکان، دانش‌آموزان و شهروندان را در یک پرسشگری مستمر دربارهٔ رابطهٔ میان مردم، شهر و محیط‌زیست گرد هم آورد. ابزارهای فرهنگی، هنری، علمی و آموزشی برای ایجاد حساسیت و آگاهی نسبت به این بحران به کار گرفته شدند، اما دغدغهٔ اصلی، تولید یک اثر هنری تمام‌شده نبود؛ بلکه شکل‌گیری گفت‌وگو، یادگیری میان‌نسلی و مراقبت مشترک در گسترهٔ فضاهای روزمرهٔ شهر در مرکز توجه قرار داشت."
+        ]
+      },
+      {
+        "id": "3",
+        "title": "بستر و مکان",
+        "paragraphs": [
+          "پروژه در بسترهای متنوعی اجرا شد: مدارس، داروخانه‌ها، خیابان‌ها، باغ‌ها، گالری‌ها، پلتفرم‌های آموزشی و فضاهای سبز. انتخاب این فضاها به‌جای گالری‌های رسمی آگاهانه بود — راهی برای ایجاد ارتباط مستقیم با زندگی روزمرهٔ شهروندان و فراهم کردن امکان گفت‌وگو و مشارکت واقعی. هر مرحله از پروژه توسط یک فضای اجتماعی خاص و ریتم‌های آن تعریف می‌شد. در مدرسه، پروژه شکلی آموزشی و گفت‌وگومحور به خود گرفت. در داروخانه، به نقطهٔ تلاقی گفت‌وگو میان مردم و هنرمندان حول محور آلودگی هوا بدل شد. در فضاهای شهری، به‌سوی مراقبت از گیاهان و تعاملات روزمره‌ای که پیرامون آنها رشد می‌کرد، بسط یافت. فضا نه‌تنها محل اجرا، بلکه بخشی از فرایند معناسازی و ارتباط بود.",
+          "مکان‌های نمایشگاهی شامل باغ نگارستان، گالری راه ابریشم، مجتمع آموزشی منظومه خرد، باغ‌موزه قصر، خیابان انقلاب، مرکز هنرهای معاصر ورشو (CCA Warsaw)، داروخانه زهره‌نو، مرکز هنر و شهرسازی برلین (ZK/U)، دپو استانبول، و یک سمینار در سازمان حفاظت محیط‌زیست بود. کارگاه‌ها نیز در مدرسه آیین‌مهر ۲، مجتمع منظومه خرد، گلخانه بیلوبا، کافه باغ کتاب، روستای درزی‌کلا، مرکز نگهداری از کودکان بی‌سرپرست بم و یک کاروانسرای در بم برگزار شدند."
+        ]
+      },
+      {
+        "id": "5",
+        "title": "انگیزه‌ها و پرسش‌ها",
+        "paragraphs": [
+          "این پروژه از یک دغدغهٔ شخصی فرجیانی نسبت به آلودگی هوای تهران و تأثیر آن بر سلامت پسرش سرچشمه گرفت. پرسشی که او آن را به‌عنوان محور اصلی پروژه — و به‌طور گسترده‌تر محور پرکتیس هنری خودش در این سال‌ها — نام برده، این است:",
+          "از این نقطهٔ شروع، پروژه به‌دنبال طرح پرسش‌هایی دربارهٔ رابطهٔ میان شهروندان، شهر و محیط‌زیست بود و از طریق مشارکت، گفت‌وگو و مراقبت جمعی، در پی بازاندیشی در «رابطهٔ میان هنر، شهر و زندگی روزمره» برآمد:",
+          "فرجیانی در طول فازهای مختلف پروژه، درک گسترده‌تری از نقش هنرمند را بیان کرده است که نحوهٔ شکل‌گیری آن را نشان می‌دهد:",
+          "این پروژه همچنین در واکنش به عدم توجه نهادهای رسمی به بحران زیست‌محیطی و نبود فرصت برای بحث دربارهٔ آن شکل گرفت. فرجیانی آگاهانه از فضاهای رسمی و گالری‌ها فاصله گرفت تا بستری بسازد که در آن گفت‌وگو با دانش‌آموزان و شهروندان — و نه نمایش برای یک مخاطب نخبه — در مرکز قرار گیرد. این انتخاب همچنین پاسخی بود به سرکوب و کنترل شدید فعالیت‌های اجتماعی و زیست‌محیطی از سوی دولت در آن دوران، که هرگونه گردهمایی یا کنش جمعی را پرخطر می‌ساخت."
+        ],
+        "quotes": [
+          {
+            "text": "به‌عنوان یک هنرمند، مادر و شهروند، عاملیت من تا کجا می‌تواند پیش برود؟",
+            "attribution": "نگار فرجیانی"
+          },
+          {
+            "text": "عاملیت یک هنرمند، مادر و شهروند در مواجهه با یک بحران زیست‌محیطی تا چه اندازه می‌تواند امتداد یابد؟ چگونه می‌توان از طریق مشارکت، رابطهٔ میان شهروندان، شهر و محیط‌زیست را بازاندیشی کرد؟ چگونه می‌توان رابطهٔ میان هنر، شهر و زندگی روزمره را خارج از فضای گالری بازآفرینی کرد؟"
+          },
+          {
+            "text": "نقش هنرمندان در چنین پروژه‌هایی صرفاً ساخت آثار هنری برای تزئین شهر نیست، بلکه ایجاد زمینه‌ها، امکانات و موقعیت‌های جدید برای بازاندیشی در خود مسئله است، و اینکه در نظر بگیریم پروژه‌ها چگونه می‌توانند به گفت‌وگوی عمیق‌تر میان اعضای جامعه از هر گروه سنی و هر پیشینهٔ اجتماعی کمک کنند.",
+            "attribution": "نگار فرجیانی"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "title": "شرایط و مذاکره‌ها",
+        "paragraphs": [
+          "پروژه با موانع متعددی مواجه شد: فقدان حمایت نهادی، نظارت اجباری از سوی وزارت آموزش و پرورش، حساسیت‌های سیاسی نسبت به فعالیت‌های زیست‌محیطی، و بدبینی اجتماعی گسترده‌تر نسبت به کار هنری. برخی از والدین حضور هنرمند در مدرسه را نقد کردند — «ما بچه‌ها را می‌فرستیم ریاضی یاد بگیرند» — و برخی گالری‌ها کار او را «غیراستاندارد» می‌دانستند زیرا در مدارس و سایر فضاهای غیرگالری اجرا می‌شد.",
+          "برای ادامهٔ کار در درون این شرایط، هنرمند آگاهانه از کنش سیاسی آشکار پرهیز کرد و روشی را بیان نمود که آن را «احتیاط به‌مثابهٔ نوعی مراقبت» توصیف کرده است. او با انتخاب فضاهای روزمره و غیرسیاسی، تمرکز بر گفت‌وگو و آموزش، و محافظت از اعتماد شرکت‌کنندگان — به‌ویژه کودکان و دانش‌آموزان — توانست پروژه را برای بیش از یک دهه در حرکت نگه دارد. عدم اتکا به نهادهای رسمی، و در عوض بنا کردن کار بر روابط شخصی و شبکه‌های غیررسمی، استراتژی دیگری برای تداوم پروژه بود."
+        ]
+      },
+      {
+        "id": "8",
+        "title": "همکاران و پشتیبانی",
+        "paragraphs": [
+          "این پروژه با همکاری شبکهٔ گسترده‌ای از نهادها، فضاها و افراد، در طول فازهای مختلف آن محقق شد: مجتمع آموزشی منظومه خرد، خانه هنر خرد، شرکت دوربین، قاب‌سازی درنگ بهار، انجمن طبیعت‌دوستان برنا، خانه مهر کودکان، کار دروازه غار، قاب‌سازی پرهون، داروخانه زهره‌نو، شرکت تبلیغاتی زیبالون، بنیاد کاف، کافه کودک باغ کتاب، مدرسه آیین‌مهر ۲، استودیو را، کارگاه سرامیک ماه‌فروز، گلخانه بیلوبا، مزرعه طلایی، پلتفرم آموزش آرکی‌کید، پرسبوک، انجمن هنرهای تجسمی یزد، بوم‌گردی مرسی‌سی، مدرسه اینورس (فاز ۲: چاپ عکس)، بانک تات/گالری محسن (فاز ۱: چاپ دفترچه).",
+          "شرکت‌کنندگان فاز اول: یاسمین سینایی، نرگس حریریان، ماندانا کریمی، فرشید شفیعی، عطیه بزرگ‌سهرابی، علی صمدپور، شادی قدیریان، ژینوس تقی‌زاده، رزیتا شرف‌جهان، ندا رضوی‌پور، معصومه بختیاری، محمدمهدی طباطبایی، مریم فریدونی، بهنام کامرانی، علی‌اصغر سیدآبادی، نیلوفر رهنما، مجتبی تاجیک، مسعود کلانتری خلیل‌آباد، رعنا شجاع‌پور، هوتن کروبه، شهریار توکلی، کریستف رضایی، شیرین حاجی‌کرملو، سروش صحت، سارا سالار، محمدحسن شهسواری، مهناز پسیخانی، جمشید حقیقت‌شناس، شادی پرند، کیاوش صاحب‌نسق، علی قائمی، شیرین قندچی، وحید نصیریان، سیمین کرامتی، کیانوش تنها، ابوالفضل شاهی و مرجان کوچکی شلمانی.",
+          "فاز دوم: مشارکت بیش از ۴۵۰ دانش‌آموز از چندین مدرسهٔ تهران، پس از فراخوانی که با همکاری خانه هنر خرد ارسال شد. انتخابی از عکس‌ها با همکاری مرسده صادقی، شادی قدیریان و محبوبه کرملی انجام شد. نمایشگاهی در مؤسسه منظومه خرد با حمایت میثم محفوظ (پرهون) و همراهی محمدرضا سلطانی، نازنین شیوایی و آذرخش عسگری برگزار شد. منتخبی از این عکس‌ها بعدتر در سال ۱۳۹۴ در مرکز هنرهای معاصر ورشو به نمایش درآمد.",
+          "فاز سوم: مشارکت مستقیم دکتر ترابی، با نمایش عکس‌های محبوبه کرملی، هوفر حقیقی، آبنوس البرزی، افشین چیذری، بهشاد محتشمی، محسن یزدی‌پور، فرزانه قدیان‌پور، احسان براتی، مسیح مستاجران، سونیتا علیزاده و روژینا رضایی راد.",
+          "فاز چهارم: با همکاری نازنین شیوایی.",
+          "فاز پنجم: با مشارکت دانش‌آموزان مدرسه آیین‌مهر ۲، مرکز نگهداری از کودکان بی‌سرپرست بم، شرکت‌کنندگان کارگاه در کاروانسرای بم، و روستای درزی‌کلا، با همکاری گلخانه بیلوبا، شهروز حکیمی، پرنیان فردوس و نسرین درزی‌کلا.",
+          "«مونوکسید تهران» با هزینهٔ شخصی هنرمند، در کنار حمایت‌های غیرمالی نهادها و مشارکت‌کنندگان نام‌برده در بالا، انجام شده است. هیچ بودجهٔ متمرکزی برای تولید جمع‌آوری نشد؛ هر مرحله از کار، با اتکا به شبکه‌های ارتباطی و منابع خاص همکاران همان بخش پیش رفت."
+        ]
+      },
+      {
+        "id": "10",
+        "title": "منابع بیشتر",
+        "paragraphs": [
+          "مصاحبهٔ مهرداد میرزایی با نگار فرجیانی.",
+          "«مونوکسید تهران در داروخانه زهره‌نو»، مجلهٔ سرخوشی.",
+          "سری نشست‌های «هنرمند/کیوریتورها» با حضور نگار فرجیانی، پروژه‌های نیومدیا (یوتیوب).",
+          "پادکست آرتروز، مصاحبه با نگار فرجیانی.",
+          "مجلهٔ مدیریت مدرسه رشد، شماره ۱۲۱."
+        ]
+      },
+      {
+        "id": "11",
+        "title": "درباره‌ی هنرمند",
+        "paragraphs": [
+          "نگار فرجیانی (متولد ۱۳۵۶، یزد) هنرمند چندرشته‌ای و کیوریتور مستقلی است که آثارش بر پیوند میان انسان و فضا، بدن، حافظه و محیط، و همچنین افراد و جامعه تمرکز دارد. بزرگ شدن در شهر کویری یزد، حساسیت او را نسبت به پایداری، هم‌وابستگی و رابطهٔ میان انسان و مکان شکل داده است. او با استفاده از پارچه، ویدئو، مجسمه و پروژه‌های مشارکتی، فضاهایی می‌آفریند که در آنها بینندگان به مشارکت‌کنندگانی فعال در یک شبکهٔ زندهٔ روابط انسانی بدل می‌شوند. او کار خودش را با نقاشی و طراحی گرافیک آغاز کرد و سپس آن را به سمت پرکتیس‌های مشارکتی و اجتماعی گسترش داد که روایت‌های غالب را به چالش می‌کشند و جوامعی را برجسته می‌کنند که غالباً نادیده گرفته شده‌اند. فرجیانی از طریق نمایشگاه‌ها، آثار هنری عمومی، کارگاه‌ها و سخنرانی‌ها در ایران و خارج از کشور، همچنان به ساختن مسیرهایی برای گفت‌وگو و حضور جمعی ادامه می‌دهد و تاریخ‌های محلی را با گفت‌وگوهای جهانی پیوند می‌زند.",
+          "اینستاگرام: negar.farajiani@ وب‌سایت: www.negarfarajiani.com"
+        ]
+      }
+    ],
+    "Participation & Process": {
+      "subsections": [
+        {
+          "title": "",
+          "paragraphs": [
+            "مشارکت در «مونوکسید تهران» به‌صورت یک فرایند باز و چندمرحله‌ای طراحی شد که بر پایهٔ ارتباط افقی، گفت‌وگوی میان‌نسلی و تمرکز بر مراقبت و مسئولیت مشترک بنا شده بود. به‌جای تأکید بر نتیجه یا محصول، فرایند تعامل و یادگیری جمعی محور اصلی بود. این پروژه در قالب یک «هنر به‌مثابه کنش اجتماعی» عمل کرد و مدام رابطهٔ میان آموزش، محیط‌زیست و شهر را بازتعریف می‌نمود."
+          ]
+        },
+        {
+          "title": "فاز اول",
+          "paragraphs": [
+            "این فاز با تماس هنرمند با دوستانش آغاز شد: دیگر هنرمندان، افرادی که فرزند داشتند و کسانی که دغدغهٔ آلودگی هوای تهران پیش از این برایشان آشنا بود. حدود چهل هنرمند به‌تدریج گرد هم آمدند و گفت‌وگوهایی که میانشان شکل گرفت، پایه و اساس یک نمایشگاه آموزشی در مجتمع آموزشی منظومه خرد تهران شد. این نمایشگاه دو هفته به طول انجامید و حدود ۱۵۰۰ نفر، که بیشتر آنها دانش‌آموزان خرد، خانواده‌ها و معلمانشان بودند، از آن بازدید کردند."
+          ]
+        },
+        {
+          "title": "فاز دوم",
+          "paragraphs": [
+            "استقبال در فاز اول نتیجه‌ای همراه داشت که فرجیانی آن را پیش‌بینی نکرده بود: کودکان عمیقاً با آثار درگیر شدند. این موضوع باعث تغییر رویکرد شد. او به‌جای آنکه نمایش آثار هنرمندان برای کودکان ادامه دهد، از کودکان دعوت کرد تا خودشان از شهر عکاسی کنند تا بحران آلودگی هوا را از دریچهٔ نگاه خودشان ببینند. یک فراخوان باز به تعدادی از مدارس تهران ارسال شد و به مدت دو سال باز ماند. بیش از ۴۵۰ عکس جمع‌آوری شد که یک آرشیو تصویری دوساله از نگاه فیلترنشدهٔ کودک به شهر را شکل داد. با همکاری خانه هنر خرد، نمایشگاهی از این عکس‌ها برگزار و جوایزی اهدا شد؛ منتخبی از این عکس‌ها بعدتر در سال ۱۳۹۳ در مرکز هنرهای معاصر ورشو به نمایش درآمد."
+          ]
+        },
+        {
+          "title": "فاز سوم",
+          "paragraphs": [
+            "پس از فاز دوم، فرجیانی تعدادی از هنرمندانی که در این مسیر تا آن زمان همراه شده بودند را گرد هم آورد تا مسیر طی‌شده را بازبینی کنند. دو رشتهٔ فکری مدام تکرار می‌شد: درگیری کودکان و رابطهٔ پروژه با فضای شهری. چند هنرمند شروع به عکاسی از حضور کودکان در شهر کردند. هنگام جست‌وجو برای یافتن فضایی جایگزین جهت نمایش این عکس‌ها، فرجیانی و تیمی از عکاسان به‌طور اتفاقی با «داروخانه زهره‌نو» — یک داروخانه هفتادساله در خیابان انقلاب — برخوردند که داروساز آن، دکتر ترابی، از پروژه استقبال کرد. عکس‌ها در میان قفسه‌های داروها و محصولات بهداشتی جای گرفتند.",
+            "آثار یازده عکاس، متمرکز بر شهر و کودکان، برای این فاز انتخاب شد. از هر عکس ۲۵۰ نسخه به‌صورت کارت‌پستال چاپ شد و مشتریان داروخانه آزاد بودند هر تعداد که می‌خواهند بردارند. یکی از واکنش‌های جالب از سوی معلم یک مدرسهٔ ابتدایی بود که تعدادی از کارت‌پستال‌ها را برای دانش‌آموزانش برد؛ دانش‌آموزان در پاسخ به آنها متن نوشتند و کلاژ ساختند که بعداً به هنرمند بازگردانده شد. این فاز با تولید یک فیلم مستند کوتاه، شامل مصاحبه با دکتر ترابی در داخل داروخانه، به پایان رسید. باغچهٔ کوچک دکتر ترابی پشت داروخانه، همراه با باور او به اینکه سبک زندگی و آموزش بیشتر از داروهای شیمیایی برای سلامت شهروندان اهمیت دارد، چرخش به‌سوی گیاهان و مراقبت را که معرف فازهای چهارم و پنجم بود، جهت‌دهی کرد."
+          ]
+        },
+        {
+          "title": "فاز چهارم",
+          "paragraphs": [
+            "فاز چهارم نشان‌دهندهٔ چرخشی از مستندسازی بحران، به‌سوی توجهی مستمر به مراقبت روزمره از محیط‌زیست بود. فرجیانی تحقیق کرد که چه گیاهانی واقعاً هوا را تصفیه می‌کنند و کدام‌یک می‌توانند در آب‌وهوای تهران زنده بمانند. او ۱۸ نوع گیاه آپارتمانی را انتخاب کرد و آنها را در باغ نگارستان با عنوان «زوفا» (نام یک گیاه دارویی) چیدمان کرد. کنار هر گیاه، یک بروشور کوچک شامل نام علمی، تصویرسازی و دستورالعمل مراقبت قرار داد. این چیدمان ۲۰ روز پابرجا بود؛ مردم می‌آمدند، سؤال می‌پرسیدند و برای گفت‌وگو می‌ماندند.",
+            "در همان باغ، با همکاری هما دلورای، لوله‌های اگزوز خودرو سیاه‌شده از دوده را آوردند و نام درختان بومی تهران را — که بسیاری از آنها تقریباً از شهر ناپدید شده‌اند — روی آنها حک کردند. در خیابان انقلاب، او همچنین به‌عنوان یک دست‌فروش، در گوشه‌ای از پیاده‌رو گیاه می‌فروخت؛ هر گلدان کارتی همراه داشت که خاصیت گیاه و نحوهٔ مراقبت از آن را توضیح می‌داد. تا پایان روز، تمامی گیاهان فروخته شده بودند. این فاز او را متقاعد کرد که تأثیر عمیق‌تر پروژه از طریق آموزش حاصل خواهد شد، که در نهایت به شکلی منجر شد که فاز پنجم به خود گرفت."
+          ]
+        },
+        {
+          "title": "فاز پنجم: گوشه‌های سبز",
+          "paragraphs": [
+            "«گوشه‌های سبز» در سال ۱۳۹۶ آغاز شد و اوج جهت‌گیری آموزش‌محور و مراقبت‌محور پروژه را نشان می‌دهد. فرجیانی گیاهان تصفیه‌کنندهٔ هوا را به کلاس‌های درس آورد تا دانش‌آموزان مسئولیت مستقیم مراقبت از یک موجود زنده را بر عهده بگیرند. با همکاری یک گیاه‌شناس، یک سیستم امتیازدهی کیفی طراحی شد: اگر دانش‌آموزان در طول ماه اول به‌خوبی از مجموعهٔ اولیهٔ گیاهان مراقبت می‌کردند، تعداد گیاهان در اتاق به‌تدریج افزایش می‌یافت تا اینکه یک «گوشهٔ سبز» کامل شکل می‌گرفت.",
+            "با گذشت زمان، این پروژه از کلاس درس فراتر رفت و به کارگاه‌های یک‌روزه در نقاط مختلف ایران تبدیل شد. در باغ کتاب تهران در اوایل سال ۱۳۹۸، کارگاهی با همراهی آرکی‌کید (ArchiKid) کودکان را با ابزارهای باغبانی و مراقبت از گیاهان آشنا کرد. در بم، در بهار همان سال، کارگاه‌هایی در بنایی قدیمی به نام «حناساب» و در یک پرورشگاه محلی برگزار شد؛ نامه‌های دانش‌آموزان تهرانی به دست کودکان بم رسید و گیاه آلوئه‌ورا به‌عنوان نماد بقا و مقاومت توسط شرکت‌کنندگان کاشته شد. در روستای درزی‌کلا در جنگل‌های هیرکانی شمال ایران، در پاییز ۱۳۹۸، دانش‌آموزان تهرانی نامه‌هایی برای کودکان روستا نوشتند و آنچه دربارهٔ محیط‌زیست می‌آموختند را با آنها به اشتراک گذاشتند."
+          ]
+        }
+      ]
+    },
+    "Editorial Notes": [
+      "این مدخل بر اساس مصاحبه با هنرمند و مستندات به‌اشتراک‌گذاشته‌شده توسط او تهیه شده است."
+    ]
+  },
   "1. Basic Information": {
     "Project Title": "Tehran Monoxide",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
       "Negar Farajiani"
     ],
     "Location": {
-      "text": "Primarily Tehran, with the fifth stage (Green Corners) extending to Bam and the Hyrcanian Forests.",
+      "text": "Tehran; Phase five in Bam and Darzikola",
       "city": "",
       "country": "",
       "venue": ""
@@ -14,6 +151,12 @@
     "Year / Time Period": {
       "text": "2010-2020"
     },
+    "Thematic Tags": [
+      "environment",
+      "urban intervention",
+      "pedagogy",
+      "process-based"
+    ],
     "Featured Project Image": {
       "url": "/images/tehran-monoxide/thumb.webp",
       "alt": "Tehran Monoxide"
@@ -22,72 +165,91 @@
   "sections": [
     {
       "id": "2",
-      "title": "Introduction",
+      "title": "Project Overview",
       "paragraphs": [
-        "Tehran Monoxide is a project for ideation, consultation, and interaction with the citizens of Tehran using cultural, artistic, scientific, and educational tools to create sensitivity and awareness regarding the air pollution crisis. This project started in 2010 and was formed as a long-term, multi-stage process in collaboration with a large number of artists, children, adolescents, students, and fellow citizens. The project was realized in five phases. In the first phase, an educational exhibition was held at the Manzoumeh Kherad Institute for Girls. In the second phase, citizens, children, and young adults aged 4 to 18, documented their positions in confronting the air pollution crisis by photographing the city of Tehran. In subsequent phases, the project expanded to urban spaces, pharmacies, schools, green spaces, and cultural institutions, and ultimately, the fifth phase, titled \"Green Corners,\" was dedicated to educational workshops and collaboration with a botanist."
+        "*Tehran Monoxide* is a long-term participatory project initiated by Negar Farajiani in 2010 around the air pollution crisis in Tehran. Across five phases, the project moved through schools, pharmacies, urban and green spaces, galleries, and rural workshops, gathering artists, children, students, and citizens into a sustained inquiry about the relationship between people, the city, and the environment. Cultural, artistic, scientific, and educational tools were used to create sensitivity and awareness around the crisis, but the central concern was not the production of a finished work — it was the formation of dialogue, intergenerational learning, and shared care across the city's everyday spaces."
       ]
     },
     {
       "id": "3",
       "title": "Context & Site",
       "paragraphs": [
-        "The project was executed in diverse contexts, including urban spaces, exhibitions, and workshops. These contexts included schools, pharmacies, streets, gardens, galleries, educational platforms, and green spaces. The selection of these spaces instead of official galleries was done with the aim of creating a direct connection with the daily lives of citizens and enabling genuine dialogue and participation. Each stage of the project was defined by a specific social space and context. For example, in the school, it was an educational and conversational project. In the pharmacy, it led to a dialogue between people and artists, and in urban spaces, it expanded to taking care of plants and daily interaction around them. The space was not only the execution site but also part of the process of creating meaning and communication.",
-        "Exhibition locations include: Negarestan Garden, Silk Road Gallery, Manzoumeh Kherad Complex, Qasr Garden Museum, Enghelab Street, CCA Warsaw, Zohreh No Pharmacy, ZK/U (Berlin), Depo (Istanbul), and a Seminar at the Department of Environment.",
-        "Workshops took place in: Aaeen Mehr 2 School, Manzoumeh Kherad Complex, Biloba Greenhouse, Book Garden Children's Cafe, Darzikola Village, Bam Orphanage Center, and a caravanserai in Bam."
+        "The project was executed across diverse contexts: schools, pharmacies, streets, gardens, galleries, educational platforms, and green spaces. The selection of these spaces instead of official galleries was deliberate — a way of creating a direct connection with the daily lives of citizens and enabling genuine dialogue and participation. Each stage of the project was defined by a specific social space and its rhythms. In the school, the project became educational and conversational. In the pharmacy, it became a meeting point for dialogue between people and artists around air pollution. In urban spaces, it expanded toward the care of plants and the daily interactions that grew around them. The space was not only the execution site but part of the process of creating meaning and communication.",
+        "Exhibition locations included Negarestan Garden, Silk Road Gallery, Manzoumeh Kherad Complex, Qasr Garden Museum, Enghelab Street, CCA Warsaw, Zohreh-No Pharmacy, ZK/U (Berlin), Depo (Istanbul), and a seminar at the Department of Environment. Workshops took place at Aaeen Mehr 2 School, Manzoumeh Kherad Complex, Biloba Greenhouse, Book Garden Children's Cafe, Darzikola village, the Bam Orphanage Center, and a caravanserai in Bam."
       ]
     },
     {
       "id": "5",
       "title": "Motivations & Questions",
       "paragraphs": [
-        "The project originated from Farajiani's personal concern regarding Tehran's air pollution and its impact on her son's health. She wanted to see, \"As an artist, mother, and citizen, how far can my agency go?\" Her goal was to create an experimental platform for dialogue, collective reflection, and action around this issue. The project sought to raise questions about the relationship between citizens, the city, and the environment, and through participation, dialogue, and collective care, to rethink the connection between \"art, city, and daily life.\" At the same time, the project was formed in response to official institutions' lack of attention to the environmental crisis and the lack of opportunity to discuss it. Farajiani consciously distanced herself from official spaces and galleries to create a context where dialogue with citizens and students, rather than exhibition for an elite audience, was at the center. This decision was also a response to the state's severe suppression and control of social and environmental activism during that era, which made any gathering or collective action risky."
+        "The project originated from Farajiani's personal concern regarding Tehran's air pollution and its impact on her son's health. The question she has named as central to the project — and to her broader practice during these years — is:",
+        "From that starting point, the project sought to raise questions about the relationship between citizens, the city, and the environment, and through participation, dialogue, and collective care to rethink the connection between *art, city, and daily life*:",
+        "Across the project's phases, Farajiani has articulated a broader understanding of the artist's role that shaped how the work unfolded:",
+        "The project was also formed in response to official institutions' lack of attention to the environmental crisis and the absence of opportunity to discuss it. Farajiani consciously distanced herself from official spaces and galleries to create a context where dialogue with citizens and students, rather than exhibition for an elite audience, was at the center. The choice of everyday and non-political spaces was also a response to the state's severe suppression and control of social and environmental activism during that era, which made any gathering or collective action risky."
+      ],
+      "quotes": [
+        {
+          "text": "As an artist, mother, and citizen, how far can my agency go?",
+          "attribution": "Negar Farajiani"
+        },
+        {
+          "text": "How far can the agency of an artist, mother, and citizen extend in the face of an environmental crisis? How might the relationship between citizens, the city, and the environment be rethought through participation? How might the connection between art, the city, and daily life be reimagined outside the gallery?"
+        },
+        {
+          "text": "The role of artists in such projects is not merely to create artworks to decorate the city, but to create new contexts, possibilities, and situations for rethinking the issue itself, and to consider how projects can contribute to deeper dialogue between members of society from any age and any social background.",
+          "attribution": "Negar Farajiani"
+        }
       ]
     },
     {
       "id": "6",
-      "title": "Constraints & Strategies",
+      "title": "Conditions & Negotiations",
       "paragraphs": [
-        "The project faced numerous obstacles: Lack of institutional support, mandatory supervision from the Ministry of Education, political sensitivities toward environmental activities, and social pessimism regarding artistic work. Even some parents criticized her presence in the school, saying \"We send our kids to learn math\". Additionally, some galleries considered her work \"non-standard\" because it was executed in schools and non-gallery spaces. To continue working within these limitations, the artist consciously avoided overt political action and viewed \"caution as a form of care.\" By choosing everyday and non-political spaces, focusing on dialogue and education, and maintaining participants' trust, she was able to continue the project. Not relying on official institutions and emphasizing personal relationships and informal networks was also a key strategy for the project's continuation."
+        "The project encountered numerous obstacles: lack of institutional support, mandatory supervision from the Ministry of Education, political sensitivities toward environmental activities, and broader social pessimism regarding artistic work. Some parents criticized the artist's presence in the school — \"we send our kids to learn math\" — and some galleries considered the work \"non-standard\" because it was executed in schools and other non-gallery spaces.",
+        "To continue working within these conditions, the artist consciously avoided overt political action and articulated a method that she has described as \"caution as a form of care.\" By choosing everyday and non-political spaces, focusing on dialogue and education, and protecting the trust of participants, especially of children and students, she was able to keep the project moving across more than a decade. Not relying on official institutions, and building instead on personal relationships and informal networks, was a further strategy for the project's continuation."
       ]
     },
     {
-      "id": "8",
-      "title": "Fundings & Partners",
-      "paragraphs": [
-        "In collaboration with Manzoumeh Kherad Complex, Kherad Art House, Doorbin Company, Derang Bahar Framing, Borna Nature Lovers Association, Children's Mehr House, Darvazeh Ghar Work, Parhoon Framing, Zohreh-No Pharmacy, Zibaloon Advertising Company, KAF Foundation, Book Garden Children's Cafe, Aaeen-e Mehr 2 School, Ra Studio, Mahforouz Ceramic Workshop, Biloba Greenhouse, Talaei Farm, Archikid Education Platform, Persbook, Yazd Visual Arts Association, Mersi-Si Eco-tourism, Inverse School (Phase 2: photo printing), Tat Bank / Mohsen Gallery (Phase 1: Booklet printing).",
-        "This project was formed using the artist's personal financial resources, alongside the support of project collaborators.",
-        "Project Participants:",
-        "Phase 1: With the participation of Yasmin Sinai, Narges Haririan, Mandana Karimi, Farshid Shafiey, Atieh Bozorg-Sohrabi, Ali Samadpour, Shadi Ghadirian, Jinoos Taghizadeh, Rozita Sharafjahan, Neda Razavipour, Masoumeh Bakhtiari, Mohammad Mehdi Tabatabaei, Maryam Fereydouni, Behnam Kamrani, Ali Asghar Seyedabadi, Niloufar Rahnama, Mojtaba Tajik, Masoud Kalantari Khalilabad, Rana Shojaepour, Hootan Karoubeh, Shahriar Tavakoli, Christophe Rezai, Shirin Hajikarmlou, Soroush Sehat, Sara Salar, Mohammad Hassan Shahsavari, Mahnaz Pasikhani, Jamshid Haghighatshenas, Shadi Parand, Kiavash Saheb-Nasagh, Ali Ghaemi, Shirin Ghandchi, Vahid Nasiriyan, Simin Keramati, Kianoush Tanha, Abolfazl Shahi, Marjan Kouchaki Shalmani.",
-        "Phase 2: Participation of over 450 students from several Tehran schools - in collaboration with the Kherad Art House, a call was sent to all Tehran schools inviting students to submit photos themed around air pollution to the secretariat. Then, with the collaboration of Mersedeh Sadeghi, Shadi Ghadirian, and Mahboubeh Karamli, a selection was made from the collected photos; an exhibition of these works was held with the support of Meysam Mahfouz (Parhoon) and the accompaniment of Mohammadreza Soltani, Nazanin Shivaei, and Azarakhsh Asgari at the Manzoomeh Kherad Institute, where prizes were awarded to some collaborating students. Additionally, in 2015 (1394 SH), a selection of these photos was exhibited at the Center for Contemporary Art, Warsaw. Phase 3: Direct participation of Dr. Torabi, featuring an exhibition of photos by Mahboubeh Karamli, Hoofer Haghighi, Abnous Alborzi, Afshin Chizari, Behshad Mohtashami, Mohsen Yazdipour, Farzaneh Ghadianpour, Ehsan Barati, Masih Mostajeran, Sonita Alizadeh, and Rojina Rezaei Rad.",
-        "Phase 4: In collaboration with Nazanin Shivaei.",
-        "Phase 5: With the participation of students from Aaeen-e Mehr 2 School, the Bam Orphanage Center, workshop participants at the Bam Caravanserai, and Darzikola village, in collaboration with the Biloba Greenhouse, Shahrouz Hakimi, Parnian Ferdows, and Nasrin Darzikola."
-      ]
-    },
-    {
-      "id": "9",
-      "title": "Re-readings",
+      "id": "7",
+      "title": "Documentation",
       "paragraphs": []
     },
     {
-      "id": "10",
-      "title": "Other references & Resources",
+      "id": "8",
+      "title": "Collaborators & Support",
       "paragraphs": [
-        "\"Tehran Monoxide\", Sarkhoshi.",
-        "Interview by Mehrdad Mirzaei with Negar Farajiani.",
-        "Contemporary Iranian Photography: Five Perspectives.",
-        "Roshd School Management Magazine, Issue 121.",
-        "Three articles are at the end of the book."
+        "The project was realized in collaboration with a wide network of institutions, spaces, and individuals, structured across its phases: Manzoumeh Kherad Complex, Kherad Art House, Doorbin Company, Derang Bahar Framing, Borna Nature Lovers Association, Children's Mehr House, Darvazeh Ghar Work, Parhoon Framing, Zohreh-No Pharmacy, Zibaloon Advertising Company, KAF Foundation, Book Garden Children's Cafe, Aaeen-e Mehr 2 School, Ra Studio, Mahforouz Ceramic Workshop, Biloba Greenhouse, Talaei Farm, Archikid Education Platform, Persbook, Yazd Visual Arts Association, Mersi-Si Eco-tourism, Inverse School (Phase 2: photo printing), Tat Bank / Mohsen Gallery (Phase 1: Booklet printing).",
+        "Phase 1 participants: Yasmin Sinai, Narges Haririan, Mandana Karimi, Farshid Shafiey, Atieh Bozorg-Sohrabi, Ali Samadpour, Shadi Ghadirian, Jinoos Taghizadeh, Rozita Sharafjahan, Neda Razavipour, Masoumeh Bakhtiari, Mohammad Mehdi Tabatabaei, Maryam Fereydouni, Behnam Kamrani, Ali Asghar Seyedabadi, Niloufar Rahnama, Mojtaba Tajik, Masoud Kalantari Khalilabad, Rana Shojaepour, Hootan Karoubeh, Shahriar Tavakoli, Christophe Rezai, Shirin Hajikarmlou, Soroush Sehat, Sara Salar, Mohammad Hassan Shahsavari, Mahnaz Pasikhani, Jamshid Haghighatshenas, Shadi Parand, Kiavash Saheb-Nasagh, Ali Ghaemi, Shirin Ghandchi, Vahid Nasiriyan, Simin Keramati, Kianoush Tanha, Abolfazl Shahi, and Marjan Kouchaki Shalmani.",
+        "Phase 2: Over 450 students from several Tehran schools, following an open call sent in collaboration with the Kherad Art House. A selection was made with Mersedeh Sadeghi, Shadi Ghadirian, and Mahboubeh Karamli. An exhibition was held at the Manzoumeh Kherad Institute with the support of Meysam Mahfouz (Parhoon) and the accompaniment of Mohammadreza Soltani, Nazanin Shivaei, and Azarakhsh Asgari. A selection of the photographs was later exhibited at the Center for Contemporary Art, Warsaw in 2015.",
+        "Phase 3: Direct participation of Dr. Torabi, with an exhibition of photographs by Mahboubeh Karamli, Hoofer Haghighi, Abnous Alborzi, Afshin Chizari, Behshad Mohtashami, Mohsen Yazdipour, Farzaneh Ghadianpour, Ehsan Barati, Masih Mostajeran, Sonita Alizadeh, and Rojina Rezaei Rad.",
+        "Phase 4: In collaboration with Nazanin Shivaei.",
+        "Phase 5: With the participation of students from Aaeen-e Mehr 2 School, the Bam Orphanage Center, workshop participants at the Bam Caravanserai, and Darzikola village, in collaboration with the Biloba Greenhouse, Shahrouz Hakimi, Parnian Ferdows, and Nasrin Darzikola.",
+        "The project was self-funded by the artist, alongside in-kind support from the institutions and partners listed above. No central production budget was raised; each phase drew on the specific networks and resources of its collaborators."
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Further Resources",
+      "paragraphs": [
+        "Mehrdad Mirzaei's interview with Negar Farajiani (in Persian).",
+        "[\"Tehran Monoxide at Zohreh-Nou Pharmacy\"](https://sarkhoshi.com/blog-fa/tehran-monoxide-zohreh-nou/), Sarkhoshi (in Persian).",
+        "\"Artist/Curators\" public talks with Negar Farajiani, New Media Projects, YouTube (in Persian).",
+        "Artroz podcast, interview with Negar Farajiani (in Persian).",
+        "*Roshd School Management* magazine, no. 121 (in Persian).",
+        "*Tehran Monoxide: A Project by Negar Farajiani* (book).",
+        "Sara Mask, \"Planted Responsibility,\" in *Tehran Monoxide*.",
+        "Hoofar Haghighi, \"Tehran Monoxide,\" in *Tehran Monoxide*.",
+        "Behzad Khosravi Noori, \"Tehran, a Phantasm of Modernity,\" in *Tehran Monoxide*.",
+        "*Contemporary Iranian Photography: Five Perspectives*, ed. Abbas Daneshvari.",
+        "Mohit.art, Notes #12 — Tehran Monoxide (2010–), Negar Farajiani, Ashkan Zahraie."
       ]
     },
     {
       "id": "11",
       "title": "About the Artist",
       "paragraphs": [
-        "Email: nfarajiani@gmail.com",
-        "Instagram: @negar.farajiani",
-        "Website: www.negarfarajiani.com",
-        "Artist Biography:",
-        "Negar Farajiani (born 1977, Yazd) is a multidisciplinary artist and independent curator whose work focuses on the connection between humans and space, the body, memory, and the environment, as well as individuals and their society. Growing up in the desert city of Yazd shaped her sensitivity towards sustainability, interdependence, and the relationship between humans and place. Using textiles, video, sculpture, and participatory projects, she creates spaces where viewers transform into active participants within a living network of human relationships. She began her career with painting and graphic design, subsequently expanding into participatory and social practices that challenge dominant narratives and highlight often-overlooked communities. Through exhibitions, public artworks, workshops, and lectures both in Iran and abroad, Farajiani continues to build pathways for dialogue and collective presence, bridging local histories with global conversations."
+        "**Negar Farajiani** (born 1977, Yazd) is a multidisciplinary artist and independent curator whose work focuses on the connection between humans and space, the body, memory, and the environment, as well as individuals and their society. Growing up in the desert city of Yazd shaped her sensitivity towards sustainability, interdependence, and the relationship between humans and place. Using textiles, video, sculpture, and participatory projects, she creates spaces where viewers transform into active participants within a living network of human relationships. She began her career with painting and graphic design, subsequently expanding into participatory and social practices that challenge dominant narratives and highlight often-overlooked communities. Through exhibitions, public artworks, workshops, and lectures both in Iran and abroad, Farajiani continues to build pathways for dialogue and collective presence, bridging local histories with global conversations.",
+        "Instagram: @negar.farajiani Website: www.negarfarajiani.com"
       ]
     }
   ],
@@ -96,14 +258,48 @@
       {
         "title": "",
         "paragraphs": [
-          "Participation in the project was designed as an open and multi-stage process. The project was built on horizontal communication, intergenerational dialogue, and a focus on shared care and responsibility. Instead of emphasizing the result or product, the process of interaction and collective learning was central - an example of \"art as social action\" that redefined the relationship between education, environment, and the city.",
-          "Project audiences & participants can be categorized into the following groups.",
-          "In the first phase, artists helped expand the project's idea by joining it and participating in the dialogues formed around it, whether through presenting artworks or collaborating in the exhibition process. In the second phase, students initially attended the exhibition as visitors, but with the release of a photography open call, they joined the project by submitting their photos of Tehran. This participation resulted in gathering a two-year visual archive of children and Young adults' perspectives on the city. Then, in collaboration with the Kherad Art House, an exhibition of these photos was held, and prizes were awarded to a number of students. A portion of these photos was exhibited at the Center for Contemporary Art, Warsaw in 2015. In the third phase, the project continued with the direct participation of Dr. Torabi, a pharmacist and led to an exhibition of photographs by various artists in a pharmacy in central Tehran, creating a space for encounter and dialogue among citizens regarding the air pollution. In the fourth phase, in collaboration with Nazanin Shivaei, the project expanded to urban and green spaces, including Negarestan Garden, Enghelab Street, and other public spaces; the collaboration emerged with institutions such as the KAF Foundation and the Department of Environment. In the fifth phase, titled \"Green Corners,\" the project focused on holding workshops in schools, the Bam Orphanage Center, a caravanserai in Bam, and Darzikola village. This phase was executed in collaboration with the Biloba Greenhouse, botanists, and student participants. It concluded with an extensive exhibition at the Silk Road Gallery. At this stage, student participation became so prominent that the artist's role shifted to the role of a collaborator in the educational process."
+          "Participation in *Tehran Monoxide* was designed as an open and multi-stage process, built on horizontal communication, intergenerational dialogue, and a focus on shared care and responsibility. Rather than emphasizing the result or product, the process of interaction and collective learning was central. The project worked as a form of \"art as social action,\" continually redefining the relationship between education, environment, and the city."
+        ]
+      },
+      {
+        "title": "Phase 1",
+        "paragraphs": [
+          "The first phase began with the artist reaching out to friends: other artists, people with children, those for whom the concern around Tehran's air was already familiar. Roughly forty artists gradually gathered, and the dialogues that formed among them became the basis for an educational exhibition at the Manzoumeh Kherad Educational Complex in Tehran. The exhibition ran for two weeks and was visited by around 1,500 people, mostly students of Kherad and their families and teachers."
+        ]
+      },
+      {
+        "title": "Phase 2",
+        "paragraphs": [
+          "The reception in the first phase produced something Farajiani had not anticipated: the children genuinely engaged with the work. This encouraged a shift. Rather than continuing with artists showing work to children, she invited the children to photograph the city themselves, to see the air-pollution crisis through their own eyes. An open call was sent to a number of Tehran schools and remained open for two years. More than 450 photographs were collected, forming a two-year visual archive of an unfiltered child's view of the city. In collaboration with the Kherad Art House, an exhibition of the photos was held and prizes were awarded; a selection was later exhibited at the Center for Contemporary Art, Warsaw in 2014."
+        ]
+      },
+      {
+        "title": "Phase 3",
+        "paragraphs": [
+          "After the second phase, Farajiani convened a number of the artists who had taken part to reflect on the path so far. Two threads kept returning: the involvement of children, and the relation of the project to urban space. Several artists began photographing children's presence in the city. Looking for an alternative space in which to exhibit those photos, Farajiani and a team of photographers came upon Zohreh-No Pharmacy by chance, a seventy-year-old pharmacy on Enghelab Street where the pharmacist, Dr. Torabi, welcomed the project. The photographs were placed among the shelves of medicines and hygiene products.",
+          "The works of eleven photographers, focused on the city and on children, were chosen for this phase. Two hundred and fifty copies of each photograph were printed as postcards, and customers of the pharmacy were free to take as many as they wished. One striking response came from an elementary-school teacher who carried a number of postcards back to her students; the students wrote texts and made collages in response, which were later returned to the artist. The phase ended with the production of a short documentary film, including an interview with Dr. Torabi inside the pharmacy. Torabi's small garden behind the pharmacy, together with her belief that lifestyle and education matter more to citizens' health than chemical medicines, informed the turn toward plants and care that defined the fourth and fifth phases."
+        ]
+      },
+      {
+        "title": "Phase 4",
+        "paragraphs": [
+          "The fourth phase marked a turn from documenting the crisis to a sustained interest in everyday care of the environment. Farajiani researched which plants actually filter the air and which can survive Tehran's climate. She selected eighteen kinds of houseplant and installed them at Negarestan Garden under the title *Zoofa*, the name of a medicinal plant. Beside each plant she placed a small brochure with its scientific name, an illustration, and care instructions. The installation remained in place for twenty days; people came, asked questions, and stayed to talk.",
+          "In the same garden, in collaboration with Homa Delvaray, they brought in car exhaust pipes blackened with soot and inscribed on them the names of trees native to Tehran, many of which have almost disappeared from the city. On Enghelab Street, she also performed as a street vendor, selling plants from a corner of the sidewalk; each pot carried a card explaining what the plant does and how to care for it. By the end of the day, all the plants had been sold. This phase convinced her that the project's deeper effect would come through education, leading to the shape that the fifth phase eventually took."
+        ]
+      },
+      {
+        "title": "Phase 5: Green Corners",
+        "paragraphs": [
+          "*Green Corners* began in 2017 and represents the culmination of the project's educational and care-based direction. Farajiani brought air-purifying plants into classrooms so that students would take direct responsibility for the care of a living thing. In collaboration with a botanist, a qualitative scoring system was designed: if the students could care well for an initial set of plants over the first month, the number of plants in the room would gradually grow, until a fully formed \"green corner\" came into being.",
+          "Over time, the project moved beyond the classroom into one-day workshops in different parts of Iran. At Tehran's Book Garden in early 2019, a workshop with ArchiKid introduced children to gardening tools and plant care. In Bam, in the spring of the same year, workshops were held in an old building called *Hanasab* and at a local orphanage; letters from Tehran students were carried to the children of Bam, and aloe was planted by participants as a sign of survival and resistance. In Darzikola village in the Hyrcanian forests of northern Iran, in autumn 2019, Tehran students wrote letters to the children of the village, sharing what they had been learning about the environment."
         ]
       }
     ]
   },
   "Visual Documentation": {
     "items": []
-  }
+  },
+  "Editorial Notes": [
+    "This entry was prepared based on an interview with the artist, and materials shared by her."
+  ]
 }

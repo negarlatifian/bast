@@ -1,19 +1,117 @@
 {
   "slug": "cafe-konj-performances",
+  "fa": {
+    "1. Basic Information": {
+      "Project Title": "پرفورمنس‌های کافه کنج",
+      "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+        "ژینوس تقی‌زاده"
+      ],
+      "Location": { "text": "تهران — کافه کنج" },
+      "Year / Time Period": { "text": "۱۳۸۲-۱۳۸۳" },
+      "Featured Project Image": { "alt": "پرفورمنس‌های کافه کنج" }
+    },
+    "sections": [
+      {
+        "id": "2",
+        "title": "مروری بر پروژه",
+        "paragraphs": [
+          "«پرفورمنس‌های کافه کنج» مجموعه‌ای از هفت اجرای طولانی‌مدت بود که در کافه‌ای کوچک در مرکز تهران به روی صحنه رفت. هر پرفورمنس دوازده ساعت پیوسته، در روز هفتم هر ماه، به مدت هفت ماه متوالی اجرا می‌شد. این اجراها از نظر فرم و محتوا با یکدیگر متفاوت بودند و نقش مخاطب در طول این هفت ماه تغییر می‌کرد: آنها گاه مشارکت‌کنندگانی فعال بودند که در کنار هنرمند نقاشی می‌کشیدند یا نامه می‌نوشتند، و گاه تنها در جایگاه ناظران یا حتی سوژه‌های ناآگاهِ آنچه در اطرافشان می‌گذشت، قرار می‌گرفتند."
+        ]
+      },
+      {
+        "id": "3",
+        "title": "بستر و مکان",
+        "paragraphs": [
+          "کافه کنج، کافه‌ای کوچک در مرکز تهران، در نزدیکی بلوار کشاورز و میدان ولیعصر بود. در سال ۱۳۸۲، مرکز شهر تقریباً هیچ گالری یا کافهٔ فرهنگی نداشت و این فضاها در شمال تهران متمرکز بودند. مرکز شهر مکانی برای رفت‌وآمد و کار و پر از ساختمان‌های اداری و عابران بود؛ بنابراین مخاطبان کافه کنج را رهگذران و افراد حاضر در منطقه، در کنار حلقهٔ رو به رشدِ مشتریان ثابتِ کافه تشکیل می‌دادند.",
+          "برای تقی‌زاده، انتخاب این مکان کاملاً آگاهانه بود. اجرای پرفورمنس‌ها در اینجا، به‌جای یک گالری یا هر فضایی که از پیش به‌عنوان مکانی هنری قاب‌بندی شده باشد، به معنای کار با مخاطبی بود که با انتظار دیدن یک اثر هنری به آنجا نیامده و لزوماً آن را به رسمیت نمی‌شناخت. کافه، اثر را بدون ادغام آن در قواعد متعارف یک فضای هنری در خود نگه می‌داشت: هیچ آستانه‌ای برای عبور، هیچ بروشوری برای خواندن و هیچ بستر انتقادی از پیش آماده‌ای وجود نداشت. هر پرفورمنس باید خوانش خود را در میان ریتم‌های یک روز معمولی پیدا می‌کرد.",
+          "این مکان همچنین پروژه را از مرکز ثقل نهادی‌ای که در آن سال‌ها با حمایت رسمی حول «هنر مفهومی» در حال شکل‌گیری بود، دور نگه می‌داشت. کار از درون یک کافهٔ کوچک در خارج از محله‌های هنری، به این معنا نوعی موضع‌گیری نیز بود: راهی برای قرار دادن این پرکتیس در شهر و ترافیک روزمرهٔ آن به‌جای صحنهٔ رسمی هنر."
+        ]
+      },
+      {
+        "id": "5",
+        "title": "انگیزه‌ها و پرسش‌ها",
+        "paragraphs": [
+          "«پرفورمنس‌های کافه کنج» از جست‌وجو برای شکلی از مواجههٔ هنری سرچشمه گرفت که به گالری، مخاطبان نهادی، یا دستگاه انتقادی پیرامون هنر معاصر وابسته نبود. این پروژه در دوره‌ای شکل گرفت که «هنر مفهومی» در ایران با حمایت فعال نهادهای رسمی در حال تثبیت بود و ساختارهای جدیدی برای هدایت و کنترل پرکتیس معاصر شکل می‌گرفت. گشایش فرهنگی در سال‌های اصلاحات، در خوانش تقی‌زاده، با یک تصویرسازیِ دقیق همراه بود: ساختن چهره‌ای شیک و بین‌المللی توسط دولتی که هنوز به سوابق سرکوبگرانهٔ اخیر خود نپرداخته بود. موزه و کیوریتورهایش بخشی از ساخت این تصویر بودند. «پرفورمنس‌های کافه کنج» تلاشی بود برای خروج از این چارچوب و جست‌وجوی گفت‌وگوی مستقیم با مخاطبی که بخشی از دنیای هنر نبود.",
+          "این پروژه همچنین برای هنرمند، فرایندی برای فهمیدن این بود که نقش یک هنرمند در بستری که در آن رسانهٔ پرفورمنس هنوز تعریف‌نشده بود، چه می‌تواند معنایی داشته باشد. او بدون دسترسی آسان به تصاویر یا متون مربوط به هنر پرفورمنس در جاهای دیگر (اینترنت دایال‌آپ، واژگانی ناآشنا، و تقریباً بدون منبع فارسی‌زبان)، هر یک از هفت پرفورمنس را از طریق فکر بلندکردن در مقابل مخاطبی توسعه داد که حضور و واکنش‌هایش خودشان بخشی از راهی بودند که او از رهگذر آن درک خودش را از رسانهٔ پرفورمنس شکل می‌داد. پرسش‌هایی که او آنها را به‌عنوان محور اصلی این تجربه نام برده، پرسش‌های خود اوست:",
+          "در پسِ این پرسش‌ها، پرسش دیگری تمام رویکرد پروژه به مخاطبش را شکل می‌داد:",
+          "این مجموعه همچنین از بار کوچکی از پرکتیس‌های مستقل دههٔ ۱۳۷۰ بهره می‌گرفت. پروژه‌های خانهٔ کلنگی که در خانه‌های در آستانهٔ تخریب توسط هومن مرتضوی، شاهرخ غیاثی، و بعدتر بیتا فیاضی، خسرو حسن‌زاده، ساسان نصیری و دیگران اجرا می‌شد، نخستین مواجههٔ خود تقی‌زاده به‌عنوان دانشجو با ویدئو و چیدمان بود. «کافه کنج» با کار ندا رضوی‌پور و «گروه موازی» در آن مقطع زمانی، و همچنین با پرکتیس پیشین بیتا فیاضی همراستا است: ژستِ دور شدن از موزه و گالری و روی آوردن به شهر."
+        ],
+        "quotes": [
+          {
+            "text": "هنرمند از این اثر چه انتظاری داشت؟ مخاطب از هنر چه می‌خواست؟ آیا رسانه‌های غیرسنتی می‌توانستند با افرادی خارج از دایرهٔ هنر ارتباط برقرار کنند؟"
+          },
+          {
+            "text": "در بیشتر کارهایی که ساختم، نمی‌خواستم مردم فکر کنند دارند یک اثر هنری تماشا می‌کنند. می‌خواستم آنها یک لحظه، یک رویداد خلاقانه را تجربه کنند، چیزی که در ذهنشان چیزی بکارد یا سؤالی مطرح کند، فارغ از اینکه بدانند این هنر است یا نه. گفتن اینکه «این یک اثر هنری است» خودش مرزی میان اثر و فردی که در مقابل آن ایستاده می‌کشد.",
+            "attribution": "ژینوس تقی‌زاده"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "title": "شرایط و مذاکره‌ها",
+        "paragraphs": [
+          "این پرفورمنس‌ها بدون دریافت مجوز رسمی و خارج از هرگونه چارچوب نهادی اجرا شدند. پس از اجرای سوم، یکی از مأموران دستگاه‌های اطلاعاتی به کافه مراجعه کرد و با صاحب آن گفت‌وگو کرد: او پرونده‌ای دربارهٔ زندگی شخصی هنرمند در اختیار داشت و به‌روشنی نشان داد که فعالیت‌های او تحت نظر قرار دارد. واکنش اولیهٔ تقی‌زاده تلاش برای دریافت مجوز بود؛ بیش از هر چیز با هدف محافظت از صاحبان کافه. با این حال، هیچ سازوکار اداری مشخصی برای این رسانه وجود نداشت. وزارت فرهنگ و ارشاد اسلامی ادارهٔ مرتبطی نداشت، ادارهٔ پلیس اماکن اساساً این پیشنهاد را نمی‌پذیرفت و ادارهٔ فرهنگی شهرداری فعالیت را خارج از حوزهٔ وظایف خود می‌دانست. هنر پرفورمنس در آن زمان برای بخش بزرگی از ساختار رسمی هنر، پرسشی بی‌پاسخ بود.",
+          "واکنش به این وضعیت، عملی و حساب‌شده بود. کار بدون درخواست مجوز ادامه یافت و تصمیم‌گیری دربارهٔ توقف آن عملاً به هر نهادی که قصد مداخله داشت واگذار شد. نبودِ حامی مالی نه یک کمبود، بلکه شرطی برای استقلال تلقی می‌شد. تصمیم‌های مربوط به فرم، زمان‌بندی و محتوا بدون نیاز به توجیه اثر برای سرمایه‌گذار یا حامی مالی اتخاذ می‌شد. همچنین توافقی با صاحبان کافه وجود داشت که در صورت شکایت یا پلمب کافه، نحوهٔ مواجهه با شرایط را مشخص می‌کرد. شرایط اجتماعی اوایل دههٔ ۱۳۸۰ نیز در تداوم پروژه مؤثر بود. پیش از گسترش نظارت‌های فراگیر و مستندسازی مبتنی بر تلفن‌های هوشمند، امکان حفظ و ادامهٔ این مجموعه در طول هفت ماه و آزادی نسبی برای توسعهٔ ایده‌ها وجود داشت."
+        ]
+      },
+      {
+        "id": "8",
+        "title": "همکاران و پشتیبانی",
+        "paragraphs": [
+          "اجرای این مجموعه با اعتماد صاحبان کافه، ستار افشار و مریم منجزی، ممکن شد که میزبانی این هفت اجرا را بدون هیچ‌گونه قید و شرطی در فرم یا محتوا بر عهده گرفتند.",
+          "این پروژه با هزینهٔ شخصی انجام گرفت؛ هیچ‌گونه بودجهٔ تولیدی در کار نبود."
+        ]
+      },
+      {
+        "id": "9",
+        "title": "خوانش",
+        "paragraphs": [
+          "ژینوس تقی‌زاده، یادداشت‌هایی بر پرفورمنس‌های کافه کنج (روایت مکتوب هنرمند از این مجموعه)."
+        ]
+      },
+      {
+        "id": "10",
+        "title": "منابع بیشتر",
+        "paragraphs": [
+          "«گزارش و مصاحبه دربارهٔ پرفورمنس‌های کافه کنج»، مجلهٔ یک هفتم (سردبیر: فرهاد جعفری)، ۱۳۸۲.",
+          "فرهاد جعفری، کافه پیانو (رمان)، نشر چشمه، ۱۳۸۶.",
+          "کافه پیانو، رمانی از فرهاد جعفری (نشر چشمه، ۱۳۸۶)، شخصیت زن اصلی خود را بر اساس پرفورمنس‌های کافه کنج خلق کرد. خود پرفورمنس‌ها با جزئیات در کتاب بازتولید شده‌اند؛ تنها نام آن شخصیت تغییر یافته است، و تمام شخصیت‌های دیگر رمان با نام‌های واقعی خود ظاهر می‌شوند. تقی‌زاده شکایتی مبنی بر نقض حقوق مؤلف علیه نویسنده و ناشر ثبت کرد. این رمان تا زمانی که حمایت علنی جعفری از محمود احمدی‌نژاد در انتخابات سال ۱۳۸۸ منجر به تحریم آن از سوی خوانندگان شد، با استقبال گسترده‌ای روبه‌رو بود و پس از آن دیگر تجدید چاپ نشد."
+        ]
+      },
+      {
+        "id": "11",
+        "title": "درباره‌ی هنرمند",
+        "paragraphs": [
+          "ژینوس تقی‌زاده (متولد ۱۳۵۰، تهران) ادبیات نمایشی را در فرهنگسرای نیاوران و مجسمه‌سازی را در دانشگاه تهران آموخت. فعالیت‌های اولیهٔ او شامل طراحی صحنه، فیلم‌نامه‌نویسی، تئاتر عروسکی و تصویرسازی کتاب کودک بود. او در سال‌های بعد با نشریات داخل و خارج از ایران به‌عنوان منتقد، نویسنده و دبیر هنری همکاری کرده است. تقی‌زاده یکی از سردبیران «تهران آونیو» بود؛ پلتفرم دوزبانهٔ اولیه دربارهٔ هنر و شهر، که سه دورهٔ نخست جشنوارهٔ موسیقی زیرزمینی ایران را در اوایل دههٔ ۱۳۸۰ برگزار کرد. کنشگری مدنی او همواره در کنار فعالیت هنری‌اش ادامه داشته است. آثار او طی سه دههٔ گذشته در دوساالن‌ها، موزه‌ها و مراکز هنری مختلف در سطح بین‌المللی به نمایش درآمده‌اند. او از سال ۱۴۰۱ در تورنتو ساکن است و همزمان در رشتهٔ نویسندگی خلاق نیز تحصیل می‌کند.",
+          "ایمیل: jinoos.tag@gmail.com",
+          "اینستاگرام: jinoostaghizadeh52hertzstudio@ وب‌سایت: www.jinoostaghizadeh.ca"
+        ]
+      }
+    ],
+    "Editorial Notes": [
+      "این مدخل بر اساس روایت هنرمند و مطالب همراه پروژه تهیه شده است."
+    ]
+  },
   "1. Basic Information": {
     "Project Title": "Cafe Konj Performances",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
       "Jinoos Taghizadeh"
     ],
     "Location": {
-      "text": "Tehran",
+      "text": "Tehran — Cafe Konj",
       "city": "Tehran",
       "country": "",
       "venue": ""
     },
     "Year / Time Period": {
-      "text": "2003–2004, Seven consecutive months, on the 7th day of each month, 10 AM–10 PM."
+      "text": "2003–2004"
     },
+    "Thematic Tags": [
+      "performance",
+      "durational",
+      "public/private space",
+      "institutional critique"
+    ],
     "Featured Project Image": {
       "url": "/images/cafe-konj/thumb.webp",
       "alt": "Cafe Konj"
@@ -22,63 +120,83 @@
   "sections": [
     {
       "id": "2",
-      "title": "Introduction",
+      "title": "Project Overview",
       "paragraphs": [
-        "Cafe Konj was a series of long-duration performances in the public space of a cafe in central Tehran. Created to establish direct communication with an audience outside the realm of art. For the artist, this project was a process of understanding and defining the concept of performance art and rethinking her own position as an artist; this was during a period when this medium was still unknown or unfamiliar to her and her audience, and access to theoretical and visual resources was very limited. Throughout these performances, the artist tried to share the understanding she was gaining of this medium unmediated with the audience; a process she herself describes as \"reinventing the wheel.\" Questions such as \"What does art want?\", \"What does the audience want?\" and \"Can non-traditional media connect with people?\" took shape at the core of this experience."
+        "*Cafe Konj Performances* was a series of seven long-duration performances staged in a small cafe in central Tehran. Each performance ran twelve continuous hours, on the seventh day of each month, for seven consecutive months. The performances were each different in form and content, and the audience's role shifted across the seven months: at times they were active participants drawing alongside the artist or writing letters, at other times observers or even unwitting subjects of what was happening around them."
       ]
     },
     {
       "id": "3",
       "title": "Context & Site",
       "paragraphs": [
-        "This series was performed in a small cafe in downtown Tehran (near Keshavarz Boulevard and Valiasr Square); a space that at the time was located outside the popular artistic neighborhoods, and its audience primarily consisted of passersby and returning regulars. In 2003, Tehran's city center lacked spaces such as galleries and cultural cafes, and such spaces were mostly concentrated in northern Tehran. For the artist, executing the project in this location was a conscious choice, distancing from the official art spaces, and a move towards an urban and informal context."
+        "Cafe Konj was a small cafe in central Tehran, near Keshavarz Boulevard and Valiasr Square. In 2003 the city centre had almost no galleries or cultural cafes; those were concentrated in northern Tehran. The centre of the city was a place of transit and work, of administrative buildings and people moving through, and therefore, Cafe Konj's audience was made up of passersby and people in the area, alongside the cafe's growing circle of regulars.",
+        "For Taghizadeh, the choice of this site was deliberate. To stage the performances here, rather than in a gallery or in any space already framed as artistic, meant working with an audience that had not arrived expecting an artwork and would not necessarily recognise one. The cafe held the work without absorbing it into the conventions of an art space: there was no threshold to cross, no programme to read, no critical context in place. Each performance had to negotiate its own legibility within the rhythms of an ordinary day.",
+        "The site also placed the project at a distance from the institutional centre of gravity that, in those years, was beginning to consolidate around \"conceptual art\" with official support. Working from a small cafe outside the art neighbourhoods was, in this sense, also a positioning: a way of locating the practice in the city and its everyday traffic rather than in the formal art scene."
       ]
     },
     {
       "id": "5",
       "title": "Motivations & Questions",
       "paragraphs": [
-        "This project took shape during a period when \"conceptual art\" was being consolidated with the support of official institutions, and new structures of control and direction in Iranian contemporary art were gradually forming. For Jinoos Taghizadeh, \"Cafe Konj Performances\" was an effort to distance herself from this atmosphere and to move towards direct communication with the general public, a public that existed outside the official art system. Simultaneously, the formation of this project was connected to prior experiences with independent movements in the 1990s and encountering the cultural policies of the reform period; a period that, according to the artist, despite its open and progressive facade, was producing a kind of controlled cultural showcase. In this context, the project was conceived as an attempt to move past this \"showcase vitrine\" and to return to the city and everyday life."
+        "*Cafe Konj Performances* grew out of a search for a form of artistic encounter that did not depend on the gallery, the institutional audience, or the critical apparatus around contemporary art. The project took shape during a period when \"conceptual art\" was being consolidated in Iran with the active support of official institutions, and new structures of direction and control over contemporary practice were forming. The cultural openness of the Reform years was, in Taghizadeh's reading, accompanied by a careful image-making: a chic, international-facing face being constructed by a state whose more recent record of repression had not yet been addressed. The museum and its curators were part of constructing that image. *Cafe Konj Performances* was an attempt to step outside that frame and to look for direct conversation with an audience who was not part of the art world.",
+        "It was also, for the artist, a process of working out what the role of an artist could mean in a context where the medium of performance was still largely undefined. Without easy access to images or texts about performance art elsewhere (dial-up internet, an unfamiliar vocabulary, almost no Persian-language references), she developed each of the seven performances by thinking aloud in front of an audience whose presence and reactions were themselves part of how she came to understand the medium of performance. The questions she has named as central to the experience are her own:",
+        "Underneath these, a further question shaped the project's whole approach to its audience:",
+        "The series also drew on a small lineage of independent practice from the 1990s. The *khaneh kalangi* (خانه‌کلنگی) projects, staged in soon-to-be-demolished houses by Hooman Mortezavi, Shahrokh Ghiasi, and later Bita Fayyazi, Khosrow Hassanzadeh, Sasan Nasiri, and others, had been Taghizadeh's own first encounter as a student with video and installation. *Cafe Konj* shares its gesture with the work of Neda Razavipour and the Parallel Group (گروه موازی) at the time, and with Bita Fayyazi's earlier practice: the gesture of stepping away from the museum and the gallery and toward the city."
+      ],
+      "quotes": [
+        {
+          "text": "What did I want from the work? What did the audience want from art? Could non-traditional media reach people who were not part of the art world?"
+        },
+        {
+          "text": "In most of the works I made, I didn't want people to think they were watching a work of art. I wanted them to experience a moment, a creative event, something that planted something in their mind or raised a question, whether or not they knew it was art. Saying 'this is a work of art' itself draws a boundary between the work and the person standing in front of it.",
+          "attribution": "Jinoos Taghizadeh"
+        }
       ]
     },
     {
       "id": "6",
-      "title": "Constraints & Strategies",
+      "title": "Conditions & Negotiations",
       "paragraphs": [
-        "These performances were conducted without obtaining official permits and outside of institutional structures. After a few performances, some signs of security surveillance emerged, but there was no clear mechanism/procedure to obtain a permit anyway, as such a medium was fundamentally undefined within the administrative structure. Faced with this situation, the project continued without navigating official channels, leaving the responsibility for any potential stoppage to the supervisory bodies. The lack of a financial sponsor, while a limitation, allowed for complete independence in decision-making. Furthermore, the social conditions of that period, compared to more recent years, allowed for a freer space to execute the project."
+        "The performances were carried out without official permits and outside any institutional frame. After the third performance, a member of the intelligence services visited the cafe and spoke with the owner: he had a file on the artist, knew details of her personal life, and made it understood that she was being watched. Taghizadeh's first response was to try to obtain a permit, partly to protect the cafe owners from any further trouble. There was, however, no administrative category for the medium. The Ministry of Culture had no relevant department; the police licensing office could not engage with the proposal at all; the municipal cultural office said the activity did not fall within its remit. Performance art was, for the larger part of the official art apparatus at the time, an unanswered question.",
+        "The responses were practical and deliberate. The work continued without applying for permits, leaving any decision to stop it to whichever supervisory body chose to assert itself. The absence of a sponsor was treated as a condition of independence rather than a deficit. Every decision about form, timing, and content could be made without consultation, and without the obligation to justify the work to a funder or to a brand. An agreement with the cafe owners covered what to do if a complaint were filed or the cafe were sealed. The social conditions of the early 2000s also helped: before the more pervasive surveillance and the saturation of smartphone-mediated documentation that came later, it was possible to sustain the series across seven months and to think through ideas with relative freedom."
       ]
     },
     {
+      "id": "7",
+      "title": "Documentation",
+      "paragraphs": []
+    },
+    {
       "id": "8",
-      "title": "Fundings & Partners",
+      "title": "Collaborators & Support",
       "paragraphs": [
-        "With the collaboration and trust of the cafe owners (Sattar Afshar and Maryam Monjezi).",
-        "The project was self-funded."
+        "The series was made possible by the trust of the cafe's owners, Sattar Afshar and Maryam Monjezi, who hosted the seven performances without conditions on form or content.",
+        "The project was self-funded; there was no production budget."
       ]
     },
     {
       "id": "9",
       "title": "Re-readings",
       "paragraphs": [
-        "Jinoos Taghizadeh's Notes on Cafe Konj Performances"
+        "Jinoos Taghizadeh, *Notes on the Café Konj Performances* (the artist's own written account of the series)."
       ]
     },
     {
       "id": "10",
-      "title": "Other references & Resources",
+      "title": "Further Resources",
       "paragraphs": [
-        "https://jinoostaghizadeh.ca/cafe-konj-performances/"
+        "\"Report and interview on the Café Konj performances,\" *Yek Haftom* magazine (ed. Farhad Jafari), 2003 (in Persian; print archive only).",
+        "Farhad Jafari, *Café Piano* (novel), Cheshmeh Publishing, 2007 (in Persian).",
+        "*Café Piano* (کافه پیانو), a novel by Farhad Jafari (Cheshmeh Publishing, 2007), built its central female character around the *Cafe Konj* performances. The performances themselves are reproduced in detail. Only that character's name is changed; all other figures in the novel appear under their real names. Taghizadeh filed a copyright complaint against the author and publisher. The novel was widely read until Jafari's public support for Mahmoud Ahmadinejad in the 2009 election led to a reader boycott, after which it was not reprinted."
       ]
     },
     {
       "id": "11",
       "title": "About the Artist",
       "paragraphs": [
-        "Bio:",
-        "Jinoos Taghizadeh (born 1971, Tehran) is a multimedia artist. She studied Dramatic Literature at the Niavaran Cultural Center and Sculpture at the University of Tehran, and began her artistic career in various fields, such as set design, screenwriting, puppet theater, and children's illustration.",
-        "She subsequently collaborated with various publications inside and outside of Iran as a critic, essayist, and art editor. In her practice, she utilizes diverse media including drawing, painting, sculpture, installation, video/audio, performance, olfactory (relating to the sense of smell) installation, participatory art, and artist's books. In her working method, there are no boundaries between disciplines, nor between research and presentation. Over the past three decades, Taghizadeh has exhibited her works internationally at biennials, museums, and art centers, while simultaneously, as a civil activist, defining her art in close connection with her social and political concerns. She has been residing in Toronto since 2022 and continues her studies in the field of creative writing.",
-        "Instagram: @jinoostaghizadeh52hertzstudio",
-        "www.jinoostaghizadeh.ca"
+        "**Jinoos Taghizadeh** (b. 1971, Tehran) studied Dramatic Literature at the Niavaran Cultural Center and Sculpture at the University of Tehran. Her early work spanned set design, screenwriting, puppet theatre, and children's illustration. She has since collaborated with publications inside and outside Iran as a critic, essayist, and art editor. She was one of the editors of *Tehran Avenue*, an early bilingual platform on art and the city, which organised the first three editions of Iran's underground music festival in the early 2000s. Her practice as a civic actor has continued in parallel with her artistic work. Her work has been shown at biennials, museums, and art centres internationally over the past three decades. She has been based in Toronto since 2022, where she is also pursuing studies in creative writing.",
+        "Email: jinoos.tag@gmail.com",
+        "Instagram: @jinoostaghizadeh52hertzstudio Website: www.jinoostaghizadeh.ca"
       ]
     }
   ],
@@ -87,70 +205,17 @@
       {
         "title": "",
         "paragraphs": [
-          "Audience participation in this series of performances varied and depended on each specific performance. In some instances, the audience was placed in the position of an active participant, while in others, they were merely observers or listeners.",
-          "In the first performance, the artist, wearing a birdcage on her head and while playing the sound of a canary singing, sold poetry oracles by Hafez (14 century Iranian Poet (1325-1390)), and the audience interacted with her just as they would when encountering an urban street vendor of Faals.",
-          "In another performance, the continuous reading of a handmade book in a space covered with yarn placed the audience in a position of listening and dealing with a disruption of their concentration.",
-          "In a performance that coincided with the anniversary of the beginning of the Iran-Iraq War, the act of bandaging expanded over bodies, objects, and even the exterior space of the cafe, while the audience was suddenly confronted with this very situation.",
-          "In the performance called \"The Journey to Paradise\", the audience participated in the construction of the piece by writing letters to the dead or entrusting objects.",
-          "In the Nowruz (Persian New Year) performance, which involved Goldfish, some audience members were indirectly invited to draw and further engaged in the action.",
-          "In the \"Long Live Joseph Beuys\" performance, an unexpected encounter occurred with audience members who viewed the artist in the role of a healer.",
-          "In the final performance, by offering \"Qajar Coffee\" (a historical reference to assassination by poisoned coffee), by collecting signatures from the audience, they participated in making a conscious decision to consume a \"poisoned\" drink, which made them sick. Throughout these seven months, audiences generally engaged with the project with a high level of trust, and even when faced with disturbing or challenging situations, they did not display oppositional reactions."
+          "The seven performances did not share a single model of participation. In one, audiences bought Hafez fortunes from the artist as they would from a street vendor. In another, they sat in a cafe webbed with skeins of yarn while she read a handmade book aloud without pause. In a third, they were drawn into an unfolding act of bandaging. Elsewhere across the series, visitors wrote letters to be carried to the afterlife, drew alongside the artist, asked for a child to be healed, or signed their names to acknowledge that the coffee they were about to drink was poisoned. The artist's role shifted accordingly: vendor, reader, nurse, traveller, mourner, healer, host. The cafe itself remained constant.",
+          "The twelve-hour duration of each day shaped what participation could be. Visitors arrived, left, returned, and brought others. Some lingered into the evening, watching the conditions in the cafe shift around them. Some entered the work directly, drawing, writing, signing, accepting bandages, taking the offered coffee. Others were listeners, witnesses, or interlocutors whose attention was reshaped without their consent being explicitly requested.",
+          "Across the seven months, audiences entered the work with a level of trust the artist has returned to repeatedly. Even when the situations were disorienting, physically uncomfortable, or ethically charged, the responses were rarely oppositional. In some performances Taghizadeh was, in part, trying to provoke pushback. She had agreed in advance with the cafe owners on what to do if a complaint were made or the cafe were closed down. But the pushback never came."
         ]
       }
     ]
   },
   "Visual Documentation": {
-    "items": [
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      },
-      {
-        "type": "photo",
-        "src": "",
-        "description": ""
-      }
-    ]
-  }
+    "items": []
+  },
+  "Editorial Notes": [
+    "This entry was prepared based on the artist's account and accompanying project materials."
+  ]
 }

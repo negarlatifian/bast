@@ -1,5 +1,103 @@
 {
   "slug": "an-equivalence-of-our-distance",
+  "fa": {
+    "1. Basic Information": {
+      "Project Title": "قد فاصله",
+      "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+        "گلرخ نفیسی"
+      ],
+      "Location": { "text": "تهران، عمارت روبرو" },
+      "Year / Time Period": { "text": "۱۳۹۹" },
+      "Featured Project Image": { "alt": "قد فاصله" }
+    },
+    "sections": [
+      {
+        "id": "2",
+        "title": "مروری بر پروژه",
+        "paragraphs": [
+          "«قد فاصله» پروژه‌ای مشارکتی بود که طی سه هفته در زمستانِ پس از همه‌گیریِ سال ۱۳۹۹ در «عمارت روبرو» (مرکز هنرهای نمایشی در مرکز تهران که در عمارتی متعلق به اواسط قرن گذشته واقع شده است) برگزار شد. این پروژه که توسط گلرخ نفیسی و با همکاری شش نفر دیگر آغاز شد، با ارسال نامه‌ای به صد نفر از دوستان، بستگان و آشنایان شکل گرفت که در آن از هر یک خواسته شده بود یک تکه لباس قدیمی، فرسوده یا بی‌استفاده را برای گروه بفرستند. لباس‌های دریافتی عکاسی و شماره‌گذاری شدند و سپس توسط مشارکت‌کنندگان و رهگذرانی که در طول سه هفته به کارگاه می‌آمدند، تکه‌تکه شکافته شدند. پارچه‌های حاصل دوباره به یکدیگر دوخته شدند تا کت‌پیکری یکپارچه و غول‌پیکر به وسعت نود متر مربع شکل بگیرد.",
+          "پرسش مرکزی پروژه از تجربه‌ی یک سال محرومیت و فاصله پیش از آن برمی‌خاست: چگونه بدن‌های غایب از طریق اشیایی که آن‌ها را دربر گرفته‌اند همچنان حاضر می‌مانند، و چگونه می‌توان یک جمع را، حتی پیش از آنکه دوباره امکان گردهم‌آمدن پیدا کند، قابل تصور ساخت؟"
+        ]
+      },
+      {
+        "id": "3",
+        "title": "بستر و مکان",
+        "paragraphs": [
+          "عمارت روبه‌رو مرکز هنرهای نمایشی در مرکز تهران، نزدیک چهارراه ولیعصر، است که در عمارتی متعلق به اواسط قرن گذشته و در انتهای کوچه‌ای کوچک قرار دارد. در دوران همه‌گیری و همزمان با تعطیلی برنامه‌های تئاتر، این ساختمان کاربری ثابتی نداشت. فضای مورد استفاده برای این پروژه «اتاق کار و ارائه» بود؛ فضایی که معمولاً به نشست‌ها و ارائه‌های پروژه اختصاص داشت و در آن زمان هنوز کارکرد مشخصی نیافته بود.",
+          "انتخاب این فضا کاملاً آگاهانه بود. غیررسمی بودن آن، فضا را همزمان به‌عنوان مکانی برای کار جمعی، گفت‌وگو و اجرا ممکن می‌کرد؛ امکانی که در چارچوب معمول گالری‌ها فراهم نبود. همان‌گونه که نفیسی اشاره کرده است، معمولاً پیدا کردن میزبان برای پروژه‌هایی از این دست در تهران بخش دشوارترِ کار است. عمارت روبه‌رو به این پروژه امکان استقرار داد، زیرا تقویم تئاتر آن به دلیل همه‌گیری خالی شده بود."
+        ]
+      },
+      {
+        "id": "5",
+        "title": "انگیزه‌ها و پرسش‌ها",
+        "paragraphs": [
+          "انگیزه‌ی اصلی پروژه از تجربه‌ی فقدان تماس فیزیکی و فقدان حضور انسانی در دوران همه‌گیری کرونا سرچشمه می‌گیرد. پروژه مسئله‌ی «حضور در غیاب» را مطرح می‌کند: اینکه در نبود دیگری، چه چیزهایی جای او را می‌گیرند و چگونه می‌توان فاصله را از طریق اشیاء و فرآیند جمعی معنا کرد. در واقع، پروژه تلاشی‌ست برای ساختن نوعی جمع خیالی و حسی از طریق عمل مشترک، گفت‌وگو و تماس با چیزهایی که جای بدن را می‌گیرند. همان‌طور که در شعر انتهایی نامه‌ها نوشته شده بود: «رشک برم کاش قبا بودمی چون که در آغوش قبا بوده‌ای».",
+          "همچنین پروژه پاسخی به فاصله‌ای بود که خود هنرمند میان پروژه‌های مشارکتی‌اش و فضای گالری‌های تهران تجربه کرده بود. بسیاری از کارهای هنرمند در فضای گالری پذیرفته نمی‌شدند و مشارکت مخاطب در شکل‌دادن اثر برای گالری‌ها مسئله‌ساز بود. از نگاه هنرمند، این فاصله، پیش از آنکه انتخاب باشد، نتیجه‌ی نظم مسلط بر گالری‌ها و اقتصاد فروش‌محور آن‌هاست."
+        ]
+      },
+      {
+        "id": "6",
+        "title": "شرایط و مذاکره‌ها",
+        "paragraphs": [
+          "مهم‌ترین مانع، برداشت رایج در فضای هنرهای تجسمی بود؛ نگرانی گالری‌ها و کیوریتورها از مشارکت مستقیم مخاطب در اثر. این امر هنرمند را به همکاری با فضای تئاتر برون‌صحنه سوق داد؛ جایی که امکان اجرای پروژه‌هایی از جنس چیدمان و مشارکت فراهم بود.",
+          "محدودیت مالی نیز وجود داشت که با کار داوطلبانه، حمایت پارچه‌فروشی کالار، و کمک‌های کوچک مشارکت‌کنندگان پوشش داده شد."
+        ]
+      },
+      {
+        "id": "8",
+        "title": "همکاران و پشتیبانی",
+        "paragraphs": [
+          "این پروژه با آغازگری گلرخ نفیسی و با همکاری هسته‌ی اصلی متشکل از احمدعلی کدیور، احمد جعفری، مارال اشگواری، پرستو صادقی، ستاره آرشلو و احسان عبدی‌فر شکل گرفت؛ کسانی که در طول سه هفته، در طراحی، سازمان‌دهی و اجرای پروژه با یکدیگر همکاری کردند. عمارت روبه‌رو در فصل تعطیلی همه‌گیری، اتاق کار و ارائه‌ی خود را میزبان این اثر بود. پارچه‌فروشی «کالار»، پارچه‌ی زیرِ آستریِ بزرگ کت را اهدا کرد و یک سازنده‌ی زیورآلات و سنجاق‌سینه، حمایت مالی خدمات پیک، داربست و موسیقی پایانی را برعهده گرفت که در دکمه‌ی بزرگ کت نیز تعبیه شدند.",
+          "در طول برگزاری کارگاه، یک خواننده‌ی زن آذری‌زبان و گروهی از نوازندگان افغانستانی هم‌گام با دوخت‌ودوز اجرای موسیقی پرداختند و در مراسم پایانی نیز، سه نوازنده‌ی موسیقی محلی قشقایی با نقاره و کرنا، آیین برافراشتن پالتو را همراهی کردند. فراتر از این هسته‌ی اصلی، بیش از صد نفر به فراخوان (نامه) پاسخ دادند و لباس‌های خود را از طریق پست ارسال کردند و با این کار به بخشی از اثر تبدیل شدند؛ در طول این سه هفته نیز، بازدیدکنندگان و رهگذران عمارت روبه‌رو هر روز به کارگاه می‌آمدند تا در شکافتن لباس‌ها، گفت‌وگو و دوخت دوباره مشارکت کنند."
+        ]
+      },
+      {
+        "id": "9",
+        "title": "خوانش",
+        "paragraphs": [
+          "تن‌های تهی، نخ‌های ناگزیر — آوا جلالی."
+        ]
+      },
+      {
+        "id": "10",
+        "title": "منابع بیشتر",
+        "paragraphs": [
+          "گلرخ نفیسی، [«قد فاصله»](https://golrokhnafisi.home.blog/2021/04/28/%d9%82%d8%af%d9%81%d8%a7%d8%b5%d9%84%d9%87/)، وبلاگ شخصی، اردیبهشت ۱۴۰۰.",
+          "Golrokh Nafisi, \"Celebration of Distant Bodies,\" in conversation with Giulia Crispiani, NO NIIN magazine, Issue 4: Imagined Collectivities (June 2021)."
+        ]
+      },
+      {
+        "id": "11",
+        "title": "درباره‌ی هنرمند",
+        "paragraphs": [
+          "**گلرخ نفیسی** تصویرساز، عروسک‌ساز و هنرمند تجسمی است که اغلب آثارش تحت تأثیر رویدادهای سیاسی و اجتماعی دنیای اطرافش شکل می‌گیرند. مشارکت مستقیم مخاطب در تعامل با اثر هنری، و سفر به‌مثابه امکانی برای ساختن تقویم‌ها و نقشه‌های تازه، دو محور اصلی در تمرین‌های هنری او هستند. او متولد اصفهان، فارغ‌التحصیل رشته‌ی طراحی صنعتی از دانشگاه هنر تهران و رشته‌ی هنرهای تجسمی (Fine Art) از آکادمی ریتولد در هلند است."
+        ]
+      }
+    ],
+    "Participation & Process": {
+      "subsections": [
+        {
+          "title": "",
+          "paragraphs": [
+            "فضای کار به سه بخش تقسیم شد: ثبت، شکافتن و دوخت دوباره.",
+            "دعوت از مشارکت‌کنندگان در دو سطح انجام شد: نخست، یک گروه سازمان‌دهنده‌ی پنج‌نفره، صد نامه‌ی شخصی برای دوستان، بستگان و آشنایان فرستادند (هر عضو گروه بیست نامه). نامه، ده ماه گذشته را که مردم یکدیگر را در آغوش نگرفته بودند توصیف می‌کرد و از گیرنده می‌خواست یک تکه لباس که به پایان عمر خود در کمدش رسیده است را بفرستد. این نامه با بیتی از مولوی پایان می‌یافت: «رشک برم کاش قبا بودمی، چون که در آغوش قبا بوده‌ای». دوم، نامه‌ای کوتاه‌تر که با چاپ ریسوگراف روی کاغذ سبک چاپ شده بود، به شیوه‌ی سنتی پخش تراکت خیابانی در چهارراه ولیعصر مرکز تهران توزیع شد.",
+            "بیش از صد لباس به کارگاه ارسال شد. هر لباس در بدو ورود، در فرمِ نهایی‌اش به‌عنوان یک قطعه‌ی کامل عکاسی و شماره‌ی شناسایی دریافت کرد و به رگالی افزوده شد که مشارکت‌کنندگان می‌توانستند لباسی را از آن انتخاب کرده و به صف شکافتن بپیوندند.",
+            "قانون بخش شکافتن این بود که استفاده از قیچی و برش ممنوع است؛ تنها استفاده از شکاف‌باز مجاز بود تا هر لباس کوک‌به‌کوک از هم باز شود. مشارکت‌کنندگان ماسک می‌زدند و با فاصله از یکدیگر می‌نشستند. افراد غریبه روزهای متمادی کنار هم کار می‌کردند، برای تمام کردن آنچه آغاز کرده بودند بازمی‌گشتند، صحبت می‌کردند، داستان می‌گفتند و گاهی در حالی که دست‌های‌شان مشغول کار بود، با هم آواز می‌خواندند.",
+            "نفیسی درباره‌ی بار معنایی واژه‌ی «شکافتن» می‌نویسد:"
+          ],
+          "quotes": [
+            {
+              "text": "«در فارسی، ما از کلمه‌ی شکافتن استفاده می‌کنیم که به معنای باز کردن درزها، دو نیم کردن، بریدن، پاره کردن و شکاف ایجاد کردن است، اما در عین حال به معنای باز کردن گره، باز کردن کلاف و باز کردن بحث یک موضوع نیز هست. بنابراین، افرادی که درگیر فرایند شکافتن بودند، هم‌زمان نقشی فعال در پویایی اجتماعی فضا ایفا می‌کردند.»",
+              "attribution": "گلرخ نفیسی"
+            }
+          ]
+        }
+      ]
+    },
+    "Editorial Notes": [
+      "این مدخل بر اساس مستندات و متون ارائه‌شده از سوی هنرمند تهیه شده است."
+    ]
+  },
   "1. Basic Information": {
     "Project Title": "An Equivalence of Our Distance",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
@@ -12,8 +110,9 @@
       "venue": "Rooberoo Mansion"
     },
     "Year / Time Period": {
-      "text": "February 2021 (Bahman 1399), Three weeks"
+      "text": "2021"
     },
+    "Thematic Tags": ["collective making", "workshop"],
     "Featured Project Image": {
       "url": "/images/equivalence/thumb.webp",
       "alt": "An Equivalence of Our Distance"
@@ -22,65 +121,76 @@
   "sections": [
     {
       "id": "2",
-      "title": "Introduction",
+      "title": "Project Overview",
       "paragraphs": [
-        "An Equivalence of Our Distance was created during the post-COVID-19 pandemic era, a time when many people had not been able to hug, put their arms around each other, or even have their clothes touched for ten months. The experience of distance and the lack of physical contact was the starting point of the project. The artist and her team sent 100 letters to friends, family, and acquaintances, asking them to send a piece of their old clothing; an \"exhausted\" piece of clothing that had spent its life in the closet and was now \"ready to join a larger garment.\" The letters were accompanied by a quote from a poem: \"I am jealous, I wish I were a cloak because you have been in the embrace of a cloak.\" After being received by post, the clothes were registered and numbered, and the process proceeded in three parts:",
-        "Registration and photographing of the clothes.",
-        "Ripping the seams by the participants using a seam ripper (without scissors).",
-        "Re-sewing and connecting the pieces to create a 90-meter fabric.",
-        "Over the course of three weeks, people sat next to each other wearing masks and at a distance, ripping the clothes, talking, telling stories, and singing. About 110 pieces of clothing were torn apart, and the separated parts were joined together to form the pieces of a large garment. This 90-square-meter fabric eventually turned into a large \"collective coat.\" On Friday, February 19th (1 Esfand), the prepared pieces were sewn in the workshop, and with the sound of Qashqai Karna and Naqareh, the coat was taken out of the workshop and raised in the courtyard of Rooberoo Mansion in the presence of participants and guests. Each visitor took a photo of one of the original clothes with them, to keep a part of the collective memory of the project."
+        "An Equivalence of Our Distance was a participatory project that took place over three weeks in the post-lockdown winter of 2021 at Rooberoo Mansion (Emarat Roberoo), a mid-century mansion turned performing arts center in central Tehran. Initiated by Golrokh Nafisi in collaboration with six others, the project began with a letter sent to one hundred friends, relatives, and acquaintances, asking each of them to return a single piece of clothing, something old, worn, no longer in use. The clothes that arrived were photographed and numbered, then unstitched piece by piece by participants and passersby who came to the workshop over the course of three weeks. The unstitched fabrics were sewn back together into a single giant coat covering ninety square meters.",
+        "The project's central question grew out of the year of withholding that preceded it: how do absent bodies remain present through the objects that carried them, and how can a collective be made imaginable again, even before it can be gathered."
       ]
     },
     {
       "id": "3",
       "title": "Context & Site",
       "paragraphs": [
-        "The project was carried out in a temporary workshop and presentation room of Rooberoo Mansion, a room without a fixed use, which was usually a place for dialogue and project presentation. With the closure of the theater activities at that time, Rooberoo Mansion provided a vacant space for this project. Due to its flexibility and informality, this space was suitable for executing a project revolving around physical presence, collective process, and participation of the audience. Unlike galleries, this space provided a setting where people could freely enter, stay, work, and participate. The final interactive installation of the work was also held in the courtyard of the Rooberoo Mansion Complex."
+        "Emarat Roberoo is a performing arts center in central Tehran, near Valiasr Crossroads, set within a mid-century mansion at the end of a small alley. During the pandemic, with theater programs suspended, the building stood with little fixed function. The room used for the project was its \"work and presentation room,\" a space normally reserved for talks and project presentations rather than performance, and one that had not at that time settled into any particular use among the people who came and went through the building.",
+        "Choosing this space was deliberate. Its informality made it usable simultaneously as a place of collective work, conversation, and performance, in ways that a gallery's protocols would not have permitted. As Nafisi has described, finding a host for projects of this kind in Tehran has typically been the harder half of the work; Emarat Roberoo agreed in this case because the theater's calendar had been emptied by the pandemic."
       ]
     },
     {
       "id": "5",
       "title": "Motivations & Questions",
       "paragraphs": [
-        "The main motivation for the project stems from the experience of distance and the lack of human contact during the COVID-19 pandemic. The project addresses the issue of \"presence in absence\": What takes the place of the other in their absence, and how distance can be defined through objects and collective processes. In a way, the project is an attempt to build a kind of imaginary and sensory collective through shared action, dialogue, and contact with elements that substitute the body. As written in the poem at the end of the letters: \"I am jealous, I wish I were a cloak, because you have been in the embrace of a cloak.\" Also, the project was a response to the distance the artist herself had experienced between her participatory projects and the space of Tehran galleries. Many of the artist's ideas were not accepted in the mainstream gallery scene, and the audience's participation in shaping the artwork was problematic for galleries. From the artist's point of view, this distance, before being a choice, is the result of the dominant order of the galleries and their sales-oriented economy."
+        "The project came together in the post-lockdown period from a longing for physical touch and from the question of what fills the apparent emptiness when others are not around. As Nafisi has put it: \"There are objects that are present that materially fill up this apparently empty space in our absence.\"",
+        "Clothes, touched daily by the people they belong to and holding their warmth and smell, became the project's chosen vehicle for absence. The poem that accompanied the letter named the same intuition: in the absence of an embrace, the garment becomes the thing one would wish to be. The project's questions emerged in conversation among the team and in Nafisi's writing about the project afterwards:",
+        "Beneath the project's gentle form was also an argument about the conditions under which participatory work can happen in Tehran. As Nafisi has described, most of her proposals to galleries have not been accepted; what she has experienced in the Tehran art scene is a fear of involving the audience directly in making the work. A project of this kind needed a space that was neither a white cube nor governed by the gallery economy's question of saleability. Off-stage theater spaces, including her ongoing work with director Hamid Pourazari, have been where this kind of participation has been able to take place."
+      ],
+      "quotes": [
+        {
+          "text": "What is present in our absence, when we are not somewhere with somebody? What are the objects that can represent absence? When do we name a group of people a population? When do we recognise a group of people together as a society beyond their individual numbers? Can we revive these rites?"
+        }
       ]
     },
     {
       "id": "6",
-      "title": "Constraints & Strategies",
+      "title": "Conditions & Negotiations",
       "paragraphs": [
-        "The most important obstacle was the common perception in the visual arts scene, the concern of galleries and curators about the direct participation of the audience in the work. This led the artist to collaborate with an off-stage theater space, a place where it was possible to execute projects of an installation and participatory nature. There was also a financial limitation, which was covered by volunteer work, the support of the Kalar fabric store, and small contributions from the participants."
+        "The project had no production funding. All collaborators, including the artist, worked without payment. For the team, this distribution of costs across a number of very small sponsors, all of whom were also present in the workshop as participants, became a working model of how a project like this can be financed.",
+        "A further set of conditions sat outside the project itself. In Nafisi's experience, participatory projects in Tehran rarely find space in the city's visual arts institutions; the way around this has not been to find smaller galleries willing to take the work in, but to step out of the gallery system altogether and into spaces shaped by experimental theater. Emarat Roberoo became viable for *An Equivalence of Our Distance* specifically because its theater calendar had been emptied by COVID-19."
       ]
     },
     {
+      "id": "7",
+      "title": "Documentation",
+      "paragraphs": []
+    },
+    {
       "id": "8",
-      "title": "Fundings & Partners",
+      "title": "Collaborators & Support",
       "paragraphs": [
-        "In collaboration with Ahmad Ali Kadivar, Ahmad Jafari, Maral Eshghvari, Parastoo Sadeghi, Setareh Arashloo, and Ehsan Abdifar - Rooberoo Mansion.",
-        "Financial Sponsors: All project collaborators and the artist herself worked without receiving any fee. The large lining fabric, which was the biggest expense, was provided to the project by Kalar fabric store. Other expenses, such as the courier for collecting the clothes, the scaffolding, and the closing music, were sponsored by the help of one of the project participants, who was a wearable accessory maker. A few of their manufactured brooches were also added to the large coat's buttons, which was itself made with a combination of all the buttons from the donated clothes."
+        "The project was initiated by Golrokh Nafisi in collaboration with a core team of Ahmadali Kadivar, Ahmad Jafari, Maral Ashgevari, Parastou Sadeghi, Setareh Arashoo, and Ehsan Abdifar, who worked together on the design, organisation, and execution of the project across its three weeks. Emarat Roberoo hosted the work in its work and presentation room during the pandemic-emptied theater season. Kalar fabric shop donated the large lining fabric for the coat, and a maker of rings and brooches contributed financially to the courier service, scaffolding, and final music, also providing brooches that were incorporated into the coat's large button.",
+        "An Azeri-speaking female singer and a group of Afghan musicians performed alongside the sewing during the workshop, and three Qashqai folk musicians of naqareh and korna accompanied the coat-raising at the final ceremony. Beyond this core, more than one hundred people sent garments by post in response to the letter, becoming through that act part of the work; visitors and passersby at Emarat Roberoo came in to the workshop daily over the three weeks to take part in unstitching, talking, and re-stitching."
       ]
     },
     {
       "id": "9",
       "title": "Re-readings",
       "paragraphs": [
-        "Written by Awa Jalali"
+        "*Hollow Bodies, Inevitable Threads* — Ava Jalali."
       ]
     },
     {
       "id": "10",
-      "title": "Other references & Resources",
+      "title": "Further Resources",
       "paragraphs": [
-        "Artist's website:",
-        "https://golrokhnafisi.home.blog/2021/04/28/%d9%82%d8%af%d9%81%d8%a7%d8%b5%d9%84%d9%87/",
-        "No-niin Magazine: https://no-niin.com/issue-4/celebration-of-distant-bodies/index.html"
+        "Golrokh Nafisi, [\"Ghad-e Faseleh\"](https://golrokhnafisi.home.blog/2021/04/28/%d9%82%d8%af%d9%81%d8%a7%d8%b5%d9%84%d9%87/), personal blog, 2021 (in Persian).",
+        "Golrokh Nafisi, [Celebration of Distant Bodies](https://no-niin.com/issue-4/celebration-of-distant-bodies/index.html), in conversation with Giulia Crispiani, *NO NIIN*, Issue 4, June 2021."
       ]
     },
     {
       "id": "11",
       "title": "About the Artist",
       "paragraphs": [
-        "Golrokh Nafisi ((born 1981, Isfahan) is an illustrator, puppet maker, and visual artist whose works are often influenced by the political and social events of the world around her. The direct participation of the audience in interacting with the artwork, and travel as an opportunity to create new calendars and maps, are two main axes in her artistic practice. Born in Isfahan, she holds a degree in Industrial Design from the Tehran University of Art and a degree in Fine Arts from the Rietveld Academie in the Netherlands."
+        "**Golrokh Nafisi** (born 1981, Isfahan) is an illustrator, puppet maker, and visual artist whose works are often influenced by the political and social events of the world around her. The direct participation of the audience in interacting with the artwork, and travel as an opportunity to create new calendars and maps, are two main axes in her artistic practice. Born in Isfahan, she holds a degree in Industrial Design from the Tehran University of Art and a degree in Fine Arts from the Rietveld Academie in the Netherlands.",
+        "Email: Golrokh[at]gmail.com"
       ]
     }
   ],
@@ -89,10 +199,24 @@
       {
         "title": "",
         "paragraphs": [
-          "Process Participation took place in three circles:",
-          "Clothing Senders: This stage was initiated with the shared feeling of distance from family and friends. Invitations were initially sent by a five-person team. Each person sent the letters to twenty people, and then ten more people were selected for more distant circles.",
-          "Public Invitation: A more general letter was printed with a Risograph Machine on lightweight paper, and it was distributed as flyers, with a traditional handout practice aiming at passerbys at Valiasr intersection.",
-          "Workshop Participants: Passersby, visitors, and those who frequented Rooberoo Mansion entered the workshop. Many of them returned every night to continue ripping the clothes. However, according to the artist, the main part of connecting people to the project was the ripping part. In the end, they participated in the coat-raising ceremony, and each visitor took home a photo of one of the clothes: a kind of participation in preserving the collective memory of the project."
+          "The workspace was divided into three sections: registration, unstitching, and re-stitching.",
+          "Inviting participants happened on two registers. First, an organising group of five sent personal letters to one hundred friends, relatives, and acquaintances, twenty letters from each member of the team. The letter described the ten months since people had last embraced each other and asked the recipient to send a single piece of clothing that had reached the end of its life in their wardrobe. It ended with a line from Rumi: \"I wish I was your garment, because you were curled up in its arms.\" Second, a shorter letter, risograph-printed on light paper, was distributed in the traditional way of street flyers at Valiasr Crossroads in central Tehran.",
+          "More than one hundred clothes were sent in. Each was photographed at the door in its final form as a complete piece, given an identification number, and added to a coat rack from which participants could select a garment and join the unstitching line.",
+          "The rule of the unstitching section was that scissors and cuts were forbidden; only seam rippers were allowed, taking each garment apart stitch by stitch. Participants wore masks and sat at distance from one another. Strangers found themselves working side by side for many days, returning to finish what they had started, talking, telling stories, sometimes singing along while their hands stayed busy.",
+          "Nafisi has reflected on what the Persian word for unstitching, شکافتن (shekāftan), carries:"
+        ],
+        "quotes": [
+          {
+            "text": "In farsi, we use the word شکافتن which means to unstitch, to cleave, cut, incise, to rupture, to split, but also to untangle, unwind, to open a topic. So, the people who were engaging with the process of unstitching were at the same time undertaking an active role in the social dynamic of the space.",
+            "attribution": "Golrokh Nafisi"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "paragraphs": [
+          "Approximately 110 garments were unstitched and their components re-sewn into the panels of a single very large coat. By the end of three weeks the combined fabric reached ninety square meters. The arrangement of the workspace then shifted again. Various musicians were invited to perform alongside the sound of the sewing machine in the middle of fabric rolls hanging from the ceiling, including an Azeri-speaking female singer and a group of Afghan musicians and singers. The remaining parts of the garments, including buttons and labels, were combined into the body and into the large button of the coat.",
+          "The final day was a public ceremony. The coat was passed out of the workshop through a window, carried by the audience, and lifted onto a tall hanger built in advance, with the load pulled up by a rope in a collective effort. A statement was read aloud, naming first the cities where the clothes had been manufactured (Vietnam, Bangladesh, Turkey) and then the Tehran neighborhoods from which the garments had come into the workshop (Karimkhan, Iranshahr, Behjat Abad). Initial photographs of each garment, taken at registration, were distributed among the crowd, and each visitor carried one of these photographs home."
         ]
       }
     ]
@@ -155,5 +279,8 @@
         "description": ""
       }
     ]
-  }
+  },
+  "Editorial Notes": [
+    "This entry was prepared based on materials shared by the artist."
+  ]
 }

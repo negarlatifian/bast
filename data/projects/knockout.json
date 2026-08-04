@@ -1,19 +1,120 @@
 {
   "slug": "knockout-tournament-ping-pong",
+  "fa": {
+    "1. Basic Information": {
+      "Project Title": "جام حذفی: گپ و گفت دور یک میز پینگ‌پُنگ",
+      "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+        "جامعه نیومدیا"
+      ],
+      "Location": { "text": "تهران، پروژه‌های نیومدیا" },
+      "Year / Time Period": { "text": "۱۳۹۷" },
+      "Featured Project Image": { "alt": "جام حذفی" }
+    },
+    "sections": [
+      {
+        "id": "2",
+        "title": "مروری بر پروژه",
+        "paragraphs": [
+          "«جام حذفی: گپ و گفت دور یک میز پینگ‌پُنگ» رویدادی یک‌هفته‌ای بود که توسط جامعه نیومدیا در دی‌ماه ۱۳۹۷ در تهران سازمان‌دهی شد و زمان‌بندی آن عامدانه با هفتهٔ هنر تجاری شهر، یعنی «تیر آرت»، هم‌زمان بود. فضای داخلی «پروژه‌های نیومدیا» با قرار دادن یک میز پینگ‌پنگ در مرکز و کنار گذاشتن چیدمان معمول فضای پروژه، موقتاً به یک مکان ورزشی تغییر کاربری داد.",
+          "این تورنمنت ۳۲ شرکت‌کننده از حوزه‌های مختلف، از جمله نقاش، معمار، کیوریتور، بازیگر و ماساژتراپیست را گرد هم آورد. میز پینگ‌پنگ به بستری بدل شد که در آن گفت‌وگو دربارهٔ شرایط کاری هنرمندان می‌توانست در جریان مسابقه و در فواصل میان دورها شکل بگیرد. این رویداد که می‌توان آن را به‌عنوان یک پادرویداد در برابر اقتصاد آرت‌فر (که در فاصلهٔ کمی از آنجا در جریان بود) دید، رقابت و بازی را به‌عنوان چارچوبی برای تأمل جمعی پیشنهاد می‌داد."
+        ]
+      },
+      {
+        "id": "3",
+        "title": "بستر و مکان",
+        "paragraphs": [
+          "«جامعه نیومدیا» یک کلکتیو مستقل، غیرتجاری و پژوهش‌محور بود که از تیرماه ۱۳۹۳ در تهران فعالیت می‌کرد. مکان آن در مرکز تهران، پیش از این تورنمنت، طی چند سال به‌عنوان آرشیو، کتابخانه و فضای پروژه عمل کرده بود و با میزبانی سخنرانی‌ها، کارگاه‌ها، اقامت‌ها و نمایشگاه‌ها، ارتباط میان فعالان محلی و بین‌المللی هنر را خارج از سیستم گالری‌های تجاری حفظ می‌کرد.",
+          "برگزاری رویداد در این فضا و هم‌زمانی دقیق آن با هفتهٔ «تیر آرت»، خود بخشی از ایده بود. پروژه به‌جای رقابت برای دیده شدن در مدار تجاری آرت‌فر، این فضای پروژه را به‌عنوان یک جغرافیای جایگزین و آگاهانه انتخاب کرد: بستری که در آن گفت‌وگو می‌توانست دربارهٔ شرایط پرکتیس هنری باشد، نه نمایش آثار برای فروش.",
+          "با برچیدن چیدمان معمول نمایشگاه و نصب یک میز پینگ‌پنگ در مرکز، تصمیم برای تغییر کاربری فضا به یک مکان ورزشی اهمیت داشت. فضا دیگر مکانی نبود که مخاطبان در آن به تماشای آثار تمام‌شده بپردازند، بلکه به مکانی بدیل تبدیل شد که همهٔ حاضران در آن یا بازیکن بودند و یا در حال گفت‌وگو پیرامون بازی."
+        ]
+      },
+      {
+        "id": "5",
+        "title": "انگیزه‌ها و پرسش‌ها",
+        "paragraphs": [
+          "این پروژه از دغدغهٔ روزمرهٔ شرایط کاری هنرمندان در تهران سرچشمه گرفت و این احساس که ساختارهای هفتهٔ هنر و اقتصاد گالری که آن را نمایندگی می‌کرد، فضای کمی برای گفت‌وگوی آشکار دربارهٔ این شرایط باقی می‌گذاشت. هدف، ایجاد نوع متفاوتی از دور هم جمع‌شدن بود: غیررسمی، غیرسلسله‌مراتبی، که در آن گفت‌وگو بتواند پیرامون عمل بازی شکل بگیرد.",
+          "در طول هفته، «معیشت و استقلال» به‌عنوان دغدغهٔ اصلی مطرح شد. شرکت‌کنندگان بیان کردند که هنرمند مستقل در تهران ناچار است هم‌زمان چندین نقش را ایفا کند: خالق، مدیر، حسابدار، بازاریاب و حتی حمل‌کنندهٔ آثار خود. وزن انباشتهٔ این چندگانگی، و انزوایی که تولید می‌کند، ضرورت وجود فضایی برای تبادل متقابل و شکلی از همبستگی صنفی را توجیه می‌کرد.",
+          "سه نقد ساختاری در طول بحث‌ها جریان داشت. نخست، مرکزگرایی جغرافیایی رویدادهایی چون «تیر آرت» که دیده‌شدن را در تهران متمرکز کرده و هنرمندان و کیوریتورهای سایر استان‌ها را به حاشیه می‌رانند. دوم، ابهامات ساختاری سیستم گالری‌داری ایران، به‌ویژه پیرامون قراردادهایی که میان نمایش یک اثر و نمایندگی هنرمند تمایز قائل نمی‌شوند، و ظرفیت محدود اتحادیه‌های صنفی هنرمندان برای رسیدگی به این مشکلات. سوم، نقش سیستم آموزشی (از هنرستان‌ها تا دانشگاه‌ها) در شکل‌دهی نه‌تنها به آموزش، بلکه به جهت‌گیری‌های زیبایی‌شناختی فارغ‌التحصیلانش."
+        ]
+      },
+      {
+        "id": "6",
+        "title": "شرایط و مذاکره‌ها",
+        "paragraphs": [
+          "موانع اصلی هم مفهومی بودند و هم عملی. از نظر مفهومی، پروژه از خلال چالش‌های ذهنی و ساختاری در تعریف هویت هنرمند عبور می‌کرد، به‌ویژه تنش میان هنرمندان مستقل و افرادی وابسته به گالری. از نظر عملی، فضا باید برای میزبانی رویدادی هنری-ورزشی که برای آن طراحی نشده بود، سازگار می‌شد.",
+          "استراتژی اصلی شامل یک «تغییر کاربری» و یک «جابه‌جایی مفاهیم» بود: تبدیل یک رقابت ورزشی به یک پلتفرم انتقادی و آموزشی، و باز کردن امکان مشارکت برای عموم به‌منظور برچیدن مرزهای فرضی و نخبه‌محور میان هنرمندان و دیگر طبقات اجتماعی."
+        ]
+      },
+      {
+        "id": "8",
+        "title": "همکاران و پشتیبانی",
+        "paragraphs": [
+          "«جام حذفی: گپ و گفت دور یک میز پینگ‌پنگ» توسط جامعه نیومدیا، به‌عنوان بخشی از برنامهٔ پروژه‌های مستقل آن، طراحی، سازمان‌دهی و میزبانی شد و امیرعلی قاسمی به‌عنوان میزبان و تسهیل‌گر در آن حضور داشت. تورنمنت برای عموم آزاد بود و ۳۲ شرکت‌کننده به برنامه پیوستند. گزارشی از مسابقات توسط بهار احمدی‌فرد نوشته و در وب‌سایت جامعه نیومدیا منتشر شد.",
+          "این پروژه کاملاً مستقل و بدون حمایت مالی خارجی سازمان‌دهی شد. تنها منبع مالی آن، هزینهٔ ورودی ۲۰ هزار تومانی شرکت‌کنندگان بود که برای خرید جام قهرمانی نمادین استفاده شد."
+        ]
+      },
+      {
+        "id": "9",
+        "title": "خوانش",
+        "paragraphs": [
+          "یک «مسابقه» بی‌مانند — امیرعلی قاسمی."
+        ]
+      },
+      {
+        "id": "10",
+        "title": "منابع بیشتر",
+        "paragraphs": [
+          "بهار احمدی‌فرد، «گزارش مسابقات جام حذفی»، وب‌سایت جامعه نیومدیا.",
+          "کل رویداد ضبط شده و در آرشیو جامعه نیومدیا نگهداری می‌شود."
+        ]
+      },
+      {
+        "id": "11",
+        "title": "درباره‌ی هنرمند",
+        "paragraphs": [
+          "جامعه نیومدیا یک کلکتیو مستقل، غیرتجاری و پژوهش‌محور در تهران است که از خرداد ۱۳۹۳ فعالیت می‌کند. این نهاد به‌عنوان آرشیو، کتابخانه و فضای پروژه عمل کرده و از طریق سخنرانی‌ها، کارگاه‌ها، انتشارات و برنامه‌های اقامت فرهنگی، از هنرهای رسانه‌ای و پرکتیس‌های نوظهور حمایت کرده است. این کلکتیو تلاش کرده تا خلأ زیرساخت‌های آکادمیک را پر کند و ارتباطاتی میان هنرمندان فعال در ایران و خارج از کشور بسازد؛ فضای فیزیکی آن (پروژه‌های نیومدیا) طی سال‌ها میزبان بسیاری از ابتکارات دیگر و کلکتیوهای همکار بوده است. فضای تهران از دی‌ماه ۱۴۰۱ بسته شده و این کلکتیو اکنون به‌عنوان یک نهاد سیار و آنلاین به فعالیت خود ادامه می‌دهد. «مپینگ کریم‌خان» یکی از پروژه‌های مشارکتی شهری آن بود.",
+          "وب‌سایت: newmediasoc.com | اینستاگرام: newmediasociety@"
+        ]
+      }
+    ],
+    "Participation & Process": {
+      "subsections": [
+        {
+          "title": "",
+          "paragraphs": [
+            "این تورنمنت طی هشت روز، از ساعت ۴ تا ۸ عصر، برگزار شد و ورود برای عموم آزاد بود. هزینهٔ ورودی ۲۰ هزار تومان بود که تماماً صرف خرید جام قهرمانی نمادین می‌شد.",
+            "ایدهٔ اولیه، رویارویی نمادین میان هنرمندان وابسته به گالری و هنرمندان مستقل بود، اما زمانی که مشارکت برای عموم آزاد شد، این دوگانگی کم‌رنگ شد. سی‌ودو نفر از سراسر شهر، از جمله یک نقاش، معمار، کیوریتور، بازیگر و ماساژتراپیست و دیگران، برای بازی نام‌نویسی کردند.",
+            "هر شرکت‌کننده در کنار میز خود را معرفی می‌کرد. گفت‌وگو در جریان مسابقه و میان دورها ادامه می‌گرفت و موضوعات مختلفی را در بر می‌گرفت: تجربهٔ زیسته، وضعیت حرفه‌ای و شرایط کاری فعلی. بحث‌ها از ریشه‌های نقاشی آبستره در آموزش هنر ایران و تأثیر چهره‌هایی چون نصرت‌الله کسرائیان و یعقوب عمامه‌پیچ، تا مطالعات پرفورمنس و بدن گسترش یافت؛ از جمله اینکه چگونه تمرینات تئاتری بدن را قادر می‌سازد تا بازی با یک توپ خیالی، واقعی به نظر برسد. در لحظاتی، شرکت‌کنندگان قلم‌مو را جایگزین راکت می‌کردند؛ کنشی که می‌توانست به‌عنوان استعاره‌ای از موقعیت هنرمند در این میدان عمل کند. تورنمنت با قهرمانی امید فتاحی (ماساژتراپیست) به پایان رسید و بهزاد هاتفی (هنرمند چندرسانه‌ای) و مرتضی دره‌باغی (نقاش آبستره) به ترتیب در جایگاه‌های دوم و سوم قرار گرفتند."
+          ]
+        }
+      ]
+    },
+    "Editorial Notes": [
+      "این مدخل بر اساس مستندات و متون ارائه‌شده از سوی کلکتیو تهیه شده و با همکاری بنیان‌گذار آن ویرایش شده است."
+    ]
+  },
   "1. Basic Information": {
     "Project Title": "Knockout Tournament: Conversations over a Ping-pong Table",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
       "New Media Society"
     ],
     "Location": {
-      "text": "Tehran",
+      "text": "New Media Projects, Tehran",
       "city": "",
       "country": "",
       "venue": ""
     },
     "Year / Time Period": {
-      "text": "January 4-11, 2019, concurrent with the \"Teer Art\" art week"
+      "text": "2019"
     },
+    "Thematic Tags": [
+      "institutional critique",
+      "dialogical",
+      "performance",
+      "body / embodiment",
+      "process-based",
+      "collective making"
+    ],
     "Featured Project Image": {
       "url": "/images/knock-out/thumb.webp",
       "alt": "Knockout Tournament"
@@ -22,69 +123,72 @@
   "sections": [
     {
       "id": "2",
-      "title": "Introduction",
+      "title": "Project Overview",
       "paragraphs": [
-        "This project was designed and executed concurrently with the \"Teer Art\" art week and functioned as a \"Counter-event\" against the dominant flow of the art market. The initial idea was based on the symbolic confrontation between gallery-affiliated artists and independent artists, but subsequently, by opening participation to the public, the conventional hierarchical structures were challenged.In this project, the game of ping-pong was not merely a sports competition, but transformed into a platform for \"conversation in action.\" After introducing themselves, participants would converse about their lived experiences, professional status, and working conditions during the game and between matches. At the end of the tournament, Omid Fattahi (a massage therapist) won the championship, overcoming professional artists. Second place went to Behzad Hatefi (a multimedia artist) and third place went to Morteza Darehbaghi (an abstract painter). 32 participants, comprising a wide spectrum of practitioners (painter, architect, curator, actor, massage therapist, etc.), attended this event."
+        "*Knockout Tournament: Conversations over a Ping-pong Table* was a week-long event organised by New Media Society in Tehran in January 2019, timed deliberately to run alongside the city's commercial art week, Teer Art. The interior of the New Media Projects space was temporarily reconfigured as a sports venue, with a ping-pong table at its centre and the usual project-space arrangement set aside.",
+        "The tournament gathered thirty-two participants from a wide range of fields, including painters, architects, curators, actors, and a massage therapist, among others. The table became a setting where conversation about the working conditions of artists could unfold during matches and in between rounds. Conceived as a counter-event to the art-fair economy taking place a short distance away, it proposed competition and play as a frame for collective reflection."
       ]
     },
     {
       "id": "3",
       "title": "Context & Site",
       "paragraphs": [
-        "The interior space of \"New Media Projects\", through a temporary change of use, was transformed into an interactive sports space.",
-        "The space was designed in such a way that by eliminating classical exhibition arrangements, it removed the usual hierarchies (artist/audience or master/student) and placed everyone on the equal level of a \"game.\""
+        "New Media Society was an independent, non-commercial, research-oriented initiative active in Tehran from July 2014. Its premises in central Tehran had functioned as an archive, library, and project space for several years before the tournament, hosting lectures, workshops, residencies, and exhibitions, and sustaining a connection between local and international practitioners outside the commercial gallery system.",
+        "Holding the event in this space, and timing it precisely with Teer Art week, was itself part of the proposition. Rather than competing for visibility within the art fair's commercial circuit, the project chose the project space as a deliberate alternative geography: a setting where the conversation could be about the conditions of practice rather than the display of works for sale.",
+        "The decision to reconfigure the space as a sports venue mattered. By dismantling the usual exhibition layout and installing a ping-pong table at the centre, the space stopped functioning as a place where audiences contemplate finished works, and became a place where everyone present was either a player or in conversation around the game."
       ]
     },
     {
       "id": "5",
       "title": "Motivations & Questions",
       "paragraphs": [
-        "The primary objective of the project was to establish fresh conversations and connections among the artistic community and to raise real issues of artistic life in an informal and non-hierarchical format.",
-        "The crisis of \"livelihood and independence\" was brought up as the central focus of the discussions.",
-        "It became evident during the discussions that the existence of an independent artist in the current ecosystem necessitates simultaneously assuming multiple, exhausting roles.",
-        "To survive, the artist is compelled to simultaneously take on the roles of creator, manager, accountant, marketer, and even the transporter of their own artworks.",
-        "This multifaceted pressure and the ensuing isolation underscored the necessity of creating a space for brainstorming, sharing experiences, and trade union solidarity.",
-        "Three major structural elements played a part in the formation of this event. First was the critique of the \"centralism\" of events like \"Teer Art,\" which had created a profound gap by exclusively focusing on the geography of Tehran and disregarding artists and curators from other provinces.",
-        "Second were the structural ambiguities in Iran's gallery system, particularly regarding vague contracts between galleries and artists (the distinction between displaying an artwork and exclusive representation) and the ineffectiveness of trade unions in resolving these issues.",
-        "Third was the critique of the educational system (from art conservatories to universities), which has deeply impacted the orientation and even the artistic taste of graduates."
+        "The project came out of a concern with the everyday working conditions of artists in Tehran, and a sense that the structures of the art week, and the gallery economy it represented, left little room for those conditions to be talked about openly. The intent was to create a different kind of gathering: informal, non-hierarchical, where conversation could surface around the act of play.",
+        "Across the week, \"livelihood and independence\" emerged as the central concern. Participants articulated how the independent artist in Tehran is required to occupy several roles at once: creator, manager, accountant, marketer, and even transporter of their own work. The cumulative weight of this multiplicity, and the isolation it produces, made the case for a space of mutual exchange and a form of trade-based solidarity.",
+        "Three structural critiques ran through the discussions. First, the geographical centralism of events such as Teer Art, which concentrate visibility on Tehran while sidelining artists and curators from other provinces. Second, the structural ambiguities of Iran's gallery system, particularly around contracts that do not distinguish between displaying a work and representing the artist, and the limited capacity of artists' unions to address these problems. Third, the role of the educational system, from art conservatories to universities, in shaping not only training but the aesthetic orientations of its graduates."
       ]
     },
     {
       "id": "6",
-      "title": "Constraints & Strategies",
+      "title": "Conditions & Negotiations",
       "paragraphs": [
-        "The main obstacles included mental and structural challenges in defining the artist's identity (the tension between independent artists and gallery-affiliated artists), as well as the physical limitations of the space to host a sports-art event.",
-        "The primary strategy involved \"change of use\" and \"shifting concepts\"; turning a sports competition into a critical and educational platform, and opening participation to the public to dismantle the hypothetical, elite-centric boundaries between artists and other societal classes."
+        "The main obstacles were both conceptual and practical. Conceptually, the project worked through the mental and structural challenges of defining the artist's identity, particularly the tension between independent artists and those affiliated with galleries. Practically, the space had to be adapted to host a sports-art event it was not designed for.",
+        "The primary strategy involved a \"change of use\" and a \"shifting of concepts\": turning a sports competition into a critical and educational platform, and opening participation to the public in order to dismantle the hypothetical, elite-centric boundaries between artists and other societal classes."
       ]
     },
     {
+      "id": "7",
+      "title": "Documentation",
+      "paragraphs": []
+    },
+    {
       "id": "8",
-      "title": "Fundings & Partners",
+      "title": "Collaborators & Support",
       "paragraphs": [
-        "Collaborators / Participating Institutions: -",
-        "Financial Sponsors: This project was organized completely independently, and its only financial source was the participants' entrance fee (20,000 Tomans), which was entirely spent on purchasing the symbolic championship cup."
+        "*Knockout Tournament* was conceived, organised, and hosted by New Media Society as part of its independent project programme, with Amirali Ghasemi as host and facilitator. The tournament was open to the public, and the thirty-two participants joined the programme. A report on the matches was written by Bahar Ahmadifard and published on the New Media Society website.",
+        "The project was organised entirely independently, without external sponsorship. Its only financial source was the participants' entry fee of 20,000 Tomans, which was used to purchase the symbolic championship trophy."
       ]
     },
     {
       "id": "9",
       "title": "Re-readings",
       "paragraphs": [
-        "Reading of the Knockout Tournament, Conversations over a Ping-pong Table - Amirali Ghasemi"
+        "An Unrivaled \"Tournament\" — Amirali Ghasemi."
       ]
     },
     {
       "id": "10",
-      "title": "Other references & Resources",
+      "title": "Further Resources",
       "paragraphs": [
-        "Report on the Knockout Tournament matches written by Bahar Ahmadifard: https://newmediasoc.com/fa/project/%d8%a2%d8%b1%d8%b4%db%8c%d9%88-%d9%be%d8%b1%d9%88%da%98%d9%87%e2%80%8c%d9%87%d8%a7/%d8%ac%d8%a7%d9%85-%d8%ad%d8%b0%d9%81%db%8c-%da%af%d9%be-%d9%88-%da%af%d9%81%d8%aa-%d8%af%d9%88%d8%b1-%db%8c%da%a9-%d9%85%db%8c%d8%b2-%d9%be%db%8c%d9%86%da%af%e2%80%8c%d9%be%d9%8f%d9%86%da%af/"
+        "Bahar Ahmadifard, [\"Report on the Knockout Cup Tournament,\"](https://newmediasoc.com/fa/project/%d8%a2%d8%b1%d8%b4%db%8c%d9%88-%d9%be%d8%b1%d9%88%da%98%d9%87%e2%80%8c%d9%87%d8%a7/%d8%ac%d8%a7%d9%85-%d8%ad%d8%b0%d9%81%db%8c-%da%af%d9%be-%d9%88-%da%af%d9%81%d8%aa-%d8%af%d9%88%d8%b1-%db%8c%da%a9-%d9%85%db%8c%d8%b2-%d9%be%db%8c%d9%86%da%af%e2%80%8c%d9%be%d9%8f%d9%86%da%af/) New Media Society website (in Persian).",
+        "The recording of the event is held in the New Media Society archive."
       ]
     },
     {
       "id": "11",
       "title": "About the Artist",
       "paragraphs": [
-        "Bio: New Media Society was an independent, non-commercial, and research-oriented initiative in Tehran that began its activities in July 2014 (Tir 1393). This center, functioning as an archive, library, and project space, focused on supporting media arts and fresh ideas. The mission of this collective was pursued through organizing lectures, workshops, publishing texts, and cultural residency programs to fill the academic void while establishing a constructive connection between domestic and international artists. New Media Society's project space is closed as a physical space since Feb 2022 and at the moment the initiative is only active via its website / archive and the New Media Nomad School.",
-        "Website/Telegram: https://newmediasoc.com"
+        "New Media Society is an independent, non-commercial, research-oriented collective in Tehran, active since June 2014 (Tir 1393). It has functioned as an archive, library, and project space, supporting media arts and emerging practices through lectures, workshops, publishing, and cultural residency programs. The collective has sought to fill a gap in academic infrastructure and to build connections between artists working in Iran and abroad, and New Media Projects, its physical space, hosted many other initiatives and partner collectives over the years. The Tehran space has been closed since January 2023, and the collective now continues as a nomadic and online entity. *Mapping Karimkhan* was one of its participatory urban projects.",
+        "Website: newmediasoc.com Instagram: @newmediasociety"
       ]
     }
   ],
@@ -93,22 +197,17 @@
       {
         "title": "",
         "paragraphs": [
-          "There were 32 participants in this event, encompassing a wide range of practitioners: painter, architect, curator, actor, massage therapist, and other active individuals from various fields.",
-          "Audiences crossed the usual boundaries and were present in both the roles of \"player\" (active agent) and \"spectator,\" actively participating in the discussions surrounding the economics and politics of art.",
-          "Discussions began with tracing the roots of the tendency toward abstract painting in the past decades and the influence of masters such as Nosratollah Kasraian and Yaghoub Amamehpich in the educational system, extending into topics concerning \"performance and body studies.\"",
-          "During these discussions, theater acting techniques and body training for \"making playing with an imaginary ball look real\" were analyzed.",
-          "Additionally, the use of alternative objects (such as a paintbrush instead of a racket) as an executive metaphor demonstrated the existential condition of the artist within the field of art."
+          "The tournament ran over eight days, from 4pm to 8pm each afternoon, and was open to the public. Entry required a fee of 20,000 Tomans, which went entirely toward the symbolic championship trophy.",
+          "The initial conceit was a symbolic confrontation between gallery-affiliated artists and independent artists. Once participation was opened to the public, this binary loosened. Thirty-two people from across the city, including a painter, an architect, a curator, an actor, and a massage therapist, among others, signed up to play.",
+          "Each participant introduced themselves at the table. Conversation continued during matches and between rounds, drifting across topics: lived experience, professional status, current working arrangements. Discussions ranged from the roots of abstract painting in Iranian art education and the influence of figures such as Nosratollah Kasraian and Yaghoub Amamehpich, to performance and body studies, including how theatre training disciplines the body to make playing with an imaginary ball appear real. At certain moments, participants substituted a paintbrush for a racket, a gesture that functioned as a metaphor for the artist's position within the field. The tournament concluded with Omid Fattahi, a massage therapist, taking the championship, followed by the multimedia artist Behzad Hatefi in second place and the abstract painter Morteza Darehbaghi in third."
         ]
       }
     ]
   },
   "Visual Documentation": {
-    "items": [
-      {
-        "type": "photo",
-        "src": "",
-        "description": "13 photos in the related folder"
-      }
-    ]
-  }
+    "items": []
+  },
+  "Editorial Notes": [
+    "This entry was prepared based on materials and texts shared by the collective, and edited in collaboration with the initiator."
+  ]
 }

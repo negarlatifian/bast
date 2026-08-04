@@ -1,75 +1,214 @@
 {
   "slug": "talk-see-taxi-project",
+  "fa": {
+    "1. Basic Information": {
+      "Project Title": "تاک‌سی",
+      "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+        "علی معمری"
+      ],
+      "Location": { "text": "بجنورد، مشهد، تهران (سیار)" },
+      "Year / Time Period": { "text": "۱۳۹۶ تا کنون" },
+      "Featured Project Image": { "alt": "تاک‌سی" }
+    },
+    "sections": [
+      {
+        "id": "2",
+        "title": "مروری بر پروژه",
+        "paragraphs": [
+          "«تاک‌سی» (Talk-See) یک فضای هنری سیار است که در دل یک خودروی مسافربری ساخته شده است. نقاشی‌های کوچکی که روی اسکناس‌های هزار تومانی کشیده شده‌اند، به‌صورت قاب‌شده یا در قالب کارت‌پستال، روی یک جایگاه دست‌ساز که جای صندلی سرنشین جلو را گرفته، به نمایش درمی‌آیند. مخاطب این اثر هر کسی است که از طریق درخواست تاکسی اینترنتی (اسنپ یا تپسی) به‌طور تصادفی وارد این وضعیت می‌شود و خود را داخل یک گالری کوچک و چرخ‌دار می‌یابد. در طول مسیر، گفت‌وگویی میان راننده-هنرمند و مسافر شکل می‌گیرد و در صورت تمایل مسافر، آثار قابل‌خریداری هستند.",
+          "این پروژه از سال ۱۳۹۶ آغاز شده و در شهرهای بجنورد، مشهد و تهران ادامه دارد. عنوان پروژه با کلمهٔ فارسی «تاکسی» بازی می‌کند و با باز کردن آن به دو واژهٔ انگلیسی Talk (حرف زدن) و See (دیدن)، کارکرد موقعیتی را که در خودرو چیده شده است نام‌گذاری می‌کند."
+        ]
+      },
+      {
+        "id": "3",
+        "title": "بستر و مکان",
+        "paragraphs": [
+          "مکان اجرا، خودرویی در حال حرکت در خیابان‌های بجنورد، مشهد یا تهران است که موقتاً به یک گالری کوچک تغییر کاربری داده است. فضای داخلی خودرو نه کاملاً عمومی است و نه کاملاً خصوصی؛ فضایی بسته و صمیمی است، اما در دل ترافیک روزمرهٔ شهر قرار دارد و برای مدتی کوتاه با غریبه‌ها به اشتراک گذاشته می‌شود. پروژه این وضعیت بینابینی را به‌عنوان فضای کاری خود در نظر می‌گیرد. انتخاب خودرو مستقیماً با این پرسش گره خورده بود که پروژه قصد داشت به چه کسانی دسترسی پیدا کند. مخاطبان گالری‌ها در شهرهایی که پروژه در آن‌ها حرکت می‌کند معمولاً افراد ثابتی هستند، و معمری علاقه‌مند بود با افرادی روبه‌رو شود که در حالت عادی به یک فضای هنری نمی‌آیند. این اثر، به‌جای آنکه از مخاطب بخواهد به سراغ آن بیاید، خود را در مسیر رفت‌وآمد روزمرهٔ او قرار می‌دهد. در مواقعی که معمری در زادگاهش، بجنورد، نمایشگاهی داشته، خودرو نیز در کنار فضای نمایشگاه پارک شده تا چیدمان سیار در کنار چیدمان متعارف قرار گیرد."
+        ]
+      },
+      {
+        "id": "5",
+        "title": "انگیزه‌ها و پرسش‌ها",
+        "paragraphs": [
+          "این پروژه از دل علاقه به خروج از مدار نسبتاً بستهٔ مخاطبان گالری پدید آمد. معمری می‌خواست بیازماید که آیا می‌توان آثار هنری را به افرادی که معمولاً با فضاهای هنری درگیر نمی‌شوند ارائه داد و حتی فروخت — نه با پایین آوردن سطح کار برای دسترسی به آن‌ها، بلکه با تغییر مکانی که این رویارویی در آن اتفاق می‌افتد. گفت‌وگوی تاکسی موقعیتی آشناست در ایران برای تبادل بین‌طبقاتی، و پروژه از این آشنایی بهره می‌گیرد و پرسش‌هایی دربارهٔ هنر، اقتصاد و زندگی روزمره را بر روی موقعیتی که مردم از پیش می‌دانند چگونه در آن رفتار کنند، لایه‌بندی می‌کند.",
+          "پرسش‌هایی که در جریان پروژه مطرح می‌شوند را می‌توان این‌گونه بیان کرد:",
+          "بستر گسترده‌تری که پروژه به آن واکنش نشان می‌دهد، دو رو دارد. از یک سو، آگاهی از اینکه گالری‌ها به چه کسانی دسترسی دارند و به چه کسانی ندارند، و کنجکاوی دربارهٔ اینکه یک پرکتیس هنری وقتی از نظر ساختاری خارج از آن مخاطب قرار می‌گیرد، چگونه به نظر می‌رسد. از سوی دیگر، فشارهای لایه‌بندی‌شدهٔ اقتصادی، اجتماعی و شهری که یک بستر کم‌هزینه، سیار و نیمه‌خصوصی را به یکی از عملی‌ترین فرم‌ها برای مواجهه‌های مستمر در شهر تبدیل می‌کند. این اثر از آنچه از پیش وجود دارد استفاده می‌کند: اعتماد میان راننده و مسافر، زمان مردهٔ ترافیک، و اسکناس به‌عنوان یک سطح کوچک، قابل‌حمل و بار‌دار."
+        ],
+        "quotes": [
+          {
+            "text": "آیا می‌توان یک موقعیت روزمره را به فضایی برای تجربهٔ هنری تبدیل کرد؟ یک گفت‌وگوی کوتاه در حال حرکت، چه امکاناتی برای تبادل دیدگاه‌ها می‌تواند تولید کند؟ و هنر چگونه می‌تواند بدون تکیه بر نهادهای رسمی، وارد جریان عادی زندگی شود؟",
+            "attribution": "علی معمری"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "title": "شرایط و مذاکره‌ها",
+        "paragraphs": [
+          "این پروژه بدون هیچ حمایت نهادی و کاملاً با هزینهٔ شخصی هنرمند انجام گرفته است. در طول سال‌های فعالیت، هیچ سانسور یا مانع رسمی گزارش نشده است. ترکیب تأمین‌هزینهٔ شخصی و ابعاد کوچک پروژه، باعث شده تا پروژه برای ادامهٔ فعالیت نسبتاً انعطاف‌پذیر و آزاد بماند.",
+          "راهبرد کاری، استفاده از چیزهایی است که در غیر این صورت بی‌استفاده می‌مانند: زمان مردهٔ ترافیک و توقف‌ها، فضای از پیش آمادهٔ داخلی یک خودروی مسافربری اینترنتی، و اعتماد روزمره‌ای که از پیش میان راننده و مسافری که درخواست خودرو گرفته وجود دارد. خود فرم سیار، بخشی از این راهبرد است. پروژه به‌جای پایبندی به یک مکان یا برنامهٔ زمانی ثابت، می‌تواند جابه‌جا شود، سازگار شود و متوقف گردد."
+        ]
+      },
+      {
+        "id": "8",
+        "title": "همکاران و پشتیبانی",
+        "paragraphs": [
+          "«تاک‌سی» پروژه‌ای خودگردان و اثر انفرادی علی معمری است که بدون هیچ میزبان نهادی، همکار یا کیوریتوری اجرا شده است. این پروژه هیچ بودجهٔ تولیدی ندارد و تماماً با هزینهٔ شخصی هنرمند پیش می‌رود؛ در تمام سال‌های فعالیت پروژه، هزینهٔ اتومبیل، متریال، تجهیزات ضبط و زمان صرف‌شده، همگی به‌طور شخصی تقبل شده‌اند."
+        ]
+      },
+      {
+        "id": "9",
+        "title": "خوانش",
+        "paragraphs": [
+          "تاک‌سی — فاطمه عطاران.",
+          "دربارهٔ نمایشگاه «تاک‌سی» — صادق هدایتی."
+        ]
+      },
+      {
+        "id": "10",
+        "title": "منابع بیشتر",
+        "paragraphs": [
+          "مستندسازی مستمر پروژه در [اینستاگرام](https://www.instagram.com/talk.see.projects/) (@talk.see.projects)."
+        ]
+      },
+      {
+        "id": "11",
+        "title": "درباره‌ی هنرمند",
+        "paragraphs": [
+          "**علی معمری** (متولد ۱۳۶۰، بجنورد) نقاش و مربی هنر با بیش از دو دهه سابقهٔ کار است که بین مشهد و بجنورد فعالیت می‌کند. او در رشتهٔ گرافیک آموزش دیده و آثارش را در نمایشگاه‌های انفرادی و گروهی در گالری‌های متعددی از جمله فضای هنری سیس و گالری گلشن در بجنورد، گالری‌های نارون و آرتین در مشهد، گالری‌های اُ، آریا و هفت‌ثمر در تهران، و گالری سپیده احدی در برلین به نمایش گذاشته است. پروژهٔ مشارکتی شهری او، «تاک‌سی»، از سال ۱۳۹۶ در جریان است."
+        ]
+      }
+    ],
+    "Participation & Process": {
+      "subsections": [
+        {
+          "title": "",
+          "paragraphs": [
+            "مشارکت از روی تصادف آغاز می‌شود. یک مسافر درخواست خودرو می‌دهد، سوار می‌شود و خود را در یک فضای پیکربندی‌شده می‌یابد: نقاشی‌های کوچک روی اسکناس، روی جایگاهی که معمولاً جای صندلی مسافر جلو قرار دارد، و آثار قاب‌شده و کارت‌پستال‌هایی که در دسترس او هستند. این مواجهه در طول مسیر سفر شکل می‌گیرد. هر دیدار رویدادی یگانه است که به‌سادگی برای همان شخص قابل‌تکرار نیست، و تمپوی پروژه را ترافیک شهر تعیین می‌کند.",
+            "عملی که این موقعیت را به هم پیوند می‌دهد، نقاشی زنده است. پشت چراغ‌های قرمز و در زمان توقف، هنرمند با استفاده از یک تخته‌شاسی که روی فرمان نصب شده، پشت اسکناس‌ها نقاشی می‌کند. همان‌طور که معمری توصیف می‌کند:"
+          ],
+          "quotes": [
+            {
+              "text": "در طول مسیر، پشت چراغ‌های قرمز و توقف‌ها، با استفاده از تخته‌شاسی‌ای که روی فرمان نصب کرده‌ام، پشت اسکناس‌ها نقاشی می‌کنم. عمل نقاشی‌کشیدن، خودبه‌خود هیجان و کنجکاوی مضاعفی برای مسافران ایجاد می‌کند و به راهی مؤثر برای باز کردن باب گفت‌وگو، ایجاد ارتباط و جلب اعتماد آن‌ها برای اشتراک‌گذاشتن دیدگاه‌ها و افکارشان تبدیل می‌شود.",
+              "attribution": "علی معمری"
+            }
+          ]
+        },
+        {
+          "title": "",
+          "paragraphs": [
+            "مسافر می‌تواند در جایگاه‌های مختلفی قرار گیرد: مشاهده‌گر، هم‌صحبت، پرسشگر کنجکاو، یا گاهی خریدار. با رضایت مسافر، گفت‌وگو گاهی به‌صورت صوتی ضبط می‌شود؛ یک دوربین ثبت وقایع که رو به آسمان روبه‌رو نصب شده، تصویری متناسب را بدون نشان‌دادن هیچ چهره‌ای ضبط می‌کند. فایل ضبط‌شده صدا را حفظ می‌کند، اما هویت را پنهان نگه می‌دارد."
+          ]
+        }
+      ]
+    },
+    "Editorial Notes": [
+      "این مدخل بر اساس روایت هنرمند و مطالب همراه پروژه تهیه شده است."
+    ]
+  },
   "1. Basic Information": {
-    "Project Title": "Talk-See (Taxi) Project",
+    "Project Title": "Talk-See",
     "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
       "Ali Moammery"
     ],
     "Location": {
-      "text": "Urban space - Bojnourd, Mashhad, Tehran",
+      "text": "Bojnourd, Mashhad, Tehran (mobile, urban)",
       "city": "",
       "country": "",
       "venue": ""
     },
     "Year / Time Period": {
-      "text": "From 2017 to the present"
+      "text": "2017–ongoing"
     },
+    "Thematic Tags": [
+      "urban intervention",
+      "dialogical",
+      "durational",
+      "public / private",
+      "performance",
+      "institutional critique",
+      "everyday encounter"
+    ],
     "Featured Project Image": {
       "url": "/images/talk-see/thumb.webp",
-      "alt": ""
+      "alt": "Talk-See"
     }
   },
   "sections": [
     {
       "id": "2",
-      "title": "Introduction",
+      "title": "Project Overview",
       "paragraphs": [
-        "Talk-See is a mobile art space that has been formed inside a passenger car (Samand) as a small gallery. In this space, small paintings - drawn on one-thousand Toman banknotes - are displayed either framed or as postcards on a handmade stand, replacing the front passenger seat.",
-        "The project's audience consists of passengers (using ride-hailing taxi apps like Snapp/Tapsi), who enter this situation entirely by chance. During the journey, a conversation develops between the driver/artist and the passengers. There is an opportunity to purchase the artworks if desired. Simultaneously, during stops (for example, during rush hours or while waiting at a red light), the artist paints on banknotes using a clipboard mounted on the steering wheel, and this process becomes part of the live experience of the project."
+        "*Talk-See* is a mobile art space built inside a passenger car. Small paintings made on one-thousand toman banknotes are displayed either framed or as postcards on a handmade stand that replaces the front passenger seat. The audience is whoever happens to call a ride-hailing taxi through Snapp or Tapsi and finds themselves, by chance, inside what is effectively a small gallery on wheels. A conversation between the driver-artist and the passenger develops over the course of the ride, and the works can be purchased if the passenger is interested.",
+        "The project has been running since 2017 and continues across Bojnourd, Mashhad, and Tehran. The title plays on the Persian word for taxi (تاکسی), opening it out into \"talk\" and \"see\", naming what the situation in the car is set up to do."
       ]
     },
     {
       "id": "3",
       "title": "Context & Site",
       "paragraphs": [
-        "Set within the urban space in motion, the project takes place inside a personal car temporarily transformed into a gallery circulating through the city streets. This space creates a kind of intermediary state between public and private: an enclosed environment, yet situated in the heart of everyday life. This setting was chosen because it provides access to an audience that does not usually visit art galleries. Instead of inviting the audience to an art space, the project places itself directly in the path of their daily commute. There were times when the car was parked alongside an art event, such as an exhibition by the artist in his hometown, Bojnourd, allowing the project to be redefined in various situations."
+        "The site is a car moving through the streets of Bojnourd, Mashhad, or Tehran, temporarily reconfigured as a small gallery. The interior of a car is neither fully public nor fully private. It is enclosed and intimate, but it sits inside the everyday traffic of the city and is briefly shared with strangers. The project takes this in-between condition as its working space. The choice of the car was tied directly to the question of who the project wanted to reach. The audience for galleries in the cities the project moves through tends to be a recurring one, and Moammery was interested in encountering people who would not typically come to an art space. Rather than asking that audience to come to the work, the work places itself in the path of their daily commute. At moments when Moammery has had a gallery exhibition in his hometown of Bojnourd, the car has also been parked next to the exhibition space, letting the mobile setup sit alongside the conventional one."
       ]
     },
     {
       "id": "5",
       "title": "Motivations & Questions",
       "paragraphs": [
-        "At its core, the project grows out of a desire to step beyond the limited circle of gallery audiences. This project seeks to test the possibility of presenting and even selling artwork among people who do not normally engage with such spaces. Furthermore, the project utilizes the familiar social experience of chatting in a taxi and turns it into a platform to raise issues regarding art, the economy, and everyday life. Several questions arise here: Is it possible to transform an everyday situation into a space for an artistic experience? What possibilities for exchanging views are created by a short conversation while on the move? And how can art enter the normal flow of life without relying on official institutions?"
+        "The project grew out of an interest in stepping outside the relatively closed circuit of gallery audiences. Moammery wanted to test whether artworks could be presented, and even sold, to people who do not normally engage with art spaces, not by lowering the work to meet them, but by changing where the encounter takes place. The taxi conversation is a familiar Iranian setting for cross-class exchange, and the project draws on this familiarity, layering questions about art, economy, and everyday life onto a situation people already know how to inhabit.",
+        "The questions running through the project can be put this way:",
+        "The broader context the project responds to has two sides. On one, an awareness of who galleries reach and who they do not, and a curiosity about what an art practice looks like when it is structurally outside that audience. On the other, the layered pressures, economic, social, and urban that make a low-cost, mobile, semi-private setting one of the more workable formats for sustained encounters in the city. The work uses what is already there: the trust between driver and passenger, the dead time of traffic, and the banknote as a small, portable, charged surface."
+      ],
+      "quotes": [
+        {
+          "text": "Can an everyday situation be turned into a space for artistic experience? What possibilities for exchanging views can a short conversation in motion produce? And how can art enter the normal flow of life without relying on official institutions?",
+          "attribution": "Ali Moammery"
+        }
       ]
     },
     {
       "id": "6",
-      "title": "Constraints & Strategies",
+      "title": "Conditions & Negotiations",
       "paragraphs": [
-        "The project was realised without any institutional financial support and is entirely funded by personal resources, which, despite the limitations, has created a sense of practical independence. So far, no specific obstacles in the form of censorship have been reported, though economic conditions alongside social and urban structures have influenced its development. The primary strategy is to utilize existing, low-cost situations in everyday life: dead time during transit, the ready-made space of the taxi, and the initial trust that exists between a driver and a passenger. The mobile nature of the project also allows it to relocate and adapt to different conditions, making it flexible in the face of potential limitations."
+        "The project has been carried out without any institutional support and is entirely self-funded by the artist. No censorship or formal obstruction has been reported across the years of operation. The combination of self-funding and the project's small footprint has kept it relatively flexible and free to continue.",
+        "The working strategy is to use what would otherwise be unused: the dead time of traffic and stops, the ready-made interior of a ride-hailing car, and the everyday trust between a driver and a passenger that is already in place when someone orders a ride. The mobile form is itself part of the strategy. The project can relocate, adapt, and pause, rather than holding to a fixed venue or schedule."
       ]
     },
     {
+      "id": "7",
+      "title": "Documentation",
+      "paragraphs": []
+    },
+    {
       "id": "8",
-      "title": "Fundings & Partners",
+      "title": "Collaborators & Support",
       "paragraphs": [
-        "The project is self-organized and funded by the artist."
+        "*Talk-See* is a solo, self-organised project by Ali Moammery, carried out without an institutional host, partner, or curator. The project has no production budget and is funded entirely by the artist; the car, materials, recording equipment, and time have all been covered personally over the years the project has been active."
       ]
     },
     {
       "id": "9",
       "title": "Re-readings",
-      "paragraphs": []
+      "paragraphs": [
+        "Talk-See — Fatemeh Attaran (in Persian).",
+        "On the \"Talk-See\" Exhibition — Sadegh Hedayati (in Persian)."
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Further Resources",
+      "paragraphs": [
+        "Ongoing project documentation on [Instagram](https://www.instagram.com/talk.see.projects/) (@talk.see.projects)."
+      ]
     },
     {
       "id": "11",
       "title": "About the Artist",
       "paragraphs": [
-        "Bio:",
-        "Ali Moammery (born 1981, Bojnourd) is a graphics graduate, painter, and art instructor with over two decades of artistic experience. He lives in Mashhad and Bojnourd, engaging in teaching and artistic activities. His works have been showcased in solo and group exhibitions across various cities and numerous galleries, including Sis Art Space and Golshan Gallery in Bojnourd, Naron and Artin galleries in Mashhad, O, Aria, and Haft-Samar galleries in Tehran, as well as Sepideh Ahadi Gallery in Berlin. His urban project, Talk-See, has been ongoing since 2017.",
-        "Email: Moammery1362@gmail.com",
-        "Website/Instagram:",
-        "https://www.instagram.com/Ali_moammery https://www.instagram.com/talk.see.projects/"
+        "**Ali Moammery** (b. 1981, Bojnourd) is a painter and art instructor with over two decades of practice, working between Mashhad and Bojnourd. He trained in graphics and has shown in solo and group exhibitions at galleries including Sis Art Space and Golshan Gallery in Bojnourd, Naron and Artin galleries in Mashhad, O, Aria, and Haft-Samar galleries in Tehran, and Sepideh Ahadi Gallery in Berlin. *Talk-See*, his urban participatory project, has been ongoing since 2017."
+      ],
+      "contact": [
+        { "platform": "instagram", "handle": "@talk.see.projects", "url": "https://www.instagram.com/talk.see.projects/" },
+        { "platform": "instagram", "handle": "@Ali_moammery", "url": "https://www.instagram.com/Ali_moammery" }
       ]
     }
   ],
@@ -78,12 +217,28 @@
       {
         "title": "",
         "paragraphs": [
-          "Encounters mainly involve the general public and taxi passengers-people from various walks of life who enter the space by chance. Their participation takes shape through encountering the artworks in an unexpected space, observing them, and, most importantly, conversing with the artist. The interior space of the car, acting as a semi-private environment, facilitates short but focused conversations. This project resembles a \"happening\" situation where each encounter is a unique event. The audience can transition between different roles, ranging from a spectator to an active participant, and even to an art buyer. The live painting process during the ride also helps to build trust and lay the groundwork for further interaction. In some cases, the conversations are audio-recorded (with the audience's consent), accompanied by video recorded by a dash-cam mounted on the car. The camera is pointed toward the sky ahead, ensuring no faces are shown. Participation in this project is momentary and discontinuous; each encounter is an independent experience that cannot be easily repeated for the same individual."
+          "Encounters mainly involve the general public and taxi passengers — people from various walks of life who enter the space by chance. Their participation takes shape through encountering the artworks in an unexpected space, observing them, and, most importantly, conversing with the artist. The interior space of the car, acting as a semi-private environment, facilitates short but focused conversations. This project resembles a \"happening\" situation where each encounter is a unique event. The audience can transition between different roles, ranging from a spectator to an active participant, and even to an art buyer.",
+          "The act that ties the situation together is the live painting. At red lights and during stops, the artist paints on the back of the banknotes using a clipboard mounted on the steering wheel. As Moammery describes it:"
+        ],
+        "quotes": [
+          {
+            "text": "During the ride, at red lights and stops, I use the clipboard I've fitted to the steering wheel to paint on the backs of the banknotes. The act of painting itself creates an extra excitement and curiosity for the passengers, and becomes an effective way of opening conversation, building rapport, and creating the trust for them to share their views and thoughts.",
+            "attribution": "Ali Moammery"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "paragraphs": [
+          "With the passenger's consent, the conversation is sometimes audio-recorded; a dashcam mounted to face the sky ahead provides a corresponding image track without showing anyone's face. The recording holds the voice but withholds identity. Participation in this project is momentary and discontinuous; each encounter is an independent experience that cannot be easily repeated for the same individual."
         ]
       }
     ]
   },
   "Visual Documentation": {
     "items": []
-  }
+  },
+  "Editorial Notes": [
+    "This entry was prepared based on the artist's account and accompanying project materials."
+  ]
 }

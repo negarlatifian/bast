@@ -50,6 +50,7 @@ export type Project = {
     subsections?: {
       title: string;
       paragraphs: string[];
+      quotes?: { text: string; attribution?: string }[];
     }[];
   };
   'Visual Documentation'?: {

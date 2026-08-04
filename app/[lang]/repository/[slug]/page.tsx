@@ -310,7 +310,7 @@ export default async function Page({
   );
   const remainingSections = project.sections.filter(
     (section) =>
-      !['2', '3'].includes(section.id) &&
+      !['2', '3', '9'].includes(section.id) &&
       !section.title.trim().toLowerCase().startsWith('re-reading'),
   );
 
@@ -359,23 +359,29 @@ export default async function Page({
         <div id='project-hero-sentinel' aria-hidden='true' />
 
         {hasMetadata && (
-          <dl className='mt-6 mb-10 flex flex-wrap gap-x-12 gap-y-6 sm:mt-8 lg:ps-68'>
-            {year && (
-              <div>
-                <dt className='text-sm font-semibold text-black sm:text-base'>
-                  {dict.project.periodLabel}
-                </dt>
-                <dd className='mt-1 text-sm text-[#777066] sm:text-base'>{year}</dd>
-              </div>
-            )}
-            {location && (
-              <div className='max-w-xs'>
-                <dt className='text-sm font-semibold text-black sm:text-base'>
-                  {dict.project.locationLabel}
-                </dt>
-                <dd className='mt-1 text-sm text-[#777066] sm:text-base'>
-                  {location}
-                </dd>
+          <dl className='mt-6 mb-10 flex flex-col gap-y-6 sm:mt-8 lg:ps-68'>
+            {(year || location) && (
+              <div className='flex flex-wrap gap-x-12 gap-y-6'>
+                {year && (
+                  <div>
+                    <dt className='text-sm font-semibold text-black sm:text-base'>
+                      {dict.project.periodLabel}
+                    </dt>
+                    <dd className='mt-1 text-sm text-[#777066] sm:text-base'>
+                      {year}
+                    </dd>
+                  </div>
+                )}
+                {location && (
+                  <div className='max-w-xs'>
+                    <dt className='text-sm font-semibold text-black sm:text-base'>
+                      {dict.project.locationLabel}
+                    </dt>
+                    <dd className='mt-1 text-sm text-[#777066] sm:text-base'>
+                      {location}
+                    </dd>
+                  </div>
+                )}
               </div>
             )}
             {tags.length > 0 && (
@@ -525,6 +531,13 @@ export default async function Page({
                         >
                           {paragraph}
                         </ProjectParagraph>
+                      ))}
+                      {subsection.quotes?.map((quote, quoteIndex) => (
+                        <ProjectQuote
+                          key={`${subsection.title}-${index}-quote-${quoteIndex}`}
+                          text={quote.text}
+                          attribution={quote.attribution}
+                        />
                       ))}
                     </section>
                   ))}
