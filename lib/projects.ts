@@ -8,6 +8,7 @@ import bookReadingSanandaj from '@/data/projects/book-reading-sanandaj.json';
 import cafeKonjPerformances from '@/data/projects/cafe-konj-performances.json';
 import daab from '@/data/projects/daab.json';
 import equivalenceDistance from '@/data/projects/equivalence-distance.json';
+import fromAfarIKissYou from '@/data/projects/from-afar-i-kiss-you.json';
 import karimkhan from '@/data/projects/karimkhan.json';
 import knockout from '@/data/projects/knockout.json';
 import paintYourShadowOrange from '@/data/projects/paint-your-shadow-orange.json';
@@ -104,6 +105,7 @@ export const projects = [
   cafeKonjPerformances,
   daab,
   equivalenceDistance,
+  fromAfarIKissYou,
   karimkhan,
   knockout,
   paintYourShadowOrange,
