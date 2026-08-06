@@ -1,0 +1,303 @@
+{
+  "slug": "owzar",
+  "fa": {
+    "1. Basic Information": {
+      "Project Title": "اوزار",
+      "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+        "احمدعلی کارگران"
+      ],
+      "Location": { "text": "جزیره‌ی هرمز" },
+      "Year / Time Period": { "text": "۱۴۰۰" },
+      "Featured Project Image": { "alt": "اوزار" }
+    },
+    "sections": [
+      {
+        "id": "2",
+        "title": "مروری بر پروژه",
+        "paragraphs": [
+          "«اوزار» پروژه‌ای برای بازسازی یک جهاز چوبی بادبانی از رده‌خارج‌شده در جزیره‌ی هرمز است. این سازه‌ی متحرک که دیگر قابلیت حرکت روی آب را ندارد، اکنون به میان محله‌ها می‌رود تا برنامه‌های فرهنگی، هنری و آموزشی را برای کودکان و نوجوانان به همراه داشته باشد. این وسیله با ترکیب چوب‌های کهنه‌ی جهاز قدیمی، لوله‌های داربست بی‌مصرف یک پروژه‌ی ساختمانی، و سازه‌ی چرخ‌دار قایق‌های موتوری که معمولاً در سواحل جنوب برای جابه‌جایی قایق‌ها استفاده می‌شود، ساخته شده است.",
+          "اوزار با طولی نزدیک به ۱۲ متر و عرضی حدود ۳ متر، در زمان استفاده‌ی کامل ظرفیت پذیرش حدود صد نفر را دارد. این سازه برای جابه‌جایی جمع می‌شود تا عرض کمتری داشته باشد و هنگام استفاده باز می‌شود تا جای نشستن فراهم کند. اوزار در محله‌های مختلف جزیره حرکت می‌کند و شامل هفت بخش اجرایی مجزاست."
+        ]
+      },
+      {
+        "id": "3",
+        "title": "بستر و مکان",
+        "paragraphs": [
+          "این پروژه در جزیره‌ی هرمز اجرا شد؛ جایی که یکی از جهازهای چوبی سنتی مشمول قانون تخریب هنوز در بندرگاه قرار داشت. انتخاب این جزیره تنها به دلایل جغرافیایی نبود؛ احمدعلی کارگران از دهه‌ی هشتاد در فضای هنری این منطقه فعالیت داشته و ارتباطی عمیق با ناخدایان و جاشوهای محلی برقرار کرده است. همین ارتباط دیرینه باعث شد مالکان فعلی و سابق این جهاز با بازسازی آن موافقت کنند.",
+          "طراحی این سازه به‌گونه‌ای است که به‌راحتی در فضاهای شهری، حومه‌ای و روستایی — مانند پیاده‌روها، پارک‌ها و محله‌های مسکونی — حرکت می‌کند. از نگاه کارگران، فضا در این پروژه حکم یک آبراه‌رسانی را دارد و قابلیت جابه‌جایی باعث می‌شود که اثر در مسیر مخاطب قرار بگیرد، به‌جای آنکه مخاطب منتظر بماند تا به فضای هنری برود."
+        ]
+      },
+      {
+        "id": "5",
+        "title": "انگیزه‌ها و پرسش‌ها",
+        "paragraphs": [
+          "ایده‌ی اوزار پس از برگزاری یک نمایشگاه تحقیقاتی درباره‌ی جهازهای بادبانی جنوب شکل گرفت. در جریان آن تحقیقات، این پرسش مطرح شد که طبق قانون، تمامی شناورهای چوبی باید طی پنج سال از رده خارج شوند. جایگزینی این شناورهای بومی با قایق‌های فایبرگلاس از نگاه کارگران، به معنای نابودی یک فرهنگ ریشه‌دار بود.",
+          "این بحران، او را به این پرسش رساند که آیا می‌توان یک جهاز در آستانه‌ی تخریب را نجات داد و آن را به ابزاری متحرک برای آموزش کودکان تبدیل کرد؟ از سوی دیگر، کارگران فاصله‌گرفتن هنرمندان از گالری‌ها را نقدی به حد ازتجاری‌شدن هنر و نبود امکانات آموزشی در مناطق حاشیه‌ای می‌داند. اوزار پاسخی به هر دوی این مشکلات طراحی شده است."
+        ],
+        "quotes": [
+          {
+            "text": "دانش سینه‌به‌سینه و عظمت ساخت جهاز همراه با مهارت‌های انسانی، آواهای مرتبط با این سازه‌ها اعم از آیین موسیقی اجرایی بالا کشیدن بادبان، آیین به‌آب‌انداختن جهاز، آیین‌های فصلی ماهیگیری و ده‌ها اثر متعلقات فرهنگ شفاهی، به یک‌باره قرار است نابود شود.",
+            "attribution": "احمدعلی کارگران"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "title": "شرایط و مذاکره‌ها",
+        "paragraphs": [
+          "اوزار با موانع مختلفی روبه‌رو بود: مشکلات اداری برای کسب مجوز، قانون دولتی امحای جهازها، و کمبود منابع مالی و نبود حامی نهادی.",
+          "پاسخ هنرمند به این مشکلات بسیار کاربردی بود: انتقال جهاز پیش از نابودی قانونی، با موافقت ناخدا؛ استفاده‌ی کامل از مواد بازیافتی به‌دلیل نبود بودجه؛ و طراحی یک سازه‌ی حرکتی که می‌توانست به‌سرعت مکان خود را در مواجهه با موانع قانونی تغییر دهد."
+        ]
+      },
+      {
+        "id": "8",
+        "title": "همکاران و پشتیبانی",
+        "paragraphs": [
+          "تیم اصلی پروژه با همکاری امین تیماس (مدیریت اجرایی)، علیرضا ادیمی (هماهنگی)، امیر بهاری تهرانی (نظارت) و مجتبی نیری‌پور (مسئولیت فنی) شکل گرفت. کارهای چوبی بر عهده‌ی مسعود خادمی، نورپردازی با کامبوجیه پشتگل و پشتیبانی با نبی تیماس بود. در جزیره، ایوب اوج هرمزی و ذبیح زرنگاری به پروژه کمک کردند و بخش‌های اجرایی توسط اسد گدری، حسین ظهوری و عباس گدری انجام شد.",
+          "امیرحسین دبه‌گر مستندسازی را انجام داد و نواب جعفری و آرمین آبست عکاسی کردند. مالکان جهاز ناخدا علی ملک سلامتی و ناخدا ناصر کبابی بودند و بادبان توسط ناخدا خلیل اوج هرمزی ساخته شد. هماهنگی‌های نهادی با مجموعه‌ی «رونق» و سازمان بنادر و دریانوردی بندر شهید باهنر هرمز انجام شد. این پروژه بودجه‌ی رسمی نداشت و با کمک بخش خصوصی و افراد علاقه‌مند به سرانجام رسید."
+        ]
+      },
+      {
+        "id": "10",
+        "title": "منابع بیشتر",
+        "paragraphs": [
+          "[احمدعلی کارگران، «بار این کشتی در جزیره‌ی هرمز قصه است»](https://www.irna.ir/news/84619783/%D8%A8%D8%A7%D8%B1-%D8%A7%DB%8C%D9%86-%DA%A9%D8%B4%D8%AA%DB%8C-%D8%AF%D8%B1-%D8%AC%D8%B2%DB%8C%D8%B1%D9%87-%D9%87%D8%B1%D9%85%D8%B2-%D9%82%D8%B5%D9%87-%D8%A7%D8%B3%D8%AA) (گفت‌وگو)، خبرگزاری ایرنا.",
+          "[یادداشت‌ها و مستندات پروژه](https://ak.blogsky.com/1403/05/06/post-189/%da%a9%d9%80%d9%80%d8%b4%d8%aa%db%8c-%d8%a7%d9%8f%d9%88%d8%b2%d8%a7%d8%b1-OWZAR)، وبلاگ هنرمند."
+        ]
+      },
+      {
+        "id": "11",
+        "title": "درباره‌ی هنرمند",
+        "paragraphs": [
+          "احمدعلی کارگران (متولد ۱۳۵۲ در بندرعباس) هنرمندی چندرشته‌ای است که کارهایش با دغدغه‌های محیط‌زیستی و استفاده از عناصر فرهنگ محلی گره خورده‌اند. او در کنار نقاشی، بر چیدمان‌های مکان‌محور در فضاهای عمومی و پرفورمنس تمرکز دارد. کارگران از دهه‌ی ۱۳۸۰ حضور فعالی در فضای هنری جزیره‌ی هرمز داشته و به‌عنوان مدیر هنری «خانه‌ی جری پولاک» و سرپرست رویدادهای هنری مختلف کار کرده است.",
+          "وبلاگ: ak.blogsky.com | اینستاگرام: ahmadkargaran@"
+        ]
+      }
+    ],
+    "Participation & Process": {
+      "subsections": [
+        {
+          "title": "فاز اول: جست‌وجو و تحویل جهاز",
+          "paragraphs": [
+            "کار با پیدا کردن یک جهاز چوب فرسوده در بندر هرمز آغاز شد. پس از گرفتن تأییدیه‌ی صاحبان آن، پیشینه‌ی تاریخی و خاطرات سفرهای دریایی آن ثبت گردید و سپس قطعات چوبی یکی‌یکی جدا و به کارگاه منتقل شد."
+          ]
+        },
+        {
+          "title": "فاز دوم: تأمین مواد بازیافتی و ساخت اسکلت",
+          "paragraphs": [
+            "برای ساخت سازه‌ای بادوام، به مصالح خاصی نیاز بود. برای ساخت اسکلت، از داربست‌های بی‌مصرف یک ساختمان استفاده شد که با جوش‌دادن به یکدیگر، اسکلت اصلی را شکل دادند. برای امکان حرکت نیز از یک تریلی دست‌ساز که معمولاً برای جابه‌جایی قایق‌های موتوری استفاده می‌شود، بهره گرفتند که در کارگاه تقویت شد."
+          ]
+        },
+        {
+          "title": "فاز سوم: حضور ناخدایان و جاشوها",
+          "paragraphs": [
+            "در این مرحله از دریانوردان و ناخدایان قدیمی دعوت شد تا برای اجرای دقیق فرم جهاز و انتقال اصطلاحات بومی به گروه همراهی کنند. ناخدا خلیل اوج هرمزی ساخت بادبان را انجام داد و مالکان این جهاز بازسازی‌شده، ناخدا علی ملک سلامتی و ناخدا ناصر کبابی بودند."
+          ]
+        },
+        {
+          "title": "فاز چهارم: بخش اجرایی هفت‌گانه",
+          "paragraphs": [
+            "این سازه به هفت بخش کارکردی تقسیم شده است: سینمای روباز با پرده‌ای از بادبان جهاز؛ جایگاه قصه‌گویی در کنار سکان؛ بخش نمایش عروسکی روی عرشه؛ ایستگاه نقاشی در دو طرف میانی؛ کتابخانه‌ای در اتاق انتهایی؛ جایگاه موسیقی روی پله‌های ورودی؛ و نگارخانه‌ای برای نمایش آثار هنری کودکان."
+          ]
+        },
+        {
+          "title": "فاز پنجم: اجرا در محلات",
+          "paragraphs": [
+            "بزرگ‌ترها این جهاز را به محل مورد نظر منتقل می‌کنند و برنامه‌ریزی و اجرای برنامه‌ها را خود کودکان انجام می‌دهند."
+          ]
+        },
+        {
+          "title": "",
+          "paragraphs": [
+            "مشارکت در اوزار در دو لایه عمل می‌کند. لایه‌ی اول در زمان ساخت است که به یک کار کاملاً گروهی بدل می‌شود و شامل انتقال دانش بومی ناخدایان و جاشوها به پروژه است. در این مرحله، مشارکت در واقع در حال ساخت یک زیرساخت برای زیرسازی فعالیت‌های بعدی است.",
+            "لایه‌ی دوم زمانی شروع می‌شود که کار ساخت تمام شده و جهاز به میان محله‌ها می‌رود. در اینجا کودکان نه‌تنها بهره‌بردار، بلکه تولیدکننده‌ی اصلی محتوای بخش‌های هفت‌گانه هستند."
+          ],
+          "quotes": [
+            {
+              "text": "بچه‌ها برای بچه‌ها برنامه‌ریزی و اجرا می‌کنند و بزرگ‌ترها فقط جهاز را به منطقه‌ی موردنظر منتقل می‌کنند.",
+              "attribution": "احمدعلی کارگران"
+            }
+          ]
+        }
+      ]
+    },
+    "Editorial Notes": [
+      "این مدخل بر اساس مستندات به‌اشتراک‌گذاشته‌شده توسط هنرمند تهیه شده است."
+    ]
+  },
+  "1. Basic Information": {
+    "Project Title": "Owzar",
+    "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+      "AhmadAli Kargaran"
+    ],
+    "Location": {
+      "text": "Hormoz Island",
+      "city": "",
+      "country": "",
+      "venue": ""
+    },
+    "Year / Time Period": {
+      "text": "2021"
+    },
+    "Thematic Tags": [
+      "heritage",
+      "informal education",
+      "public space",
+      "collective making"
+    ],
+    "Featured Project Image": {
+      "url": "/images/owzar/thumb.webp",
+      "alt": "Owzar"
+    }
+  },
+  "sections": [
+    {
+      "id": "2",
+      "title": "Project Overview",
+      "paragraphs": [
+        "*Owzar* is a project centered on salvaging a decommissioned wooden sailing dhow on Hormoz Island and rebuilding it into a mobile, land-bound structure. Instead of traveling by sea, this modified vessel moves through the island's landlocked neighborhoods to bring cultural, artistic, and educational programs directly to local children and youth. The vehicle was constructed by combining weathered timbers from the old dhow, leftover scaffolding pipes from a local construction site, and the wheeled trailers typically used along Iran's southern coast to haul motorboats out of the water.",
+        "Measuring roughly twelve meters long and three meters wide, the structure can accommodate about one hundred visitors when fully deployed. It features a folding design: it narrows significantly for easy transport through tight streets and expands outward when parked to create built-in seating areas. As it moves between various neighborhoods on Hormoz Island, the vessel unfolds to reveal seven distinct, dedicated program stations."
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Context & Site",
+      "paragraphs": [
+        "The project was executed on Hormoz Island, where one of the traditional wooden dhows slated for destruction under decommissioning laws was still moored at the local port. The choice of location was deeply personal rather than just geographic. Kargaran has been an active fixture in the Hormoz art community since the mid-2000s, developing close ties with local captains, sailors, and the broader maritime community over decades. This deep-seated local trust is what allowed him to convince both the current and former owners of the dhow to hand it over for creative reconstruction.",
+        "The vehicle is designed to transition smoothly through urban, suburban, and rural spaces alike, including pedestrian walkways, parks, and residential blocks. In Kargaran's view, space itself serves as a medium for connection. The mobility of the structure allows the artwork to intercept people in their everyday routines; rather than requiring an audience to seek out a formal art venue, the art venue moves directly into their path."
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Motivations & Questions",
+      "paragraphs": [
+        "The initial idea for *Owzar* grew out of a research-driven exhibition exploring traditional sailing dhows in southern Iran. While investigating the distinct regional variations and naming conventions of wooden ships across the Persian Gulf, Kargaran confronted a critical issue: a government mandate requiring the systematic destruction and decommissioning of all traditional wooden vessels within a five-year window. For Kargaran, replacing these regional wooden crafts with modern fiberglass boats meant the erasure of a deep-rooted coastal lifestyle:",
+        "This realization sparked a practical challenge: could a ship destined to be broken up or burned be repurposed into an educational tool for children, redesigned to travel directly to where they live? More broadly, Kargaran views the shift away from conventional galleries as a critique of both the hyper-commercialization of the contemporary art world and the stark lack of educational infrastructure and artistic resources available in marginal communities far from capital cities. *Owzar* was built to tackle both issues at once."
+      ],
+      "quotes": [
+        {
+          "text": "The vast oral, transmitted knowledge of dhow-building, together with human skills, the sounds and songs tied to these vessels — the music for raising the sail, the rituals of launching the dhow, the seasonal rituals of fishing, and dozens of other elements of oral culture — are all set to be destroyed at once.",
+          "attribution": "AhmadAli Kargaran"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Conditions & Negotiations",
+      "paragraphs": [
+        "The project had to navigate an array of bureaucratic, financial, and structural hurdles. Administratively, the team faced complex permit requirements for public performances. Structurally, they were racing directly against the decommissioning law slated to destroy the vessel. Financially, they operated completely without state funding or institutional backing, relying instead on independent backers and local volunteers.",
+        "The project adapted through specific design choices. To circumvent the destruction mandate, they acquired and moved the ship before it could be destroyed, with the explicit consent of its captains. To counter financial shortages, they relied entirely on recycled and salvaged components — old ship timbers, leftover scaffolding, and an abandoned trailer. Finally, to manage regulatory friction or sudden interference during public events, they designed the vehicle to be fluid and fully mobile, allowing it to easily pack up and change locations if confronted."
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Documentation",
+      "paragraphs": []
+    },
+    {
+      "id": "8",
+      "title": "Collaborators & Support",
+      "paragraphs": [
+        "The core execution team included Amin Timas (Executive Management), Alireza Adimi (Coordination), Amir Bahari Tehrani (Supervision), and Mojtaba Niripour (Technical and Operational Direction). Masoud Khademi led wood fabrication, with lighting design by Kambujieh Poshtgol and logistics by Nabi Timas. Local support on the island was anchored by Ayoub Owj Hormozi and Zabih Zarangari, while the performance team consisted of Asad Gedri, Hossein Zohouri, and Abbas Gedri.",
+        "Project documentation was managed by Amirhossein Dabehgar, with photography by Navvab Jafari and Armin Abast. The underlying vessel belonged to Captain Ali Malek Salamati and Captain Naser Kababi, and its sail was crafted by Captain Khalil Owj Hormozi. Institutional coordination was facilitated via the *Rong* Cultural and Tourism Centre alongside the Shahid Bahonar Port and Maritime Authority (Port of Hormoz). The project received no official funding and was realized entirely through private sector contributions and independent enthusiasts."
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Further Resources",
+      "paragraphs": [
+        "Interview with AhmadAli Kargaran, [\"The cargo of this ship on Hormoz Island is a story\"](https://www.irna.ir/news/84619783/%D8%A8%D8%A7%D8%B1-%D8%A7%DB%8C%D9%86-%DA%A9%D8%B4%D8%AA%DB%8C-%D8%AF%D8%B1-%D8%AC%D8%B2%DB%8C%D8%B1%D9%87-%D9%87%D8%B1%D9%85%D8%B2-%D9%82%D8%B5%D9%87-%D8%A7%D8%B3%D8%AA), IRNA News Agency (in Persian).",
+        "[Project notes and documentation](https://ak.blogsky.com/1403/05/06/post-189/%da%a9%d9%80%d9%80%d8%b4%d8%aa%db%8c-%d8%a7%d9%8f%d9%88%d8%b2%d8%a7%d8%b1-OWZAR), artist's blog (in Persian)."
+      ]
+    },
+    {
+      "id": "11",
+      "title": "About the Artist",
+      "paragraphs": [
+        "**AhmadAli Kargaran** (born 1973 in Bandar Abbas/Gamberoon) is a multidisciplinary artist whose practice bridges ecological advocacy with regional heritage and folk culture. Alongside an active studio painting practice, Kargaran focuses on site-specific installations in public spaces and performance art. He has been deeply involved in the Hormoz Island art scene since the 2000s, serving as the artistic director of the Jerry Pollock House and organizing numerous regional festivals and cultural events.",
+        "Blog: ak.blogsky.com Instagram: @ahmadkargaran"
+      ]
+    }
+  ],
+  "Participation & Process": {
+    "subsections": [
+      {
+        "title": "Phase 1: Locating and Acquiring the Dhow",
+        "paragraphs": [
+          "The project began by tracking down an intact, weathered dhow at the Hormoz port. After securing permission from its owners, the team documented the vessel's history (including details of its construction) and recorded oral histories of its past voyages. The wooden hull was then carefully dismantled piece by piece and moved to the project workshop."
+        ]
+      },
+      {
+        "title": "Phase 2: Gathering Recycled Materials and Building the Frame",
+        "paragraphs": [
+          "Constructing a frame durable enough to handle the stress of land travel required specific materials. For structural integrity, the artist used discarded scaffolding pipes from a construction site, welding them together to form the vehicle's main skeleton. For mobility, the team sourced a handmade, out-of-use boat trailer — the kind local fishermen use to park motorboats on the beach — which was thoroughly reinforced and rebuilt in the workshop."
+        ]
+      },
+      {
+        "title": "Phase 3: Engaging Captains and Sailors",
+        "paragraphs": [
+          "Older, experienced seafarers were invited directly into the workshop to help shape the vessel's final form and ensure that local maritime terminology was accurately assigned to each modified section. The sail was hand-tailored by Captain Khalil Owj Hormozi, and the recognized owners of the salvaged dhow were Captain Ali Malek Salamati and Captain Naser Kababi."
+        ]
+      },
+      {
+        "title": "Phase 4: Setting Up the Seven Stations",
+        "paragraphs": [
+          "The completed structure is divided into seven functional creative areas: an open-air cinema that uses the vessel's large sail as a projection screen; a storytelling station, positioned at the helm, utilizing the dhow's rudder as a podium; a puppet theatre, directly on the main deck and bow; a painting station, placed along the fixed, non-folding middle sides of the hull; a library, located inside the rear cabin of the ship; a music station, set up along the entrance steps leading into the cabin; and a gallery, at the far end of the structure, to exhibit artwork made during current or past workshops."
+        ]
+      },
+      {
+        "title": "Phase 5: Neighborhood Performances",
+        "paragraphs": [
+          "While adults handle the logistical task of towing the dhow to its destination, the actual programming, coordination, and execution are run entirely by the youth."
+        ]
+      },
+      {
+        "title": "",
+        "paragraphs": [
+          "Participation in *Owzar* functions across two primary layers. The first occurs during the build phase as an act of pure collective making. Bringing captains, sailors, shipwrights, and previous owners into the workshop allowed oral histories, nautical terms, sea shanties, and maritime rituals to be preserved within the physical project. Here, participation focuses on building infrastructure — a community platform that, once finished, hosts the actions of others. The collaborative focus is directed toward creating a shared resource that rescues the fading maritime heritage of southern Iran and transforms it into a functional, moving platform.",
+          "The second layer activates once the vessel hits the streets. The island's children are positioned not merely as passive observers or beneficiaries, but as the primary coordinators of the space. Adults handle the physical relocation of the vehicle, but the content across all seven stations is produced and managed by the kids themselves."
+        ],
+        "quotes": [
+          {
+            "text": "Children plan and perform for children, and the adults only move the dhow to the chosen location.",
+            "attribution": "AhmadAli Kargaran"
+          }
+        ]
+      }
+    ]
+  },
+  "Visual Documentation": {
+    "items": [
+      { "type": "photo", "src": "/images/owzar/01.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/02.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/03.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/04.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/05.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/06.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/07.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/08.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/09.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/10.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/11.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/12.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/13.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/14.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/15.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/16.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/17.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/18.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/19.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/20.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/21.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/22.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/23.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/24.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/25.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/26.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/owzar/27.webp", "description": "Owzar. Hormoz Island, 2021. Project documentation by Amirhossein Dabehgar; photography by Navvab Jafari and Armin Abast. Photo courtesy of the artist." }
+    ]
+  },
+  "Editorial Notes": [
+    "This entry was prepared based on materials shared by the artist."
+  ]
+}
