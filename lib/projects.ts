@@ -4,9 +4,11 @@ import path from 'node:path';
 import type { Locale } from './i18n';
 import { pickArray, pickString } from './merge';
 
+import anExperienceInTir from '@/data/projects/an-experience-in-tir.json';
 import bookReadingSanandaj from '@/data/projects/book-reading-sanandaj.json';
 import cafeKonjPerformances from '@/data/projects/cafe-konj-performances.json';
 import daab from '@/data/projects/daab.json';
+import enghelabAzadi from '@/data/projects/enghelab-azadi.json';
 import equivalenceDistance from '@/data/projects/equivalence-distance.json';
 import fromAfarIKissYou from '@/data/projects/from-afar-i-kiss-you.json';
 import karimkhan from '@/data/projects/karimkhan.json';
@@ -16,6 +18,8 @@ import paintYourShadowOrange from '@/data/projects/paint-your-shadow-orange.json
 import paper from '@/data/projects/paper.json';
 import postOnion from '@/data/projects/post-onion.json';
 import printingMachine from '@/data/projects/printing-machine.json';
+import radioKhiaban from '@/data/projects/radio-khiaban.json';
+import stones from '@/data/projects/stones.json';
 import talkSee from '@/data/projects/talk-see.json';
 import tehranMonoxide from '@/data/projects/tehran-monoxide.json';
 import theSecretOfLaleh from '@/data/projects/the-secret-of-laleh.json';
@@ -104,9 +108,11 @@ export type ProjectMedia = {
 };
 
 export const projects = [
+  anExperienceInTir,
   bookReadingSanandaj,
   cafeKonjPerformances,
   daab,
+  enghelabAzadi,
   equivalenceDistance,
   fromAfarIKissYou,
   karimkhan,
@@ -116,6 +122,8 @@ export const projects = [
   paper,
   postOnion,
   printingMachine,
+  radioKhiaban,
+  stones,
   talkSee,
   tehranMonoxide,
   theSecretOfLaleh,
@@ -272,7 +280,7 @@ function getMediaType(src: string): ProjectMedia['type'] {
     return 'photo';
   }
 
-  if (videoExtensions.has(extension)) {
+  if (videoExtensions.has(extension) || src.includes('vimeo.com')) {
     return 'video';
   }
 

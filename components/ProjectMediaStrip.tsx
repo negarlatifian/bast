@@ -9,6 +9,11 @@ type ProjectMediaStripProps = {
   title: string;
 };
 
+function getVimeoEmbedUrl(src: string): string | null {
+  const match = src.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  return match ? `https://player.vimeo.com/video/${match[1]}` : null;
+}
+
 export default function ProjectMediaStrip({
   mediaItems,
   title,
@@ -104,11 +109,21 @@ export default function ProjectMediaStrip({
               >
                 <div className='relative h-72 w-full overflow-hidden bg-black/5 sm:h-80 lg:h-96'>
                   {item.type === 'video' ? (
-                    <video
-                      src={item.src}
-                      controls
-                      className='h-full w-full object-cover'
-                    />
+                    getVimeoEmbedUrl(item.src) ? (
+                      <iframe
+                        src={getVimeoEmbedUrl(item.src) ?? undefined}
+                        title={item.description || title}
+                        className='h-full w-full'
+                        allow='autoplay; fullscreen; picture-in-picture'
+                        allowFullScreen
+                      />
+                    ) : (
+                      <video
+                        src={item.src}
+                        controls
+                        className='h-full w-full object-cover'
+                      />
+                    )
                   ) : item.type === 'link' ? (
                     <a
                       href={item.src}
