@@ -12,6 +12,7 @@ import fromAfarIKissYou from '@/data/projects/from-afar-i-kiss-you.json';
 import karimkhan from '@/data/projects/karimkhan.json';
 import knockout from '@/data/projects/knockout.json';
 import paintYourShadowOrange from '@/data/projects/paint-your-shadow-orange.json';
+import paper from '@/data/projects/paper.json';
 import postOnion from '@/data/projects/post-onion.json';
 import printingMachine from '@/data/projects/printing-machine.json';
 import talkSee from '@/data/projects/talk-see.json';
@@ -109,6 +110,7 @@ export const projects = [
   karimkhan,
   knockout,
   paintYourShadowOrange,
+  paper,
   postOnion,
   printingMachine,
   talkSee,
