@@ -40,6 +40,11 @@ export type Project = {
     'Featured Project Image': {
       url: string;
       alt: string;
+      /**
+       * Optional CSS object-position for the hero crop, e.g. 'center 85%'.
+       * Defaults to 'center' when omitted.
+       */
+      position?: string;
     };
     'Thematic Tags'?: string[];
   };
@@ -90,11 +95,13 @@ export type Project = {
       id: string;
       title?: string;
       paragraphs?: string[];
+      quotes?: { text: string; attribution?: string }[];
     }[];
     'Participation & Process'?: {
       subsections?: {
         title?: string;
         paragraphs?: string[];
+        quotes?: { text: string; attribution?: string }[];
       }[];
     };
     'Editorial Notes'?: string[];
@@ -185,6 +192,38 @@ export function getProjectImage(project: Project) {
   );
 }
 
+export type ProjectYearRange = {
+  start: number;
+  end: number;
+  ongoing: boolean;
+};
+
+const yearPattern = /(?:19|20)\d{2}/g;
+
+/**
+ * Parses a sortable year range out of the free-text "Year / Time Period"
+ * field (e.g. "2023-2024", "First phase: 2017", "2017–ongoing"). Always
+ * run against the English source text — the field is one of the ones
+ * `localizeProject` swaps for a Farsi string, and Farsi numerals won't
+ * match this pattern. Returns null when the text has no parseable year.
+ */
+export function getProjectYearRange(project: Project): ProjectYearRange | null {
+  const text = project['1. Basic Information']['Year / Time Period'].text;
+  const years = (text.match(yearPattern) ?? []).map(Number);
+
+  if (years.length === 0) {
+    return null;
+  }
+
+  const ongoing = /ongoing|present/i.test(text);
+
+  return {
+    start: Math.min(...years),
+    end: ongoing ? new Date().getFullYear() : Math.max(...years),
+    ongoing,
+  };
+}
+
 export function getProjectBySlug(slug: string) {
   return projects.find((project) => project.slug === slug);
 }
@@ -246,6 +285,9 @@ export function localizeProject(project: Project, locale: Locale): Project {
         ...section,
         title: pickString(section.title, faSection?.title),
         paragraphs: pickArray(section.paragraphs, faSection?.paragraphs),
+        quotes: section.quotes
+          ? pickArray(section.quotes, faSection?.quotes)
+          : section.quotes,
       };
     }),
     'Participation & Process': project['Participation & Process']
@@ -262,6 +304,9 @@ export function localizeProject(project: Project, locale: Locale): Project {
                   subsection.paragraphs,
                   faSubsection?.paragraphs,
                 ),
+                quotes: subsection.quotes
+                  ? pickArray(subsection.quotes, faSubsection?.quotes)
+                  : subsection.quotes,
               };
             },
           ),
