@@ -41,7 +41,10 @@ export default function MainLayout({
       <header
         className={`sticky top-0 z-30 ${headerClassName} backdrop-blur-md`}
       >
-        <div className='mx-auto flex w-full max-w-none items-center justify-between px-8 py-2 sm:px-16 lg:px-24'>
+        <div
+          dir='ltr'
+          className='mx-auto flex w-full max-w-none items-center justify-between px-8 py-2 sm:px-16 lg:px-24'
+        >
           <Link
             href={localizeHref(lang, '/')}
             className='logo-wrapper text-[0.95rem] font-semibold text-black sm:text-xl'

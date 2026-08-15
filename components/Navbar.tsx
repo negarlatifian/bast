@@ -12,13 +12,27 @@ export default function Navbar() {
   const pathname = usePathname();
   const { lang, dict } = useLocale();
 
-  const navItems = [
-    { label: dict.nav.repository, href: '/repository' },
-    { label: dict.nav.rereading, href: '/readings' },
-    { label: dict.nav.library, href: '/library-page' },
-    { label: dict.nav.map, href: '/map' },
-    { label: dict.nav.about, href: '/aboutbast' },
-  ].map((item) => ({ ...item, href: localizeHref(lang, item.href) }));
+  const orderedNavEntries =
+    lang === 'fa'
+      ? [
+          { label: dict.nav.about, href: '/aboutbast' },
+          { label: dict.nav.map, href: '/map' },
+          { label: dict.nav.library, href: '/library-page' },
+          { label: dict.nav.rereading, href: '/readings' },
+          { label: dict.nav.repository, href: '/repository' },
+        ]
+      : [
+          { label: dict.nav.repository, href: '/repository' },
+          { label: dict.nav.rereading, href: '/readings' },
+          { label: dict.nav.library, href: '/library-page' },
+          { label: dict.nav.map, href: '/map' },
+          { label: dict.nav.about, href: '/aboutbast' },
+        ];
+
+  const navItems = orderedNavEntries.map((item) => ({
+    ...item,
+    href: localizeHref(lang, item.href),
+  }));
 
   /* lock body-scroll while menu is open */
   useEffect(() => {
@@ -45,7 +59,7 @@ export default function Navbar() {
      hover:text-[#7f242a]`;
 
   return (
-    <nav className='relative z-30 w-fit'>
+    <nav dir='ltr' className='relative z-30 w-fit'>
       {/* ───── Top bar ───── */}
 
       <div className='mx-auto flex items-center justify-between py-2'>

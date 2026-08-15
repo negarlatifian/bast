@@ -90,6 +90,7 @@ export type Project = {
       Location?: { text?: string };
       'Year / Time Period'?: { text?: string };
       'Featured Project Image'?: { alt?: string };
+      'Thematic Tags'?: string[];
     };
     sections?: {
       id: string;
@@ -278,6 +279,9 @@ export function localizeProject(project: Project, locale: Locale): Project {
           faBasic?.['Featured Project Image']?.alt,
         ),
       },
+      'Thematic Tags': basic['Thematic Tags']
+        ? pickArray(basic['Thematic Tags'], faBasic?.['Thematic Tags'])
+        : basic['Thematic Tags'],
     },
     sections: project.sections.map((section) => {
       const faSection = fa.sections?.find((item) => item.id === section.id);

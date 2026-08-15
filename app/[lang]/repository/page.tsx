@@ -1,5 +1,5 @@
 import MainLayout from '@/components/MainLayout';
-import RepositoryMasonry from '@/components/RepositoryMasonry';
+import RepositoryView from '@/components/RepositoryView';
 import {
   getProjectImage,
   getProjectPreviewText,
@@ -7,7 +7,7 @@ import {
   projects,
 } from '@/lib/projects';
 import { getDictionary } from '@/lib/dictionaries';
-import { isLocale, localizeHref } from '@/lib/i18n';
+import { formatLocaleNumber, isLocale, localizeHref } from '@/lib/i18n';
 import { headers } from 'next/headers';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -134,7 +134,7 @@ export default async function Page({
 
       {searchQuery && (
         <p className='mt-8 text-sm leading-6 text-[#4f4a43]'>
-          {filteredProjects.length}{' '}
+          {formatLocaleNumber(filteredProjects.length, lang)}{' '}
           {filteredProjects.length === 1
             ? dict.search.resultsFor
             : dict.search.resultsForPlural}{' '}
@@ -142,7 +142,7 @@ export default async function Page({
         </p>
       )}
 
-      <RepositoryMasonry projects={visibleProjects} layoutSeed={layoutSeed} />
+      <RepositoryView projects={visibleProjects} layoutSeed={layoutSeed} />
     </MainLayout>
   );
 }

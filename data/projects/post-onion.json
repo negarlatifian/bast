@@ -8,7 +8,8 @@
       ],
       "Location": { "text": "گالری گرمساری، بندرعباس" },
       "Year / Time Period": { "text": "۱۳۹۵" },
-      "Featured Project Image": { "alt": "پست‌پیاز" }
+      "Featured Project Image": { "alt": "پست‌پیاز" },
+      "Thematic Tags": ["dialogical", "performance", "نقد نهادی", "durational"]
     },
     "sections": [
       {
@@ -197,7 +198,16 @@
     ]
   },
   "Visual Documentation": {
-    "items": []
+    "items": [
+      { "type": "photo", "src": "/images/post-onion/01.webp", "description": "Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/post-onion/02.webp", "description": "Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/post-onion/03.webp", "description": "Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/post-onion/04.webp", "description": "Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/post-onion/05.webp", "description": "Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/post-onion/06.webp", "description": "Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/post-onion/07.webp", "description": "Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/post-onion/08.webp", "description": "Photo courtesy of the artist." }
+    ]
   },
   "Editorial Notes": [
     "This entry was prepared based on materials shared by the artist."

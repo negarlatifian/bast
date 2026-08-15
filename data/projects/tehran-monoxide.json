@@ -6,9 +6,16 @@
       "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
         "نگار فرجیانی"
       ],
-      "Location": { "text": "تهران؛ فاز پنجم در بم و درزی‌کلا" },
-      "Year / Time Period": { "text": "۱۳۸۹ تا ۱۳۹۹" },
-      "Featured Project Image": { "alt": "تهران مونوکسید" }
+      "Location": {
+        "text": "تهران؛ فاز پنجم در بم و درزی‌کلا"
+      },
+      "Year / Time Period": {
+        "text": "۱۳۸۹ تا ۱۳۹۹"
+      },
+      "Featured Project Image": {
+        "alt": "تهران مونوکسید"
+      },
+      "Thematic Tags": ["environment", "urban intervention", "pedagogy", "فرآیند محور"]
     },
     "sections": [
       {
@@ -297,7 +304,188 @@
     ]
   },
   "Visual Documentation": {
-    "items": []
+    "items": [
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-0.webp",
+        "description": "Project timeline. Illustration from Tehran Monoxide book, 2021. Courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-1.webp",
+        "description": "Tehran Monoxide Exhibition poster. Designed by Homa Delvaray."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-2.webp",
+        "description": "“Yasmin Sinai created a collaborative project with the students titled Bubbles of Hope. During the exhibition period, they created a mural along the lengthy stairwell wall, inspired by images of the city and their dreams. The students, led by Yasmin, painted a mural depicting gray and dense apartment blocks, a colorful sky, and installed bubbles containing plants hanging from the ceiling on the other side of the room.” Manzoumeh Kherad Institute, Tehran, October 2011. Photo courtesy of the artist. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-3.webp",
+        "description": "“On their way to their classrooms, students often paused to view the interactive work by Shirin Hajikaramlou, and sometimes played with shadows they made while blocking the video projector.” Manzoumeh Kherad Institute, Tehran, October 2011. Photo courtesy of the artist. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-4.webp",
+        "description": "“The first work viewable upon entering the school was Kianoush Tanha's interactive three-dimensional piece combining a car engine and its exhaust pipe. Once the viewer turned a manual switch on, the engine would start, and air would pump into the exhaust pipe so that the audience could use it to pump air into the balloons provided.” Manzoumeh Kherad Institute, Tehran, October 2011. Photo courtesy of the artist. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-5.webp",
+        "description": "“Shirin Ghandchi and Ali Ghaemi had collaboratively created an animation using still images from their paintings. Ali's paintings themed around the city and its dense building blocks. Shirin had painted portraits of their son. The animation was presented on a TV screen in one of the classrooms.” Manzoumeh Kherad Institute, Tehran, October 2011. Photo courtesy of the artist. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-6.webp",
+        "description": "“The wall opposite the Christophe Rezai installation was initially left blank to accommodate a growing work-in-progress, an interactive piece by Soroush Sehhat. He started the work by posting a piece of paper on the wall that included a description of the scene of a family stuck in a traffic jam. He then posted pieces of paper with written dialogue in response to the scene and asked students to contribute to this dialogic exchange based on their own imaginations and perspectives. By the end of the show, the wall was covered by many pieces of paper, each adding a unique voice to the larger conversation. Three years later, we exhibited the Soroush Sehhat work in the Negarestan Garden, in a new context.” Manzoumeh Kherad Institute, Tehran, October 2011. Photo courtesy of the artist. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-7.webp",
+        "description": "“On the theater's walls, photographs by Jinoos Taghizadeh along with a number of writings were displayed. The writings were modified verses of Hafiz, changed in ways that would make air pollution and urban issues their theme. The artist had rewritten the verses and inserted them into sealed envelopes in the same style as the Hafiz divinations that are sold throughout Iran. The photographs depicted children wearing chemical safety masks and walking through the streets to sell the artist's envelopes to those stopped in traffic.” Manzoumeh Kherad Institute, Tehran, October 2011. Photo courtesy of the artist. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-9.webp",
+        "description": "Open call for participation in Tehran Monoxide phase 2. Designed by Homa Delvaray. Courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-10.webp",
+        "description": "Photograph by thirteen-year-old Farnoush Gheibi. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-11.webp",
+        "description": "A selection of photographs taken by schoolchildren in response to the open call. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-12.webp",
+        "description": "Swapping Roles Exhibition. Manzoumeh Kherad Institute, Tehran, October 2014. Designed by Homa Delvaray."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-13.webp",
+        "description": "“The drugstore's storefront and interior looked more interesting in the evenings, as the change in lighting would allow for better examination of details, like the colorful boxes of pharmaceutical and beauty products.” Photos by Kamyar Minoukadeh. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-14.webp",
+        "description": "“Pictured is a schoolteacher whom I never met. She is selecting a number of photographs to take to her students, taking advice from Dr. Torabi. After a few days, she came back with the students' writings and their modified photographs.” Photos by Kamyar Minoukadeh. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-15.webp",
+        "description": "“Whenever I found vacant space in the shelves, I would ask Dr. Torabi's permission to place a few of the photos there. Pictured are photos by Sonita Alizadeh and Mohsen Yazdipour, placed near Vitamin C effervescent tablets.” Photo courtesy of the artist. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-16.webp",
+        "description": "Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-17.webp",
+        "description": "Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-18.webp",
+        "description": "Project poster, Negarestan Garden, 2015. Designed by Nazanin Shivaee. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-19.webp",
+        "description": "Installation at Lalehzar Garden, 2015. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-20.webp",
+        "description": "One-day performance, Plants for Better Air at Home — installation of plants on a busy corner in Enqelab Street, Tehran, 2015. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-21.webp",
+        "description": "One-day performance, Plants for Better Air at Home — installation of plants on a busy corner in Enqelab Street, Tehran, 2015. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-22.webp",
+        "description": "Installation view of Negar Farajiani's pieces in Flanerie, an exhibition curated by Alireza Labeshka. Kaaf Institute, Tehran, September 2016. Photo by Masih Mostajeran."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-23.webp",
+        "description": "Introduction to Green Corners. Kaaf Institute, Tehran, 2017. Photo by Masih Mostajeran."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-24.webp",
+        "description": "Green Corners workshop. Biloba Greenhouse, 2017. Photos by Samaneh Gholamnejad."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-25.webp",
+        "description": "Photo by Masih Mostajeran."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-26.webp",
+        "description": "Students mounting a plant box in a classroom, Tehran, 2017. Photos by Samaneh Gholamnejad."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-27.webp",
+        "description": "Green Corners workshop in association with ArchiKids, Tehran's Book Garden, 2018. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-28.webp",
+        "description": "Green Corners workshop, Bam, 2019. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-29.webp",
+        "description": "Green Corners workshop in association with ArchiKids, Tehran's Book Garden, 2018. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-30.webp",
+        "description": "“In Darzikola, following an invitation from a local resident, we gathered in an alley that led to the forests to get to know each other. We learnt each other's names, sang songs and played games together, and talked about where we lived.” Green Corners workshop, Darzikola, 2019. Photo by Samaneh Gholamnejad. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-31.webp",
+        "description": "Green Corners workshop, Darzikola, 2019. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-32.webp",
+        "description": "Tehran Monoxide Exhibition. Silk Road Gallery, Tehran, 2018. Photo by Masih Mostajeran."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-33.webp",
+        "description": "Tehran Monoxide Exhibition. Silk Road Gallery, Tehran, 2018. Photo by Masih Mostajeran."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-34.webp",
+        "description": "While several critics reported to newspapers and magazines their distaste for the exhibition's unusual venue, the project generally received limited coverage as local media at the time were much less interested in the impact of art in social contexts as they are today. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-35.webp",
+        "description": "Artist's note. Extract from Tehran Monoxide book, 2021."
+      },
+      {
+        "type": "photo",
+        "src": "/images/tehran-monoxide/TM-36.webp",
+        "description": "Project timeline. Illustration from Tehran Monoxide book, 2021. Courtesy of the artist."
+      }
+    ]
   },
   "Editorial Notes": [
     "This entry was prepared based on an interview with the artist, and materials shared by her."

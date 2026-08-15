@@ -36,18 +36,22 @@ body {
 }
 
 /*
- * Farsi typography. The "Mosk" family is Latin-only, so Persian text falls
- * back to a Persian-capable stack. To use Vazirmatn, drop a woff2 into
- * /public/fonts and add an @font-face for it above, then it will be picked up
- * automatically as the first choice below.
+ * Farsi typography. The "Mosk" family is Latin-only, so Persian text uses
+ * Mirza (self-hosted via next/font/google, see app/[lang]/layout.tsx) with a
+ * system fallback for anything outside its coverage.
  */
 :lang(fa),
 [dir='rtl'] {
-  font-family: 'Vazirmatn', 'Mosk', Tahoma, 'Segoe UI', sans-serif;
+  font-family: var(--font-mirza), 'Mosk', Tahoma, 'Segoe UI', sans-serif;
 }
 
-/* Persian digits / punctuation read better with slightly looser leading. */
+/*
+ * Mirza's x-height is noticeably smaller than Mosk's at the same font-size,
+ * so Farsi text reads as too small unless bumped up. Persian digits /
+ * punctuation also read better with slightly looser leading.
+ */
 [dir='rtl'] {
+  font-size: 1.15em;
   line-height: 1.9;
 }
 

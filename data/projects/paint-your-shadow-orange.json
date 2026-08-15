@@ -8,7 +8,8 @@
       ],
       "Location": { "text": "گالری آبی بلند، روستای طالقانی‌محله، ساری؛ و بعدتر در تهران، رشت و قائم‌شهر" },
       "Year / Time Period": { "text": "۱۴۰۲ تا کنون" },
-      "Featured Project Image": { "alt": "سایه‌ات را نارنجی کن" }
+      "Featured Project Image": { "alt": "سایه‌ات را نارنجی کن" },
+      "Thematic Tags": ["dialogical", "ساخت جمعی", "فرآیند محور", "durational", "workshop", "youth", "pedagogy"]
     },
     "sections": [
       {
@@ -196,7 +197,20 @@
     ]
   },
   "Visual Documentation": {
-    "items": []
+    "items": [
+      { "type": "photo", "src": "/images/paint-shadow/01.webp", "description": "The beginning of the project, family gathering. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/02.webp", "description": "Participation of the local community in sewing patchwork. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/03.webp", "description": "Participation of the local community in sewing patchwork. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/04.webp", "description": "Local community and village women, Taleghani Mahalleh. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/05.webp", "description": "Workshop at Ordibehesht Music Academy, Qaem Shahr, 2024. Photo: Negar Abdangchi. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/06.webp", "description": "Workshop at Ordibehesht Music Academy, Qaem Shahr, 2024. Photo: Negar Abdangchi. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/07.webp", "description": "Workshop at Ordibehesht Music Academy, Qaem Shahr, 2024. Photo: Negar Abdangchi. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/08.webp", "description": "Workshop at Ordibehesht Music Academy, Qaem Shahr, 2024. Photo: Negar Abdangchi. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/09.webp", "description": "Workshop at Ordibehesht Music Academy, Qaem Shahr, 2024. Photo: Negar Abdangchi. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/10.webp", "description": "Performance at Ordibehesht Music Academy, Qaem Shahr, 2024. Photo: Negar Abdangchi. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/11.webp", "description": "Exhibition and workshop at Abieboland Gallery, Sari, 2023. Photo: Negar Abdangchi. Photo courtesy of the artist." },
+      { "type": "photo", "src": "/images/paint-shadow/12.webp", "description": "Performance at Ordibehesht Music Academy, Qaem Shahr, 2024. Photo: Negar Abdangchi. Photo courtesy of the artist." }
+    ]
   },
   "Editorial Notes": [
     "This entry was prepared based on materials and texts shared by the artist, and edited in collaboration with the artist."

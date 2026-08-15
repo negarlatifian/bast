@@ -8,7 +8,8 @@
       ],
       "Location": { "text": "امانت‌داری، بازار سعدی، رشت؛ بازار آرت‌بوک، گالری دیدار، تهران" },
       "Year / Time Period": { "text": "۱۴۰۲-۱۴۰۴" },
-      "Featured Project Image": { "alt": "ماشین چاپ" }
+      "Featured Project Image": { "alt": "ماشین چاپ" },
+      "Thematic Tags": ["urban intervention", "durational", "نقد نهادی"]
     },
     "sections": [
       {
@@ -114,7 +115,8 @@
     ],
     "Featured Project Image": {
       "url": "/images/printing-machine/thumb.webp",
-      "alt": "Printing Machine"
+      "alt": "Printing Machine",
+      "position": "center 85%"
     }
   },
   "sections": [
@@ -202,7 +204,30 @@
     ]
   },
   "Visual Documentation": {
-    "items": []
+    "items": [
+      { "type": "photo", "src": "/images/printing-machine/01.webp", "description": "\"Reproduce the Plain\", Saadi Bazaar, Rasht, 2023. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/02.webp", "description": "\"Reproduce the Plain\", Saadi Bazaar, Rasht, 2023. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/03.webp", "description": "\"Reproduce the Plain\", Saadi Bazaar, Rasht, 2023. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/04.webp", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/05.webp", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "video", "src": "/images/printing-machine/06.mp4", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/07.webp", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/08.webp", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/09.webp", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/10.webp", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/11.webp", "description": "\"Printing Machine No. 3 / Amirali Ghasemi\", Bazar Art Books, Didar Gallery, Tehran, 2025. Print design: Amirali Ghasemi. Manual: Saba Hassanzadeh. Illustration: Katayoun Masoudi. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/12.webp", "description": "\"Printing Machine No. 3 / Amirali Ghasemi\", Bazar Art Books, Didar Gallery, Tehran, 2025. Print design: Amirali Ghasemi. Manual: Saba Hassanzadeh. Illustration: Katayoun Masoudi. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/13.webp", "description": "\"Printing Machine No. 3 / Amirali Ghasemi\", Bazar Art Books, Didar Gallery, Tehran, 2025. Print design: Amirali Ghasemi. Manual: Saba Hassanzadeh. Illustration: Katayoun Masoudi. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/14.webp", "description": "\"Printing Machine No. 3 / Amirali Ghasemi\", Bazar Art Books, Didar Gallery, Tehran, 2025. Print design: Amirali Ghasemi. Manual: Saba Hassanzadeh. Illustration: Katayoun Masoudi. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/15.webp", "description": "\"Printing Machine No. 3 / Amirali Ghasemi\", Bazar Art Books, Didar Gallery, Tehran, 2025. Print design: Amirali Ghasemi. Manual: Saba Hassanzadeh. Illustration: Katayoun Masoudi. Source: Amaanatdaari." },
+      { "type": "video", "src": "/images/printing-machine/16.mp4", "description": "Printing Machine instruction. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/17.webp", "description": "Printing Machine instruction. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/18.webp", "description": "Printing Machine instruction. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/19.webp", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/20.webp", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "photo", "src": "/images/printing-machine/21.webp", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." },
+      { "type": "video", "src": "/images/printing-machine/22.mp4", "description": "\"This One Was Birth, That One Was Wind\", Saadi Bazaar, Rasht, 2024. Illustrations: Yasi Mossadegh. Source: Amaanatdaari." }
+    ]
   },
   "Editorial Notes": [
     "This entry was prepared based on materials shared by Amaanatdaari."

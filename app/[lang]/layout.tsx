@@ -1,10 +1,19 @@
 import type { Metadata } from 'next';
+import { Mirza } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
 import '../globals.css';
 import { LocaleProvider } from '@/components/LocaleProvider';
 import { getDictionary } from '@/lib/dictionaries';
 import { getDirection, isLocale, locales } from '@/lib/i18n';
+
+// Farsi display face — see the `:lang(fa)` rule in globals.css.
+const mirza = Mirza({
+  subsets: ['arabic', 'latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-mirza',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Bast work',
@@ -40,7 +49,7 @@ export default async function RootLayout({
   const dict = getDictionary(lang);
 
   return (
-    <html lang={lang} dir={getDirection(lang)}>
+    <html lang={lang} dir={getDirection(lang)} className={mirza.variable}>
       <body className='text-[rgb(54,54,54)]'>
         <LocaleProvider lang={lang} dict={dict}>
           {children}

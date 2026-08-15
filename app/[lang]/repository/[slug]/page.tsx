@@ -300,6 +300,8 @@ export default async function Page({
   const tags = basicInformation['Thematic Tags'] ?? [];
   const imageSrc = getProjectImage(project);
   const imageAlt = basicInformation['Featured Project Image'].alt || title;
+  const imagePosition =
+    basicInformation['Featured Project Image'].position?.trim() || 'center';
   const mediaItems = getProjectMedia(project);
   const reReading = getProjectReReading(project.slug);
   const introductionSection = project.sections.find(
@@ -331,6 +333,7 @@ export default async function Page({
             priority
             sizes='100vw'
             className='object-cover'
+            style={{ objectPosition: imagePosition }}
           />
           <div className='absolute inset-0 bg-[#d67878]/68 mix-blend-multiply' />
           <div className='absolute inset-0 bg-black/20 mix-blend-color-burn' />

@@ -20,12 +20,14 @@ export default function ProjectMediaStrip({
 }: ProjectMediaStripProps) {
   const [activePhotoIndex, setActivePhotoIndex] = useState<number | null>(null);
   const [imageRatios, setImageRatios] = useState<Record<string, number>>({});
-  const photoItems = useMemo(
-    () => mediaItems.filter((item) => item.type === 'photo'),
+  // Photos and videos are both browsable in the lightbox (arrow keys/buttons);
+  // only 'link' items stay strip-only.
+  const lightboxItems = useMemo(
+    () => mediaItems.filter((item) => item.type === 'photo' || item.type === 'video'),
     [mediaItems]
   );
   const activePhoto =
-    activePhotoIndex === null ? null : photoItems[activePhotoIndex];
+    activePhotoIndex === null ? null : lightboxItems[activePhotoIndex];
 
   const closeLightbox = useCallback(() => setActivePhotoIndex(null), []);
   const showPreviousPhoto = useCallback(() => {
@@ -34,18 +36,18 @@ export default function ProjectMediaStrip({
         return currentIndex;
       }
 
-      return (currentIndex - 1 + photoItems.length) % photoItems.length;
+      return (currentIndex - 1 + lightboxItems.length) % lightboxItems.length;
     });
-  }, [photoItems.length]);
+  }, [lightboxItems.length]);
   const showNextPhoto = useCallback(() => {
     setActivePhotoIndex((currentIndex) => {
       if (currentIndex === null) {
         return currentIndex;
       }
 
-      return (currentIndex + 1) % photoItems.length;
+      return (currentIndex + 1) % lightboxItems.length;
     });
-  }, [photoItems.length]);
+  }, [lightboxItems.length]);
   const updateImageRatio = useCallback((src: string, width: number, height: number) => {
     if (height === 0) {
       return;
@@ -93,8 +95,8 @@ export default function ProjectMediaStrip({
       >
         <div className='flex w-max items-start gap-4 pb-3'>
           {mediaItems.map((item) => {
-            const photoIndex = photoItems.findIndex(
-              (photo) => photo.src === item.src
+            const lightboxIndex = lightboxItems.findIndex(
+              (lightboxItem) => lightboxItem.src === item.src
             );
             const imageRatio = imageRatios[item.src];
             const mediaWidth = imageRatio
@@ -109,21 +111,31 @@ export default function ProjectMediaStrip({
               >
                 <div className='relative h-72 w-full overflow-hidden bg-black/5 sm:h-80 lg:h-96'>
                   {item.type === 'video' ? (
-                    getVimeoEmbedUrl(item.src) ? (
-                      <iframe
-                        src={getVimeoEmbedUrl(item.src) ?? undefined}
-                        title={item.description || title}
-                        className='h-full w-full'
-                        allow='autoplay; fullscreen; picture-in-picture'
-                        allowFullScreen
-                      />
-                    ) : (
-                      <video
-                        src={item.src}
-                        controls
-                        className='h-full w-full object-cover'
-                      />
-                    )
+                    <>
+                      {getVimeoEmbedUrl(item.src) ? (
+                        <iframe
+                          src={getVimeoEmbedUrl(item.src) ?? undefined}
+                          title={item.description || title}
+                          className='h-full w-full'
+                          allow='autoplay; fullscreen; picture-in-picture'
+                          allowFullScreen
+                        />
+                      ) : (
+                        <video
+                          src={item.src}
+                          controls
+                          className='h-full w-full object-cover'
+                        />
+                      )}
+                      <button
+                        type='button'
+                        aria-label='Open video in fullscreen'
+                        onClick={() => setActivePhotoIndex(lightboxIndex)}
+                        className='absolute bottom-2 right-2 z-10 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/70 text-lg leading-none text-white hover:bg-black/85'
+                      >
+                        ⤢
+                      </button>
+                    </>
                   ) : item.type === 'link' ? (
                     <a
                       href={item.src}
@@ -137,7 +149,7 @@ export default function ProjectMediaStrip({
                     <button
                       type='button'
                       aria-label='Open image'
-                      onClick={() => setActivePhotoIndex(photoIndex)}
+                      onClick={() => setActivePhotoIndex(lightboxIndex)}
                       className='relative block h-full w-full cursor-pointer'
                     >
                       <Image
@@ -183,7 +195,7 @@ export default function ProjectMediaStrip({
             x
           </button>
 
-          {photoItems.length > 1 && (
+          {lightboxItems.length > 1 && (
             <button
               type='button'
               aria-label='Previous image'
@@ -201,16 +213,44 @@ export default function ProjectMediaStrip({
             className='flex h-full w-full max-w-6xl flex-col items-center justify-center gap-4'
             onClick={(event) => event.stopPropagation()}
           >
-            <div className='relative h-[78vh] w-full'>
-              <Image
-                src={activePhoto.src}
-                alt={activePhoto.description || title}
-                fill
-                sizes='100vw'
-                className='object-contain'
-                priority
-              />
-            </div>
+            {activePhoto.type === 'video' ? (
+              getVimeoEmbedUrl(activePhoto.src) ? (
+                <div className='relative h-[78vh] w-full'>
+                  <iframe
+                    src={getVimeoEmbedUrl(activePhoto.src) ?? undefined}
+                    title={activePhoto.description || title}
+                    className='h-full w-full'
+                    allow='autoplay; fullscreen; picture-in-picture'
+                    allowFullScreen
+                  />
+                </div>
+              ) : (
+                // Intentionally not forced to fill the box: sizing the
+                // <video> to its own aspect ratio (instead of stretching it
+                // with object-contain) keeps the native control bar the
+                // width of the actual video instead of the full container,
+                // which looks broken for portrait clips.
+                <div className='flex h-[78vh] w-full items-center justify-center'>
+                  <video
+                    src={activePhoto.src}
+                    controls
+                    autoPlay
+                    className='max-h-full max-w-full'
+                  />
+                </div>
+              )
+            ) : (
+              <div className='relative h-[78vh] w-full'>
+                <Image
+                  src={activePhoto.src}
+                  alt={activePhoto.description || title}
+                  fill
+                  sizes='100vw'
+                  className='object-contain'
+                  priority
+                />
+              </div>
+            )}
             {activePhoto.description && (
               <figcaption className='max-w-3xl text-center text-sm leading-6 text-white/85'>
                 {activePhoto.description}
@@ -218,7 +258,7 @@ export default function ProjectMediaStrip({
             )}
           </figure>
 
-          {photoItems.length > 1 && (
+          {lightboxItems.length > 1 && (
             <button
               type='button'
               aria-label='Next image'

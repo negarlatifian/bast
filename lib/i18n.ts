@@ -53,3 +53,19 @@ export function switchLocaleInPath(pathname: string, nextLocale: Locale): string
   }
   return `/${nextLocale}${pathname}`;
 }
+
+const numberFormatters: Record<Locale, Intl.NumberFormat> = {
+  en: new Intl.NumberFormat('en-US', { useGrouping: false }),
+  fa: new Intl.NumberFormat('fa-IR', { useGrouping: false }),
+};
+
+/**
+ * Renders a plain number (a year, a count) in the active locale's digits —
+ * Persian numerals for Farsi, Western Arabic numerals for English. Use this
+ * anywhere a raw number is interpolated into UI text; localized strings that
+ * already come from data (e.g. a project's own Farsi "Year / Time Period"
+ * text) already carry the right digits and don't need this.
+ */
+export function formatLocaleNumber(value: number, locale: Locale): string {
+  return numberFormatters[locale].format(value);
+}

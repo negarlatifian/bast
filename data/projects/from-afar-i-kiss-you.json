@@ -6,9 +6,15 @@
       "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
         "بهزاد هاتفی و سوفیا هاتفی"
       ],
-      "Location": { "text": "آنلاین" },
-      "Year / Time Period": { "text": "۱۳۹۸" },
-      "Featured Project Image": { "alt": "قصه‌های از دور می‌بوسمت" }
+      "Location": {
+        "text": "آنلاین"
+      },
+      "Year / Time Period": {
+        "text": "۱۳۹۸"
+      },
+      "Featured Project Image": {
+        "alt": "قصه‌های از دور می‌بوسمت"
+      }
     },
     "sections": [
       {
@@ -172,30 +178,126 @@
   },
   "Visual Documentation": {
     "items": [
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/01.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/02.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/03.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/04.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/05.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/06.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/07.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/08.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/09.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/10.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/11.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/12.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/13.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/14.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/15.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/16.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/17.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/18.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/19.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/20.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/21.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/22.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/23.webp", "description": "" },
-      { "type": "photo", "src": "/images/from-afar-i-kiss-you/24.webp", "description": "" }
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/01.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/02.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/03.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/04.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/05.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/06.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/07.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/08.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/09.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/10.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/11.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/12.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/13.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/14.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/15.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/16.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/17.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/18.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/19.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/20.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/21.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/22.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/23.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      },
+      {
+        "type": "photo",
+        "src": "/images/from-afar-i-kiss-you/24.webp",
+        "description": "Courtesy of the artists / از آرشیو هنرمند"
+      }
     ]
   },
   "Editorial Notes": [
