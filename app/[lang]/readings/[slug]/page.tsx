@@ -21,10 +21,10 @@ export function generateStaticParams() {
 
 function CropMarks() {
   const positions = [
-    '-top-[5px] -left-[5px]',
-    '-top-[5px] -right-[5px] rotate-90',
-    '-bottom-[5px] -left-[5px] -rotate-90',
-    '-bottom-[5px] -right-[5px] rotate-180',
+    'top-2 left-2 sm:top-3 sm:left-3',
+    'top-2 right-2 rotate-90 sm:top-3 sm:right-3',
+    'bottom-2 left-2 -rotate-90 sm:bottom-3 sm:left-3',
+    'bottom-2 right-2 rotate-180 sm:bottom-3 sm:right-3',
   ];
 
   return (
