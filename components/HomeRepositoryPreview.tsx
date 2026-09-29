@@ -1,14 +1,15 @@
 'use client';
 
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import type { PointerEvent } from 'react';
+import Link from 'next/link';
+import type { MouseEvent, PointerEvent } from 'react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLocale } from './LocaleProvider';
 import { getDirection, localizeHref } from '@/lib/i18n';
 
 type HomePreviewProject = {
   slug: string;
+  title: string;
   imageAlt: string;
   imageSrc: string;
 };
@@ -61,6 +62,13 @@ type DragState = {
   moved: boolean;
 };
 
+// Where the visitor has dragged each fragment, keyed to the layout it was
+// dragged in so a breakpoint or direction change starts from a clean scatter.
+type DraggedPositions = {
+  layoutKey: string;
+  byIndex: Record<number, { x: number; y: number }>;
+};
+
 // The image cluster is anchored to the right (x 55-88%) so it sits beside
 // left-aligned hero text. Under RTL the hero text flips to the right (it
 // uses logical `items-start` alignment), so the cluster must mirror to the
@@ -69,11 +77,14 @@ function mirrorPosition(position: PreviewPosition): PreviewPosition {
   return { ...position, x: 100 - position.x - position.w };
 }
 
-function getInitialPositions(count: number, isDesktop: boolean, mirror: boolean) {
+function getPositions(count: number, isDesktop: boolean, mirror: boolean) {
   const sourcePositions = isDesktop ? desktopPositions : mobilePositions;
+  // Cap at one project per fixed slot so entries never stack directly on
+  // top of one another.
+  const visibleCount = Math.min(count, sourcePositions.length);
 
-  return Array.from({ length: count }, (_, index) => {
-    const position = sourcePositions[index % sourcePositions.length];
+  return Array.from({ length: visibleCount }, (_, index) => {
+    const position = sourcePositions[index];
     return mirror ? mirrorPosition(position) : position;
   });
 }
@@ -88,53 +99,73 @@ function getNodePoint(position: PreviewPosition) {
   };
 }
 
+/**
+ * A decorative scatter of repository fragments stitched together by a red
+ * thread — Bast's visual shorthand for a counter-archive of many voices.
+ * Each fragment is a real link to its project (not just a backdrop), so the
+ * cluster is fully reachable by keyboard and screen reader, not only by
+ * pointer. Fragments can also be dragged around; a drag never counts as a
+ * click, so only a plain click follows the link.
+ */
 export default function HomeRepositoryPreview({
   projects,
 }: HomeRepositoryPreviewProps) {
-  const router = useRouter();
-  const { lang, dict } = useLocale();
+  const { lang } = useLocale();
   const isRtl = getDirection(lang) === 'rtl';
-  const containerRef = useRef<HTMLDivElement>(null);
-  const dragStateRef = useRef<DragState | null>(null);
-  const [previewPositions, setPreviewPositions] = useState<PreviewPosition[]>(
-    () => getInitialPositions(projects.length, true, isRtl)
-  );
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
-    const syncPositions = () => {
-      setPreviewPositions(
-        getInitialPositions(projects.length, mediaQuery.matches, isRtl)
-      );
-    };
+    const sync = () => setIsDesktop(mediaQuery.matches);
 
-    syncPositions();
-    mediaQuery.addEventListener('change', syncPositions);
+    sync();
+    mediaQuery.addEventListener('change', sync);
 
-    return () => {
-      mediaQuery.removeEventListener('change', syncPositions);
-    };
-  }, [projects.length, isRtl]);
-  const points = useMemo(
-    () => previewPositions.map((position) => getNodePoint(position)),
-    [previewPositions]
+    return () => mediaQuery.removeEventListener('change', sync);
+  }, []);
+
+  const containerRef = useRef<HTMLDivElement>(null);
+  const dragStateRef = useRef<DragState | null>(null);
+  const suppressClickRef = useRef(false);
+  const layoutKey = `${isDesktop ? 'desktop' : 'mobile'}-${isRtl ? 'rtl' : 'ltr'}`;
+  const [dragged, setDragged] = useState<DraggedPositions>({
+    layoutKey,
+    byIndex: {},
+  });
+
+  const layoutPositions = useMemo(
+    () => getPositions(projects.length, isDesktop, isRtl),
+    [projects.length, isDesktop, isRtl]
   );
-  const path = projects
-    .map((_, index) => {
-      const point = points[index];
-      return `${index === 0 ? 'M' : 'L'} ${point.x} ${point.y}`;
-    })
+  const positions = useMemo(() => {
+    const byIndex = dragged.layoutKey === layoutKey ? dragged.byIndex : {};
+
+    return layoutPositions.map((position, index) =>
+      byIndex[index] ? { ...position, ...byIndex[index] } : position
+    );
+  }, [dragged, layoutKey, layoutPositions]);
+  const visibleProjects = projects.slice(0, positions.length);
+  const points = useMemo(
+    () => positions.map((position) => getNodePoint(position)),
+    [positions]
+  );
+  const path = points
+    .map((point, index) => `${index === 0 ? 'M' : 'L'} ${point.x} ${point.y}`)
     .join(' ');
 
-  const openRepository = () => {
-    router.push(localizeHref(lang, '/repository'));
-  };
-
   const handlePointerDown = (
-    event: PointerEvent<HTMLDivElement>,
+    event: PointerEvent<HTMLAnchorElement>,
     index: number
   ) => {
-    const position = previewPositions[index];
+    // A drag that ended outside the tile never fires its click, so a stale
+    // flag would otherwise swallow the next genuine click.
+    suppressClickRef.current = false;
+
+    if (event.button !== 0) {
+      return;
+    }
+
+    const position = positions[index];
 
     dragStateRef.current = {
       index,
@@ -149,7 +180,7 @@ export default function HomeRepositoryPreview({
     event.currentTarget.setPointerCapture(event.pointerId);
   };
 
-  const handlePointerMove = (event: PointerEvent<HTMLDivElement>) => {
+  const handlePointerMove = (event: PointerEvent<HTMLAnchorElement>) => {
     const dragState = dragStateRef.current;
     const container = containerRef.current;
 
@@ -158,29 +189,29 @@ export default function HomeRepositoryPreview({
     }
 
     const containerRect = container.getBoundingClientRect();
-    const deltaX = ((event.clientX - dragState.startClientX) / containerRect.width) * 100;
-    const deltaY = ((event.clientY - dragState.startClientY) / containerRect.height) * 100;
+    const deltaX =
+      ((event.clientX - dragState.startClientX) / containerRect.width) * 100;
+    const deltaY =
+      ((event.clientY - dragState.startClientY) / containerRect.height) * 100;
 
     if (Math.abs(deltaX) > 0.35 || Math.abs(deltaY) > 0.35) {
       dragState.moved = true;
     }
 
-    setPreviewPositions((currentPositions) =>
-      currentPositions.map((position, index) => {
-        if (index !== dragState.index) {
-          return position;
-        }
+    const { w } = positions[dragState.index];
+    const x = Math.min(100 - w * 0.3, Math.max(-w * 0.7, dragState.startX + deltaX));
+    const y = Math.min(98, Math.max(-w * 0.55, dragState.startY + deltaY));
 
-        return {
-          ...position,
-          x: Math.min(100 - position.w * 0.3, Math.max(-position.w * 0.7, dragState.startX + deltaX)),
-          y: Math.min(98, Math.max(-position.w * 0.55, dragState.startY + deltaY)),
-        };
-      })
-    );
+    setDragged((current) => ({
+      layoutKey,
+      byIndex: {
+        ...(current.layoutKey === layoutKey ? current.byIndex : {}),
+        [dragState.index]: { x, y },
+      },
+    }));
   };
 
-  const handlePointerUp = (event: PointerEvent<HTMLDivElement>) => {
+  const handlePointerUp = (event: PointerEvent<HTMLAnchorElement>) => {
     const dragState = dragStateRef.current;
 
     if (!dragState || dragState.pointerId !== event.pointerId) {
@@ -189,34 +220,24 @@ export default function HomeRepositoryPreview({
 
     dragStateRef.current = null;
     event.currentTarget.releasePointerCapture(event.pointerId);
+    suppressClickRef.current = dragState.moved;
+  };
 
-    if (!dragState.moved) {
-      openRepository();
+  const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (suppressClickRef.current) {
+      event.preventDefault();
+      suppressClickRef.current = false;
     }
   };
 
   return (
     <div
       ref={containerRef}
-      role='link'
-      tabIndex={0}
-      aria-label={dict.common.openRepository}
-      onClick={(event) => {
-        if (event.target === event.currentTarget) {
-          openRepository();
-        }
-      }}
-      onKeyDown={(event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          openRepository();
-        }
-      }}
-      className='group relative z-20 mt-6 min-h-[34rem] cursor-pointer overflow-hidden outline-none sm:min-h-[42rem] lg:absolute lg:inset-0 lg:mt-0 lg:min-h-0'
+      className='relative z-20 mt-6 min-h-[34rem] sm:min-h-[42rem] lg:absolute lg:inset-0 lg:mt-0 lg:min-h-0'
     >
       <svg
         aria-hidden='true'
-        className='pointer-events-none absolute inset-0 z-30 h-full w-full'
+        className='pointer-events-none absolute inset-0 z-10 h-full w-full'
         viewBox='0 0 100 100'
         preserveAspectRatio='none'
       >
@@ -229,13 +250,13 @@ export default function HomeRepositoryPreview({
           vectorEffect='non-scaling-stroke'
         >
           {path && <path d={path} />}
-          {projects.slice(0, -2).map((_, index) => {
+          {visibleProjects.slice(0, -2).map((project, index) => {
             const firstPoint = points[index];
             const secondPoint = points[index + 2];
 
             return (
               <path
-                key={`cross-thread-${projects[index].slug}`}
+                key={`cross-thread-${project.slug}`}
                 d={`M ${firstPoint.x} ${firstPoint.y} L ${secondPoint.x} ${secondPoint.y}`}
               />
             );
@@ -243,19 +264,22 @@ export default function HomeRepositoryPreview({
         </g>
       </svg>
 
-      {projects.map((project, index) => {
-        const position = previewPositions[index];
+      {visibleProjects.map((project, index) => {
+        const position = positions[index];
 
         return (
-          <div
+          <Link
             key={project.slug}
+            href={localizeHref(lang, `/repository/${project.slug}`)}
+            draggable={false}
             onPointerDown={(event) => handlePointerDown(event, index)}
             onPointerMove={handlePointerMove}
             onPointerUp={handlePointerUp}
             onPointerCancel={() => {
               dragStateRef.current = null;
             }}
-            className={`absolute ${position.a} cursor-grab touch-none select-none transition-transform duration-500 hover:scale-[1.045] active:cursor-grabbing group-hover:scale-[1.025]`}
+            onClick={handleClick}
+            className='group absolute cursor-grab touch-none overflow-hidden select-none active:cursor-grabbing motion-safe:transition-transform motion-safe:duration-500 motion-safe:hover:scale-[1.045] motion-safe:focus-visible:scale-[1.045] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#7f242a]'
             style={{
               left: `${position.x}%`,
               top: `${position.y}%`,
@@ -263,26 +287,28 @@ export default function HomeRepositoryPreview({
               zIndex: position.z,
             }}
           >
-            <Image
-              src={project.imageSrc}
-              alt={project.imageAlt}
-              fill
-              sizes='(min-width: 1024px) 18vw, 48vw'
-              className='object-cover'
-              draggable={false}
-            />
-            <div className='absolute inset-0 bg-[#d67878]/68 mix-blend-multiply' />
-            <div className='absolute inset-0 bg-black/20 mix-blend-color-burn' />
-            <div
-              aria-hidden='true'
-              className='absolute inset-0 opacity-25 mix-blend-multiply'
-              style={{
-                backgroundImage:
-                  'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.45) 1px, transparent 0)',
-                backgroundSize: '4px 4px',
-              }}
-            />
-          </div>
+            <span className={`relative block w-full ${position.a}`}>
+              <Image
+                src={project.imageSrc}
+                alt={project.imageAlt || project.title}
+                fill
+                sizes='(min-width: 1024px) 18vw, 48vw'
+                className='object-cover'
+                draggable={false}
+              />
+              <span className='absolute inset-0 bg-[#d67878]/68 mix-blend-multiply' />
+              <span className='absolute inset-0 bg-black/20 mix-blend-color-burn' />
+              <span
+                aria-hidden='true'
+                className='absolute inset-0 opacity-25 mix-blend-multiply'
+                style={{
+                  backgroundImage:
+                    'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.45) 1px, transparent 0)',
+                  backgroundSize: '4px 4px',
+                }}
+              />
+            </span>
+          </Link>
         );
       })}
     </div>

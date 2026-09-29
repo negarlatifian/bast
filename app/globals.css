@@ -1,5 +1,26 @@
 @import 'tailwindcss';
 
+/*
+ * Bast color palette. Colors are applied as literal Tailwind arbitrary
+ * values at each usage site (e.g. `text-[#7f242a]`) rather than through
+ * `@theme` tokens — this comment is the one place the full palette and its
+ * intent are written down together.
+ *
+ * Ground      rgb(248, 248, 246)  Off-white page background.
+ * Ink         rgb(54, 54, 54)     Body text.
+ * Primary     #7f242a             Maroon. The site's single accent: section
+ *                                 eyebrows, links and actions, tags, the
+ *                                 thread motif and crop marks.
+ * Wash        #d67878             Dusty rose. Decorative image tint only
+ *                                 (masonry overlays, re-reading card fill),
+ *                                 not used for text or actions.
+ * Reading bg  #8a8c84             Sage. Background for individual
+ *                                 re-reading pages only.
+ * Neutrals    #777066 / #a39a8d / #d9d2c7 / #e9e3d6 / #efe9dc
+ *                                 Muted text, borders and panel fills,
+ *                                 darkest to lightest.
+ */
+
 @font-face {
   font-family: 'Mosk';
   src: url('/fonts/Mosk_Light_300.woff2') format('woff2');
@@ -127,5 +148,127 @@ canvas {
   .logo-wrapper {
     width: 120px;
     height: 80px;
+  }
+}
+
+/*
+ * The home page's "+" menu: the sheet drops in from the top edge like a
+ * page pulled down over the collage, then its entries settle in one by one.
+ */
+@keyframes plus-menu-drop {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes plus-menu-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes plus-menu-turn {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 45deg;
+  }
+}
+
+.plus-menu-sheet {
+  animation: plus-menu-drop 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.plus-menu-item {
+  animation: plus-menu-rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.plus-menu-close {
+  rotate: 45deg;
+  animation: plus-menu-turn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plus-menu-sheet,
+  .plus-menu-item,
+  .plus-menu-close {
+    animation: none;
+  }
+}
+
+/*
+ * Home collage, desktop: while a column's photo fills its full-page strip,
+ * whatever sits over that strip turns white. The intro line carries a white
+ * copy of itself clipped to the strip (the strip's edges are published as
+ * --home-strip-left/right, measured from the line's own left edge); the
+ * logo, the "+" and the language label turn white when the strip reaches
+ * their edge of the screen.
+ */
+.home-intro-reverse {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .home-intro-reverse {
+    position: absolute;
+    inset: 0;
+    display: block;
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+  html[data-home-strip] .home-intro-reverse {
+    opacity: 1;
+    clip-path: inset(
+      -0.5em max(0px, calc(100% - var(--home-strip-right))) -0.5em
+        max(0px, var(--home-strip-left))
+    );
+  }
+
+  html[data-home-strip~='left'] .logo {
+    filter: brightness(0) invert(1);
+  }
+
+  html[data-home-strip~='right'] .home-plus {
+    color: #fff;
+  }
+
+  html[dir='ltr'][data-home-strip~='left'] .home-spine a,
+  html[dir='rtl'][data-home-strip~='right'] .home-spine a {
+    color: rgb(255 255 255 / 0.9);
+  }
+
+  html[dir='ltr'][data-home-strip~='left'] .home-spine > span,
+  html[dir='rtl'][data-home-strip~='right'] .home-spine > span {
+    background-color: rgb(255 255 255 / 0.7);
+  }
+
+  html[dir='ltr'][data-home-strip~='left'] .home-spine span span,
+  html[dir='rtl'][data-home-strip~='right'] .home-spine span span {
+    color: rgb(255 255 255 / 0.5);
+  }
+
+  /* Keeps the logo's scroll swap (see .logo above) alongside the fade. */
+  .logo {
+    transition:
+      transform 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.55s ease,
+      filter 0.5s ease;
+  }
+
+  .home-plus,
+  .home-spine a {
+    transition: color 0.5s ease;
   }
 }

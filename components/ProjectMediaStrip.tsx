@@ -53,10 +53,15 @@ export default function ProjectMediaStrip({
       return;
     }
 
-    setImageRatios((currentRatios) => ({
-      ...currentRatios,
-      [src]: width / height,
-    }));
+    const ratio = width / height;
+
+    // Bail out when nothing changed: the image ref below reports on every
+    // render, and a fresh object each time would loop.
+    setImageRatios((currentRatios) =>
+      currentRatios[src] === ratio
+        ? currentRatios
+        : { ...currentRatios, [src]: ratio }
+    );
   }, []);
 
   useEffect(() => {
@@ -99,9 +104,15 @@ export default function ProjectMediaStrip({
               (lightboxItem) => lightboxItem.src === item.src
             );
             const imageRatio = imageRatios[item.src];
+            // Until a photo reports its own shape, it gets a landscape-ish
+            // placeholder width. Without one the figure collapses to zero
+            // width, and a zero-width lazy image may never be requested —
+            // so it never loads, never reports a shape, and stays invisible.
             const mediaWidth = imageRatio
               ? `clamp(12rem, ${Math.min(imageRatio * 24, 34).toFixed(2)}rem, 34rem)`
-              : undefined;
+              : item.type === 'photo'
+                ? '18rem'
+                : undefined;
 
             return (
               <figure
@@ -158,13 +169,24 @@ export default function ProjectMediaStrip({
                         fill
                         sizes='(min-width: 1024px) 544px, 78vw'
                         className='object-cover'
-                        onLoadingComplete={(image) =>
+                        onLoad={(event) =>
                           updateImageRatio(
                             item.src,
-                            image.naturalWidth,
-                            image.naturalHeight
+                            event.currentTarget.naturalWidth,
+                            event.currentTarget.naturalHeight
                           )
                         }
+                        // A photo that finished loading before the page
+                        // hydrated never fires onLoad, so it is read here.
+                        ref={(image) => {
+                          if (image?.complete && image.naturalWidth > 0) {
+                            updateImageRatio(
+                              item.src,
+                              image.naturalWidth,
+                              image.naturalHeight
+                            );
+                          }
+                        }}
                       />
                     </button>
                   )}

@@ -21,7 +21,11 @@
     "noProjects": "No projects found.",
     "comingSoon": "Coming soon",
     "toggleNav": "Toggle navigation",
-    "closeNav": "Close navigation"
+    "closeNav": "Close navigation",
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
   },
   "project": {
     "periodLabel": "Period",
@@ -33,7 +37,34 @@
     "editorialNote": "This entry was prepared based on the artist's account and accompanying project materials."
   },
   "home": {
-    "heroTitle": "Bast is a research and curatorial platform dedicated to the study, rethinking, and documentation of participatory art in Iran."
+    "heroTitle": "Bast is a research and curatorial platform dedicated to the study, rethinking, and documentation of participatory art in Iran.",
+    "heroCta": "Enter the repository",
+    "sections": {
+      "repository": {
+        "eyebrow": "Repository",
+        "title": "From the repository",
+        "description": "A growing collection of participatory art projects from Iran, each entry built from the artist's own account.",
+        "viewAll": "View the full repository"
+      },
+      "rereading": {
+        "eyebrow": "Re-reading",
+        "title": "Re-readings",
+        "description": "Independent responses that open each project to another voice.",
+        "viewAll": "View all re-readings"
+      },
+      "library": {
+        "eyebrow": "Library",
+        "title": "From the library",
+        "description": "Books, articles, and research surrounding participatory art, from Iran and beyond.",
+        "viewAll": "Browse the library"
+      },
+      "map": {
+        "eyebrow": "Map",
+        "title": "Place and time",
+        "description": "A timeline and a geographic map trace the repository's projects across Iran.",
+        "viewAll": "Open the map"
+      }
+    }
   },
   "repository": {
     "intro": [
