@@ -103,7 +103,7 @@ export default async function Page({
   const readingProject =
     withImages.find((project) => reReadingSlugs.has(project.slug)) ??
     withImages[0];
-  const [repositoryProject, libraryProject] = withImages.filter(
+  const [aboutProject, repositoryProject] = withImages.filter(
     (project) => project !== readingProject
   );
 
@@ -124,6 +124,20 @@ export default async function Page({
   const textLayouts = randomTextLayouts();
   const panels: TriptychPanel[] = [
     {
+      key: 'about',
+      eyebrow: sections.about.eyebrow,
+      title: sections.about.title,
+      description: dict.home.heroTitle,
+      href: localizeHref(locale, '/aboutbast'),
+      linkLabel: sections.about.viewAll,
+      image: toImage(
+        aboutProject,
+        localizeHref(locale, `/repository/${aboutProject?.slug ?? ''}`)
+      ),
+      frame: frames[0],
+      ...textLayouts[0],
+    },
+    {
       key: 'repository',
       eyebrow: sections.repository.eyebrow,
       title: sections.repository.title,
@@ -134,8 +148,8 @@ export default async function Page({
         repositoryProject,
         localizeHref(locale, `/repository/${repositoryProject?.slug ?? ''}`)
       ),
-      frame: frames[0],
-      ...textLayouts[0],
+      frame: frames[1],
+      ...textLayouts[1],
     },
     {
       key: 'rereading',
@@ -150,20 +164,6 @@ export default async function Page({
           ? localizeHref(locale, `/readings/${readingProject.slug}`)
           : localizeHref(locale, `/repository/${readingProject?.slug ?? ''}`)
       ),
-      frame: frames[1],
-      ...textLayouts[1],
-    },
-    {
-      key: 'library',
-      eyebrow: sections.library.eyebrow,
-      title: sections.library.title,
-      description: sections.library.description,
-      href: localizeHref(locale, '/library-page'),
-      linkLabel: sections.library.viewAll,
-      image: toImage(
-        libraryProject,
-        localizeHref(locale, `/repository/${libraryProject?.slug ?? ''}`)
-      ),
       frame: frames[2],
       ...textLayouts[2],
     },
@@ -172,17 +172,6 @@ export default async function Page({
   return (
     <MainLayout navigation='plus'>
       <section className='flex flex-col gap-4 pt-1 pb-10 sm:gap-6 lg:min-h-0 lg:flex-1 lg:pb-8'>
-        <h1 className='relative text-base leading-snug font-semibold text-black sm:text-xl lg:text-[clamp(1.25rem,1.8vw,1.9rem)] lg:[@media(max-height:560px)]:hidden'>
-          {/* The line spans the collage's full width (its text wraps
-              narrower) so the reversed copy's clip lines up with the
-              strips in either reading direction. */}
-          <span className='block max-w-4xl'>{dict.home.heroTitle}</span>
-          {/* A white copy, clipped to whichever full-page photo strip is
-              showing, so the line reads across both photo and paper. */}
-          <span aria-hidden='true' className='home-intro-reverse'>
-            <span className='block max-w-4xl'>{dict.home.heroTitle}</span>
-          </span>
-        </h1>
         <HomeTriptych panels={panels} />
       </section>
     </MainLayout>

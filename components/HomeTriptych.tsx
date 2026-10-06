@@ -236,8 +236,6 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
   const suppressClickRef = useRef(false);
 
   const [size, setSize] = useState({ width: 0, height: 0 });
-  // Where the collage sits in the viewport, for the full-page strips.
-  const [viewport, setViewport] = useState({ left: 0, width: 0 });
   const [columns, setColumns] = useState<Box[]>([]);
   const [active, setActive] = useState<number | null>(null);
   const [draggingIndex, setDraggingIndex] = useState<number | null>(null);
@@ -253,10 +251,6 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
       const rect = container.getBoundingClientRect();
 
       setSize({ width: rect.width, height: rect.height });
-      setViewport({
-        left: rect.left,
-        width: document.documentElement.clientWidth,
-      });
       setColumns(
         columnRefs.current.map((column, index) => {
           const box = column?.getBoundingClientRect();
@@ -323,26 +317,6 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
   });
   const draggedByIndex = dragged.layoutKey === layoutKey ? dragged.byIndex : {};
   const isMeasured = size.width > 0 && columns.length === panels.length;
-  const hasPageStrips = isMeasured && !isStacked;
-
-  // A column's full-page strip, in viewport pixels: the column's own width,
-  // except that the leftmost and rightmost columns (which flip under RTL)
-  // run on out to the screen's edges.
-  const stripFor = (index: number) => {
-    const column = columns[index];
-    const lefts = columns.map((each) => each.left);
-    const rights = columns.map((each) => each.left + each.width);
-    const isLeftmost = column.left <= Math.min(...lefts);
-    const isRightmost = column.left + column.width >= Math.max(...rights);
-
-    return {
-      left: isLeftmost ? 0 : viewport.left + column.left,
-      right: isRightmost
-        ? viewport.width
-        : viewport.left + column.left + column.width,
-    };
-  };
-
   // Whether a frame at this spot (percentages of the collage) would cover
   // any column's heading or text.
   const coversText = (
@@ -364,36 +338,6 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
       column.blocks.some((block) => intersects(frameRect, block))
     );
   };
-
-  // Tell the page which full-page strip is showing, so the pieces laid over
-  // it — the intro line, the logo, the "+" and the language label — can
-  // turn white where the photo is behind them (see globals.css).
-  const activeStrip =
-    hasPageStrips && active !== null ? stripFor(active) : undefined;
-  const stripLeft = activeStrip?.left;
-  const stripRight = activeStrip?.right;
-
-  useEffect(() => {
-    const root = document.documentElement;
-
-    if (stripLeft === undefined || stripRight === undefined) {
-      delete root.dataset.homeStrip;
-      return;
-    }
-
-    const edges = [
-      stripLeft <= 0 ? 'left' : '',
-      stripRight >= viewport.width ? 'right' : '',
-    ].filter(Boolean);
-
-    root.dataset.homeStrip = edges.join(' ') || 'inner';
-    root.style.setProperty('--home-strip-left', `${stripLeft - viewport.left}px`);
-    root.style.setProperty('--home-strip-right', `${stripRight - viewport.left}px`);
-
-    return () => {
-      delete root.dataset.homeStrip;
-    };
-  }, [stripLeft, stripRight, viewport.left, viewport.width]);
 
   // Frame positions and widths as percentages of the collage.
   const frames = panels.map((panel, index) => {
@@ -596,9 +540,8 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
     .map((pin, index) => `${index === 0 ? 'M' : 'L'} ${pin.x} ${pin.y}`)
     .join(' ');
   const lastPin = pins[pins.length - 1];
-  // A second strand straight from the first frame to the last, closing the
-  // three into a triangle. Only side by side: stacked, it would run
-  // straight through the column text.
+  // A second, straight strand from the first frame to the last. Only side
+  // by side: stacked, it would run straight through the column text.
   const slackPath =
     pins.length > 2 && !isStacked
       ? `M ${pins[0].x} ${pins[0].y} L ${lastPin.x} ${lastPin.y}`
@@ -637,17 +580,12 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
               index < panels.length - 1 ? 'border-b lg:border-e lg:border-b-0' : ''
             }`}
           >
-            {/* Stacked, each column carries its own effect. Side by side,
-                the effect runs the full height of the page instead (see the
-                strips below). */}
-            {!hasPageStrips && (
-              <ColumnEffect
-                panel={panel}
-                isActive={isActive}
-                isDimmed={isDimmed}
-                sizes='100vw'
-              />
-            )}
+            <ColumnEffect
+              panel={panel}
+              isActive={isActive}
+              isDimmed={isDimmed}
+              sizes='(min-width: 1024px) 34vw, 100vw'
+            />
 
             {/* The whole column is a target, not just its title. Kept out
                 of the tab order since the title link already covers it. */}
@@ -731,31 +669,6 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
         );
       })}
 
-      {/* Side by side, each column's effect is a strip running the full
-          height of the page and, for the outer columns, out to the screen
-          edge. Fixed and behind everything, so the header and intro sit on
-          top of it. */}
-      {hasPageStrips &&
-        panels.map((panel, index) => {
-          const { left, right } = stripFor(index);
-
-          return (
-            <div
-              key={`strip-${panel.key}`}
-              aria-hidden='true'
-              className='pointer-events-none fixed inset-y-0 -z-10'
-              style={{ left, width: right - left }}
-            >
-              <ColumnEffect
-                panel={panel}
-                isActive={active === index}
-                isDimmed={active !== null && active !== index}
-                sizes='40vw'
-              />
-            </div>
-          );
-        })}
-
       {isMeasured && (
         <>
           <svg
@@ -766,7 +679,7 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
             <g
               fill='none'
               stroke='#7f242a'
-              strokeWidth='0.3'
+              strokeWidth='1'
               strokeLinecap='round'
               strokeLinejoin='round'
             >
@@ -778,10 +691,8 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
                 key={panels[index].key}
                 cx={pin.x}
                 cy={pin.y}
-                r='4'
+                r='2'
                 fill='#7f242a'
-                stroke='rgb(248,248,246)'
-                strokeWidth='1.5'
               />
             ))}
           </svg>

@@ -40,6 +40,11 @@
     "heroTitle": "Bast is a research and curatorial platform dedicated to the study, rethinking, and documentation of participatory art in Iran.",
     "heroCta": "Enter the repository",
     "sections": {
+      "about": {
+        "eyebrow": "About",
+        "title": "About Bast",
+        "viewAll": "Read more about Bast"
+      },
       "repository": {
         "eyebrow": "Repository",
         "title": "From the repository",
@@ -114,6 +119,7 @@
       "The Bast Library is an evolving digital index of resources that approach participatory art from multiple perspectives. It brings together books, articles, interviews, and research texts from Iran and beyond, contributing to the theoretical, historical, and critical discourse surrounding the field.",
       "The library also links to external digital archives, reading lists, and parallel research initiatives, continually expanding through the addition of new references."
     ],
+    "comingSoon": "Coming soon",
     "suggestResource": "Suggest a resource",
     "tabs": {
       "en": "English",
@@ -125,60 +131,49 @@
   },
   "about": {
     "sectionsNavLabel": "About sections",
-    "overviewLabel": "Overview",
+    "overviewLabel": "About Bast",
     "intro": [
-      "Bast (بسط — from the Arabic root meaning to expand or to articulate) is a research and curatorial platform dedicated to the study, documentation, and re-reading of participatory art in Iran.",
-      "Through editorial, curatorial, and research-based work, Bast asks how participatory practices have responded to specific social, political, ecological, and institutional conditions in the region, and what forms of collaboration, interaction, and creative agency they have proposed."
+      "Bast (بسط — from the Arabic root meaning to expand or to articulate) is a research and curatorial platform dedicated to the study, rethinking, and documentation of participatory art in Iran.",
+      "Through editorial and research-based work, Bast asks how participatory practices have responded to specific social, political, ecological, and institutional conditions, and what forms of collaboration, interaction, and creative agency they have proposed.",
+      "Participatory art encompasses practices that place participation, dialogue, collaboration, and collective action at the centre of the artistic process. Bast uses the term as an inclusive umbrella for a range of practices in which the work is shaped through the involvement of others, rather than as a fixed category. The terminology surrounding these practices is varied, and each term carries its own critical emphasis and evaluative framework; Bast therefore uses \"participatory art\" as a working term, open to different forms, contexts, and interpretations.",
+      "In Iran, many participatory initiatives have emerged, often in direct response to specific socio-political constraints, urgencies, and local conditions. They have taken many forms, including neighbourhood actions, workshops centred on conversation, long-term collaborations, and spaces for collective making. Many of these projects grew out of structural gaps, moments of crisis, and the absence of infrastructures for criticism and education, seeking instead to create alternative spaces for interaction and collective action. Bast is not limited to a single period or generation. Working with available documents, archival materials, and oral accounts, it also follows earlier projects and initiatives to trace a longer view of how participatory art has developed in Iran. Documenting and archiving these practices presents systemic challenges. The lack of centralised institutional resources, together with the fragmentation of existing materials, has contributed to the erasure of significant localised experiences from collective memory. The result is a substantial gap in the critical history of contemporary Iranian art, particularly with regard to participatory art practices.",
+      "Bast responds to this gap by operating as a counter-archive: a living archive of multiple voices in which documentation serves as a critical and creative methodology capable of generating knowledge, analysis, and the rearticulation of collective memory. This counter-archival approach intervenes in the documentation process, attempts to destabilise official narratives by focusing on human and personal accounts, and offers a space for alternative imaginaries to the established canon of art history. Within this framework, each archived project becomes a parallel opportunity for writing, creative interventions, and reactivation by artists, curators, researchers, and others.",
+      "Underlying this work is a shared awareness of the fragility of collective memory, of how easily particular histories disappear, and of the need to create spaces where marginalised voices can be heard. Our aim is to create a sustainable network of cultural practitioners who collectively preserve and re-read memory."
     ],
     "sections": [
       {
-        "id": "context",
-        "title": "Context and Necessity",
-        "blocks": [
-          { "type": "p", "text": "In recent decades, alongside the emergence of post-studio approaches, artistic practices that prioritize process, dialogue, and collective action over the production of objects have become central to critical discussion. What is broadly referred to as participatory art transforms the viewer from someone who watches into someone who takes part; without their presence, the work remains incomplete." },
-          { "type": "p", "text": "This expanded field has been described through a range of terms, including socially engaged art, community-based art, activist art, dialogic art, littoral art, relational aesthetics, sited public art, interventionist art, collaborative art, contextual art, and social practice. Each term establishes its own critical emphasis and evaluative framework. At Bast, we use participatory art as an inclusive umbrella term that encompasses a range of practices rather than a fixed category." },
-          { "type": "p", "text": "In Iran, many participatory initiatives have emerged, often in direct response to specific socio-political constraints, urgencies, and local conditions. They have taken many forms, including neighborhood actions, workshops centered on conversation, long-term collaborations, and spaces for collective making. Many of these projects grew out of structural gaps, moments of crisis, and the absence of infrastructures for criticism and education, seeking instead to create alternative spaces for interaction and collective action. Bast is not limited to a single period or generation. Working with available documents, archival materials, and oral accounts, it also traces earlier projects and initiatives to draw a longer historical line through the development of participatory art in Iran." },
-          { "type": "p", "text": "However, documenting and archiving these practices presents systemic challenges. The lack of centralized institutional resources, together with the fragmentation of existing materials, has contributed to the erasure of significant localized experiences from collective memory. The result is a substantial gap in the critical history of contemporary Iranian art, particularly with regard to participatory practices." },
-          { "type": "p", "text": "Bast responds to this gap. Rather than functioning as a traditional, static archive, it operates as a counter-archive: a living archive of multiple voices in which documentation serves as a critical and creative methodology capable of generating knowledge, analysis, and the rearticulation of collective memory. This counter-archival approach actively intervenes in the documentation process, destabilizing official narratives while creating space for alternative historical perspectives. Within this framework, each archived project becomes a site for writing alongside it, critical analysis, and creative intervention." },
-          { "type": "p", "text": "At the same time, we maintain a critical perspective on what participatory art actually does in Iran: where it has generated meaningful interventions, and where it has reproduced the very structures it set out to challenge. Each project is considered simultaneously as a visual document, a form of social action, and a mode of knowledge production. We are equally interested in how artists, curators, researchers, mediators, and others encounter these projects through parallel writing, creative interpretation, or reactivation, always from particular positions and with particular investments. We also ask what ethical negotiations become necessary when a participatory project is translated into institutional language in order to be evaluated." },
-          { "type": "p", "text": "Underlying this work is a shared awareness of the fragility of collective memory, of how easily particular histories disappear, and of the need to create spaces where marginalized voices can be heard. We therefore understand the archive as something living, participatory, and open to change. Our aim is to cultivate lasting networks of cultural practitioners who collectively create, preserve, and re-read memory." }
-        ]
-      },
-      {
         "id": "approach",
-        "title": "Approach and Process",
+        "title": "Approach and process",
         "blocks": [
-          { "type": "p", "text": "Bast operates through three intersecting processes: collection, conversation, and re-reading. Each project is gathered, analyzed through dialogue with its initiator, and subsequently opened to critical re-reading and creative mediation. This process is iterative rather than linear. Projects remain subject to ongoing reassessment, conversations evolve over time, interpretations stay open to contestation, and successive layers of analysis are continuously incorporated." },
-          { "type": "h3", "text": "Collection and selection" },
-          { "type": "p", "text": "Participatory art projects are identified and sourced across a range of contexts through research, dialogues with practitioners, peer recommendations, and open calls. Projects are included not solely for their historical or aesthetic significance, but for their capacity to illuminate the social, institutional, and embodied dynamics that characterize participatory art in contemporary Iran." },
-          { "type": "h3", "text": "Conversation with the artist" },
-          { "type": "p", "text": "Before any formal interpretation or re-reading takes place, the editorial team conducts in-depth conversations with the artist or project initiator. These conversations vary in format according to the nature of each project and its specific context, with the aim of uncovering the lived experience of the work. They address personal, social, and institutional frameworks, strategies for engaging participants, and the practical constraints encountered during the project's realization." },
-          { "type": "h3", "text": "Re-reading (خوانش) and creative mediation" },
-          { "type": "p", "text": "Every archived project serves as a point of departure for further engagement. Selected projects are accompanied by an invited re-reading by an artist, researcher, or cultural practitioner, offering an independent response to the original work. These re-readings are not bound to a single medium and may take the form of critical texts, personal reflections, experiential narratives, creative responses, dialogues, podcasts, interactive web-based media, or other appropriate formats. Projects may also undergo creative mediation through reactivation, translation, or the structural reworking of the original project into new formats. Re-readings may be initiated by the original artist, the Bast editorial team, or external practitioners seeking to engage with the archive." },
-          { "type": "h3", "text": "Editorial ethics" },
-          { "type": "p", "text": "Archival entries are authored by the editorial team using materials provided by the artist alongside publicly available sources. A standardized editorial note accompanies each entry, transparently outlining its methodology and preparation. Rights of revision and withdrawal are set out in Intellectual Property and Copyright." }
+          { "type": "p", "text": "Making these examples accessible raises critical questions about the practice of participatory art, including where it has succeeded in creating meaningful interventions and where it has instead reproduced the very structures it sought to challenge; on whose terms participation was invited, and who was in a position to accept. It asks how to understand projects that were interrupted, left unfinished, or never documented, and whether such outcomes should be read as shortcomings of the work or as evidence of the conditions under which it was attempted. It also draws attention to the ethical considerations that arise when a participatory project is translated into institutional language for the purposes of evaluation or access." },
+          { "type": "p", "text": "Bast operates through three intersecting processes: collection, conversation, and re-reading. Each project is gathered, analysed through dialogue with its initiator(s), and subsequently opened to critical re-reading and creative mediation. This process is iterative rather than linear. Projects remain subject to reassessment, conversations evolve, interpretations stay open to contestation, and successive layers of analysis are incorporated." },
+          { "type": "ul", "items": [
+            { "label": "Collection and selection:", "text": "The Bast team finds participatory art projects across a range of contexts through research, dialogues with practitioners, peer recommendations, and open calls. Projects are included not solely for their historical or aesthetic significance, but for their capacity to illuminate the social, institutional, and embodied dynamics that characterise participatory art in contemporary Iran." },
+            { "label": "Conversation with the artist:", "text": "Before any formal interpretation or re-reading takes place, the Bast team conducts in-depth conversations with the artist or project initiator(s). These conversations vary in format according to the nature of each project and its specific context, with the aim of uncovering the lived experience of the work. They address personal, social, and institutional frameworks, strategies for engaging participants, and the practical constraints encountered during the project's initiation, realisation, and aftermath." },
+            { "label": "Re-reading and creative mediation:", "text": "Every archived project serves as a point of departure for further engagement. Selected projects are accompanied by an invited re-reading by an artist, researcher, or cultural practitioner, offering an independent response to the original work. These re-readings are not bound to a single medium and may take the form of critical texts, personal reflections, experiential narratives, creative responses, dialogues, interactive web-based media, or other appropriate formats. Projects may also undergo creative mediation through reactivation, translation, or the structural reworking of the original project into new formats. Re-readings may be initiated by the original artist, the Bast team, or external practitioners seeking to engage with the archive." },
+            { "label": "Editorial ethics:", "text": "Archival entries are authored by the Bast team using materials provided by the artist, conversations with them, and available sources. An editorial note accompanies each entry, outlining its methodology and preparation. Details of rights of revision and withdrawal are set out in Intellectual Property and Copyright." }
+          ] }
         ]
       },
       {
         "id": "take-part",
         "title": "Take Part in Bast",
         "blocks": [
-          { "type": "p", "text": "Bast is a collaborative platform that continues to grow through the participation of artists, researchers, writers, and cultural practitioners. There are several ways to take part:" },
+          { "type": "p", "text": "Bast is a collaborative platform that continues to grow through the participation of artists, researchers, writers, and cultural practitioners. There are two ways to contribute:" },
           { "type": "ul", "items": [
-            { "label": "Suggest a project:", "text": "Propose a participatory art project, whether your own or someone else's, for inclusion in the Bast Repository. The editorial team will work with the proposer and the original artist or initiator to develop the archive entry.", "href": "/suggest-a-project" },
-            { "label": "Propose a re-reading:", "text": "Submit a proposal in response to an existing project in the repository. Re-readings may take the form of critical interpretations, personal reflections, experiential narratives, or creative responses presented through text, audio, dialogue, or other media." },
-            { "label": "Suggest a resource for the library:", "text": "Recommend a book, article, interview, or research resource related to participatory art for inclusion in the Bast Library.", "href": "/suggest-a-resource" }
+            { "label": "Suggest a project:", "text": "If you know of a participatory art project that could be included in the Bast Repository, whether it is your own work or that of another individual or group, you can share it with us by filling out the form below. The Bast team will review your submission and get in touch with you.", "href": "/suggest-a-project", "cta": "Suggest a project" },
+            { "label": "Propose a re-reading:", "text": "Submit a proposal in response to an existing project in the repository. Re-readings may take the form of critical interpretations, personal reflections, experiential narratives, or creative responses presented through text, audio, dialogue, or other media.", "href": "/propose-a-re-reading", "cta": "Propose a re-reading" }
           ] }
         ]
       },
       {
         "id": "ip-copyright",
-        "title": "Intellectual Property and Copyright",
+        "title": "Rights",
         "blocks": [
-          { "type": "p", "text": "Bast is an independent, self-funded, non-profit research and curatorial platform, operating without affiliation with any institution, commercial gallery, or funding body." },
-          { "type": "p", "text": "The privacy and security of project participants remain a primary editorial priority. Decisions regarding the public presentation of archived materials are made collaboratively by the Bast editorial team in consultation with the represented artists, collectives, and initiatives. Artists and collectives may revise, restrict, or withdraw their materials at any stage, before or after publication. Bast treats archiving as an editorial practice grounded in consent rather than a claim of record." },
+          { "type": "p", "text": "Bast is an independent, self-organised, non-profit research and curatorial platform, operating independently of any institution, commercial gallery, or funding body." },
+          { "type": "p", "text": "The privacy and security of project participants remain a primary editorial priority. The Bast team decides how archived materials are presented publicly, in consultation with the represented artists, collectives, and initiatives. Artists and collectives may revise, restrict, or withdraw their materials at any stage, before or after publication. Bast treats archiving as an editorial practice grounded in consent rather than a claim of record." },
           { "type": "lead", "text": "Rights of Use and Redistribution:" },
-          { "type": "p", "text": "Materials hosted on Bast are available for research and educational purposes, provided they are appropriately attributed. Copyright for all participatory artworks remains with their original artists and creators; Bast claims no ownership of these works. Copyright for re-readings and supplementary texts remains with their respective authors. Documentation and data relating to artistic projects may not be used for commercial purposes or incorporated into external projects without the explicit consent of the original artist." },
+          { "type": "p", "text": "Materials published on Bast are available for non-profit research and educational purposes. Any reference to these materials must credit the creators of the material and name Bast as the research platform that published it, with a link to the relevant page on the website. Copyright for all participatory artworks remains with their original artists and creators; Bast claims no intellectual property rights in these works. Copyright for re-readings and supplementary texts remains with their respective authors and Bast. Documentation and data relating to artistic projects may not be used for commercial purposes or incorporated into external projects without the explicit consent of the artist(s) involved and the Bast team." },
           { "type": "p", "text": "Materials originally published on Bast may be redistributed, provided they include full attribution and a link to bast.work. Materials that Bast republishes from secondary sources remain subject to the licensing terms established by their original publishers." }
         ]
       },
@@ -189,7 +184,7 @@
           { "name": "Reyhaneh Mirjahani", "role": "Curator and Editor, Co-founder", "url": "https://www.reyhanehmirjahani.com/" },
           { "name": "Amirali Ghasemi", "role": "Curator and Editor, Co-founder", "url": "https://amiralighasemi.org/" },
           { "name": "Negar Latifian", "role": "Platform Designer and Developer", "url": "https://www.negarlatifian.com/" },
-          { "name": "Bahar Ahmadifar", "role": "Copyeditor" }
+          { "name": "Bahar Ahmadifar", "role": "Copyeditor, Translator" }
         ]
       },
       {
@@ -197,7 +192,7 @@
         "title": "Credits",
         "blocks": [
           { "type": "p", "text": "Logo — Horny Horse Studio" },
-          { "type": "p", "text": "Texts and Images — Courtesy of the artists, contributors, and the Bast project" },
+          { "type": "p", "text": "Texts and Images — Courtesy of the artists, contributors" },
           { "type": "p", "text": "www.bast.work" },
           { "type": "p", "text": "© 2026 Bast" }
         ]

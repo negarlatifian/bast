@@ -9,7 +9,7 @@ import type { ReactNode } from 'react';
 type AboutBlock = {
   type: string;
   text?: string;
-  items?: { label: string; text: string; href?: string }[];
+  items?: { label: string; text: string; href?: string; cta?: string }[];
 };
 
 type AboutSection = {
@@ -95,7 +95,7 @@ export default async function Page({
                       href={localizeHref(locale, item.href)}
                       className={`inline-flex items-center gap-1 ${linkClassName}`}
                     >
-                      {about.openFormCta}
+                      {item.cta ?? about.openFormCta}
                       <span aria-hidden='true'>
                         {lang === 'fa' ? '←' : '→'}
                       </span>
