@@ -323,7 +323,7 @@ export default async function Page({
       : [dict.project.editorialNote];
 
   return (
-    <MainLayout>
+    <MainLayout header='overHero'>
       <article className='pb-16'>
         <div className='relative -mx-8 h-[38vh] min-h-[260px] overflow-hidden sm:-mx-16 sm:h-[46vh] sm:min-h-[320px] lg:-mx-24'>
           <Image

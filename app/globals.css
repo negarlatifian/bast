@@ -205,3 +205,85 @@ canvas {
   }
 }
 
+
+/*
+ * Home collage, desktop: while a column's photo fills its full-page strip,
+ * the logo, the "+" and the language label turn white when the strip reaches
+ * their edge of the screen. The language label always sits on the left.
+ */
+@media (min-width: 1024px) {
+  html[data-home-strip~='left'] .logo {
+    filter: brightness(0) invert(1);
+  }
+
+  html[data-home-strip~='right'] .home-plus {
+    color: #fff;
+  }
+
+  html[data-home-strip~='left'] .home-spine a {
+    color: rgb(255 255 255 / 0.9);
+  }
+
+  html[data-home-strip~='left'] .home-spine > span {
+    background-color: rgb(255 255 255 / 0.7);
+  }
+
+  html[data-home-strip~='left'] .home-spine span span {
+    color: rgb(255 255 255 / 0.5);
+  }
+
+  /* Keeps the logo's scroll swap (see .logo above) alongside the fade. */
+  .logo {
+    transition:
+      transform 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.55s ease,
+      filter 0.5s ease;
+  }
+
+  .home-plus,
+  .home-spine a {
+    transition: color 0.5s ease;
+  }
+}
+
+/*
+ * Project pages: while the header floats over the hero image, the logo and
+ * nav bar turn white so they read against the photo. Once the hero scrolls
+ * away the header gets its usual off-white ground and dark text back.
+ */
+.header-on-hero .logo {
+  filter: brightness(0) invert(1);
+}
+
+.header-on-hero .nav-bar a,
+.header-on-hero .nav-bar input,
+.header-on-hero .nav-bar button {
+  color: #fff;
+}
+
+.header-on-hero .nav-bar a:hover {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.header-on-hero .nav-bar span {
+  color: rgb(255 255 255 / 0.6);
+}
+
+.header-on-hero .nav-bar input::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.header-on-hero .nav-bar form {
+  border-color: rgb(255 255 255 / 0.6);
+}
+
+.header-on-hero .nav-bar svg {
+  stroke: #fff;
+}
+
+.logo,
+.nav-bar a,
+.nav-bar input,
+.nav-bar button {
+  transition-property: transform, opacity, filter, color;
+}

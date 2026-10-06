@@ -62,7 +62,7 @@ export default function Navbar() {
     <nav dir='ltr' className='relative z-30 w-fit'>
       {/* ───── Top bar ───── */}
 
-      <div className='mx-auto flex items-center justify-between py-2'>
+      <div className='nav-bar mx-auto flex items-center justify-between py-2'>
         {/* desktop links */}
         <div className='hidden items-center gap-5 md:flex lg:gap-8'>
           {navItems.map(({ label, href }) => (

@@ -15,14 +15,20 @@ type MainLayoutProps = PropsWithChildren<{
   // The home page trades the full nav bar for a single "+" dropdown and
   // moves the language switch to a spine label on the page edge.
   navigation?: 'bar' | 'plus';
+  // Project pages float the header over the hero image; it only takes on a
+  // background once the hero (marked by #project-hero-sentinel) scrolls away.
+  header?: 'solid' | 'overHero';
 }>;
 
 export default function MainLayout({
   children,
   variant = 'default',
   navigation = 'bar',
+  header = 'solid',
 }: MainLayoutProps) {
   const [scrolled, setScrolled] = useState(false);
+  const [pastHero, setPastHero] = useState(false);
+  const isOverHero = header === 'overHero';
   const { lang, dict } = useLocale();
   const isReadingVariant = variant === 'reading';
   // On desktop the home page is a single screen: the header and a collage
@@ -32,18 +38,35 @@ export default function MainLayout({
   const backgroundClassName = isReadingVariant
     ? 'bg-[#8a8c84]'
     : 'bg-[rgb(248,248,246)]';
-  const headerClassName = isReadingVariant
-    ? 'bg-[#8a8c84]/95'
-    : 'bg-[rgb(248,248,246)]/95';
+  const headerClassName = isOverHero
+    ? `fixed inset-x-0 transition-colors duration-300 ${
+        pastHero
+          ? 'bg-[rgb(248,248,246)]/95 backdrop-blur-md'
+          : 'header-on-hero bg-transparent'
+      }`
+    : `sticky backdrop-blur-md ${
+        isReadingVariant ? 'bg-[#8a8c84]/95' : 'bg-[rgb(248,248,246)]/95'
+      }`;
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
+
+      if (isOverHero) {
+        const sentinel = document.getElementById('project-hero-sentinel');
+        const headerHeight =
+          document.querySelector('header')?.getBoundingClientRect().height ??
+          0;
+        setPastHero(
+          !!sentinel && sentinel.getBoundingClientRect().top <= headerHeight,
+        );
+      }
     };
 
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isOverHero]);
 
   return (
     <div
@@ -66,9 +89,9 @@ export default function MainLayout({
 
       {/* ---------- Header ---------- */}
       <header
-        className={`sticky top-0 z-30 ${
+        className={`top-0 z-30 ${
           isSingleScreen ? 'lg:shrink-0' : ''
-        } ${headerClassName} backdrop-blur-md ${
+        } ${headerClassName} ${
           isSingleScreen
             ? 'lg:static lg:bg-transparent lg:backdrop-blur-none'
             : ''
@@ -118,7 +141,8 @@ export default function MainLayout({
         <div
           aria-label={dict.common.language}
           role='group'
-          className='home-spine fixed bottom-6 z-30 flex rotate-180 items-center gap-3 [writing-mode:vertical-rl] ltr:left-3 rtl:right-3 sm:bottom-10 sm:ltr:left-6 sm:rtl:right-6 lg:ltr:left-10 lg:rtl:right-10'
+          dir='ltr'
+          className='home-spine fixed bottom-6 left-3 z-30 flex rotate-180 items-center gap-3 [writing-mode:vertical-rl] sm:bottom-10 sm:left-6 lg:left-10'
         >
           <span
             aria-hidden='true'
