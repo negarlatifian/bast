@@ -9,7 +9,7 @@
       "Location": { "text": "یزد" },
       "Year / Time Period": { "text": "۲۸ آبان تا ۲ آذر ۱۳۹۷" },
       "Featured Project Image": { "alt": "مکعب‌های سفید" },
-      "Thematic Tags": ["مکان-محور", "memory", "private/public space", "urban intervention"]
+      "Thematic Tags": ["فضای عمومی و شهری", "فضای نهادی و گالری", "مداخله", "بدن، جنسیت و مراقبت", "میراث و مکان"]
     },
     "sections": [
       {
@@ -135,12 +135,7 @@
     "Year / Time Period": {
       "text": "19–23 November 2018"
     },
-    "Thematic Tags": [
-      "site-specific",
-      "memory",
-      "private/public space",
-      "urban intervention"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Institutional & Gallery Space", "Intervention", "Body, Gender & Care", "Heritage & Place"],
     "Featured Project Image": {
       "url": "/images/white-cubes/thumb.webp",
       "alt": "White Cubes"

@@ -9,7 +9,7 @@
       "Location": { "text": "گالری گرمساری، بندرعباس" },
       "Year / Time Period": { "text": "۱۳۹۵" },
       "Featured Project Image": { "alt": "پست‌پیاز" },
-      "Thematic Tags": ["dialogical", "performance", "نقد نهادی", "durational"]
+      "Thematic Tags": ["فضای نهادی و گالری", "گفت‌وگو و روایت جمعی", "نقد نهادی"]
     },
     "sections": [
       {
@@ -105,12 +105,7 @@
     "Year / Time Period": {
       "text": "1395 (2015)"
     },
-    "Thematic Tags": [
-      "dialogical",
-      "performance",
-      "institutional critique",
-      "durational"
-    ],
+    "Thematic Tags": ["Institutional & Gallery Space", "Dialogue & Collective Narrative", "Institutional Critique"],
     "Featured Project Image": {
       "url": "/images/post-onion/thumb.webp",
       "alt": "Post-Onion"

@@ -8,7 +8,8 @@
       ],
       "Location": { "text": "تهران" },
       "Year / Time Period": { "text": "۱۳۹۶" },
-      "Featured Project Image": { "alt": "کاغذ" }
+      "Featured Project Image": { "alt": "کاغذ" },
+      "Thematic Tags": ["فضای خودگردان", "فضای نهادی و گالری", "گفت‌وگو و روایت جمعی"]
     },
     "sections": [
       {
@@ -99,12 +100,7 @@
     "Year / Time Period": {
       "text": "2017"
     },
-    "Thematic Tags": [
-      "performance",
-      "conversation",
-      "multi-location",
-      "domestic and public space"
-    ],
+    "Thematic Tags": ["Self-Organised Space", "Institutional & Gallery Space", "Dialogue & Collective Narrative"],
     "Featured Project Image": {
       "url": "/images/paper/thumb.webp",
       "alt": "Paper"

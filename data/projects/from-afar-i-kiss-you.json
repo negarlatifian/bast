@@ -14,7 +14,8 @@
       },
       "Featured Project Image": {
         "alt": "قصه‌های از دور می‌بوسمت"
-      }
+      },
+      "Thematic Tags": ["فضای آنلاین و فرامرزی", "ساخت جمعی", "گفت‌وگو و روایت جمعی", "بدن، جنسیت و مراقبت"]
     },
     "sections": [
       {
@@ -90,15 +91,7 @@
     "Year / Time Period": {
       "text": "2020"
     },
-    "Thematic Tags": [
-      "pandemic",
-      "distance",
-      "collective writing",
-      "WhatsApp",
-      "asynchronous narrative",
-      "cross-border",
-      "online"
-    ],
+    "Thematic Tags": ["Online & Cross-Border", "Collective Making", "Dialogue & Collective Narrative", "Body, Gender & Care"],
     "Featured Project Image": {
       "url": "/images/from-afar-i-kiss-you/thumb.webp",
       "alt": "Stories From Afar, I Kiss You"

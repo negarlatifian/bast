@@ -10,7 +10,7 @@
       "Location": { "text": "تهران — کافه جس؛ گالری داربست" },
       "Year / Time Period": { "text": "۱۳۹۷–۱۳۹۸ (۲۰۱۹)" },
       "Featured Project Image": { "alt": "داب" },
-      "Thematic Tags": ["forum theater", "youth", "pedagogy", "dialogical", "فرآیند محور", "ساخت جمعی", "performance"]
+      "Thematic Tags": ["فضای نهادی و گالری", "ساخت جمعی", "بازی", "کارگاه و پداگوژی", "گفت‌وگو و روایت جمعی", "بدن، جنسیت و مراقبت"]
     },
     "sections": [
       {
@@ -103,15 +103,7 @@
     "Year / Time Period": {
       "text": "2019"
     },
-    "Thematic Tags": [
-      "forum theater",
-      "youth",
-      "pedagogy",
-      "dialogical",
-      "process-based",
-      "collective making",
-      "performance"
-    ],
+    "Thematic Tags": ["Institutional & Gallery Space", "Collective Making", "Play", "Workshop & Pedagogy", "Dialogue & Collective Narrative", "Body, Gender & Care"],
     "Featured Project Image": {
       "url": "/images/daab/thumb.webp",
       "alt": ""

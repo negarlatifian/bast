@@ -9,7 +9,7 @@
       "Location": { "text": "تهران، عمارت روبرو" },
       "Year / Time Period": { "text": "۱۳۹۹" },
       "Featured Project Image": { "alt": "قد فاصله" },
-      "Thematic Tags": ["ساخت جمعی", "workshop"]
+      "Thematic Tags": ["فضای خودگردان", "فضای نهادی و گالری", "ساخت جمعی", "حافظه و آرشیو", "بدن، جنسیت و مراقبت"]
     },
     "sections": [
       {
@@ -113,7 +113,7 @@
     "Year / Time Period": {
       "text": "2021"
     },
-    "Thematic Tags": ["collective making", "workshop"],
+    "Thematic Tags": ["Self-Organised Space", "Institutional & Gallery Space", "Collective Making", "Memory & Archive", "Body, Gender & Care"],
     "Featured Project Image": {
       "url": "/images/equivalence/thumb.webp",
       "alt": "An Equivalence of Our Distance"

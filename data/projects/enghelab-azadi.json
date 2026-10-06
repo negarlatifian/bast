@@ -8,7 +8,8 @@
       ],
       "Location": { "text": "تهران" },
       "Year / Time Period": { "text": "۱۳۹۶" },
-      "Featured Project Image": { "alt": "انقلاب آزادی / آزادی انقلاب" }
+      "Featured Project Image": { "alt": "انقلاب آزادی / آزادی انقلاب" },
+      "Thematic Tags": ["فضای عمومی و شهری", "مداخله", "بدن، جنسیت و مراقبت", "میراث و مکان"]
     },
     "sections": [
       {
@@ -103,12 +104,7 @@
     "Year / Time Period": {
       "text": "2017"
     },
-    "Thematic Tags": [
-      "performance",
-      "urban space",
-      "everyday encounter",
-      "collective memory"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Intervention", "Body, Gender & Care", "Heritage & Place"],
     "Featured Project Image": {
       "url": "/images/enghelab_azadi/thumb.webp",
       "alt": "Enghelab Azadi / Azadi Enghelab"

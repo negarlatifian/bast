@@ -8,7 +8,8 @@
       ],
       "Location": { "text": "سنندج، پارک آی‌تی" },
       "Year / Time Period": { "text": "اردیبهشت تا تیر ۱۳۹۵" },
-      "Featured Project Image": { "alt": "کتاب‌خوانی در پارک سنندج" }
+      "Featured Project Image": { "alt": "کتاب‌خوانی در پارک سنندج" },
+      "Thematic Tags": ["فضای عمومی و شهری", "مداخله", "میراث و مکان"]
     },
     "sections": [
       {
@@ -84,12 +85,7 @@
     "Year / Time Period": {
       "text": "May–July 2016 (Ordibehesht–Tir 1395), 10 sessions, every Sunday evening"
     },
-    "Thematic Tags": [
-      "public space",
-      "collective reading",
-      "urban intervention",
-      "durational"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Intervention", "Heritage & Place"],
     "Featured Project Image": {
       "url": "/images/sanandaj-reading/thumb.webp",
       "alt": "Book Reading in Sanandaj Park"

@@ -9,7 +9,7 @@
       "Location": { "text": "بجنورد، مشهد، تهران (سیار)" },
       "Year / Time Period": { "text": "۱۳۹۶ تا کنون" },
       "Featured Project Image": { "alt": "تاک‌سی" },
-      "Thematic Tags": ["urban intervention", "dialogical", "durational", "public / private", "performance", "نقد نهادی", "everyday encounter"]
+      "Thematic Tags": ["فضای عمومی و شهری", "فضای خودگردان", "گفت‌وگو و روایت جمعی", "مداخله", "نقد نهادی"]
     },
     "sections": [
       {
@@ -121,15 +121,7 @@
     "Year / Time Period": {
       "text": "2017–ongoing"
     },
-    "Thematic Tags": [
-      "urban intervention",
-      "dialogical",
-      "durational",
-      "public / private",
-      "performance",
-      "institutional critique",
-      "everyday encounter"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Self-Organised Space", "Dialogue & Collective Narrative", "Intervention", "Institutional Critique"],
     "Featured Project Image": {
       "url": "/images/talk-see/thumb.webp",
       "alt": "Talk-See"

@@ -8,7 +8,8 @@
       ],
       "Location": { "text": "فضای ربت و دارآباد، تهران" },
       "Year / Time Period": { "text": "۱۴۰۲" },
-      "Featured Project Image": { "alt": "تجربه‌ای در تیر ماه" }
+      "Featured Project Image": { "alt": "تجربه‌ای در تیر ماه" },
+      "Thematic Tags": ["فضای خودگردان", "ساخت جمعی", "کارگاه و پداگوژی", "گفت‌وگو و روایت جمعی", "بدن، جنسیت و مراقبت"]
     },
     "sections": [
       {
@@ -114,12 +115,7 @@
     "Year / Time Period": {
       "text": "2023"
     },
-    "Thematic Tags": [
-      "collective writing",
-      "workshop",
-      "speculative fiction",
-      "zine-making"
-    ],
+    "Thematic Tags": ["Self-Organised Space", "Collective Making", "Workshop & Pedagogy", "Dialogue & Collective Narrative", "Body, Gender & Care"],
     "Featured Project Image": {
       "url": "/images/an_experience_in_tir/thumb.webp",
       "alt": "An Experience in Tir"

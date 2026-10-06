@@ -9,7 +9,7 @@
       "Location": { "text": "جزیره‌ی هرمز" },
       "Year / Time Period": { "text": "۱۴۰۰" },
       "Featured Project Image": { "alt": "اوزار" },
-      "Thematic Tags": ["heritage", "informal education", "public space", "ساخت جمعی"]
+      "Thematic Tags": ["فضای عمومی و شهری", "فضای خودگردان", "ساخت جمعی", "گفت‌وگو و روایت جمعی", "مداخله", "نقد نهادی", "میراث و مکان", "محیط‌زیست و اکولوژی"]
     },
     "sections": [
       {
@@ -140,12 +140,7 @@
     "Year / Time Period": {
       "text": "2021"
     },
-    "Thematic Tags": [
-      "heritage",
-      "informal education",
-      "public space",
-      "collective making"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Self-Organised Space", "Collective Making", "Dialogue & Collective Narrative", "Intervention", "Institutional Critique", "Heritage & Place", "Environment & Ecology"],
     "Featured Project Image": {
       "url": "/images/owzar/thumb.webp",
       "alt": "Owzar"

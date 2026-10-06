@@ -9,7 +9,7 @@
       "Location": { "text": "کوچه شهامتی، ده‌ونک، تهران" },
       "Year / Time Period": { "text": "۱۳۹۷" },
       "Featured Project Image": { "alt": "کارگران به کارخانه نمی‌روند" },
-      "Thematic Tags": ["urban intervention", "public space", "ساخت جمعی", "memory", "مکان-محور"]
+      "Thematic Tags": ["فضای عمومی و شهری", "فضای خودگردان", "ساخت جمعی", "گفت‌وگو و روایت جمعی", "مداخله", "حافظه و آرشیو", "میراث و مکان"]
     },
     "sections": [
       {
@@ -108,13 +108,7 @@
     "Year / Time Period": {
       "text": "2018"
     },
-    "Thematic Tags": [
-      "urban intervention",
-      "public space",
-      "collective making",
-      "memory",
-      "site-specific"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Self-Organised Space", "Collective Making", "Dialogue & Collective Narrative", "Intervention", "Memory & Archive", "Heritage & Place"],
     "Featured Project Image": {
       "url": "/images/kargaran/thumb.webp",
       "alt": ""

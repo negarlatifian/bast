@@ -15,7 +15,7 @@
       "Featured Project Image": {
         "alt": "سنگ‌ها"
       },
-      "Thematic Tags": ["interactive installation", "phenomenology of material", "بازی"]
+      "Thematic Tags": ["فضای نهادی و گالری", "بازی", "محیط‌زیست و اکولوژی"]
     },
     "sections": [
       {
@@ -123,11 +123,7 @@
     "Year / Time Period": {
       "text": "2018"
     },
-    "Thematic Tags": [
-      "interactive installation",
-      "phenomenology of material",
-      "play"
-    ],
+    "Thematic Tags": ["Institutional & Gallery Space", "Play", "Environment & Ecology"],
     "Featured Project Image": {
       "url": "/images/stones/thumb.webp",
       "alt": "Stones"

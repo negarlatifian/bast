@@ -15,7 +15,7 @@
       "Featured Project Image": {
         "alt": "تهران مونوکسید"
       },
-      "Thematic Tags": ["environment", "urban intervention", "pedagogy", "فرآیند محور"]
+      "Thematic Tags": ["فضای عمومی و شهری", "فضای خودگردان", "فضای نهادی و گالری", "ساخت جمعی", "کارگاه و پداگوژی", "مداخله", "بدن، جنسیت و مراقبت", "محیط‌زیست و اکولوژی"]
     },
     "sections": [
       {
@@ -158,12 +158,7 @@
     "Year / Time Period": {
       "text": "2010-2020"
     },
-    "Thematic Tags": [
-      "environment",
-      "urban intervention",
-      "pedagogy",
-      "process-based"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Self-Organised Space", "Institutional & Gallery Space", "Collective Making", "Workshop & Pedagogy", "Intervention", "Body, Gender & Care", "Environment & Ecology"],
     "Featured Project Image": {
       "url": "/images/tehran-monoxide/thumb.webp",
       "alt": "Tehran Monoxide"

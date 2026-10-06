@@ -9,7 +9,7 @@
       "Location": { "text": "تهران — کافه کنج" },
       "Year / Time Period": { "text": "۱۳۸۲-۱۳۸۳" },
       "Featured Project Image": { "alt": "پرفورمنس‌های کافه کنج" },
-      "Thematic Tags": ["performance", "durational", "public/private space", "نقد نهادی"]
+      "Thematic Tags": ["فضای عمومی و شهری", "گفت‌وگو و روایت جمعی", "مداخله", "بدن، جنسیت و مراقبت"]
     },
     "sections": [
       {
@@ -107,12 +107,7 @@
     "Year / Time Period": {
       "text": "2003–2004"
     },
-    "Thematic Tags": [
-      "performance",
-      "durational",
-      "public/private space",
-      "institutional critique"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Dialogue & Collective Narrative", "Intervention", "Body, Gender & Care"],
     "Featured Project Image": {
       "url": "/images/cafe-konj/thumb.webp",
       "alt": "Cafe Konj"

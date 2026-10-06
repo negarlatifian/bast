@@ -9,7 +9,7 @@
       "Location": { "text": "امانت‌داری، بازار سعدی، رشت؛ بازار آرت‌بوک، گالری دیدار، تهران" },
       "Year / Time Period": { "text": "۱۴۰۲-۱۴۰۴" },
       "Featured Project Image": { "alt": "ماشین چاپ" },
-      "Thematic Tags": ["urban intervention", "durational", "نقد نهادی"]
+      "Thematic Tags": ["فضای عمومی و شهری", "فضای خودگردان", "مداخله"]
     },
     "sections": [
       {
@@ -108,11 +108,7 @@
     "Year / Time Period": {
       "text": "2023-2024"
     },
-    "Thematic Tags": [
-      "urban intervention",
-      "durational",
-      "institutional critique"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Self-Organised Space", "Intervention"],
     "Featured Project Image": {
       "url": "/images/printing-machine/thumb.webp",
       "alt": "Printing Machine",

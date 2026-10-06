@@ -8,7 +8,8 @@
       ],
       "Location": { "text": "آنلاین" },
       "Year / Time Period": { "text": "۱۳۹۷–۱۴۰۰" },
-      "Featured Project Image": { "alt": "رادیو خیابان" }
+      "Featured Project Image": { "alt": "رادیو خیابان" },
+      "Thematic Tags": ["فضای عمومی و شهری", "فضای آنلاین و فرامرزی", "گفت‌وگو و روایت جمعی", "مداخله", "نقد نهادی", "بدن، جنسیت و مراقبت"]
     },
     "sections": [
       {
@@ -118,11 +119,7 @@
     "Year / Time Period": {
       "text": "2018–2021"
     },
-    "Thematic Tags": [
-      "public space",
-      "online platform",
-      "cross-border"
-    ],
+    "Thematic Tags": ["Public & Urban Space", "Online & Cross-Border", "Dialogue & Collective Narrative", "Intervention", "Institutional Critique", "Body, Gender & Care"],
     "Featured Project Image": {
       "url": "/images/radio_khiaban/thumb.webp",
       "alt": "Radio Khiaban"

@@ -8,7 +8,8 @@
       ],
       "Location": { "text": "تهران، پروژه‌های نیومدیا" },
       "Year / Time Period": { "text": "۱۳۹۶" },
-      "Featured Project Image": { "alt": "مپینگ کریم‌خان" }
+      "Featured Project Image": { "alt": "مپینگ کریم‌خان" },
+      "Thematic Tags": ["فضای عمومی و شهری", "فضای خودگردان", "ساخت جمعی", "گفت‌وگو و روایت جمعی", "نقد نهادی", "حافظه و آرشیو", "میراث و مکان"]
     },
     "sections": [
       {
@@ -112,7 +113,8 @@
     "Featured Project Image": {
       "url": "/images/karimkhan/thumb.webp",
       "alt": "Mapping Karimkhan"
-    }
+    },
+    "Thematic Tags": ["Public & Urban Space", "Self-Organised Space", "Collective Making", "Dialogue & Collective Narrative", "Institutional Critique", "Memory & Archive", "Heritage & Place"]
   },
   "sections": [
     {

@@ -9,7 +9,7 @@
       "Location": { "text": "تهران، پروژه‌های نیومدیا" },
       "Year / Time Period": { "text": "۱۳۹۷" },
       "Featured Project Image": { "alt": "جام حذفی" },
-      "Thematic Tags": ["نقد نهادی", "dialogical", "performance", "body / embodiment", "فرآیند محور", "ساخت جمعی"]
+      "Thematic Tags": ["فضای خودگردان", "فضای نهادی و گالری", "بازی", "گفت‌وگو و روایت جمعی", "نقد نهادی"]
     },
     "sections": [
       {
@@ -108,14 +108,7 @@
     "Year / Time Period": {
       "text": "2019"
     },
-    "Thematic Tags": [
-      "institutional critique",
-      "dialogical",
-      "performance",
-      "body / embodiment",
-      "process-based",
-      "collective making"
-    ],
+    "Thematic Tags": ["Self-Organised Space", "Institutional & Gallery Space", "Play", "Dialogue & Collective Narrative", "Institutional Critique"],
     "Featured Project Image": {
       "url": "/images/knock-out/thumb.webp",
       "alt": "Knockout Tournament"

@@ -9,7 +9,7 @@
       "Location": { "text": "گالری آبی بلند، روستای طالقانی‌محله، ساری؛ و بعدتر در تهران، رشت و قائم‌شهر" },
       "Year / Time Period": { "text": "۱۴۰۲ تا کنون" },
       "Featured Project Image": { "alt": "سایه‌ات را نارنجی کن" },
-      "Thematic Tags": ["dialogical", "ساخت جمعی", "فرآیند محور", "durational", "workshop", "youth", "pedagogy"]
+      "Thematic Tags": ["فضای خودگردان", "فضای نهادی و گالری", "ساخت جمعی", "کارگاه و پداگوژی", "بدن، جنسیت و مراقبت"]
     },
     "sections": [
       {
@@ -103,15 +103,7 @@
     "Year / Time Period": {
       "text": "2023—ongoing"
     },
-    "Thematic Tags": [
-      "dialogical",
-      "collective making",
-      "process-based",
-      "durational",
-      "workshop",
-      "youth",
-      "pedagogy"
-    ],
+    "Thematic Tags": ["Self-Organised Space", "Institutional & Gallery Space", "Collective Making", "Workshop & Pedagogy", "Body, Gender & Care"],
     "Featured Project Image": {
       "url": "/images/paint-shadow/thumb.webp",
       "alt": "Paint Your Shadow Orange"
