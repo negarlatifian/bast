@@ -19,6 +19,82 @@ function PlusMark({ className }: { className?: string }) {
   );
 }
 
+const EMAIL = 'bast.work.team@gmail.com';
+const INSTAGRAM = {
+  handle: '@bast.work',
+  url: 'https://www.instagram.com/bast.work/',
+};
+
+function MailIcon() {
+  return (
+    <svg
+      aria-hidden='true'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='1.8'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='h-7 w-7'
+    >
+      <rect x='3' y='5' width='18' height='14' rx='1.5' />
+      <path d='m3.5 6 8.5 7 8.5-7' />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg
+      aria-hidden='true'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='1.8'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='h-7 w-7'
+    >
+      <rect x='3' y='3' width='18' height='18' rx='5' />
+      <circle cx='12' cy='12' r='4' />
+      <circle cx='17.2' cy='6.8' r='0.9' fill='currentColor' stroke='none' />
+    </svg>
+  );
+}
+
+/** Bast's email and Instagram, as icon links. */
+function MenuSignature({ className }: { className?: string }) {
+  const linkClass =
+    'flex h-12 w-12 items-center justify-center text-[#7f242a] transition-colors hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7f242a]';
+
+  return (
+    <ul className={`-me-2 flex items-center gap-2 ${className ?? ''}`}>
+      <li>
+        <a
+          href={`mailto:${EMAIL}`}
+          aria-label={EMAIL}
+          title={EMAIL}
+          className={linkClass}
+        >
+          <MailIcon />
+        </a>
+      </li>
+      <li>
+        <a
+          href={INSTAGRAM.url}
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label={`Instagram ${INSTAGRAM.handle}`}
+          title={INSTAGRAM.handle}
+          className={linkClass}
+        >
+          <InstagramIcon />
+        </a>
+      </li>
+    </ul>
+  );
+}
+
 /**
  * The home page's navigation: a single registration-mark "+" that drops a
  * full-screen index over the page — Bast's sections as numbered entries,
@@ -142,13 +218,13 @@ export default function PlusMenu() {
                 className='plus-menu-item flex flex-col gap-2 sm:gap-3 lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:justify-end lg:pb-3'
                 style={{ animationDelay: '120ms' }}
               >
-                <p className='mb-auto hidden max-w-sm pt-[18dvh] text-lg leading-snug text-[#777066] lg:block [@media(max-height:680px)]:hidden'>
-                  {dict.home.heroTitle}
-                </p>
-                <p className='flex items-center gap-2 text-[0.7rem] font-extrabold tracking-wide text-[#7f242a] uppercase sm:text-xs'>
-                  <PlusMark className='h-2.5 w-2.5 shrink-0' />
-                  {dict.search.inputLabel}
-                </p>
+                <div className='flex items-center justify-between gap-4'>
+                  <p className='flex items-center gap-2 text-[0.7rem] font-extrabold tracking-wide text-[#7f242a] uppercase sm:text-xs'>
+                    <PlusMark className='h-2.5 w-2.5 shrink-0' />
+                    {dict.search.inputLabel}
+                  </p>
+                  <MenuSignature className='-my-3' />
+                </div>
                 <div className='[&_button]:h-10 [&_button]:w-10 [&_form]:w-full [&_form]:border-black/60 [&_input]:w-full [&_input]:py-2 [&_input]:text-lg sm:[&_input]:text-2xl [&_svg]:h-5 [&_svg]:w-5'>
                   <Suspense fallback={null}>
                     <SearchForm onSearch={() => setOpen(false)} />
@@ -196,11 +272,6 @@ export default function PlusMenu() {
                 className='plus-menu-item mt-auto flex flex-wrap items-center justify-between gap-4 pt-8 lg:hidden [@media(max-height:500px)]:pt-5'
                 style={{ animationDelay: `${180 + navItems.length * 60}ms` }}
               >
-                <div className='mb-4 hidden basis-full sm:block [@media(max-height:900px)]:hidden'>
-                  <p className='max-w-md text-lg leading-snug text-[#777066]'>
-                    {dict.home.heroTitle}
-                  </p>
-                </div>
                 <p className='flex items-center gap-2 text-[0.7rem] font-extrabold tracking-wide text-[#7f242a] uppercase sm:text-xs'>
                   <PlusMark className='h-2.5 w-2.5 shrink-0' />
                   {dict.common.language}

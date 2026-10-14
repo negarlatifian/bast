@@ -649,14 +649,13 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
               />
             )}
 
-            {/* The whole column is a target, not just its title. Kept out
-                of the tab order since the title link already covers it. */}
+            {/* The whole column is the link; with no visible heading, the
+                title becomes its accessible name. */}
             <Link
               href={panel.href}
               onClick={(event) => handleColumnClick(event, index)}
-              tabIndex={-1}
-              aria-hidden='true'
-              className='absolute inset-0'
+              aria-label={panel.title}
+              className='absolute inset-0 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-[#7f242a]'
             />
 
             <p
@@ -664,7 +663,7 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
                 eyebrowRefs.current[index] = node;
               }}
               className={`relative flex items-center gap-3 text-[0.7rem] font-extrabold tracking-wide uppercase transition-colors duration-500 sm:text-xs ${
-                isActive ? 'text-white' : 'text-[#7f242a]'
+                isActive ? 'text-white' : 'text-black'
               }`}
             >
               <span className='tabular-nums'>
@@ -687,33 +686,23 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
               ref={(node) => {
                 textRefs.current[index] = node;
               }}
-              className={`relative flex max-w-md flex-col gap-2 sm:gap-2.5 lg:gap-3 ${
+              className={`relative flex max-w-md flex-col gap-3 sm:gap-4 ${
                 TEXT_POSITION_CLASS[panel.textPosition]
               } ${panel.textIndent ? 'lg:ms-[10%]' : ''}`}
             >
-              <h2
-                className={`text-xl leading-tight font-semibold transition-colors duration-500 sm:text-3xl lg:text-[clamp(1.6rem,2.4vw,2.6rem)] ${
-                  isActive ? 'text-white' : 'text-black'
-                }`}
-              >
-                <Link
-                  href={panel.href}
-                  onClick={(event) => handleColumnClick(event, index)}
-                  className='focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current'
-                >
-                  {panel.title}
-                </Link>
-              </h2>
+              {/* No visible heading: the description leads the column, and
+                  the title stays for screen readers and the page outline. */}
+              <h2 className='sr-only'>{panel.title}</h2>
               <p
-                className={`text-sm leading-6 transition-colors duration-500 lg:text-base lg:[@media(max-height:680px)]:hidden ${
-                  isActive ? 'text-white/85' : 'text-[#777066]'
+                className={`text-lg leading-snug font-medium transition-colors duration-500 sm:text-xl lg:text-[clamp(1.15rem,1.55vw,1.6rem)] lg:[@media(max-height:680px)]:text-lg ${
+                  isActive ? 'text-white' : 'text-black'
                 }`}
               >
                 {panel.description}
               </p>
               <span
                 aria-hidden='true'
-                className={`inline-flex w-fit items-center gap-2 text-xs font-medium transition-colors duration-500 sm:text-sm lg:text-[1.05rem] ${
+                className={`inline-flex w-fit items-center gap-2 text-sm font-medium transition-colors duration-500 sm:text-base lg:text-[1.05rem] ${
                   isActive ? 'text-white' : 'text-[#7f242a]'
                 }`}
               >
