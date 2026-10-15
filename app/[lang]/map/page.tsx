@@ -1,6 +1,6 @@
 import MainLayout from '@/components/MainLayout';
 import MapAndTimeline from '@/components/MapAndTimeline';
-import type { MapPin, MapProjectSummary, MapThread } from '@/components/ProjectsMap';
+import type { MapPin, MapProjectSummary } from '@/components/ProjectsMap';
 import type { TimelineProject } from '@/components/ProjectsTimeline';
 import { getDictionary } from '@/lib/dictionaries';
 import { isLocale, type Locale } from '@/lib/i18n';
@@ -92,16 +92,6 @@ export default async function Page({
 
   const pins = Array.from(pinsById.values());
 
-  const threads: MapThread[] = Object.entries(projectCityLinks)
-    .filter(([, cityIds]) => cityIds.length > 1)
-    .map(([slug, cityIds]) => ({
-      slug,
-      points: cityIds.map((cityId) => {
-        const city = mapCities[cityId];
-        return { x: city.x, y: city.y };
-      }),
-    }));
-
   const onlineProjects = onlineProjectSlugs
     .map(toProjectSummary)
     .filter((project): project is MapProjectSummary => project !== null);
@@ -149,7 +139,6 @@ export default async function Page({
 
       <MapAndTimeline
         pins={pins}
-        threads={threads}
         onlineProjects={onlineProjects}
         timelineProjects={timelineProjects}
       />

@@ -100,8 +100,8 @@ function MenuSignature({ className }: { className?: string }) {
  * full-screen index over the page — Bast's sections as numbered entries,
  * each drawing a short red thread when pointed at, with search set beside
  * them. On desktop the entries and search sit side by side; on phones and
- * tablets search comes first, the entries follow, and the language switch
- * (which the sheet covers on the page) closes the sheet at the bottom. On
+ * tablets search comes first and the entries follow. The language switch
+ * (which the sheet covers on the page) sits beside the close mark. On
  * short landscape screens the entries split into two columns. The type is
  * sized to the screen, so the sheet only scrolls on the very smallest.
  */
@@ -200,15 +200,20 @@ export default function PlusMenu() {
                   className='logo logo1'
                 />
               </Link>
-              <button
-                ref={closeRef}
-                type='button'
-                aria-label={dict.common.closeMenu}
-                onClick={close}
-                className='flex h-11 w-11 cursor-pointer items-center justify-center text-[#7f242a] transition-colors hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7f242a] sm:h-12 sm:w-12'
-              >
-                <PlusMark className='plus-menu-close h-7 w-7 sm:h-8 sm:w-8' />
-              </button>
+              <div className='flex items-center gap-4 sm:gap-6'>
+                <Suspense fallback={null}>
+                  <LanguageSwitcher />
+                </Suspense>
+                <button
+                  ref={closeRef}
+                  type='button'
+                  aria-label={dict.common.closeMenu}
+                  onClick={close}
+                  className='flex h-11 w-11 cursor-pointer items-center justify-center text-[#7f242a] transition-colors hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7f242a] sm:h-12 sm:w-12'
+                >
+                  <PlusMark className='plus-menu-close h-7 w-7 sm:h-8 sm:w-8' />
+                </button>
+              </div>
             </div>
 
             <div className='flex min-h-0 flex-1 flex-col overflow-y-auto px-8 pt-2 pb-6 sm:px-16 sm:pt-6 sm:pb-10 lg:grid lg:grid-cols-12 lg:gap-12 lg:overflow-visible lg:px-24 lg:pt-2 lg:pb-16'>
@@ -267,19 +272,6 @@ export default function PlusMenu() {
                   })}
                 </ol>
               </nav>
-
-              <div
-                className='plus-menu-item mt-auto flex flex-wrap items-center justify-between gap-4 pt-8 lg:hidden [@media(max-height:500px)]:pt-5'
-                style={{ animationDelay: `${180 + navItems.length * 60}ms` }}
-              >
-                <p className='flex items-center gap-2 text-[0.7rem] font-extrabold tracking-wide text-[#7f242a] uppercase sm:text-xs'>
-                  <PlusMark className='h-2.5 w-2.5 shrink-0' />
-                  {dict.common.language}
-                </p>
-                <Suspense fallback={null}>
-                  <LanguageSwitcher />
-                </Suspense>
-              </div>
             </div>
           </div>,
           document.body

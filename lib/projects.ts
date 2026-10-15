@@ -16,7 +16,8 @@ import knockout from '@/data/projects/knockout.json';
 import owzar from '@/data/projects/owzar.json';
 import paintYourShadowOrange from '@/data/projects/paint-your-shadow-orange.json';
 import paper from '@/data/projects/paper.json';
-import postOnion from '@/data/projects/post-onion.json';
+// Hidden for now — re-enable by restoring this import and the entry in `projects` below.
+// import postOnion from '@/data/projects/post-onion.json';
 import printingMachine from '@/data/projects/printing-machine.json';
 import radioKhiaban from '@/data/projects/radio-khiaban.json';
 import stones from '@/data/projects/stones.json';
@@ -128,7 +129,7 @@ export const projects = [
   owzar,
   paintYourShadowOrange,
   paper,
-  postOnion,
+  // postOnion, // hidden for now
   printingMachine,
   radioKhiaban,
   stones,

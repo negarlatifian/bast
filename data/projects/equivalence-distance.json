@@ -9,7 +9,13 @@
       "Location": { "text": "تهران، عمارت روبرو" },
       "Year / Time Period": { "text": "۱۳۹۹" },
       "Featured Project Image": { "alt": "قد فاصله" },
-      "Thematic Tags": ["فضای خودگردان", "فضای نهادی و گالری", "ساخت جمعی", "حافظه و آرشیو", "بدن، جنسیت و مراقبت"]
+      "Thematic Tags": [
+        "فضای خودگردان",
+        "فضای نهادی و گالری",
+        "ساخت جمعی",
+        "حافظه و آرشیو",
+        "بدن، جنسیت و مراقبت"
+      ]
     },
     "sections": [
       {
@@ -55,9 +61,7 @@
       {
         "id": "9",
         "title": "خوانش",
-        "paragraphs": [
-          "تن‌های تهی، نخ‌های ناگزیر — آوا جلالی."
-        ]
+        "paragraphs": ["تن‌های تهی، نخ‌های ناگزیر — آوا جلالی."]
       },
       {
         "id": "10",
@@ -113,7 +117,13 @@
     "Year / Time Period": {
       "text": "2021"
     },
-    "Thematic Tags": ["Self-Organised Space", "Institutional & Gallery Space", "Collective Making", "Memory & Archive", "Body, Gender & Care"],
+    "Thematic Tags": [
+      "Self-Organised Space",
+      "Institutional & Gallery Space",
+      "Collective Making",
+      "Memory & Archive",
+      "Body, Gender & Care"
+    ],
     "Featured Project Image": {
       "url": "/images/equivalence/thumb.webp",
       "alt": "An Equivalence of Our Distance"
@@ -174,9 +184,7 @@
     {
       "id": "9",
       "title": "Re-readings",
-      "paragraphs": [
-        "*Hollow Bodies, Inevitable Threads* — Ava Jalali."
-      ]
+      "paragraphs": ["*Hollow Bodies, Inevitable Threads* — Ava Jalali."]
     },
     {
       "id": "10",
@@ -191,7 +199,7 @@
       "title": "About the Artist",
       "paragraphs": [
         "**Golrokh Nafisi** (born 1981, Isfahan) is an illustrator, puppet maker, and visual artist whose works are often influenced by the political and social events of the world around her. The direct participation of the audience in interacting with the artwork, and travel as an opportunity to create new calendars and maps, are two main axes in her artistic practice. Born in Isfahan, she holds a degree in Industrial Design from the Tehran University of Art and a degree in Fine Arts from the Rietveld Academie in the Netherlands.",
-        "Email: Golrokh[at]gmail.com"
+        "Email: [Golrokh@gmail.com](mailto:Golrokh@gmail.com)"
       ]
     }
   ],

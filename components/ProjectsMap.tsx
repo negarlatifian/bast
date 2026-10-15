@@ -5,13 +5,7 @@ import { useMemo, useState } from 'react';
 import { useLocale } from './LocaleProvider';
 import ProjectListRow from './ProjectListRow';
 import { formatLocaleNumber } from '@/lib/i18n';
-import {
-  CITY_NETWORK_EDGES,
-  IRAN_PATH_D,
-  MAP_VIEW_BOX,
-  mapCities,
-  type MapCityId,
-} from '@/lib/mapData';
+import { IRAN_PATH_D, MAP_VIEW_BOX, type MapCityId } from '@/lib/mapData';
 
 export type MapProjectSummary = {
   slug: string;
@@ -30,14 +24,8 @@ export type MapPin = {
   projects: MapProjectSummary[];
 };
 
-export type MapThread = {
-  slug: string;
-  points: { x: number; y: number }[];
-};
-
 type ProjectsMapProps = {
   pins: MapPin[];
-  threads: MapThread[];
   onlineProjects: MapProjectSummary[];
   selectedTag: string | null;
 };
@@ -50,7 +38,6 @@ function markerSizeClass(count: number) {
 
 export default function ProjectsMap({
   pins,
-  threads,
   onlineProjects,
   selectedTag,
 }: ProjectsMapProps) {
@@ -76,28 +63,17 @@ export default function ProjectsMap({
     return !selectedTag || project.tags.includes(selectedTag);
   }
 
-  const threadPaths = threads.map((thread) => ({
-    slug: thread.slug,
-    d: thread.points
-      .map(
-        (point, index) => `${index === 0 ? 'M' : 'L'} ${point.x} ${point.y}`,
-      )
-      .join(' '),
-    involvesActiveCity: activeCity
-      ? pins
-          .find((pin) => pin.id === activeCity)
-          ?.projects.some((project) => project.slug === thread.slug)
-      : false,
-    matchesFilter: mappedProjects.some(
-      (project) => project.slug === thread.slug && matchesTag(project),
-    ),
-  }));
-
-  const networkEdgePoints = CITY_NETWORK_EDGES.map(([fromId, toId]) => {
-    const from = mapCities[fromId];
-    const to = mapCities[toId];
-    return `M ${from.x} ${from.y} L ${to.x} ${to.y}`;
-  }).join(' ');
+  // Every project city joined to every other, so the whole repository reads
+  // as one web.
+  const connections = pins.flatMap((from, index) =>
+    pins.slice(index + 1).map((to) => ({
+      key: `${from.id}-${to.id}`,
+      d: `M ${from.x} ${from.y} L ${to.x} ${to.y}`,
+      touchesActiveCity: activeCity === from.id || activeCity === to.id,
+      matchesFilter:
+        from.projects.some(matchesTag) && to.projects.some(matchesTag),
+    })),
+  );
 
   const filteredOnlineProjects = onlineProjects.filter(matchesTag);
   const globalMatches = selectedTag
@@ -130,7 +106,8 @@ export default function ProjectsMap({
 
             <path
               d={IRAN_PATH_D}
-              fill='#efe9dc'
+              fill='#8a8c84'
+              fillOpacity='0.2'
               stroke='#7f242a'
               strokeWidth='1.4'
               strokeLinejoin='round'
@@ -138,39 +115,22 @@ export default function ProjectsMap({
             />
             <path d={IRAN_PATH_D} fill='url(#map-grain)' opacity='0.16' />
 
-            <path
-              d={networkEdgePoints}
-              fill='none'
-              stroke='#7f242a'
-              strokeWidth='0.9'
-              strokeDasharray='1 3'
-              strokeLinecap='round'
-              vectorEffect='non-scaling-stroke'
-              opacity={selectedTag ? 0.15 : 0.45}
-              className='transition-opacity duration-300'
-            />
-
-            <g
-              fill='none'
-              stroke='#7f242a'
-              strokeLinecap='round'
-              vectorEffect='non-scaling-stroke'
-            >
-              {threadPaths.map((thread) => {
-                const emphasize = thread.involvesActiveCity;
-                const opacity = !thread.matchesFilter
+            <g fill='none' stroke='#7f242a' strokeLinecap='round'>
+              {connections.map((connection) => {
+                const opacity = !connection.matchesFilter
                   ? 0.06
-                  : emphasize
-                    ? 1
-                    : 0.7;
+                  : connection.touchesActiveCity
+                    ? 0.9
+                    : 0.35;
 
                 return (
                   <path
-                    key={thread.slug}
-                    d={thread.d}
-                    strokeWidth={emphasize && thread.matchesFilter ? 2.2 : 1.3}
+                    key={connection.key}
+                    d={connection.d}
+                    strokeWidth={0.6}
+                    vectorEffect='non-scaling-stroke'
                     opacity={opacity}
-                    className='transition-[opacity,stroke-width] duration-300'
+                    className='transition-opacity duration-300'
                   />
                 );
               })}

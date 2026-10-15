@@ -6,13 +6,11 @@ import { useLocale } from './LocaleProvider';
 import ProjectsMap, {
   type MapPin,
   type MapProjectSummary,
-  type MapThread,
 } from './ProjectsMap';
 import ProjectsTimeline, { type TimelineProject } from './ProjectsTimeline';
 
 type MapAndTimelineProps = {
   pins: MapPin[];
-  threads: MapThread[];
   onlineProjects: MapProjectSummary[];
   timelineProjects: TimelineProject[];
 };
@@ -24,7 +22,6 @@ const INITIAL_TAG_COUNT = 14;
 
 export default function MapAndTimeline({
   pins,
-  threads,
   onlineProjects,
   timelineProjects,
 }: MapAndTimelineProps) {
@@ -143,7 +140,6 @@ export default function MapAndTimeline({
       ) : (
         <ProjectsMap
           pins={pins}
-          threads={threads}
           onlineProjects={onlineProjects}
           selectedTag={selectedTag}
         />
