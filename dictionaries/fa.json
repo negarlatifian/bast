@@ -18,7 +18,7 @@
     "homeAriaLabel": "خانه‌ی بسط",
     "openRepository": "باز کردن مخزن بسط",
     "reReading": "خوانش",
-    "participationProcess": "مشارکت و فرایند",
+    "participationProcess": "شکل‌های مشارکت و فرآیند اجرا",
     "noProjects": "پروژه‌ای یافت نشد.",
     "comingSoon": "به‌زودی",
     "toggleNav": "باز و بسته کردن منو",
@@ -32,7 +32,7 @@
     "periodLabel": "دوره",
     "locationLabel": "مکان",
     "topicsLabel": "برچسب‌های مضمونی",
-    "documentationLabel": "مستندات",
+    "documentationLabel": "گالری",
     "sectionsNavLabel": "بخش‌های پروژه",
     "contactLabel": "تماس",
     "editorialNote": "این مدخل بر اساسِ روایتِ هنرمند و موادِ همراهِ پروژه تهیه شده است."
@@ -48,7 +48,7 @@
       },
       "repository": {
         "eyebrow": "مخزن",
-        "title": "از مخزن",
+        "title": "مخزن",
         "description": "مجموعه‌ای رو به رشد از پروژه‌های هنر مشارکتی در ایران، هر مدخل بر پایه‌ی روایتِ خودِ هنرمند.",
         "viewAll": "مشاهده‌ی کاملِ مخزن"
       },

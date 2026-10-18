@@ -55,6 +55,8 @@ type Box = {
 
 // Clearance kept between a frame and the column's text or edges.
 const BAND_GAP = 16;
+// Clearance kept around text while a frame is dragged near it.
+const TEXT_MARGIN = 8;
 
 const TEXT_POSITION_CLASS: Record<TriptychPanel['textPosition'], string> = {
   top: 'mt-[clamp(1.25rem,5%,2.5rem)]',
@@ -116,8 +118,10 @@ function placeFrame(column: Box, frame: TriptychFrame, isStacked: boolean) {
   );
   const bandTop = band.top;
   const bandBottom = band.bottom;
+  // No minimum size: in a short stretch the frame shrinks rather than
+  // spilling over the text beside it.
   const maxHeight = Math.max(
-    40,
+    0,
     (bandBottom - bandTop) * (isStacked ? 0.85 : 0.72) - CAPTION_SPACE
   );
   const width = Math.min(
@@ -361,7 +365,14 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
     };
 
     return columns.some((column) =>
-      column.blocks.some((block) => intersects(frameRect, block))
+      column.blocks.some((block) =>
+        intersects(frameRect, {
+          left: block.left - TEXT_MARGIN,
+          top: block.top - TEXT_MARGIN,
+          right: block.right + TEXT_MARGIN,
+          bottom: block.bottom + TEXT_MARGIN,
+        })
+      )
     );
   };
 
@@ -548,11 +559,29 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
     const x = Math.min(100 - w * 0.4, Math.max(-w * 0.6, dragState.start.x + deltaX));
     const y = Math.min(88, Math.max(-2, dragState.start.y + deltaY));
 
+    // Frames never pass over text. Blocked, the frame slides along the
+    // text's edge on whichever axis is still free, or else holds still.
+    const aspect = panels[dragState.index].frame.aspect;
+    const current = frames[dragState.index];
+    // One already over text (the text reflowed under it) moves freely
+    // until it's clear, so it can't get stuck there.
+    const next = coversText(current, w, aspect)
+      ? { x, y }
+      : [
+          { x, y },
+          { x, y: current.y },
+          { x: current.x, y },
+        ].find((candidate) => !coversText(candidate, w, aspect));
+
+    if (!next) {
+      return;
+    }
+
     setDragged((current) => ({
       layoutKey,
       byIndex: {
         ...(current.layoutKey === layoutKey ? current.byIndex : {}),
-        [dragState.index]: { x, y },
+        [dragState.index]: next,
       },
     }));
   };
@@ -649,8 +678,7 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
               />
             )}
 
-            {/* The whole column is the link; with no visible heading, the
-                title becomes its accessible name. */}
+            {/* The whole column is the link, named by the panel title. */}
             <Link
               href={panel.href}
               onClick={(event) => handleColumnClick(event, index)}
@@ -662,7 +690,7 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
               ref={(node) => {
                 eyebrowRefs.current[index] = node;
               }}
-              className={`relative flex items-center gap-3 text-[0.7rem] font-extrabold tracking-wide uppercase transition-colors duration-500 sm:text-xs ${
+              className={`pointer-events-none relative flex items-center gap-3 text-[0.7rem] font-extrabold tracking-wide uppercase transition-colors duration-500 sm:text-xs ${
                 isActive ? 'text-white' : 'text-black'
               }`}
             >
@@ -679,27 +707,48 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
               >
                 <path d='M5 0V10M0 5H10' stroke='currentColor' strokeWidth='1' />
               </svg>
-              {panel.eyebrow}
             </p>
 
             <div
               ref={(node) => {
                 textRefs.current[index] = node;
               }}
-              className={`relative flex max-w-md flex-col gap-3 sm:gap-4 ${
+              // Clicks fall through the text to the column link beneath it.
+              className={`pointer-events-none relative flex max-w-md flex-col gap-3 sm:gap-4 ${
                 TEXT_POSITION_CLASS[panel.textPosition]
               } ${panel.textIndent ? 'lg:ms-[10%]' : ''}`}
             >
-              {/* No visible heading: the description leads the column, and
-                  the title stays for screen readers and the page outline. */}
-              <h2 className='sr-only'>{panel.title}</h2>
-              <p
-                className={`text-lg leading-snug font-medium transition-colors duration-500 sm:text-xl lg:text-[clamp(1.15rem,1.55vw,1.6rem)] lg:[@media(max-height:680px)]:text-lg ${
-                  isActive ? 'text-white' : 'text-black'
-                }`}
-              >
-                {panel.description}
-              </p>
+              {panel.key === 'about' ? (
+                <>
+                  {/* About has no visible heading: its description leads the
+                      column, larger and bolder than the other columns' text. */}
+                  <h2 className='sr-only'>{panel.title}</h2>
+                  <p
+                    className={`text-xl leading-snug font-semibold transition-colors duration-500 sm:text-2xl lg:text-[clamp(1.4rem,1.95vw,2.1rem)] lg:[@media(max-height:680px)]:text-xl ${
+                      isActive ? 'text-white' : 'text-black'
+                    }`}
+                  >
+                    {panel.description}
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h2
+                    className={`text-xl leading-tight font-semibold transition-colors duration-500 sm:text-3xl lg:text-[clamp(1.6rem,2.4vw,2.6rem)] ${
+                      isActive ? 'text-white' : 'text-black'
+                    }`}
+                  >
+                    {panel.title}
+                  </h2>
+                  <p
+                    className={`text-sm leading-6 transition-colors duration-500 lg:text-base lg:[@media(max-height:680px)]:hidden ${
+                      isActive ? 'text-white/85' : 'text-[#777066]'
+                    }`}
+                  >
+                    {panel.description}
+                  </p>
+                </>
+              )}
               <span
                 aria-hidden='true'
                 className={`inline-flex w-fit items-center gap-2 text-sm font-medium transition-colors duration-500 sm:text-base lg:text-[1.05rem] ${

@@ -89,6 +89,7 @@ export const projectCityLinks: Record<string, MapCityId[]> = {
   'talk-see-taxi-project': ['bojnourd', 'mashhad', 'tehran'],
   'tehran-monoxide': ['tehran', 'bam', 'darzikola'],
   'the-secret-of-laleh': ['tehran'],
+  'un-monopoly': ['tehran'],
   'white-cubes': ['yazd'],
   'workers-dont-go-to-the-factory': ['tehran'],
 };

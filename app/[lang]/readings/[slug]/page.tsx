@@ -70,37 +70,46 @@ export default async function Page({
       <article className='relative mx-auto mt-8 flex w-full max-w-4xl flex-col gap-6 bg-[#f8f8f6] px-5 py-8 sm:mt-12 sm:px-10 sm:py-12 lg:px-16'>
         <CropMarks />
 
-        <header className='relative overflow-hidden border-s-4 border-[#7f242a] bg-[#d67878]/10 p-5 sm:p-7'>
-          <div
-            aria-hidden='true'
-            className='pointer-events-none absolute inset-0 opacity-[0.07] mix-blend-multiply'
-            style={{
-              backgroundImage:
-                'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.45) 1px, transparent 0)',
-              backgroundSize: '4px 4px',
-            }}
-          />
-          <div className='relative flex flex-col gap-3'>
-            <p className='text-[0.7rem] font-extrabold tracking-wide text-[#7f242a] uppercase sm:text-xs'>
-              {dict.common.reReading}
-            </p>
-            <h1 className='text-3xl font-semibold leading-tight text-black sm:text-4xl'>
+        <header className='flex items-stretch border border-dashed border-[#7f242a]'>
+          <p className='flex shrink-0 items-center justify-center border-e border-dashed border-[#7f242a] px-2.5 py-4 text-[0.65rem] font-bold tracking-[0.2em] text-[#7f242a] uppercase [writing-mode:vertical-rl] ltr:rotate-180 sm:px-3 sm:text-xs'>
+            {dict.common.reReading}
+          </p>
+          <div className='flex flex-col gap-3 px-5 py-5 sm:px-7 sm:py-6'>
+            <h1 className='text-2xl font-semibold leading-tight text-black sm:text-3xl'>
               {reReading.title}
             </h1>
-            <div className='flex flex-col gap-1 text-sm leading-6 text-[#4f4a43] sm:text-base'>
-              <p>{reReading.credit ?? reReading.author}</p>
-              {reReading.role && <p>{reReading.role}</p>}
-              {reReading.source && <p>{reReading.source}</p>}
-              {reReading.year && <p>{reReading.year}</p>}
+            <p className='flex flex-wrap items-baseline gap-x-2 text-sm leading-6 text-[#4f4a43] sm:text-base'>
+              {[
+                reReading.credit ?? reReading.author,
+                reReading.role,
+                reReading.source,
+                reReading.year,
+              ]
+                .filter(Boolean)
+                .map((item, index) => (
+                  <span key={`reading-meta-${index}`} className='flex items-baseline gap-x-2'>
+                    {index > 0 && (
+                      <span aria-hidden='true' className='text-[#7f242a]'>
+                        ·
+                      </span>
+                    )}
+                    {item}
+                  </span>
+                ))}
               {project && (
-                <Link
-                  href={localizeHref(lang, `/repository/${project.slug}`)}
-                  className='w-fit text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black'
-                >
-                  {project['1. Basic Information']['Project Title']}
-                </Link>
+                <span className='flex items-baseline gap-x-2'>
+                  <span aria-hidden='true' className='text-[#7f242a]'>
+                    ·
+                  </span>
+                  <Link
+                    href={localizeHref(lang, `/repository/${project.slug}`)}
+                    className='text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black'
+                  >
+                    {project['1. Basic Information']['Project Title']}
+                  </Link>
+                </span>
               )}
-            </div>
+            </p>
           </div>
         </header>
 

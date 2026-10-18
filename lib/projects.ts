@@ -24,6 +24,7 @@ import stones from '@/data/projects/stones.json';
 import talkSee from '@/data/projects/talk-see.json';
 import tehranMonoxide from '@/data/projects/tehran-monoxide.json';
 import theSecretOfLaleh from '@/data/projects/the-secret-of-laleh.json';
+import unMonopoly from '@/data/projects/un-monopoly.json';
 import whiteCubes from '@/data/projects/white-cubes.json';
 import workers from '@/data/projects/workers.json';
 
@@ -53,7 +54,11 @@ export type Project = {
     id: string;
     title: string;
     paragraphs: string[];
-    quotes?: { text: string; attribution?: string }[];
+    /**
+     * Block quotes render after all paragraphs, unless `afterParagraph` (a
+     * 0-based paragraph index) places a quote directly after that paragraph.
+     */
+    quotes?: { text: string; attribution?: string; afterParagraph?: number }[];
     contact?: {
       platform: string;
       handle: string;
@@ -64,7 +69,7 @@ export type Project = {
     subsections?: {
       title: string;
       paragraphs: string[];
-      quotes?: { text: string; attribution?: string }[];
+      quotes?: { text: string; attribution?: string; afterParagraph?: number }[];
     }[];
   };
   'Visual Documentation'?: {
@@ -97,13 +102,13 @@ export type Project = {
       id: string;
       title?: string;
       paragraphs?: string[];
-      quotes?: { text: string; attribution?: string }[];
+      quotes?: { text: string; attribution?: string; afterParagraph?: number }[];
     }[];
     'Participation & Process'?: {
       subsections?: {
         title?: string;
         paragraphs?: string[];
-        quotes?: { text: string; attribution?: string }[];
+        quotes?: { text: string; attribution?: string; afterParagraph?: number }[];
       }[];
     };
     'Editorial Notes'?: string[];
@@ -136,6 +141,7 @@ export const projects = [
   talkSee,
   tehranMonoxide,
   theSecretOfLaleh,
+  unMonopoly,
   whiteCubes,
   workers,
 ] satisfies Project[];

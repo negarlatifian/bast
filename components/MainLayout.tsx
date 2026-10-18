@@ -10,6 +10,21 @@ import { useState, useEffect } from 'react';
 import { useLocale } from './LocaleProvider';
 import { localizeHref } from '@/lib/i18n';
 
+const READING_BG_SAMPLES = [
+  { name: 'Old gold', color: '#c9a24e' },
+  { name: 'Lighter old gold', color: '#d4b264' },
+  { name: 'Soft gold', color: '#d8b974' },
+  { name: 'Darker old gold', color: '#bb9443' },
+  { name: 'Antique brass', color: '#b8964f' },
+  { name: 'Muted gold', color: '#bfa262' },
+  { name: 'Dusty gold', color: '#c4a868' },
+  { name: 'Warm gold', color: '#cf9f45' },
+  { name: 'Amber gold', color: '#d19a3c' },
+  { name: 'Greenish gold', color: '#bfa448' },
+  { name: 'Bronze gold', color: '#ae8840' },
+  { name: 'Deep gold', color: '#a8803a' },
+];
+
 type MainLayoutProps = PropsWithChildren<{
   variant?: 'default' | 'reading';
   // The home page trades the full nav bar for a single "+" dropdown and
@@ -35,9 +50,10 @@ export default function MainLayout({
   // that fills exactly what's left, with nothing to scroll. Below that it
   // scrolls like any other page.
   const isSingleScreen = navigation === 'plus';
-  const backgroundClassName = isReadingVariant
-    ? 'bg-[#8a8c84]'
-    : 'bg-[rgb(248,248,246)]';
+  // TEMPORARY: live background picker for choosing the reading-page color.
+  // Remove READING_BG_SAMPLES, readingBg and the picker once one is chosen.
+  const [readingBg, setReadingBg] = useState(READING_BG_SAMPLES[0].color);
+  const backgroundClassName = isReadingVariant ? '' : 'bg-[rgb(248,248,246)]';
   const headerClassName = isOverHero
     ? `fixed inset-x-0 transition-colors duration-300 ${
         pastHero
@@ -45,7 +61,7 @@ export default function MainLayout({
           : 'header-on-hero bg-transparent'
       }`
     : `sticky backdrop-blur-md ${
-        isReadingVariant ? 'bg-[#8a8c84]/95' : 'bg-[rgb(248,248,246)]/95'
+        isReadingVariant ? '' : 'bg-[rgb(248,248,246)]/95'
       }`;
 
   useEffect(() => {
@@ -79,7 +95,29 @@ export default function MainLayout({
         // so the layout itself leaves the ground to <body>.
         isSingleScreen ? '' : backgroundClassName
       }`}
+      style={isReadingVariant ? { backgroundColor: readingBg } : undefined}
     >
+      {isReadingVariant && (
+        <div className='fixed bottom-4 right-4 z-50 flex flex-col gap-2 bg-white p-3 text-xs shadow-lg'>
+          <p className='font-semibold text-black'>Sample background</p>
+          {READING_BG_SAMPLES.map((sample) => (
+            <button
+              key={sample.color}
+              type='button'
+              onClick={() => setReadingBg(sample.color)}
+              className={`flex items-center gap-2 text-start text-black ${
+                readingBg === sample.color ? 'font-bold' : ''
+              }`}
+            >
+              <span
+                className='h-5 w-5 shrink-0 border border-black/20'
+                style={{ backgroundColor: sample.color }}
+              />
+              {sample.name} {sample.color}
+            </button>
+          ))}
+        </div>
+      )}
       <a
         href='#main-content'
         className='sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:top-4 focus-visible:inset-s-4 focus-visible:z-50 focus-visible:bg-[#7f242a] focus-visible:px-4 focus-visible:py-2 focus-visible:text-sm focus-visible:font-medium focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white'
@@ -89,6 +127,11 @@ export default function MainLayout({
 
       {/* ---------- Header ---------- */}
       <header
+        style={
+          isReadingVariant && !isOverHero
+            ? { backgroundColor: `${readingBg}f2` }
+            : undefined
+        }
         className={`top-0 z-30 ${
           isSingleScreen ? 'lg:shrink-0' : ''
         } ${headerClassName} ${

@@ -70,7 +70,7 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-          <SearchForm />
+          <SearchForm collapsible />
           <LanguageSwitcher />
         </div>
 

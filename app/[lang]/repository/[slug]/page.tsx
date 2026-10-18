@@ -165,17 +165,20 @@ function renderWithEmphasis(text: string, keyPrefix: string): ReactNode[] {
   return parts.length > 0 ? parts : [text];
 }
 
-function ProjectParagraph({ children }: { children: string }) {
-  const paragraph = normalizeProjectParagraph(children);
-  let nodes: ReactNode[] = [paragraph];
+/** Applies links, bold, and emphasis markers to a line of project text. */
+function renderInlineText(text: string): ReactNode[] {
+  let nodes: ReactNode[] = [text];
   nodes = transformTextNodes(nodes, renderWithMarkdownLinks);
   nodes = transformTextNodes(nodes, renderWithAutoLinks);
   nodes = transformTextNodes(nodes, renderWithBold);
   nodes = transformTextNodes(nodes, renderWithEmphasis);
+  return nodes;
+}
 
+function ProjectParagraph({ children }: { children: string }) {
   return (
     <p className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'>
-      {nodes}
+      {renderInlineText(normalizeProjectParagraph(children))}
     </p>
   );
 }
@@ -190,14 +193,59 @@ function ProjectQuote({
   return (
     <blockquote className='my-2 border-s-2 border-[#7f242a]/40 py-1 ps-5 italic sm:my-3 sm:ps-6'>
       <p className='text-sm leading-6 text-[#24211d] sm:text-base sm:leading-7'>
-        {text}
+        {renderInlineText(text)}
       </p>
       {attribution && (
         <footer className='mt-3 text-sm not-italic leading-6 text-[#777066]'>
-          — {attribution}
+          — {renderInlineText(attribution)}
         </footer>
       )}
     </blockquote>
+  );
+}
+
+type SectionQuote = { text: string; attribution?: string; afterParagraph?: number };
+
+/**
+ * Renders paragraphs with their block quotes, placing each quote after the
+ * paragraph its `afterParagraph` index names, or at the end when unset.
+ */
+function ProjectParagraphsWithQuotes({
+  keyPrefix,
+  paragraphs,
+  quotes = [],
+}: {
+  keyPrefix: string;
+  paragraphs: string[];
+  quotes?: SectionQuote[];
+}) {
+  const renderQuote = (quote: SectionQuote, index: number) => (
+    <ProjectQuote
+      key={`${keyPrefix}-quote-${index}`}
+      text={quote.text}
+      attribution={quote.attribution}
+    />
+  );
+  const isTrailing = (quote: SectionQuote) =>
+    quote.afterParagraph === undefined ||
+    quote.afterParagraph >= paragraphs.length;
+
+  return (
+    <>
+      {paragraphs.map((paragraph, paragraphIndex) => (
+        <Fragment key={`${keyPrefix}-${paragraphIndex}`}>
+          <ProjectParagraph>{paragraph}</ProjectParagraph>
+          {quotes.map((quote, quoteIndex) =>
+            quote.afterParagraph === paragraphIndex
+              ? renderQuote(quote, quoteIndex)
+              : null,
+          )}
+        </Fragment>
+      ))}
+      {quotes.map((quote, quoteIndex) =>
+        isTrailing(quote) ? renderQuote(quote, quoteIndex) : null,
+      )}
+    </>
   );
 }
 
@@ -395,9 +443,12 @@ export default async function Page({
                 <dd className='mt-2 flex flex-wrap items-center gap-x-3 gap-y-2'>
                   {tags.map((tag, index) => (
                     <Fragment key={tag}>
-                      <span className='text-[0.7rem] font-extrabold tracking-wide text-[#7f242a] uppercase sm:text-xs'>
+                      <Link
+                        href={`${localizeHref(lang, '/repository')}?tag=${encodeURIComponent(tag)}`}
+                        className='text-[0.7rem] font-extrabold tracking-wide text-[#7f242a] uppercase transition-colors hover:text-black sm:text-xs'
+                      >
                         {tag}
-                      </span>
+                      </Link>
                       {index < tags.length - 1 && (
                         <span
                           aria-hidden='true'
@@ -559,31 +610,22 @@ export default async function Page({
                 label: dict.common.reReading,
                 content: (
                   <section key='re-reading' id='re-reading' className='scroll-mt-28'>
-                    <div className='relative overflow-hidden border-s-4 border-[#7f242a] bg-[#d67878]/10 p-5 sm:p-7'>
-                      <div
-                        aria-hidden='true'
-                        className='pointer-events-none absolute inset-0 opacity-[0.07] mix-blend-multiply'
-                        style={{
-                          backgroundImage:
-                            'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.45) 1px, transparent 0)',
-                          backgroundSize: '4px 4px',
-                        }}
-                      />
-                      <div className='relative flex flex-col gap-2'>
-                        <h2 className='text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
-                          {dict.common.reReading}
-                        </h2>
-                        <Link
-                          href={localizeHref(lang, `/readings/${project.slug}`)}
-                          className='w-fit text-base font-medium leading-6 text-black transition-colors hover:text-[#7f242a] sm:text-lg'
-                        >
+                    <Link
+                      href={localizeHref(lang, `/readings/${project.slug}`)}
+                      className='group flex items-stretch border border-dashed border-[#7f242a] transition-colors hover:bg-[#7f242a]/5'
+                    >
+                      <h2 className='flex shrink-0 items-center justify-center border-e border-dashed border-[#7f242a] px-2 py-3 text-[0.65rem] font-bold tracking-[0.2em] text-[#7f242a] uppercase [writing-mode:vertical-rl] ltr:rotate-180 sm:text-xs'>
+                        {dict.common.reReading}
+                      </h2>
+                      <div className='flex flex-col justify-center gap-1 px-4 py-4 sm:px-5'>
+                        <span className='text-base font-semibold leading-6 text-black transition-colors group-hover:text-[#7f242a] sm:text-lg'>
                           {reReading.title}
-                        </Link>
-                        <p className='text-sm leading-6 text-[#777066] sm:text-base'>
+                        </span>
+                        <span className='text-sm leading-6 text-[#4f4a43] sm:text-base'>
                           {reReading.author}
-                        </p>
+                        </span>
                       </div>
-                    </div>
+                    </Link>
                   </section>
                 ),
               }
@@ -617,18 +659,11 @@ export default async function Page({
                     <ProjectMediaStrip mediaItems={mediaItems} title={title} />
                   ) : (
                     <>
-                      {section.paragraphs.map((paragraph, index) => (
-                        <ProjectParagraph key={`${section.id}-${index}`}>
-                          {paragraph}
-                        </ProjectParagraph>
-                      ))}
-                      {section.quotes?.map((quote, index) => (
-                        <ProjectQuote
-                          key={`${section.id}-quote-${index}`}
-                          text={quote.text}
-                          attribution={quote.attribution}
-                        />
-                      ))}
+                      <ProjectParagraphsWithQuotes
+                        keyPrefix={section.id}
+                        paragraphs={section.paragraphs}
+                        quotes={section.quotes}
+                      />
                       {section.contact && (
                         <ProjectContact
                           label={dict.project.contactLabel}
