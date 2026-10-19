@@ -92,11 +92,21 @@
     },
     "Visual Documentation": {
       "items": [
-        { "description": "عکس از آرشیو هنرمند" },
-        { "description": "عکس از آرشیو هنرمند" },
-        { "description": "عکس از آرشیو هنرمند" },
-        { "description": "عکس از آرشیو هنرمند" },
-        { "description": "عکس از آرشیو هنرمند" }
+        {
+          "description": "عکس از آرشیو هنرمند"
+        },
+        {
+          "description": "عکس از آرشیو هنرمند"
+        },
+        {
+          "description": "عکس از آرشیو هنرمند"
+        },
+        {
+          "description": "عکس از آرشیو هنرمند"
+        },
+        {
+          "description": ""
+        }
       ]
     },
     "Editorial Notes": [
@@ -198,11 +208,31 @@
   },
   "Visual Documentation": {
     "items": [
-      { "type": "photo", "src": "/images/kairos/01.webp", "description": "Photo courtesy of the artist." },
-      { "type": "photo", "src": "/images/kairos/02.webp", "description": "Photo courtesy of the artist." },
-      { "type": "photo", "src": "/images/kairos/03.webp", "description": "Photo courtesy of the artist." },
-      { "type": "photo", "src": "/images/kairos/04.webp", "description": "Photo courtesy of the artist." },
-      { "type": "video", "src": "/images/kairos/05.mp4", "description": "Photo courtesy of the artist." }
+      {
+        "type": "photo",
+        "src": "/images/kairos/01.webp",
+        "description": "Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/kairos/02.webp",
+        "description": "Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/kairos/03.webp",
+        "description": "Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/kairos/04.webp",
+        "description": "Photo courtesy of the artist."
+      },
+      {
+        "type": "video",
+        "src": "/images/kairos/05.mp4",
+        "description": ""
+      }
     ]
   },
   "Editorial Notes": [
