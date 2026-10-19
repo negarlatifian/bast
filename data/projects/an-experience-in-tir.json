@@ -6,100 +6,102 @@
       "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
         "یاسمین قلعه‌نویی"
       ],
-      "Location": { "text": "فضای ربت و دارآباد، تهران" },
-      "Year / Time Period": { "text": "۱۴۰۲" },
-      "Featured Project Image": { "alt": "تجربه‌ای در تیر ماه" },
-      "Thematic Tags": ["فضای خودگردان", "ساخت جمعی", "کارگاه و پداگوژی", "گفت‌وگو و روایت جمعی", "بدن، جنسیت و مراقبت"]
+      "Location": {
+        "text": "فضای رَبت و دارآباد، تهران"
+      },
+      "Year / Time Period": {
+        "text": "۱۴۰۲"
+      },
+      "Featured Project Image": {
+        "alt": "تجربه‌ای در تیر ماه"
+      },
+      "Thematic Tags": [
+        "فضای خودگردان",
+        "ساخت جمعی",
+        "کارگاه و پداگوژی",
+        "گفت‌وگو و روایت جمعی",
+        "بدن، جنسیت و مراقبت"
+      ]
     },
     "sections": [
       {
         "id": "2",
         "title": "معرفی کوتاه پروژه",
         "paragraphs": [
-          "«تجربه‌ای در تیر ماه» یک کارگاه نویسندگی جمعی چهارجلسه‌ای بود که توسط یاسمین قلعه‌نویی برگزار شد و گروهی کوچک از شرکت‌کنندگان را گرد هم آورد تا با ترکیب رئالیسم جادویی و علمی‌تخیلی، داستانی مشترک بنویسند. این کارگاه که در بازه‌ای نزدیک به دو هفته برگزار شد، میان فضای بسته‌ی نویسندگی و فضای باز بیرون حرکت می‌کرد و روایت‌گویی شخصی، جهان‌سازی جمعی و حرکت فیزیکی را در یک فرایند واحد به هم می‌بافت.",
-          "این کارگاه در چهار جلسه‌ی مجزا برگزار شد: روز نخست به معرفی و گفت‌وگوی مشترک اختصاص داشت، روز دوم به ساختن جهانی داستانی به‌صورت گروهی، روز سوم به یک پیاده‌روی آرام در دامنه‌های دارآباد، و روز پایانی به نویسندگی مشترک که به ساخت یک زین دست‌ساز همراه با نقشه‌ای از جهان ساخته‌شده توسط گروه انجامید."
+          "«تجربه‌ای در تیر ماه» یک کارگاه داستان‌نویسیِ جمعی طی چهار جلسه بود که در تیر ۱۴۰۲ به دعوت یاسمین قلعه‌نویی و با همراهی گلنوش حشمتی در فضای «رَبت» برگزار شد. این کارگاه بیشتر حول محور داستان‌های علمی-تخیلی و رئالیسم جادویی متمرکز بود؛ اما هدف نهاییِ آن چاپ کتاب یا تولید متن نبود، بلکه تمرینی بود برای خواندن، تخیل کردن، قدم زدن و در کنار هم بودن. جلسات این کارگاه در محیط بسته‌ی رَبت و دامنه‌های دارآباد در البرز انجام شد."
         ]
       },
       {
         "id": "3",
         "title": "زمینه و بستر اجرا",
         "paragraphs": [
-          "«تجربه‌ای در تیر ماه» در دو مکان در تهران برگزار شد. جلسه‌های اصلی کارگاه در فضای ربت، فضایی مستقل، برگزار شد، در حالی‌که روز سوم به دامنه‌های دارآباد منتقل شد تا شرکت‌کنندگان پیاده‌روی آرامی را در دل طبیعت تجربه کنند.",
-          "جابه‌جایی میان یک اتاق کوچک و صمیمی و یک فضای باز طبیعی، به کارگاه دو ریتم متفاوت بخشید: کار نزدیک و مشترکِ خواندن و نوشتن در فضای بسته، و مواجهه‌ی جمعی و جسمانی با فضایی مشترک در فضای باز."
-        ]
+          "از نظر هنرمند، برگزاری این پروژه در دو بسترِ متمایز — فضای داخلیِ «رَبت» و طبیعتِ دارآباد — ارتباطی مستقیم با مفاهیم «زمان» و «سرعت» داشت. او بر این باور است که قدم زدنِ آهسته در کوه، نوع متفاوتی از درکِ زمان را پیش می‌نهد و گروه را وادار می‌کند تا تأثیرِ این ریتمِ کُند را بر روندِ هنریِ خود بسنجند؛ نگاهی که با مفهوم «زمانِ نامتعارف» — که هنرمند در آثار پیشینش پیرامون تجربه‌ی بیماری کاویده بود — همسو است.",
+          "همان‌طور که یاسمین قلعه‌نویی اشاره می‌کند: «فکر می‌کنم در فارسی معاصر کمتر به‌طور مستقیم از این مفهوم حرف می‌زنیم؛ با وجود اینکه فشارهای مضاعف از همه سو، ما را در ارتباطی روزمره با بیماری قرار داده و در عین حال، با زبانِ پزشکی احاطه شده‌ایم.»",
+          "انتخابِ فضای مستقل و خودگردانِ «رَبت» نیز دقیقاً در همین راستا صورت گرفته است؛ چرا که این مکان‌ها با تکیه بر استقلالِ عمل، بستری امن برای اجرای فعالیت‌های مشارکتی فراهم می‌آورند که از شتابِ زدگیِ رایجِ نهادهای رسمی به دور است."
+        ],
+        "quotes": []
       },
       {
         "id": "5",
         "title": "انگیزه‌ها و پرسش‌ها",
         "paragraphs": [
-          "مفهوم «کریپ‌تایم» (crip time) در مرکز پیش‌فرض‌های این کارگاه قرار داشت. قلعه‌نویی اشاره می‌کند که زبان فارسی کمتر مستقیم به این ایده می‌پردازد، با آنکه بیماری، ناتوانی و پزشکی حضوری دائمی و فراگیر در زندگی روزمره دارند. آوردن این چارچوب به فرایند کارگاه، راهی بود برای آشکار کردن این حضورِ ناگفته در دل یک تجربه‌ی خلاقانه‌ی مشترک.",
-          "از نگاه قلعه‌نویی، هدف از این نوع مشارکت اجتماعی هرگز ساختن اثری عجیب یا غافلگیرکننده نبود، بلکه پرداختن به دغدغه‌هایی بنیادی‌تر بود: بدن، اضطراب و تنهایی، و امکان مواجهه‌ی جمعی با این شرایط به‌جای تجربه‌ی تنهای آن‌ها."
+          "پیشنهاد پروژه برای قلعه‌نویی از یک خلأ شخصی بیرون آمد و از این میل که با جمعی هم‌فکر به پرسش‌هایی بیندیشد که در دعوت‌نامهٔ کارگاه مطرح شده بود. تاریخ انجام کار نیز برای او مهم بود: تابستان ۱۴۰۲؛ زمانی که در نگاه او دلسردی و جداافتادگیِ خاصی در فضا وجود داشت که تخیل و کنار هم آمدن می‌توانست به آن کمک کند. پرسش محوری کارگاه، آن‌طور که در دعوت‌نامه برای مخاطبان صورت‌بندی شده بود، حول این می‌چرخید که چگونه می‌توان به‌شکل جمعی تخیل کرد، و چگونه می‌توان با داستان‌نویسی، آینده(های) دگرگونی را متصور شد و گذشته را به‌شکلی دیگر روایت کرد.",
+          "برای قلعه‌نویی، یکی دیگر از وجوه پروژه، نوشتن به فارسی بود — اما نه به‌عنوان زبانی خنثی. فارسی برای او زبانی است که فشارهای ساختارهای سیاسی، اجتماعی و اقتصادی را در خود حمل می‌کند و درعین‌حال، می‌تواند این فشارها را به چیز دیگری تبدیل کرده یا به‌عبارتی فعال کند. این موضوع که در فضای هنری معاصر تا حدی تحت بحران بوده، همچنان پرسشی است که هنرمند دنبال می‌کند؛ به‌خصوص در ارتباط با نویسنده‌ها و هنرمندانی که نوشتن به فارسی بخش مهمی از کارشان است. از زمان انجام این کار تاکنون، قلعه‌نویی بیشتر با فضای نوشتن تجربی و زین مواجه شده و دوست دارد دقیق‌تر آن را دنبال کند. در یک افق وسیع‌تر، او این کار را به جنسی متفاوت از مشارکت اجتماعی پیوند می‌زند؛ در مقابل آنچه آن را «نیروی مرگ و سرخوردگی» می‌خواند:"
+        ],
+        "quotes": [
+          {
+            "text": "برای من هدف مشارکت اجتماعی، درست کردن کار چشمگیر یا عجیب نیست و امیالش رو باید جای دیگه‌ای دنبال کرد که به دغدغهٔ بدن‌ها، اضطراب، احساس عدم تعلق، یا تنهایی و تک‌افتادگی مربوطه.",
+            "attribution": "یاسمین قلعه‌نویی"
+          }
         ]
       },
       {
         "id": "6",
         "title": "محدودیت‌ها و راهبردها",
         "paragraphs": [
-          "این پروژه با تنشی میان فضاهای نهادی و مستقل روبه‌رو بود. نزدیک‌شدن به گالری‌ها و دیگر نهادهای هنری رسمی، موانع اداری ایجاد می‌کرد و سلسله‌مراتب جنسیتی‌ای را آشکار می‌ساخت که بر نحوه‌ی سازمان‌دهی و میزبانی فعالیت‌های کارگاه تأثیر می‌گذاشت.",
-          "در پاسخ، قلعه‌نویی تصمیمی تاکتیکی گرفت و کارگاه را در فضای ربت، مکانی مستقل و بیرون از قید و بندهای نهادهای رسمی، برگزار کرد. این انتخاب کنترل مستقیم‌تری بر قالب، ریتم و فضای کارگاه به گروه داد."
+          "نسبت پروژه با فضای رسمی هنر در نگاه قلعه‌نویی چندلایه است. برنامه‌ریزی با گالری‌ها و فضاهای رسمی، در تجربهٔ او، پیچیدگی‌ای دارد که اغلب کار را ناممکن می‌سازد، آن را از هدف جمع دور می‌کند، یا خود به بخشی از آن دوری بدل می‌شود. این پیچیدگی صرفاً اداری نیست: فضای رسمی هنر، در نگاه او، جنسیت‌زده نیز هست — و کارهای مشارکتی می‌توانند ارتباطی متفاوت را ممکن کنند و تقاطع ستم‌های مختلف را روشن سازند. این تشخیص، بخشی از دلیل انتخاب فضای خودگردان است؛ نه به‌عنوان نقص گالری، بلکه به‌عنوان امکانی متفاوت."
         ]
       },
-      { "id": "7", "title": "گالری", "paragraphs": [] },
+      {
+        "id": "7",
+        "title": "گالری",
+        "paragraphs": []
+      },
       {
         "id": "8",
-        "title": "منابع مالی / حامیان",
+        "title": "همکاران / حامیان",
         "paragraphs": [
-          "میزبانی و تبلیغ این کارگاه بر عهده‌ی فضای ربت بود، با همکاری گلنوش حشمتی.",
-          "این پروژه هیچ بودجه‌ی نهادی دریافت نکرد. هزینه‌های پذیرایی را خود هنرمند شخصاً پرداخت و هزینه‌ی چاپ زین میان شرکت‌کنندگان تقسیم شد."
+          "کارگاه به دعوت یاسمین قلعه‌نویی و با همراهی گلنوش حشمتی در فضای رَبت برگزار شد. فضای رَبت مکان کارگاه و پخش خبر آن را بر عهده داشت. کار فاقد بودجه‌ی نهادی بود؛ هزینه‌های پذیرایی توسط هنرمند، و هزینه‌های چاپ به‌صورت گروهی توسط شرکت‌کنندگان تأمین شد."
         ]
       },
       {
         "id": "10",
         "title": "منابع بیشتر",
         "paragraphs": [
-          "[فضای ربت](https://rabtspace.org/)، میزبان و همکار پروژه."
+          "[وب‌سایت فضای رَبت](https://rabtspace.org/)"
         ]
       },
       {
         "id": "11",
         "title": "درباره هنرمند",
         "paragraphs": [
-          "یاسمین قلعه‌نویی هنرمندی چندرشته‌ای است که در حوزه‌های هنرهای تجسمی، چاپ‌دستی و هنر مشارکتی اجتماع‌محور فعالیت می‌کند.",
-          "اینستاگرام: qall@"
+          "یاسمین قلعه‌نویی هنرمند و پژوهشگری است که در زمینه‌های مختلفی چون هنرهای تجسمی، چاپ دستی و پروژه‌های مشارکتی فعالیت می‌کند. آثار و نوشته‌های او غالباً بر موضوعات اجتماعی، هویت، اقتصاد هنر و تاریخ معاصر تمرکز دارند.",
+          "اینستاگرام: [@qall](https://www.instagram.com/qall)"
         ]
       }
     ],
     "Participation & Process": {
       "subsections": [
         {
-          "title": "روز اول: معرفی و گفت‌وگوی مشترک",
+          "title": "",
           "paragraphs": [
-            "کارگاه با معرفی شرکت‌کنندگان و به اشتراک‌گذاری تجربه‌های آن‌ها از سال گذشته در ایران — سالی که با تحولات اجتماعی و سیاسی مهمی همراه بود — آغاز شد. سپس گروه متنی را با هم خواندند تا نقطه‌ی آغاز مشترکی پیش از ورود به نویسندگی جمعی داشته باشند."
-          ]
-        },
-        {
-          "title": "روز دوم: جهان‌سازی",
-          "paragraphs": [
-            "جلسه‌ی دوم به مجموعه‌ای از تمرین‌های جهان‌سازی جمعی اختصاص داشت که در آن شرکت‌کنندگان شروع به شکل‌دادن به بستر، قواعد و منطق درونی جهان داستانی‌ای کردند که قرار بود با هم در آن بنویسند."
-          ]
-        },
-        {
-          "title": "روز سوم: پیاده‌روی آرام در دارآباد",
-          "paragraphs": [
-            "در روز سوم، گروه فضای ربت را ترک کرد و به دامنه‌های دارآباد رفت تا پیاده‌روی آرام و بی‌شتابی را تجربه کند. حرکت با ریتمی آهسته، راهی بود برای پیوند زدن جهان‌سازی داستانی کارگاه با یک مواجهه‌ی فیزیکی مشترک با بدن‌ها و محیط اطراف گروه."
-          ]
-        },
-        {
-          "title": "روز چهارم: نویسندگی جمعی و ساخت زین",
-          "paragraphs": [
-            "در روز پایانی، گروه رشته‌های به‌جامانده از جلسات پیشین را به هم پیوند زد و نوشته‌ای مشترک ساخت. کارگاه با ساخت دستی یک زین، همراه با نقشه‌ای که گروه به‌صورت مشترک تهیه کرد، به پایان رسید؛ کاری که جهان مشترک، جسمانی و خیالیِ کارگاه را به شیء‌ای فیزیکی و قابل‌اشتراک‌گذاری بدل کرد.",
-            "(در سال ۱۴۰۴، پس از تحولات اجتماعی گسترده‌ی آن سال، نشستی پیگیرانه با همکاری «اتاق مطالعه» برای بازخوانی دغدغه‌های این کارگاه برگزار شد.)"
+            "مخاطبان این کارگاه نیاز به هیچ مهارت قبلی در داستان‌نویسی نداشتند و معیار حضور صرفاً میل به مشارکت و نوشتن بود. روند برگزاری جلسات به این ترتیب پیش رفت: روز اول با گفتگو درباره‌ی تجربه‌ی زیستن در ایران طی سال گذشته و خواندن بخش‌هایی از داستان‌های خیالی آغاز شد. روز دوم به تخیل گروهی و صحبت درباره‌ی جهان‌های آینده اختصاص یافت. در روز سوم، گروه به دارآباد رفتند تا قدم‌زدنِ آهسته و درکِ محیط با حواس بیدارتر را تجربه کنند. و در روز چهارم، نوشتنِ گروهی و ساخت یک «زین» (مینی‌مجله دست‌ساز) و یک نقشه انجام شد. مشارکت در این کارگاه بر پایه‌ی تصمیمات جمعی بود و شرکت‌کنندگان ریتم جلسات را مشخص می‌کردند. در طول این روند، بحث‌های عمیقی درباره‌ی هدف از این دورهمی و تفاوتِ فضایِ کارگاه با آموزش‌های رسمی در مدارس شکل گرفت. هدف از این کار صرفاً گردهم آمدن و بازی کردن بود، نه تولید یک متن حرفه‌ای. (بعدها در تابستان ۱۴۰۴، جلسه‌ای برای همخوانیِ گروهی پیرامون این تجربه با حضور پرشورترِ اعضا برگزار شد)."
           ]
         }
       ]
     },
     "Editorial Notes": [
-      "این مدخل بر اساس مستندات به‌اشتراک‌گذاشته‌شده توسط هنرمند تهیه شده است."
+      "این مدخل بر اساس مستندات و متون ارائه‌شده از سوی هنرمند تهیه شده است."
     ]
   },
   "1. Basic Information": {
@@ -116,7 +118,13 @@
     "Year / Time Period": {
       "text": "2023"
     },
-    "Thematic Tags": ["Self-Organised Space", "Collective Making", "Workshop & Pedagogy", "Dialogue & Collective Narrative", "Body, Gender & Care"],
+    "Thematic Tags": [
+      "Self-Organised Space",
+      "Collective Making",
+      "Workshop & Pedagogy",
+      "Dialogue & Collective Narrative",
+      "Body, Gender & Care"
+    ],
     "Featured Project Image": {
       "url": "/images/an_experience_in_tir/thumb.webp",
       "alt": "An Experience in Tir"
@@ -127,32 +135,45 @@
       "id": "2",
       "title": "Project Overview",
       "paragraphs": [
-        "*An Experience in Tir* was a four-session collaborative writing workshop organized by artist Yasamin Ghalehnoie, bringing together a small group of participants to write speculative fiction together across the registers of magical realism and science fiction. Held over roughly two weeks, the workshop moved between an indoor writing room and the outdoors, threading personal storytelling, collective world-building, and physical movement together into a single process.",
-        "The workshop unfolded across four distinct sessions: an opening day of introductions and shared reflection, a day devoted to building a fictional world together, a field trip involving a slow walk through the foothills of Darabad, and a final day of collaborative writing that produced a hand-made zine paired with a map of the world the group had built."
+        "*An Experience in Tir* was a four-session collaborative writing workshop organized in July 2023 by Yasamin Ghalehnoie, in collaboration with Golnoush Heshmati and the independent venue Rabt Space. The workshop centered on speculative fiction, science fiction, and magical realism. Rather than focusing on professional text production or publishing goals, the sessions used group reading, walking, and collective imagination as a social practice of mutual accompaniment and simply being together.",
+        "The initial sessions took place inside the interior rooms of Rabt Space, while one session transitioned outdoors into the foothills of the Alborz Mountains in Darabad. Each gathering began with an open conversation detailing participants' personal experiences navigating life in Iran over the previous year, before moving into shared readings and slow walking exercises. The workshop concluded with the group co-creating a hand-made collective zine and an imaginative map."
       ]
     },
     {
       "id": "3",
       "title": "Context & Site",
       "paragraphs": [
-        "*An Experience in Tir* took place across two settings in Tehran. The workshop's core sessions were hosted at Rabt Space, an independently run space, while the third day moved outdoors to the foothills of Darabad for a slow, unhurried walk through the landscape.",
-        "Moving between an intimate seated room and open natural terrain gave the workshop two distinct registers: the close, shared work of reading and writing together indoors, and a collective, embodied encounter with a shared physical space outdoors."
+        "The project intentionally balanced two contrasting environments: the enclosed, intimate interior of Rabt Space and the expansive natural landscape of Darabad. For Ghalehnoie, this spatial contrast was directly tied to altering one's perception of time and pace. Stepping out of urban interiors to walk through mountain trails offered a different way to experience time. Slow walking became a core group discipline, prompting participants to consider how shifting their physical pacing might influence their writing and creative output.",
+        "This approach aligns with the concept of *crip time*—a theoretical framework Ghalehnoie integrates into her practice to explore the lived experiences of chronic illness, disability, and varying physical capacities:",
+        "Rabt Space also managed public outreach and provided the physical workshop venue. This choice was deliberate: Ghalehnoie notes that self-organized, independent spaces possess a degree of flexibility and operational autonomy that makes them uniquely suited for collaborative, participatory work. These venues can adapt to the immediate emotional needs and urgent concerns of those who gather, a flexibility that directly manifests in their format, aesthetic choices, and distribution methods."
+      ],
+      "quotes": [
+        {
+          "text": "I think we speak less directly about this in contemporary Persian, even though the compounded pressures from every direction have placed us in daily contact with illness, surrounded by the language of medicine.",
+          "attribution": "Yasamin Ghalehnoie",
+          "afterParagraph": 1
+        }
       ]
     },
     {
       "id": "5",
       "title": "Motivations & Questions",
       "paragraphs": [
-        "Central to the workshop's premise was the concept of *crip time*. Ghalehnoie has noted that Persian rarely discusses this idea directly, even though illness, disability, and medicine are a constant, pervasive presence in daily life. Bringing this framework into the workshop's process was a way of making that unspoken presence explicit within a shared creative practice.",
-        "For Ghalehnoie, the aim of this kind of social engagement was never to produce a striking or unusual work of art, but to address more fundamental concerns: the body, anxiety, and loneliness, and the possibility of encountering these conditions collectively rather than alone."
+        "The workshop proposal grew out of Ghalehnoie's personal desire to think through complex socio-political questions alongside a group of like-minded peers. The timing of the project was highly significant: held in the summer of 2023, it arrived during a period of widespread public exhaustion and social fragmentation, which the artist felt could be addressed through collective imagination and community gathering. The core prompt distributed to participants questioned how communities might build collective imagery through storytelling to envision alternative futures and re-narrate historical events.",
+        "Another dimension of the project involved working specifically in Persian, which the artist views as a loaded medium: for her, the Persian language is not a neutral tool, but a structure carrying deep traces of political, social, and economic pressures, while simultaneously possessing the capacity to subvert or reshape those same forces. This linguistic inquiry remains a central focus of her ongoing practice, particularly when engaging with writers and visual artists for whom text is an essential component of the work. Since completing this workshop, Ghalehnoie has deepened her involvement with independent zine communities and experimental text platforms. More broadly, she links this work to an alternative style of social practice designed to counter collective disillusionment:"
+      ],
+      "quotes": [
+        {
+          "text": "For me the aim of social engagement isn't making striking or unusual work—its desires belong elsewhere, in the concerns of bodies, anxiety, the sense of not belonging, of loneliness and being on one's own.",
+          "attribution": "Yasamin Ghalehnoie"
+        }
       ]
     },
     {
       "id": "6",
       "title": "Conditions & Negotiations",
       "paragraphs": [
-        "The project navigated tension between institutional and independent spaces. Approaching galleries and other established art institutions raised administrative hurdles and exposed gendered hierarchies that shaped how the workshop's activities could be organized and hosted.",
-        "In response, Ghalehnoie made the tactical decision to hold the workshop at Rabt Space, an independently run venue outside the constraints of formal institutions. This choice gave the group more direct control over the workshop's format, pace, and atmosphere."
+        "Ghalehnoie's relationship with institutional art spaces is multi-layered. In her experience, coordinating projects within commercial galleries or formal institutions involves complex administrative hurdles and gendered hierarchies that often dilute a group's core intentions or exacerbate social alienation. Choosing an independent, self-managed space like Rabt was a tactical decision to access alternative possibilities and highlight intersecting structural exclusions, rather than a compromise due to a lack of gallery access."
       ]
     },
     {
@@ -164,62 +185,57 @@
       "id": "8",
       "title": "Collaborators & Support",
       "paragraphs": [
-        "The workshop was hosted and promoted by Rabt Space, with additional collaboration from Golnoush Heshmati.",
-        "The project received no institutional funding. Hospitality costs were covered personally by the artist, and the cost of printing the zine was shared among the participants themselves."
+        "Yasamin Ghalehnoie initiated the project in collaboration with Rabt Space and Golnoush Heshmati. Rabt Space provided the physical workspace and handled promotional outreach. The project operated entirely without institutional funding or corporate grants; hospitality costs were covered personally by the artist, and printing costs for the zines were shared among the participants."
       ]
     },
     {
       "id": "10",
       "title": "Further Resources",
       "paragraphs": [
-        "[Rabt Space](https://rabtspace.org/), project venue and collaborator."
+        "[Rabt Space website](https://rabtspace.org/)"
       ]
     },
     {
       "id": "11",
       "title": "About the Artist",
       "paragraphs": [
-        "**Yasamin Ghalehnoie** is a multi-disciplinary artist working across fine arts, printmaking, and participatory community art.",
-        "Instagram: @qall"
+        "**Yasamin Ghalehnoie** is an artist and researcher whose multi-faceted practice spans fine arts, traditional printmaking, and participatory community art initiatives. Her written texts, studio work, and collaborative workshops focus on social themes, including identity politics, the internal economics of the art world, and regional contemporary history.",
+        "Instagram: [@qall](https://www.instagram.com/qall)"
       ]
     }
   ],
   "Participation & Process": {
     "subsections": [
       {
-        "title": "Day One: Introductions and Shared Reflection",
+        "title": "",
         "paragraphs": [
-          "The workshop opened with participants introducing themselves and sharing their experiences of the past year in Iran, a year marked by significant social and political upheaval. The group then read a text together as a shared point of departure, before moving into collaborative fiction."
-        ]
-      },
-      {
-        "title": "Day Two: World-Building",
-        "paragraphs": [
-          "The second session was devoted to a series of collective world-building exercises, in which participants began shaping the setting, rules, and internal logic of the speculative world they would go on to write within together."
-        ]
-      },
-      {
-        "title": "Day Three: A Slow Walk in Darabad",
-        "paragraphs": [
-          "On the third day, the group left Rabt Space for the foothills of Darabad and took part in a slow, deliberate walk through the landscape. Moving at an unhurried pace became a way of grounding the workshop's speculative world-building in a shared physical encounter with the group's own bodies and surroundings."
-        ]
-      },
-      {
-        "title": "Day Four: Collective Writing and Zine-Making",
-        "paragraphs": [
-          "On the final day, the group wove the threads from the previous sessions into a piece of collaborative writing. The workshop closed with the hand-making of a zine, together with a map the group produced collectively, translating the workshop's shared, embodied, speculative world into a physical, shareable object.",
-          "*(In 2025, following that year's wider social upheaval, a follow-up session revisiting the workshop's themes was held in collaboration with Otagh-e Motale'e, or \"The Study Room.\")*"
+          "The open call for the workshop was aimed broadly at anyone with a desire to gather and an interest in writing practices. No prior training or expertise in formal storytelling was required; the invitation relied entirely on shared interest, personal intimacy, and ease.",
+          "Day One: Began with introductions, checking in, and sharing personal reflections on living in Iran over the tumultuous prior year. The session transitioned into group readings of selected magical realist, speculative, and science-fiction texts.",
+          "Day Two: Involved collaborative exercises built around world-building, focusing on imagining unreached futures and alternative temporalities through conversation.",
+          "Day Three: A field trip to the Alborz mountain foothills in Darabad. The group engaged in slow, mindful walking to deliberately heighten sensory awareness of their natural surroundings.",
+          "Day Four: Focused on collaborative writing, mapping out narrative settings, and looking for themes of resistance, speculation, and mutual care within their texts. The session ended with the assembly of a hand-made zine and a shared map.",
+          "The participatory structure of the workshop ensured that all exercises were fully cooperative, depending completely on individual presence and group accompaniment. Rather than acting as a passive audience, participants dictated the actual rhythm and evolution of the sessions. The model of collective action used here encouraged collaborative experimentation, trial and error, and active community participation.",
+          "During the process, the group explored foundational questions regarding the purpose of gathering and the heavy institutional connotations of the word *practice*. They debated how their perception of the workshop space tied back to past experiences with rigid formal schooling, and what forms radical, alternative education might take.",
+          "The project intentionally avoided professional publishing or text-production benchmarks. The primary objective remained focused on community gathering, exploring relevant literature, and creative play. *(In the summer of 2025, a follow-up collective re-reading session was organized in collaboration with Otagh-e Motalee'e, bringing members together in a different venue for an impassioned review of the experience.)*"
         ]
       }
     ]
   },
   "Visual Documentation": {
     "items": [
-      { "type": "photo", "src": "/images/an_experience_in_tir/01.webp", "description": "An Experience in Tir workshop, 2023. Photo courtesy of the artist." },
-      { "type": "photo", "src": "/images/an_experience_in_tir/02.webp", "description": "An Experience in Tir workshop, 2023. Photo courtesy of the artist." }
+      {
+        "type": "photo",
+        "src": "/images/an_experience_in_tir/01.webp",
+        "description": "An Experience in Tir workshop, 2023. Photo courtesy of the artist."
+      },
+      {
+        "type": "photo",
+        "src": "/images/an_experience_in_tir/02.webp",
+        "description": "An Experience in Tir workshop, 2023. Photo courtesy of the artist."
+      }
     ]
   },
   "Editorial Notes": [
-    "This entry was prepared based on materials shared by the artist."
+    "This entry was prepared based on documentation and texts provided by the artist."
   ]
 }

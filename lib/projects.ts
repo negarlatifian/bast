@@ -296,9 +296,14 @@ export function localizeProject(project: Project, locale: Locale): Project {
         ...section,
         title: pickString(section.title, faSection?.title),
         paragraphs: pickArray(section.paragraphs, faSection?.paragraphs),
-        quotes: section.quotes
-          ? pickArray(section.quotes, faSection?.quotes)
-          : section.quotes,
+        // An explicit empty `quotes` array in Farsi means the quote is
+        // already part of the Farsi paragraphs, so the English one is dropped.
+        quotes:
+          faSection?.quotes?.length === 0
+            ? []
+            : section.quotes
+              ? pickArray(section.quotes, faSection?.quotes)
+              : section.quotes,
       };
     }),
     'Participation & Process': project['Participation & Process']
@@ -323,6 +328,17 @@ export function localizeProject(project: Project, locale: Locale): Project {
           ),
         }
       : project['Participation & Process'],
+    // Captions only exist in English, so they're dropped rather than shown
+    // untranslated on Farsi pages (images fall back to the project title).
+    'Visual Documentation': project['Visual Documentation']
+      ? {
+          ...project['Visual Documentation'],
+          items: project['Visual Documentation'].items?.map((item) => ({
+            ...item,
+            description: '',
+          })),
+        }
+      : project['Visual Documentation'],
     'Editorial Notes': project['Editorial Notes']
       ? pickArray(project['Editorial Notes'], fa['Editorial Notes'])
       : project['Editorial Notes'],

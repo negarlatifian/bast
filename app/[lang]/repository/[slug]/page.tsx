@@ -497,7 +497,10 @@ export default async function Page({
           }
 
           const documentationSection = remainingSections.find(
-            (section) => section.title.trim().toLowerCase() === 'documentation',
+            // Matched by id too, since the Farsi title ("گالری") differs.
+            (section) =>
+              section.id === '7' ||
+              section.title.trim().toLowerCase() === 'documentation',
           );
 
           // Projects with their own "Documentation" section (e.g. daab, workers)
@@ -566,14 +569,14 @@ export default async function Page({
                   id='participation'
                   className='flex scroll-mt-28 flex-col gap-10'
                 >
+                  <h2 className='-mb-7 text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
+                    {dict.common.participationProcess}
+                  </h2>
                   {participationSubsections.map((subsection, index) => (
                     <section
                       key={`${subsection.title}-${index}`}
                       className='flex flex-col gap-3'
                     >
-                      <h2 className='text-lg font-semibold leading-7 text-black sm:text-xl sm:leading-7'>
-                        {dict.common.participationProcess}
-                      </h2>
                       {subsection.title && (
                         <h3 className='text-base font-medium leading-6 text-[#4f4a43] sm:text-lg'>
                           {subsection.title}
