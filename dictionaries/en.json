@@ -37,7 +37,7 @@
     "editorialNote": "This entry was prepared based on the artist's account and accompanying project materials."
   },
   "home": {
-    "heroTitle": "Bast is a research and curatorial platform dedicated to the study, rethinking, and documentation of participatory art in Iran.",
+    "heroTitle": "Bast is a research and curatorial platform dedicated to the study and documentation of participatory art in Iran.",
     "heroCta": "Enter the repository",
     "sections": {
       "about": {
@@ -48,13 +48,13 @@
       "repository": {
         "eyebrow": "Repository",
         "title": "Repository",
-        "description": "A growing collection of participatory art projects from Iran, each entry built from the artist's own account.",
+        "description": "A growing repository of participatory art projects in Iran, spanning different cities, contexts, and forms of collaboration.",
         "viewAll": "View the full repository"
       },
       "rereading": {
         "eyebrow": "Re-reading",
         "title": "Re-readings",
-        "description": "Independent responses that open each project to another voice.",
+        "description": "Independent responses written for Bast in which an artist, researcher, or writer extends a project in the repository from another position.",
         "viewAll": "View all re-readings"
       },
       "library": {

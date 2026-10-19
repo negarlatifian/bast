@@ -50,13 +50,11 @@ function randomFrames(): TriptychFrame[] {
 }
 
 // Each column's text takes a different height too — one high, one centred,
-// one low — with the odd block nudged in from the edge.
-function randomTextLayouts(): Pick<
-  TriptychPanel,
-  'textPosition' | 'textIndent'
->[] {
+// one low. It only ever moves vertically, always starting in line with the
+// column's number above it.
+function randomTextLayouts(): Pick<TriptychPanel, 'textPosition'>[] {
   return shuffle<TriptychPanel['textPosition']>(['top', 'middle', 'bottom']).map(
-    (textPosition) => ({ textPosition, textIndent: Math.random() < 0.35 })
+    (textPosition) => ({ textPosition })
   );
 }
 

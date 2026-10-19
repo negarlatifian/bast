@@ -36,7 +36,6 @@ export type TriptychPanel = {
   // Where the column's text block sits; the frame takes the space it
   // leaves free. Shuffled per request so no two columns match.
   textPosition: 'top' | 'middle' | 'bottom';
-  textIndent: boolean;
 };
 
 type Point = { x: number; y: number };
@@ -716,7 +715,7 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
               // Clicks fall through the text to the column link beneath it.
               className={`pointer-events-none relative flex max-w-md flex-col gap-3 sm:gap-4 ${
                 TEXT_POSITION_CLASS[panel.textPosition]
-              } ${panel.textIndent ? 'lg:ms-[10%]' : ''}`}
+              }`}
             >
               {panel.key === 'about' ? (
                 <>
