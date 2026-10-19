@@ -19,7 +19,8 @@ import paper from '@/data/projects/paper.json';
 // Hidden for now — re-enable by restoring this import and the entry in `projects` below.
 // import postOnion from '@/data/projects/post-onion.json';
 import printingMachine from '@/data/projects/printing-machine.json';
-import radioKhiaban from '@/data/projects/radio-khiaban.json';
+// Hidden for now — re-enable by restoring this import and the entry in `projects` below.
+// import radioKhiaban from '@/data/projects/radio-khiaban.json';
 import selfService from '@/data/projects/self-service.json';
 import steps from '@/data/projects/steps.json';
 import stones from '@/data/projects/stones.json';
@@ -142,7 +143,7 @@ export const projects = [
   paper,
   // postOnion, // hidden for now
   printingMachine,
-  radioKhiaban,
+  // radioKhiaban, // hidden for now
   selfService,
   steps,
   stones,
