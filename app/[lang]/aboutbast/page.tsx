@@ -1,6 +1,7 @@
 import MainLayout from '@/components/MainLayout';
 import ProjectSectionNav from '@/components/ProjectSectionNav';
 import { getDictionary } from '@/lib/dictionaries';
+import { getFormUrl } from '@/lib/forms';
 import { isLocale, localizeHref, type Locale } from '@/lib/i18n';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -85,25 +86,32 @@ export default async function Page({
             key={key}
             className='ms-6 list-disc space-y-3 text-sm leading-6 tracking-normal text-black sm:ms-12 sm:text-[1.08rem] sm:leading-7'
           >
-            {block.items?.map((item, itemIndex) => (
-              <li key={`${key}-${itemIndex}`}>
-                <strong>{item.label}</strong> {item.text}
-                {item.href && (
-                  <>
-                    {' '}
-                    <Link
-                      href={localizeHref(locale, item.href)}
-                      className={`inline-flex items-center gap-1 ${linkClassName}`}
-                    >
-                      {item.cta ?? about.openFormCta}
-                      <span aria-hidden='true'>
-                        {lang === 'fa' ? '←' : '→'}
-                      </span>
-                    </Link>
-                  </>
-                )}
-              </li>
-            ))}
+            {block.items?.map((item, itemIndex) => {
+              const formUrl = item.href && getFormUrl(locale, item.href);
+              return (
+                <li key={`${key}-${itemIndex}`}>
+                  <strong>{item.label}</strong> {item.text}
+                  {item.href && (
+                    <>
+                      {' '}
+                      <Link
+                        href={formUrl ?? localizeHref(locale, item.href)}
+                        {...(formUrl && {
+                          target: '_blank',
+                          rel: 'noopener noreferrer',
+                        })}
+                        className={`inline-flex items-center gap-1 ${linkClassName}`}
+                      >
+                        {item.cta ?? about.openFormCta}
+                        <span aria-hidden='true'>
+                          {lang === 'fa' ? '←' : '→'}
+                        </span>
+                      </Link>
+                    </>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         );
       }

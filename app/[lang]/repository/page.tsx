@@ -8,9 +8,9 @@ import {
   projects,
 } from '@/lib/projects';
 import { getDictionary } from '@/lib/dictionaries';
-import { formatLocaleNumber, isLocale, localizeHref } from '@/lib/i18n';
+import { getFormUrl } from '@/lib/forms';
+import { formatLocaleNumber, isLocale } from '@/lib/i18n';
 import { headers } from 'next/headers';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export const dynamic = 'force-dynamic';
@@ -141,13 +141,15 @@ export default async function Page({
             {paragraph}
           </p>
         ))}
-        <Link
-          href={localizeHref(lang, '/suggest-a-project')}
+        <a
+          href={getFormUrl(lang, '/suggest-a-project')}
+          target='_blank'
+          rel='noopener noreferrer'
           className='mt-2 inline-flex w-fit items-center gap-2 text-sm font-medium leading-6 text-[#7f242a] transition-colors hover:text-black sm:text-[1.08rem] sm:leading-7'
         >
           {dict.repository.suggestProject}
           <span aria-hidden='true'>{lang === 'fa' ? '←' : '→'}</span>
-        </Link>
+        </a>
       </article>
 
       <RepositoryTagFilter

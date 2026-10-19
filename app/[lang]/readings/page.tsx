@@ -1,6 +1,7 @@
 import MainLayout from '@/components/MainLayout';
 import { getProjectReReadings } from '@/data/rereading';
 import { getDictionary } from '@/lib/dictionaries';
+import { getFormUrl } from '@/lib/forms';
 import { isLocale, localizeHref } from '@/lib/i18n';
 import { getProjectBySlug, localizeProject } from '@/lib/projects';
 import Link from 'next/link';
@@ -39,13 +40,15 @@ export default async function Page({
             {paragraph}
           </p>
         ))}
-        <Link
-          href={localizeHref(lang, '/propose-a-re-reading')}
+        <a
+          href={getFormUrl(lang, '/propose-a-re-reading')}
+          target='_blank'
+          rel='noopener noreferrer'
           className='mt-2 inline-flex w-fit items-center gap-2 text-sm font-medium leading-6 text-[#7f242a] transition-colors hover:text-black sm:text-[1.08rem] sm:leading-7'
         >
           {dict.readings.proposeReading}
           <span aria-hidden='true'>{lang === 'fa' ? '←' : '→'}</span>
-        </Link>
+        </a>
       </article>
 
       <div className='mt-12 grid w-full gap-x-8 gap-y-8 pb-24 sm:mt-14 md:grid-cols-2'>
