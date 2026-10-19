@@ -11,6 +11,7 @@ import daab from '@/data/projects/daab.json';
 import enghelabAzadi from '@/data/projects/enghelab-azadi.json';
 import equivalenceDistance from '@/data/projects/equivalence-distance.json';
 import fromAfarIKissYou from '@/data/projects/from-afar-i-kiss-you.json';
+import kairos from '@/data/projects/kairos.json';
 import karimkhan from '@/data/projects/karimkhan.json';
 import knockout from '@/data/projects/knockout.json';
 import owzar from '@/data/projects/owzar.json';
@@ -21,9 +22,11 @@ import paper from '@/data/projects/paper.json';
 import printingMachine from '@/data/projects/printing-machine.json';
 // Hidden for now — re-enable by restoring this import and the entry in `projects` below.
 // import radioKhiaban from '@/data/projects/radio-khiaban.json';
+import sameRoots from '@/data/projects/same-roots.json';
 import selfService from '@/data/projects/self-service.json';
 import steps from '@/data/projects/steps.json';
 import stones from '@/data/projects/stones.json';
+import tanakuraParking from '@/data/projects/tanakura-parking.json';
 import talkSee from '@/data/projects/talk-see.json';
 import tehranMonoxide from '@/data/projects/tehran-monoxide.json';
 import theSecretOfLaleh from '@/data/projects/the-secret-of-laleh.json';
@@ -136,6 +139,7 @@ export const projects = [
   enghelabAzadi,
   equivalenceDistance,
   fromAfarIKissYou,
+  kairos,
   karimkhan,
   knockout,
   owzar,
@@ -144,9 +148,11 @@ export const projects = [
   // postOnion, // hidden for now
   printingMachine,
   // radioKhiaban, // hidden for now
+  sameRoots,
   selfService,
   steps,
   stones,
+  tanakuraParking,
   talkSee,
   tehranMonoxide,
   theSecretOfLaleh,
