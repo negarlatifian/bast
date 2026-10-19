@@ -617,7 +617,7 @@ export default async function Page({
                       href={localizeHref(lang, `/readings/${project.slug}`)}
                       className='group flex items-stretch border border-dashed border-[#7f242a] transition-colors hover:bg-[#7f242a]/5'
                     >
-                      <h2 className='flex shrink-0 items-center justify-center border-e border-dashed border-[#7f242a] px-2 py-3 text-[0.65rem] font-bold tracking-[0.2em] text-[#7f242a] uppercase [writing-mode:vertical-rl] ltr:rotate-180 sm:text-xs'>
+                      <h2 className='flex shrink-0 items-center justify-center border-l border-dashed border-[#7f242a] px-2 py-3 text-[0.65rem] font-bold tracking-[0.2em] text-[#7f242a] uppercase [writing-mode:vertical-rl] ltr:rotate-180 sm:text-xs'>
                         {dict.common.reReading}
                       </h2>
                       <div className='flex flex-col justify-center gap-1 px-4 py-4 sm:px-5'>

@@ -71,13 +71,21 @@ export default async function Page({
         <CropMarks />
 
         <header className='flex items-stretch border border-dashed border-[#7f242a]'>
-          <p className='flex shrink-0 items-center justify-center border-e border-dashed border-[#7f242a] px-2.5 py-4 text-[0.65rem] font-bold tracking-[0.2em] text-[#7f242a] uppercase [writing-mode:vertical-rl] ltr:rotate-180 sm:px-3 sm:text-xs'>
+          <p className='flex shrink-0 items-center justify-center border-l border-dashed border-[#7f242a] px-2.5 py-4 text-[0.65rem] font-bold tracking-[0.2em] text-[#7f242a] uppercase [writing-mode:vertical-rl] ltr:rotate-180 sm:px-3 sm:text-xs'>
             {dict.common.reReading}
           </p>
           <div className='flex flex-col gap-3 px-5 py-5 sm:px-7 sm:py-6'>
             <h1 className='text-2xl font-semibold leading-tight text-black sm:text-3xl'>
               {reReading.title}
             </h1>
+            {project && (
+              <Link
+                href={localizeHref(lang, `/repository/${project.slug}`)}
+                className='self-start text-base text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black sm:text-lg'
+              >
+                {project['1. Basic Information']['Project Title']}
+              </Link>
+            )}
             <p className='flex flex-wrap items-baseline gap-x-2 text-sm leading-6 text-[#4f4a43] sm:text-base'>
               {[
                 reReading.credit ?? reReading.author,
@@ -96,19 +104,6 @@ export default async function Page({
                     {item}
                   </span>
                 ))}
-              {project && (
-                <span className='flex items-baseline gap-x-2'>
-                  <span aria-hidden='true' className='text-[#7f242a]'>
-                    ·
-                  </span>
-                  <Link
-                    href={localizeHref(lang, `/repository/${project.slug}`)}
-                    className='text-[#7f242a] underline decoration-[#7f242a]/40 underline-offset-4 transition-colors hover:text-black'
-                  >
-                    {project['1. Basic Information']['Project Title']}
-                  </Link>
-                </span>
-              )}
             </p>
           </div>
         </header>

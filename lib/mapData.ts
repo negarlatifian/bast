@@ -85,6 +85,8 @@ export const projectCityLinks: Record<string, MapCityId[]> = {
   paper: ['tehran'],
   'post-onion': ['bandar-abbas'],
   'printing-machine-dastgah-e-chap': ['rasht', 'tehran'],
+  'self-service': ['tehran'],
+  steps: ['tehran'],
   stones: ['tehran'],
   'talk-see-taxi-project': ['bojnourd', 'mashhad', 'tehran'],
   'tehran-monoxide': ['tehran', 'bam', 'darzikola'],

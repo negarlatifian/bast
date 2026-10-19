@@ -20,6 +20,8 @@ import paper from '@/data/projects/paper.json';
 // import postOnion from '@/data/projects/post-onion.json';
 import printingMachine from '@/data/projects/printing-machine.json';
 import radioKhiaban from '@/data/projects/radio-khiaban.json';
+import selfService from '@/data/projects/self-service.json';
+import steps from '@/data/projects/steps.json';
 import stones from '@/data/projects/stones.json';
 import talkSee from '@/data/projects/talk-see.json';
 import tehranMonoxide from '@/data/projects/tehran-monoxide.json';
@@ -111,6 +113,10 @@ export type Project = {
         quotes?: { text: string; attribution?: string; afterParagraph?: number }[];
       }[];
     };
+    /** Captions matched to the English items by position. */
+    'Visual Documentation'?: {
+      items?: { description?: string }[];
+    };
     'Editorial Notes'?: string[];
   };
 };
@@ -137,6 +143,8 @@ export const projects = [
   // postOnion, // hidden for now
   printingMachine,
   radioKhiaban,
+  selfService,
+  steps,
   stones,
   talkSee,
   tehranMonoxide,
@@ -160,6 +168,7 @@ const projectMediaFolders: Record<string, string> = {
   'paint-your-shadow-orange': 'paint-shadow',
   'post-onion': 'post-onion',
   'printing-machine-dastgah-e-chap': 'printing-machine',
+  steps: 'stairs',
   'talk-see-taxi-project': 'talk-see',
   'tehran-monoxide': 'tehran-monoxide',
   'white-cubes': 'white-cubes',
@@ -328,14 +337,15 @@ export function localizeProject(project: Project, locale: Locale): Project {
           ),
         }
       : project['Participation & Process'],
-    // Captions only exist in English, so they're dropped rather than shown
-    // untranslated on Farsi pages (images fall back to the project title).
+    // Untranslated captions are dropped rather than shown in English on
+    // Farsi pages (images fall back to the project title).
     'Visual Documentation': project['Visual Documentation']
       ? {
           ...project['Visual Documentation'],
-          items: project['Visual Documentation'].items?.map((item) => ({
+          items: project['Visual Documentation'].items?.map((item, index) => ({
             ...item,
-            description: '',
+            description:
+              fa['Visual Documentation']?.items?.[index]?.description ?? '',
           })),
         }
       : project['Visual Documentation'],
