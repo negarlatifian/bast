@@ -6,11 +6,14 @@ import {
   getProjectBySlug,
   getProjectImage,
   getProjectMedia,
+  getProjectPreviewText,
   localizeProject,
   projects,
 } from '@/lib/projects';
 import { getDictionary } from '@/lib/dictionaries';
 import { isLocale, localizeHref, locales } from '@/lib/i18n';
+import { pageMetadata, toDescription } from '@/lib/seo';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -316,6 +319,32 @@ function ProjectContact({
       </ul>
     </div>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string; slug: string }>;
+}): Promise<Metadata> {
+  const { lang, slug } = await params;
+  const rawProject = getProjectBySlug(slug);
+
+  if (!isLocale(lang) || !rawProject) {
+    return {};
+  }
+
+  const project = localizeProject(rawProject, lang);
+  const image = getProjectImage(project);
+
+  return pageMetadata({
+    lang,
+    path: `/repository/${slug}`,
+    title: project['1. Basic Information']['Project Title'],
+    description:
+      toDescription(getProjectPreviewText(project)) ||
+      getDictionary(lang).home.heroTitle,
+    image: image === '/under-construction.webp' ? undefined : image,
+  });
 }
 
 export default async function Page({

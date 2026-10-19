@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import { connection } from 'next/server';
 
@@ -56,6 +58,26 @@ function randomTextLayouts(): Pick<TriptychPanel, 'textPosition'>[] {
   return shuffle<TriptychPanel['textPosition']>(['top', 'middle', 'bottom']).map(
     (textPosition) => ({ textPosition })
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    return {};
+  }
+
+  const dict = getDictionary(lang);
+
+  return pageMetadata({
+    lang,
+    path: '/',
+    description: dict.home.heroTitle,
+  });
 }
 
 export default async function Page({

@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import MainLayout from '@/components/MainLayout';
 import { getProjectReReadings } from '@/data/rereading';
 import { getDictionary } from '@/lib/dictionaries';
@@ -6,6 +8,27 @@ import { isLocale, localizeHref } from '@/lib/i18n';
 import { getProjectBySlug, localizeProject } from '@/lib/projects';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    return {};
+  }
+
+  const dict = getDictionary(lang);
+
+  return pageMetadata({
+    lang,
+    path: '/readings',
+    title: dict.home.sections.rereading.title,
+    description: dict.home.sections.rereading.description,
+  });
+}
 
 export default async function Page({
   params,

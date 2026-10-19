@@ -6,6 +6,7 @@ import '../globals.css';
 import { LocaleProvider } from '@/components/LocaleProvider';
 import { getDictionary } from '@/lib/dictionaries';
 import { getDirection, isLocale, locales } from '@/lib/i18n';
+import { defaultOgImage, siteDescription, siteName, siteUrl } from '@/lib/seo';
 
 // Farsi display face — see the `:lang(fa)` rule in globals.css.
 const mirza = Mirza({
@@ -16,8 +17,22 @@ const mirza = Mirza({
 });
 
 export const metadata: Metadata = {
-  title: 'Bast work',
-  description: 'A digital archival website for Bast materials and collections.',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteName,
+    template: `%s | ${siteName}`,
+  },
+  description: siteDescription,
+  openGraph: {
+    type: 'website',
+    siteName,
+    title: siteName,
+    description: siteDescription,
+    images: [defaultOgImage],
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },

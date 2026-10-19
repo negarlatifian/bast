@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import LibraryView from '@/components/LibraryView';
 import MainLayout from '@/components/MainLayout';
 import { getLibraryEntriesByLanguage } from '@/data/library';
@@ -20,6 +22,27 @@ const emptyShelf = [
   'h-36 w-8 bg-[#d9d2c7] sm:h-40 sm:w-9',
   'h-44 w-12 bg-[#efe9dc] sm:h-48 sm:w-14',
 ];
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    return {};
+  }
+
+  const dict = getDictionary(lang);
+
+  return pageMetadata({
+    lang,
+    path: '/library-page',
+    title: dict.nav.library,
+    description: dict.home.sections.library.description,
+  });
+}
 
 export default async function Page({
   params,

@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import MainLayout from '@/components/MainLayout';
 import ProjectSectionNav from '@/components/ProjectSectionNav';
 import { getDictionary } from '@/lib/dictionaries';
@@ -44,6 +46,27 @@ function SubTitle({ children }: { children: ReactNode }) {
       {children}
     </h3>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    return {};
+  }
+
+  const dict = getDictionary(lang);
+
+  return pageMetadata({
+    lang,
+    path: '/aboutbast',
+    title: dict.nav.about,
+    description: dict.home.heroTitle,
+  });
 }
 
 export default async function Page({

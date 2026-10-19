@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import MainLayout from '@/components/MainLayout';
 import MapAndTimeline from '@/components/MapAndTimeline';
 import type { MapPin, MapProjectSummary } from '@/components/ProjectsMap';
@@ -18,6 +20,27 @@ import {
   projects,
 } from '@/lib/projects';
 import { notFound } from 'next/navigation';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    return {};
+  }
+
+  const dict = getDictionary(lang);
+
+  return pageMetadata({
+    lang,
+    path: '/map',
+    title: dict.nav.map,
+    description: dict.home.sections.map.description,
+  });
+}
 
 export default async function Page({
   params,

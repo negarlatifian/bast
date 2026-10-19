@@ -4,9 +4,11 @@ import {
   getProjectReReadings,
   getReReadingParagraphs,
 } from '@/data/rereading';
-import { getProjectBySlug, localizeProject } from '@/lib/projects';
+import { getProjectBySlug, getProjectImage, localizeProject } from '@/lib/projects';
 import { getDictionary } from '@/lib/dictionaries';
 import { isLocale, localizeHref, locales } from '@/lib/i18n';
+import { pageMetadata, toDescription } from '@/lib/seo';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -41,6 +43,35 @@ function CropMarks() {
       ))}
     </>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string; slug: string }>;
+}): Promise<Metadata> {
+  const { lang, slug } = await params;
+
+  if (!isLocale(lang)) {
+    return {};
+  }
+
+  const reReading = getProjectReReading(slug, lang);
+
+  if (!reReading) {
+    return {};
+  }
+
+  const rawProject = getProjectBySlug(reReading.slug);
+  const image = rawProject ? getProjectImage(rawProject) : undefined;
+
+  return pageMetadata({
+    lang,
+    path: `/readings/${slug}`,
+    title: reReading.title,
+    description: toDescription(getReReadingParagraphs(reReading)[0] ?? ''),
+    image: image === '/under-construction.webp' ? undefined : image,
+  });
 }
 
 export default async function Page({

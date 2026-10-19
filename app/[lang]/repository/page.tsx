@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import MainLayout from '@/components/MainLayout';
 import RepositoryTagFilter from '@/components/RepositoryTagFilter';
 import RepositoryView from '@/components/RepositoryView';
@@ -44,6 +46,27 @@ function getSeedFromRequestHeader(value: string) {
   }
 
   return seed >>> 0;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    return {};
+  }
+
+  const dict = getDictionary(lang);
+
+  return pageMetadata({
+    lang,
+    path: '/repository',
+    title: dict.nav.repository,
+    description: dict.home.sections.repository.description,
+  });
 }
 
 export default async function Page({

@@ -1,7 +1,30 @@
+import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 import MainLayout from '@/components/MainLayout';
 import { getDictionary } from '@/lib/dictionaries';
 import { isLocale } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    return {};
+  }
+
+  const dict = getDictionary(lang);
+
+  return pageMetadata({
+    lang,
+    path: '/suggest-a-resource',
+    title: dict.library.suggestResource,
+    description: dict.home.heroTitle,
+  });
+}
 
 export default async function Page({
   params,
