@@ -55,7 +55,7 @@ export default async function Page({
   }
 
   const dict = getDictionary(lang);
-  const reReading = getProjectReReading(slug);
+  const reReading = getProjectReReading(slug, lang);
 
   if (!reReading) {
     notFound();

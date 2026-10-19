@@ -1,13 +1,14 @@
+import type { Locale } from '@/lib/i18n';
 import { sanandajReadingText } from './book-reading-sanandaj';
 import { cafeKonjReading } from './cafe-konj-performances';
 import { daabReading } from './daab';
 import { equivalenceDistanceReading } from './equivalence-distance';
 import { knockoutTournamentReading } from './knockout-tournament';
 import { mappingKarimkhanReading } from './mapping-karimkhan';
+import { paintYourShadowOrangeReading } from './paint-your-shadow-orange';
 import { whiteCubesReading } from './white-cubes';
 
-export type ProjectReReading = {
-  slug: string;
+type ReReadingText = {
   title: string;
   author: string;
   credit?: string;
@@ -16,6 +17,11 @@ export type ProjectReReading = {
   year?: string;
   boldParagraphs?: string[];
   content: string;
+};
+
+export type ProjectReReading = ReReadingText & {
+  slug: string;
+  fa?: ReReadingText;
 };
 
 const reReadings: ProjectReReading[] = [
@@ -31,15 +37,29 @@ const reReadings: ProjectReReading[] = [
   },
   knockoutTournamentReading,
   mappingKarimkhanReading,
+  paintYourShadowOrangeReading,
   whiteCubesReading,
 ];
 
-export function getProjectReReading(slug: string) {
-  return reReadings.find((reReading) => reReading.slug === slug);
+function localizeReReading(
+  reReading: ProjectReReading,
+  lang?: Locale,
+): ProjectReReading {
+  if (lang === 'fa' && reReading.fa) {
+    return { slug: reReading.slug, ...reReading.fa };
+  }
+
+  return reReading;
 }
 
-export function getProjectReReadings() {
-  return reReadings;
+export function getProjectReReading(slug: string, lang?: Locale) {
+  const reReading = reReadings.find((reReading) => reReading.slug === slug);
+
+  return reReading && localizeReReading(reReading, lang);
+}
+
+export function getProjectReReadings(lang?: Locale) {
+  return reReadings.map((reReading) => localizeReReading(reReading, lang));
 }
 
 export function getReReadingParagraphs(reReading: ProjectReReading) {

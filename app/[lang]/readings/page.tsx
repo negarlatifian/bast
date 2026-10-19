@@ -18,7 +18,7 @@ export default async function Page({
   }
 
   const dict = getDictionary(lang);
-  const reReadings = getProjectReReadings().map((reReading) => {
+  const reReadings = getProjectReReadings(lang).map((reReading) => {
     const rawProject = getProjectBySlug(reReading.slug);
     const project = rawProject ? localizeProject(rawProject, lang) : undefined;
 

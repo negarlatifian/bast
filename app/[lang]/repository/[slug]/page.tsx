@@ -351,7 +351,7 @@ export default async function Page({
   const imagePosition =
     basicInformation['Featured Project Image'].position?.trim() || 'center';
   const mediaItems = getProjectMedia(project);
-  const reReading = getProjectReReading(project.slug);
+  const reReading = getProjectReReading(project.slug, lang);
   const introductionSection = project.sections.find(
     (section) => section.id === '2',
   );
