@@ -660,9 +660,13 @@ export default function HomeTriptych({ panels }: { panels: TriptychPanel[] }) {
             }}
             onFocus={() => setActive(index)}
             onBlur={() => setActive(null)}
-            className={`relative flex min-h-[30rem] flex-col overflow-hidden border-[#d9d2c7] p-4 sm:min-h-[34rem] sm:p-6 lg:min-h-0 lg:p-7 ${
+            className={`relative flex min-h-[30rem] flex-col overflow-hidden p-4 transition-colors duration-500 sm:min-h-[34rem] sm:p-6 lg:min-h-0 lg:p-7 ${
               // Only the dividers between columns — no outer lines.
               index < panels.length - 1 ? 'border-b lg:border-e lg:border-b-0' : ''
+            } ${
+              // The dividers fade out while a column is showing, so nothing
+              // cuts across the photo.
+              active === null ? 'border-[#d9d2c7]' : 'border-transparent'
             }`}
           >
             {/* Stacked, each column carries its own effect. Side by side,
