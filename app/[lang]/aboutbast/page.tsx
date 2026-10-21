@@ -86,6 +86,23 @@ export default async function Page({
   const sections = about.sections as AboutSection[];
   const linkClassName =
     'font-medium underline decoration-[#7f242a]/45 underline-offset-4 transition-colors hover:text-[#7f242a]';
+  const email = 'bast.work.team@gmail.com';
+  const emailToken = '{email}';
+
+  // Paragraph text may carry an {email} token for an inline mailto link.
+  function renderText(text: string | undefined) {
+    if (!text?.includes(emailToken)) return text;
+    const [before, after] = text.split(emailToken);
+    return (
+      <>
+        {before}
+        <a className={linkClassName} href={`mailto:${email}`} dir='ltr'>
+          {email}
+        </a>
+        {after}
+      </>
+    );
+  }
 
   function renderBlocks(blocks: AboutBlock[] | undefined, keyPrefix: string) {
     return blocks?.map((block, index) => {
@@ -139,7 +156,7 @@ export default async function Page({
         );
       }
 
-      return <Paragraph key={key}>{block.text}</Paragraph>;
+      return <Paragraph key={key}>{renderText(block.text)}</Paragraph>;
     });
   }
 
@@ -198,12 +215,15 @@ export default async function Page({
           ) : (
             renderBlocks(section.blocks, section.id)
           )}
-          {section.id === 'contact' && (
+          {section.id === 'contact' &&
+            !section.blocks?.some((block) =>
+              block.text?.includes(emailToken),
+            ) && (
             <Paragraph>
               {about.emailLabel}{' '}
               <a
                 className={linkClassName}
-                href='mailto:bast.work.team@gmail.com'
+                href={`mailto:${email}`}
               >
                 {about.emailCta}
               </a>
