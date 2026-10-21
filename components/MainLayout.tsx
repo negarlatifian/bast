@@ -158,7 +158,11 @@ export default function MainLayout({
       <main
         id='main-content'
         tabIndex={-1}
-        className={`mx-auto w-full max-w-none px-8 outline-none sm:px-16 lg:px-24 ${
+        className={`mx-auto w-full max-w-none outline-none sm:px-16 lg:px-24 ${
+          // On phones a re-reading's paper sheet runs edge to edge, with no
+          // strip of the gold ground beside it.
+          isReadingVariant ? 'px-0' : 'px-8'
+        } ${
           isSingleScreen ? 'lg:flex lg:min-h-0 lg:flex-1 lg:flex-col' : ''
         }`}
       >

@@ -95,11 +95,21 @@ export function getProjectReReadings(lang?: Locale) {
     .map((reReading) => localizeReReading(reReading, lang));
 }
 
-// A paragraph written as `![alt](/path)` is shown as an image.
-export function getReReadingImage(paragraph: string) {
-  const match = paragraph.match(/^!\[([^\]]*)\]\((\S+)\)$/);
+// A paragraph made only of image lines, `![alt](src)` or `![alt](src "40%")`
+// with an optional display width, is shown as images. Images on consecutive
+// lines share a row.
+export function getReReadingImages(paragraph: string) {
+  const images = paragraph.split('\n').map((line) => {
+    const match = line
+      .trim()
+      .match(/^!\[([^\]]*)\]\((\S+)(?:\s+"(\d+%)")?\)$/);
 
-  return match ? { alt: match[1], src: match[2] } : null;
+    return match ? { alt: match[1], src: match[2], width: match[3] } : null;
+  });
+
+  return images.every(Boolean)
+    ? (images as { alt: string; src: string; width?: string }[])
+    : null;
 }
 
 export function getReReadingParagraphs(reReading: ProjectReReading) {

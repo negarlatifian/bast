@@ -2,7 +2,7 @@ import MainLayout from '@/components/MainLayout';
 import {
   getProjectReReading,
   getProjectReReadings,
-  getReReadingImage,
+  getReReadingImages,
   getReReadingParagraphs,
   getReReadingPath,
 } from '@/data/rereading';
@@ -74,7 +74,7 @@ export async function generateMetadata({
     title: reReading.title,
     description: toDescription(
       getReReadingParagraphs(reReading).find(
-        (paragraph) => !getReReadingImage(paragraph),
+        (paragraph) => !getReReadingImages(paragraph),
       ) ?? '',
     ),
     image: image === '/under-construction.webp' ? undefined : image,
@@ -105,7 +105,7 @@ export default async function Page({
 
   return (
     <MainLayout variant='reading'>
-      <article className='relative mx-auto mt-8 flex w-full max-w-4xl flex-col gap-6 bg-[#f8f8f6] px-5 py-8 sm:mt-12 sm:px-10 sm:py-12 lg:px-16'>
+      <article className='relative mx-auto flex w-full max-w-4xl flex-col gap-6 bg-[#f8f8f6] px-5 py-8 sm:mt-12 sm:px-10 sm:py-12 lg:px-16'>
         <CropMarks />
 
         <header className='flex items-stretch border border-dashed border-[#7f242a]'>
@@ -148,19 +148,27 @@ export default async function Page({
 
         <div className='flex flex-col gap-4'>
           {paragraphs.map((paragraph, index) => {
-            const image = getReReadingImage(paragraph);
+            const images = getReReadingImages(paragraph);
 
-            if (image) {
+            if (images) {
               return (
-                <Image
+                <div
                   key={`reading-paragraph-${index}`}
-                  src={image.src}
-                  alt={image.alt}
-                  width={0}
-                  height={0}
-                  sizes='(min-width: 896px) 768px, 100vw'
-                  className='h-auto w-full'
-                />
+                  className='flex justify-center gap-4'
+                >
+                  {images.map((image) => (
+                    <Image
+                      key={image.src}
+                      src={image.src}
+                      alt={image.alt}
+                      width={0}
+                      height={0}
+                      sizes='(min-width: 896px) 768px, 100vw'
+                      className='h-auto min-w-0'
+                      style={{ width: image.width ?? '100%' }}
+                    />
+                  ))}
+                </div>
               );
             }
 
