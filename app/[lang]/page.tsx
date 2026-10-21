@@ -8,7 +8,7 @@ import HomeTriptych, {
   type TriptychPanel,
 } from '@/components/HomeTriptych';
 import MainLayout from '@/components/MainLayout';
-import { getProjectReReadings } from '@/data/rereading';
+import { getProjectReReadings, getReReadingPath } from '@/data/rereading';
 import { getDictionary } from '@/lib/dictionaries';
 import { isLocale, localizeHref, type Locale } from '@/lib/i18n';
 import { getProjectImage, localizeProject, projects } from '@/lib/projects';
@@ -117,11 +117,13 @@ export default async function Page({
 
   // The re-reading column shows a project that actually has a re-reading,
   // and its frame opens that essay; the other two open the project entry.
-  const reReadingSlugs = new Set(
-    getProjectReReadings().map((reReading) => reReading.slug)
+  const reReadingPaths = new Map(
+    getProjectReReadings(locale)
+      .reverse()
+      .map((reReading) => [reReading.slug, getReReadingPath(reReading)])
   );
   const readingProject =
-    withImages.find((project) => reReadingSlugs.has(project.slug)) ??
+    withImages.find((project) => reReadingPaths.has(project.slug)) ??
     withImages[0];
   const [aboutProject, repositoryProject] = withImages.filter(
     (project) => project !== readingProject
@@ -180,8 +182,11 @@ export default async function Page({
       linkLabel: sections.rereading.viewAll,
       image: toImage(
         readingProject,
-        reReadingSlugs.has(readingProject?.slug ?? '')
-          ? localizeHref(locale, `/readings/${readingProject.slug}`)
+        reReadingPaths.has(readingProject?.slug ?? '')
+          ? localizeHref(
+              locale,
+              `/readings/${reReadingPaths.get(readingProject.slug)}`
+            )
           : localizeHref(locale, `/repository/${readingProject?.slug ?? ''}`)
       ),
       frame: frames[2],

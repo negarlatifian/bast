@@ -1,7 +1,7 @@
 import MainLayout from '@/components/MainLayout';
 import ProjectMediaStrip from '@/components/ProjectMediaStrip';
 import ProjectSectionNav from '@/components/ProjectSectionNav';
-import { getProjectReReading } from '@/data/rereading';
+import { getReReadingPath, getReReadingsForProject } from '@/data/rereading';
 import {
   getProjectBySlug,
   getProjectImage,
@@ -380,7 +380,7 @@ export default async function Page({
   const imagePosition =
     basicInformation['Featured Project Image'].position?.trim() || 'center';
   const mediaItems = getProjectMedia(project);
-  const reReading = getProjectReReading(project.slug, lang);
+  const reReadings = getReReadingsForProject(project.slug, lang);
   const introductionSection = project.sections.find(
     (section) => section.id === '2',
   );
@@ -636,14 +636,16 @@ export default async function Page({
           // (id "8"), matching the project's original document order. Falls
           // back to right after Participation & Process for projects that
           // don't have that section, so it's never dropped.
-          const reReadingNavEntry = reReading
+          const reReadingNavEntry = reReadings.length > 0
             ? {
                 id: 're-reading',
                 label: dict.common.reReading,
                 content: (
-                  <section key='re-reading' id='re-reading' className='scroll-mt-28'>
+                  <section key='re-reading' id='re-reading' className='flex scroll-mt-28 flex-col gap-3'>
+                    {reReadings.map((reReading) => (
                     <Link
-                      href={localizeHref(lang, `/readings/${project.slug}`)}
+                      key={getReReadingPath(reReading)}
+                      href={localizeHref(lang, `/readings/${getReReadingPath(reReading)}`)}
                       className='group flex items-stretch border border-dashed border-[#7f242a] transition-colors hover:bg-[#7f242a]/5'
                     >
                       <h2 className='flex shrink-0 items-center justify-center border-l border-dashed border-[#7f242a] px-2 py-3 text-[0.65rem] font-bold tracking-[0.2em] text-[#7f242a] uppercase [writing-mode:vertical-rl] ltr:rotate-180 sm:text-xs'>
@@ -658,6 +660,7 @@ export default async function Page({
                         </span>
                       </div>
                     </Link>
+                    ))}
                   </section>
                 ),
               }

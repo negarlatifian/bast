@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-import { getProjectReReadings } from '@/data/rereading';
+import { getProjectReReadings, getReReadingPath } from '@/data/rereading';
 import { locales } from '@/lib/i18n';
 import { projects } from '@/lib/projects';
 import { languageAlternates, siteUrl } from '@/lib/seo';
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     ...staticPaths,
     ...projects.map((project) => `/repository/${project.slug}`),
-    ...getProjectReReadings().map((reReading) => `/readings/${reReading.slug}`),
+    ...getProjectReReadings().map((reReading) => `/readings/${getReReadingPath(reReading)}`),
   ];
 
   return paths.flatMap((path) => {

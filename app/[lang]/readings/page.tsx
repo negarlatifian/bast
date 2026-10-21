@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { pageMetadata } from '@/lib/seo';
 import MainLayout from '@/components/MainLayout';
-import { getProjectReReadings } from '@/data/rereading';
+import { getProjectReReadings, getReReadingPath } from '@/data/rereading';
 import { getDictionary } from '@/lib/dictionaries';
 import { getFormUrl } from '@/lib/forms';
 import { isLocale, localizeHref } from '@/lib/i18n';
@@ -77,8 +77,8 @@ export default async function Page({
       <div className='mt-12 grid w-full gap-x-8 gap-y-8 pb-24 sm:mt-14 md:grid-cols-2'>
         {reReadings.map(({ reReading, projectTitle }) => (
           <Link
-            key={reReading.slug}
-            href={localizeHref(lang, `/readings/${reReading.slug}`)}
+            key={getReReadingPath(reReading)}
+            href={localizeHref(lang, `/readings/${getReReadingPath(reReading)}`)}
             className='group relative overflow-hidden border-s-4 border-[#7f242a] bg-[#d67878]/10 p-5 transition-colors hover:bg-[#d67878]/15 sm:p-7'
           >
             <div

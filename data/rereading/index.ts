@@ -5,7 +5,10 @@ import { daabReading } from './daab';
 import { equivalenceDistanceReading } from './equivalence-distance';
 import { knockoutTournamentReading } from './knockout-tournament';
 import { mappingKarimkhanReading } from './mapping-karimkhan';
+import { mappingKarimkhanFouReading } from './mapping-karimkhan-fou';
 import { paintYourShadowOrangeReading } from './paint-your-shadow-orange';
+import { talkSeeAttaranReading } from './talk-see-attaran';
+import { talkSeeHedayatiReading } from './talk-see-hedayati';
 import { whiteCubesReading } from './white-cubes';
 
 type ReReadingText = {
@@ -20,7 +23,13 @@ type ReReadingText = {
 };
 
 export type ProjectReReading = ReReadingText & {
+  // The project this re-reading belongs to.
   slug: string;
+  // The re-reading's own URL segment under /readings. Defaults to the
+  // project slug; set it when a project has more than one re-reading.
+  path?: string;
+  // Languages the re-reading is shown in. Defaults to all of them.
+  languages?: Locale[];
   fa?: ReReadingText;
 };
 
@@ -37,7 +46,10 @@ const reReadings: ProjectReReading[] = [
   },
   knockoutTournamentReading,
   mappingKarimkhanReading,
+  mappingKarimkhanFouReading,
   paintYourShadowOrangeReading,
+  talkSeeAttaranReading,
+  talkSeeHedayatiReading,
   whiteCubesReading,
 ];
 
@@ -46,20 +58,48 @@ function localizeReReading(
   lang?: Locale,
 ): ProjectReReading {
   if (lang === 'fa' && reReading.fa) {
-    return { slug: reReading.slug, ...reReading.fa };
+    return { slug: reReading.slug, path: reReading.path, ...reReading.fa };
   }
 
   return reReading;
 }
 
-export function getProjectReReading(slug: string, lang?: Locale) {
-  const reReading = reReadings.find((reReading) => reReading.slug === slug);
+function isShownIn(reReading: ProjectReReading, lang?: Locale) {
+  return !lang || !reReading.languages || reReading.languages.includes(lang);
+}
+
+export function getReReadingPath(reReading: ProjectReReading) {
+  return reReading.path ?? reReading.slug;
+}
+
+export function getProjectReReading(path: string, lang?: Locale) {
+  const reReading = reReadings.find(
+    (reReading) =>
+      getReReadingPath(reReading) === path && isShownIn(reReading, lang),
+  );
 
   return reReading && localizeReReading(reReading, lang);
 }
 
+export function getReReadingsForProject(slug: string, lang?: Locale) {
+  return reReadings
+    .filter(
+      (reReading) => reReading.slug === slug && isShownIn(reReading, lang),
+    )
+    .map((reReading) => localizeReReading(reReading, lang));
+}
+
 export function getProjectReReadings(lang?: Locale) {
-  return reReadings.map((reReading) => localizeReReading(reReading, lang));
+  return reReadings
+    .filter((reReading) => isShownIn(reReading, lang))
+    .map((reReading) => localizeReReading(reReading, lang));
+}
+
+// A paragraph written as `![alt](/path)` is shown as an image.
+export function getReReadingImage(paragraph: string) {
+  const match = paragraph.match(/^!\[([^\]]*)\]\((\S+)\)$/);
+
+  return match ? { alt: match[1], src: match[2] } : null;
 }
 
 export function getReReadingParagraphs(reReading: ProjectReReading) {

@@ -1,5 +1,6 @@
 export const mappingKarimkhanReading = {
   slug: 'mapping-karimkhan',
+  languages: ['en' as const],
   title: '#Mappingkarimkhan 9 years on',
   author: 'AmirAli Ghasemi',
   role: 'Media artist and independent curator',

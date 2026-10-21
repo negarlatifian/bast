@@ -2,21 +2,24 @@ import MainLayout from '@/components/MainLayout';
 import {
   getProjectReReading,
   getProjectReReadings,
+  getReReadingImage,
   getReReadingParagraphs,
+  getReReadingPath,
 } from '@/data/rereading';
 import { getProjectBySlug, getProjectImage, localizeProject } from '@/lib/projects';
 import { getDictionary } from '@/lib/dictionaries';
 import { isLocale, localizeHref, locales } from '@/lib/i18n';
 import { pageMetadata, toDescription } from '@/lib/seo';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export function generateStaticParams() {
   return locales.flatMap((lang) =>
-    getProjectReReadings().map((reReading) => ({
+    getProjectReReadings(lang).map((reReading) => ({
       lang,
-      slug: reReading.slug,
+      slug: getReReadingPath(reReading),
     })),
   );
 }
@@ -69,7 +72,11 @@ export async function generateMetadata({
     lang,
     path: `/readings/${slug}`,
     title: reReading.title,
-    description: toDescription(getReReadingParagraphs(reReading)[0] ?? ''),
+    description: toDescription(
+      getReReadingParagraphs(reReading).find(
+        (paragraph) => !getReReadingImage(paragraph),
+      ) ?? '',
+    ),
     image: image === '/under-construction.webp' ? undefined : image,
   });
 }
@@ -141,6 +148,22 @@ export default async function Page({
 
         <div className='flex flex-col gap-4'>
           {paragraphs.map((paragraph, index) => {
+            const image = getReReadingImage(paragraph);
+
+            if (image) {
+              return (
+                <Image
+                  key={`reading-paragraph-${index}`}
+                  src={image.src}
+                  alt={image.alt}
+                  width={0}
+                  height={0}
+                  sizes='(min-width: 896px) 768px, 100vw'
+                  className='h-auto w-full'
+                />
+              );
+            }
+
             const isBoldParagraph =
               reReading.boldParagraphs?.includes(paragraph) ?? false;
 
