@@ -70,7 +70,7 @@
         "id": "10",
         "title": "منابع بیشتر",
         "paragraphs": [
-          "مستندسازی مستمر پروژه در [اینستاگرام](https://www.instagram.com/talk.see.projects/) (@talk.see.projects)."
+          "مستندسازی مستمر پروژه در اینستاگرام ([@talk.see.projects](https://www.instagram.com/talk.see.projects/))."
         ]
       },
       {
@@ -78,6 +78,10 @@
         "title": "درباره هنرمند",
         "paragraphs": [
           "**علی معمری** (متولد ۱۳۶۰، بجنورد) نقاش و مربی هنر با بیش از دو دهه سابقهٔ کار است که بین مشهد و بجنورد فعالیت می‌کند. او در رشتهٔ گرافیک آموزش دیده و آثارش را در نمایشگاه‌های انفرادی و گروهی در گالری‌های متعددی از جمله فضای هنری سیس و گالری گلشن در بجنورد، گالری‌های نارون و آرتین در مشهد، گالری‌های اُ، آریا و هفت‌ثمر در تهران، و گالری سپیده احدی در برلین به نمایش گذاشته است. پروژهٔ مشارکتی شهری او، «تاک‌سی»، از سال ۱۳۹۶ در جریان است."
+        ],
+        "contact": [
+          { "platform": "instagram", "handle": "@talk.see.projects", "url": "https://www.instagram.com/talk.see.projects/" },
+          { "platform": "instagram", "handle": "@Ali_moammery", "url": "https://www.instagram.com/Ali_moammery" }
         ]
       }
     ],
@@ -191,7 +195,7 @@
       "id": "10",
       "title": "Further Resources",
       "paragraphs": [
-        "Ongoing project documentation on [Instagram](https://www.instagram.com/talk.see.projects/) (@talk.see.projects)."
+        "Ongoing project documentation on Instagram ([@talk.see.projects](https://www.instagram.com/talk.see.projects/))."
       ]
     },
     {
