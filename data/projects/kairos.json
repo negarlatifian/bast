@@ -227,11 +227,6 @@
         "type": "photo",
         "src": "/images/kairos/04.webp",
         "description": "Photo courtesy of the artist."
-      },
-      {
-        "type": "video",
-        "src": "/images/kairos/05.mp4",
-        "description": ""
       }
     ]
   },
