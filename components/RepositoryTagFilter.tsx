@@ -59,6 +59,8 @@ export default function RepositoryTagFilter({
               <Link
                 href={buildHref(nextTags)}
                 scroll={false}
+                prefetch={false}
+                rel='nofollow'
                 aria-current={isSelected ? 'true' : undefined}
                 className={`text-[0.7rem] font-extrabold uppercase tracking-wide transition-colors sm:text-xs ${
                   isSelected
@@ -93,6 +95,8 @@ export default function RepositoryTagFilter({
           <Link
             href={buildHref([])}
             scroll={false}
+            prefetch={false}
+            rel='nofollow'
             className='text-xs font-medium text-[#7f242a] transition-colors hover:text-black'
           >
             {dict.map.clearFilter}
