@@ -1,64 +1,15 @@
 import type { Metadata } from 'next';
 import { pageMetadata } from '@/lib/seo';
 import { notFound } from 'next/navigation';
-import { connection } from 'next/server';
 
-import HomeTriptych, {
-  type TriptychFrame,
-  type TriptychPanel,
-} from '@/components/HomeTriptych';
+import HomeTriptychShuffle, {
+  type TriptychPanelText,
+} from '@/components/HomeTriptychShuffle';
 import MainLayout from '@/components/MainLayout';
 import { getProjectReReadings, getReReadingPath } from '@/data/rereading';
 import { getDictionary } from '@/lib/dictionaries';
 import { isLocale, localizeHref, type Locale } from '@/lib/i18n';
 import { getProjectImage, localizeProject, projects } from '@/lib/projects';
-
-function randomBetween(min: number, max: number) {
-  return min + Math.random() * (max - min);
-}
-
-function shuffle<T>(items: T[]) {
-  const result = [...items];
-
-  for (let index = result.length - 1; index > 0; index -= 1) {
-    const swapIndex = Math.floor(Math.random() * (index + 1));
-    [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
-  }
-
-  return result;
-}
-
-const FRAME_ASPECTS: TriptychFrame['aspect'][] = ['4/5', '1/1', '5/4'];
-
-function jitter(slot: number) {
-  return Math.min(1, Math.max(0, slot + randomBetween(-0.12, 0.12)));
-}
-
-// Loose placements for the three columns' frames — the collage fits each to
-// its column's actual space. Every frame takes a different height (high,
-// middle, low) and a different side (start, centre, end), shuffled per
-// visit, so the three never line up into a grid.
-function randomFrames(): TriptychFrame[] {
-  const slots = [0, 0.5, 1];
-  const ySlots = shuffle(slots);
-  const xSlots = shuffle(slots);
-
-  return slots.map((_, index) => ({
-    aspect: FRAME_ASPECTS[Math.floor(Math.random() * FRAME_ASPECTS.length)],
-    size: Math.random(),
-    x: jitter(xSlots[index]),
-    y: jitter(ySlots[index]),
-  }));
-}
-
-// Each column's text takes a different height too — one high, one centred,
-// one low. It only ever moves vertically, always starting in line with the
-// column's number above it.
-function randomTextLayouts(): Pick<TriptychPanel, 'textPosition'>[] {
-  return shuffle<TriptychPanel['textPosition']>(['top', 'middle', 'bottom']).map(
-    (textPosition) => ({ textPosition })
-  );
-}
 
 export async function generateMetadata({
   params,
@@ -91,60 +42,37 @@ export default async function Page({
     notFound();
   }
 
-  // Render per request so each visit draws a new set of project images.
-  await connection();
-
+  // Prerendered once per language and served from the CDN; the images and
+  // arrangement are drawn per visit in the browser by HomeTriptychShuffle.
   const locale: Locale = lang;
   const dict = getDictionary(locale);
   const sections = dict.home.sections;
 
-  const withImages = shuffle(
-    projects
-      .map((rawProject) => {
-        const project = localizeProject(rawProject, locale);
-        const basicInformation = project['1. Basic Information'];
-        const title = basicInformation['Project Title'];
+  const withImages = projects
+    .map((rawProject) => {
+      const project = localizeProject(rawProject, locale);
+      const basicInformation = project['1. Basic Information'];
+      const title = basicInformation['Project Title'];
 
-        return {
-          slug: project.slug,
-          title,
-          alt: basicInformation['Featured Project Image'].alt || title,
-          src: getProjectImage(project),
-        };
-      })
-      .filter((project) => project.src !== '/under-construction.webp')
+      return {
+        slug: project.slug,
+        title,
+        alt: basicInformation['Featured Project Image'].alt || title,
+        src: getProjectImage(project),
+      };
+    })
+    .filter((project) => project.src !== '/under-construction.webp');
+
+  // One re-reading per project (the same pick as before when it has several).
+  const reReadingPaths: [string, string][] = Array.from(
+    new Map(
+      getProjectReReadings(locale)
+        .reverse()
+        .map((reReading) => [reReading.slug, getReReadingPath(reReading)])
+    )
   );
 
-  // The re-reading column shows a project that actually has a re-reading,
-  // and its frame opens that essay; the other two open the project entry.
-  const reReadingPaths = new Map(
-    getProjectReReadings(locale)
-      .reverse()
-      .map((reReading) => [reReading.slug, getReReadingPath(reReading)])
-  );
-  const readingProject =
-    withImages.find((project) => reReadingPaths.has(project.slug)) ??
-    withImages[0];
-  const [aboutProject, repositoryProject] = withImages.filter(
-    (project) => project !== readingProject
-  );
-
-  const toImage = (
-    project: (typeof withImages)[number] | undefined,
-    href: string
-  ): TriptychPanel['image'] =>
-    project
-      ? { src: project.src, alt: project.alt, caption: project.title, href }
-      : {
-          src: '/under-construction.webp',
-          alt: '',
-          caption: '',
-          href,
-        };
-
-  const frames = randomFrames();
-  const textLayouts = randomTextLayouts();
-  const panels: TriptychPanel[] = [
+  const panels: TriptychPanelText[] = [
     {
       key: 'about',
       eyebrow: sections.about.eyebrow,
@@ -152,12 +80,6 @@ export default async function Page({
       description: dict.home.heroTitle,
       href: localizeHref(locale, '/aboutbast'),
       linkLabel: sections.about.viewAll,
-      image: toImage(
-        aboutProject,
-        localizeHref(locale, `/repository/${aboutProject?.slug ?? ''}`)
-      ),
-      frame: frames[0],
-      ...textLayouts[0],
     },
     {
       key: 'repository',
@@ -166,12 +88,6 @@ export default async function Page({
       description: sections.repository.description,
       href: localizeHref(locale, '/repository'),
       linkLabel: sections.repository.viewAll,
-      image: toImage(
-        repositoryProject,
-        localizeHref(locale, `/repository/${repositoryProject?.slug ?? ''}`)
-      ),
-      frame: frames[1],
-      ...textLayouts[1],
     },
     {
       key: 'rereading',
@@ -180,24 +96,17 @@ export default async function Page({
       description: sections.rereading.description,
       href: localizeHref(locale, '/readings'),
       linkLabel: sections.rereading.viewAll,
-      image: toImage(
-        readingProject,
-        reReadingPaths.has(readingProject?.slug ?? '')
-          ? localizeHref(
-              locale,
-              `/readings/${reReadingPaths.get(readingProject.slug)}`
-            )
-          : localizeHref(locale, `/repository/${readingProject?.slug ?? ''}`)
-      ),
-      frame: frames[2],
-      ...textLayouts[2],
     },
   ];
 
   return (
     <MainLayout navigation='plus'>
       <section className='flex flex-col gap-4 pt-1 pb-10 sm:gap-6 lg:min-h-0 lg:flex-1 lg:pb-8'>
-        <HomeTriptych panels={panels} />
+        <HomeTriptychShuffle
+          panels={panels}
+          projects={withImages}
+          reReadingPaths={reReadingPaths}
+        />
       </section>
     </MainLayout>
   );

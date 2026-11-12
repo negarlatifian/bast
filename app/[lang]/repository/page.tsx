@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { pageMetadata } from '@/lib/seo';
 import MainLayout from '@/components/MainLayout';
-import RepositoryTagFilter from '@/components/RepositoryTagFilter';
-import RepositoryView from '@/components/RepositoryView';
+import RepositoryBrowser, {
+  RepositoryBrowserFallback,
+  type RepositoryBrowserProject,
+} from '@/components/RepositoryBrowser';
 import {
   getProjectImage,
   getProjectPreviewText,
@@ -11,42 +13,9 @@ import {
 } from '@/lib/projects';
 import { getDictionary } from '@/lib/dictionaries';
 import { getFormUrl } from '@/lib/forms';
-import { formatLocaleNumber, isLocale } from '@/lib/i18n';
-import { headers } from 'next/headers';
+import { isLocale } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
-
-export const dynamic = 'force-dynamic';
-
-function shuffleProjects<T>(items: T[], seed: number) {
-  const shuffledItems = [...items];
-  let randomState = seed;
-
-  const nextRandom = () => {
-    randomState = (randomState * 1664525 + 1013904223) % 4294967296;
-    return randomState / 4294967296;
-  };
-
-  for (let index = shuffledItems.length - 1; index > 0; index -= 1) {
-    const randomIndex = Math.floor(nextRandom() * (index + 1));
-    [shuffledItems[index], shuffledItems[randomIndex]] = [
-      shuffledItems[randomIndex],
-      shuffledItems[index],
-    ];
-  }
-
-  return shuffledItems;
-}
-
-function getSeedFromRequestHeader(value: string) {
-  let seed = 2166136261;
-
-  for (let index = 0; index < value.length; index += 1) {
-    seed ^= value.charCodeAt(index);
-    seed = Math.imul(seed, 16777619);
-  }
-
-  return seed >>> 0;
-}
+import { Suspense } from 'react';
 
 export async function generateMetadata({
   params,
@@ -69,12 +38,13 @@ export async function generateMetadata({
   });
 }
 
+// Prerendered per language and served from the CDN. Search (?q=), tag
+// filters (?tag=) and the shuffled layout are applied in the browser by
+// RepositoryBrowser, so no visit to this page runs server code.
 export default async function Page({
   params,
-  searchParams,
 }: {
   params: Promise<{ lang: string }>;
-  searchParams: Promise<{ q?: string; tag?: string | string[] }>;
 }) {
   const { lang } = await params;
 
@@ -83,26 +53,7 @@ export default async function Page({
   }
 
   const dict = getDictionary(lang);
-  const { q, tag } = await searchParams;
-  const headersList = await headers();
-  const seedSource = [
-    headersList.get('x-vercel-id'),
-    headersList.get('x-forwarded-for'),
-    headersList.get('user-agent'),
-    headersList.get('accept-language'),
-    headersList.get('date'),
-  ]
-    .filter(Boolean)
-    .join('|');
-  const searchQuery = q?.trim().toLowerCase() ?? '';
-  const selectedTags = Array.from(
-    new Set(
-      (Array.isArray(tag) ? tag : tag ? [tag] : [])
-        .map((item) => item.trim())
-        .filter(Boolean),
-    ),
-  );
-  const repositoryProjects = projects.map((rawProject) => {
+  const repositoryProjects: RepositoryBrowserProject[] = projects.map((rawProject) => {
     const project = localizeProject(rawProject, lang);
     const basicInformation = project['1. Basic Information'];
     const title = basicInformation['Project Title'];
@@ -136,12 +87,6 @@ export default async function Page({
       imageSrc: getProjectImage(project),
     };
   });
-  const layoutSeed = getSeedFromRequestHeader(seedSource);
-  const filteredProjects = repositoryProjects.filter(
-    (project) =>
-      (!searchQuery || project.searchText.includes(searchQuery)) &&
-      selectedTags.every((selected) => project.tags.includes(selected)),
-  );
   const tagCounts = new Map<string, number>();
   for (const project of repositoryProjects) {
     for (const projectTag of project.tags) {
@@ -151,7 +96,6 @@ export default async function Page({
   const sortedTags = Array.from(tagCounts.entries()).sort(
     (a, b) => b[1] - a[1] || a[0].localeCompare(b[0], lang),
   );
-  const visibleProjects = shuffleProjects(filteredProjects, layoutSeed);
 
   return (
     <MainLayout>
@@ -175,29 +119,16 @@ export default async function Page({
         </a>
       </article>
 
-      <RepositoryTagFilter
-        tags={sortedTags}
-        selectedTags={selectedTags}
-        searchQuery={q?.trim()}
-      />
-
-      {(searchQuery || selectedTags.length > 0) && (
-        <p className='mt-8 text-sm leading-6 text-[#4f4a43]'>
-          {formatLocaleNumber(filteredProjects.length, lang)}{' '}
-          {filteredProjects.length === 1
-            ? dict.search.resultsFor
-            : dict.search.resultsForPlural}{' '}
-          {searchQuery && <>&ldquo;{q}&rdquo;</>}
-          {searchQuery && selectedTags.length > 0 && ' · '}
-          {selectedTags.length > 0 && (
-            <span className='font-extrabold tracking-wide text-[#7f242a] uppercase'>
-              {selectedTags.join(' · ')}
-            </span>
-          )}
-        </p>
-      )}
-
-      <RepositoryView projects={visibleProjects} layoutSeed={layoutSeed} />
+      <Suspense
+        fallback={
+          <RepositoryBrowserFallback
+            projects={repositoryProjects}
+            tags={sortedTags}
+          />
+        }
+      >
+        <RepositoryBrowser projects={repositoryProjects} tags={sortedTags} />
+      </Suspense>
     </MainLayout>
   );
 }

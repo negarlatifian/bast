@@ -1,7 +1,6 @@
 'use client';
 
-import Link from 'next/link';
-import { Fragment, useState } from 'react';
+import { Fragment, useState, type MouseEvent } from 'react';
 
 import { localizeHref } from '@/lib/i18n';
 
@@ -32,6 +31,22 @@ export default function RepositoryTagFilter({
     return `${localizeHref(lang, '/repository')}${query ? `?${query}` : ''}`;
   };
 
+  // Filtering happens in the browser, so a tag click only updates the address
+  // (keeping back/forward and shareable links) without asking the server.
+  const followInPlace = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (
+      event.button !== 0 ||
+      event.metaKey ||
+      event.ctrlKey ||
+      event.shiftKey ||
+      event.altKey
+    ) {
+      return;
+    }
+    event.preventDefault();
+    window.history.pushState(null, '', event.currentTarget.href);
+  };
+
   // Selected tags stay visible even when the list is collapsed.
   const visibleTags = tagsExpanded
     ? tags
@@ -56,10 +71,9 @@ export default function RepositoryTagFilter({
 
           return (
             <Fragment key={tag}>
-              <Link
+              <a
                 href={buildHref(nextTags)}
-                scroll={false}
-                prefetch={false}
+                onClick={followInPlace}
                 rel='nofollow'
                 aria-current={isSelected ? 'true' : undefined}
                 className={`text-[0.7rem] font-extrabold uppercase tracking-wide transition-colors sm:text-xs ${
@@ -70,7 +84,7 @@ export default function RepositoryTagFilter({
               >
                 {tag}
                 {isSelected && <span aria-hidden='true'> ×</span>}
-              </Link>
+              </a>
               {index < visibleTags.length - 1 && (
                 <span
                   aria-hidden='true'
@@ -92,16 +106,15 @@ export default function RepositoryTagFilter({
           </button>
         )}
         {selectedTags.length > 0 && (
-          <Link
+          <a
             href={buildHref([])}
-            scroll={false}
-            prefetch={false}
+            onClick={followInPlace}
             rel='nofollow'
             className='text-xs font-medium text-[#7f242a] transition-colors hover:text-black'
           >
             {dict.map.clearFilter}
             <span aria-hidden='true'> ×</span>
-          </Link>
+          </a>
         )}
       </div>
     </div>
