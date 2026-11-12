@@ -50,8 +50,11 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  // Run on everything except Next internals, API routes, and static assets.
+  // Only paths that still need a locale. Paths already under /en or /fa are
+  // skipped so they're served straight from the CDN without invoking the
+  // proxy (each invocation counts against the Vercel function limits).
+  // Keep the locale list in sync with lib/i18n (matchers must be literals).
   matcher: [
-    '/((?!api|_next/static|_next/image|images|fonts|favicon|.*\\.[\\w]+$).*)',
+    '/((?!(?:en|fa)(?:/|$)|api|_next/static|_next/image|images|fonts|favicon|.*\\.[\\w]+$).*)',
   ],
 };
