@@ -32,7 +32,7 @@ import tehranMonoxide from '@/data/projects/tehran-monoxide.json';
 import theSecretOfLaleh from '@/data/projects/the-secret-of-laleh.json';
 import unMonopoly from '@/data/projects/un-monopoly.json';
 import whiteCubes from '@/data/projects/white-cubes.json';
-import workers from '@/data/projects/workers.json';
+// import workers from '@/data/projects/workers.json';
 
 export type Project = {
   slug: string;
@@ -158,7 +158,7 @@ export const projects = [
   theSecretOfLaleh,
   unMonopoly,
   whiteCubes,
-  workers,
+  // workers, // hidden for now
 ] satisfies Project[];
 
 const fallbackImages: Record<string, string> = {
