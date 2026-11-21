@@ -1,6 +1,7 @@
 import MainLayout from '@/components/MainLayout';
 import {
   getProjectReReading,
+  getReReadingFallbackHref,
   getProjectReReadings,
   getReReadingImages,
   getReReadingParagraphs,
@@ -13,11 +14,13 @@ import { pageMetadata, toDescription } from '@/lib/seo';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 
 export function generateStaticParams() {
+  // Every re-reading in every language: one that isn't shown in a language
+  // redirects there instead of 404ing.
   return locales.flatMap((lang) =>
-    getProjectReReadings(lang).map((reReading) => ({
+    getProjectReReadings().map((reReading) => ({
       lang,
       slug: getReReadingPath(reReading),
     })),
@@ -96,6 +99,12 @@ export default async function Page({
   const reReading = getProjectReReading(slug, lang);
 
   if (!reReading) {
+    const fallbackHref = getReReadingFallbackHref(slug, lang);
+
+    if (fallbackHref) {
+      redirect(localizeHref(lang, fallbackHref));
+    }
+
     notFound();
   }
 

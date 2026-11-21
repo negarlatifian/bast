@@ -74,12 +74,24 @@ export default function ProjectMediaStrip({
         closeLightbox();
       }
 
+      // In RTL the strip runs right-to-left, so the next item sits to the
+      // left and the arrow keys swap meaning.
+      const isRtl = document.documentElement.dir === 'rtl';
+
       if (event.key === 'ArrowLeft') {
-        showPreviousPhoto();
+        if (isRtl) {
+          showNextPhoto();
+        } else {
+          showPreviousPhoto();
+        }
       }
 
       if (event.key === 'ArrowRight') {
-        showNextPhoto();
+        if (isRtl) {
+          showPreviousPhoto();
+        } else {
+          showNextPhoto();
+        }
       }
     };
 
@@ -225,19 +237,19 @@ export default function ProjectMediaStrip({
                 event.stopPropagation();
                 showPreviousPhoto();
               }}
-              className='absolute left-3 top-1/2 z-10 -translate-y-1/2 cursor-pointer px-3 py-4 text-4xl leading-none text-white sm:left-6'
+              className='absolute inset-s-3 top-1/2 z-10 -translate-y-1/2 cursor-pointer px-3 py-4 text-4xl leading-none text-white sm:inset-s-6'
             >
               {'<'}
             </button>
           )}
 
           <figure
-            className='flex h-full w-full max-w-6xl flex-col items-center justify-center gap-4'
+            className='flex h-full max-h-full w-full max-w-6xl flex-col items-center justify-center gap-4'
             onClick={(event) => event.stopPropagation()}
           >
             {activePhoto.type === 'video' ? (
               getVimeoEmbedUrl(activePhoto.src) ? (
-                <div className='relative h-[78vh] w-full'>
+                <div className='relative min-h-0 w-full flex-1 sm:h-[78vh] sm:flex-none'>
                   <iframe
                     src={getVimeoEmbedUrl(activePhoto.src) ?? undefined}
                     title={activePhoto.description || title}
@@ -252,7 +264,7 @@ export default function ProjectMediaStrip({
                 // with object-contain) keeps the native control bar the
                 // width of the actual video instead of the full container,
                 // which looks broken for portrait clips.
-                <div className='flex h-[78vh] w-full items-center justify-center'>
+                <div className='flex min-h-0 w-full flex-1 items-center justify-center sm:h-[78vh] sm:flex-none'>
                   <video
                     src={activePhoto.src}
                     controls
@@ -262,7 +274,7 @@ export default function ProjectMediaStrip({
                 </div>
               )
             ) : (
-              <div className='relative h-[78vh] w-full'>
+              <div className='relative min-h-0 w-full flex-1 sm:h-[78vh] sm:flex-none'>
                 <Image
                   src={activePhoto.src}
                   alt={activePhoto.description || title}
@@ -274,7 +286,7 @@ export default function ProjectMediaStrip({
               </div>
             )}
             {activePhoto.description && (
-              <figcaption className='max-w-3xl text-center text-sm leading-6 text-white/85'>
+              <figcaption className='max-h-[30vh] max-w-3xl shrink-0 overflow-y-auto text-center text-sm leading-6 text-white/85'>
                 {activePhoto.description}
               </figcaption>
             )}
@@ -288,7 +300,7 @@ export default function ProjectMediaStrip({
                 event.stopPropagation();
                 showNextPhoto();
               }}
-              className='absolute right-3 top-1/2 z-10 -translate-y-1/2 cursor-pointer px-3 py-4 text-4xl leading-none text-white sm:right-6'
+              className='absolute inset-e-3 top-1/2 z-10 -translate-y-1/2 cursor-pointer px-3 py-4 text-4xl leading-none text-white sm:inset-e-6'
             >
               {'>'}
             </button>

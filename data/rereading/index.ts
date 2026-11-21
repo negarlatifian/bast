@@ -1,4 +1,4 @@
-import type { Locale } from '@/lib/i18n';
+import { locales, type Locale } from '@/lib/i18n';
 import { sanandajReadingText } from './book-reading-sanandaj';
 import { cafeKonjReading } from './cafe-konj-performances';
 import { daabReading } from './daab';
@@ -70,6 +70,31 @@ function isShownIn(reReading: ProjectReReading, lang?: Locale) {
 
 export function getReReadingPath(reReading: ProjectReReading) {
   return reReading.path ?? reReading.slug;
+}
+
+export function getReReadingLanguages(reReading: ProjectReReading) {
+  return reReading.languages ?? [...locales];
+}
+
+// Where to send a reader who asks for a re-reading in a language it isn't
+// shown in (say, through the language switch): the project's re-reading in
+// that language, or else the project page.
+export function getReReadingFallbackHref(path: string, lang: Locale) {
+  const reReading = reReadings.find(
+    (reReading) => getReReadingPath(reReading) === path,
+  );
+
+  if (!reReading || isShownIn(reReading, lang)) {
+    return null;
+  }
+
+  const sibling = reReadings.find(
+    (other) => other.slug === reReading.slug && isShownIn(other, lang),
+  );
+
+  return sibling
+    ? `/readings/${getReReadingPath(sibling)}`
+    : `/repository/${reReading.slug}`;
 }
 
 export function getProjectReReading(path: string, lang?: Locale) {
