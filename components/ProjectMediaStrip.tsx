@@ -285,7 +285,7 @@ export default function ProjectMediaStrip({
                 />
               </div>
             )}
-            {activePhoto.description && (
+            {activePhoto.description?.trim() && (
               <figcaption className='max-h-[30vh] max-w-3xl shrink-0 overflow-y-auto text-center text-sm leading-6 text-white/85'>
                 {activePhoto.description}
               </figcaption>
