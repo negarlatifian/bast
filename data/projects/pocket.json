@@ -1,0 +1,230 @@
+{
+  "slug": "pocket",
+  "fa": {
+    "1. Basic Information": {
+      "Project Title": "پاکت",
+      "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+        "کلکتیو پاکت (هنگامه حسینی، نسترن فتوحی)"
+      ],
+      "Location": { "text": "آنلاین" },
+      "Year / Time Period": { "text": "۱۴۰۴ تاکنون" },
+      "Featured Project Image": { "alt": "پاکت" },
+      "Thematic Tags": ["فضای آنلاین و فرامرزی", "حافظه و آرشیو", "ساخت جمعی", "گفت‌وگو و روایت جمعی"]
+    },
+    "sections": [
+      {
+        "id": "2",
+        "title": "معرفی کوتاه پروژه",
+        "paragraphs": [
+          "«پاکت» پروژه‌ای آرشیوی و مشارکتی است که از گردآوری عکس‌های موبایلی و روایت‌های همراه آن‌ها شکل می‌گیرد. کار در دوره‌هایی پیاپی پیش می‌رود: در هر دوره از افراد دعوت می‌شود حول محور یک موضوع، یک عکس به‌همراه متنی کوتاه بفرستند؛ متنی که می‌تواند شرح یک لحظه، خاطره‌ای کوتاه، احساسی گذرا یا هر روایت دیگری باشد که تجربهٔ ثبت‌شده در تصویر را گسترش دهد. تصویر و متن در کنار یکدیگر یک واحد روایی می‌سازند و به مخاطب امکان می‌دهند فراتر از آنچه در قاب دیده می‌شود به تجربهٔ زیستهٔ فرد نزدیک شود.",
+          "کار در ۱۴۰۳ به‌صورت آنلاین شکل گرفت و نخستین رونمایی عمومی آن در فروردین ۱۴۰۴ برگزار شد؛ پروژه تاکنون ادامه دارد و در قالب آرشیو مشارکتی، انتشار دیجیتال و مستندسازی جمعی و به‌صورت چندرسانه‌ای پیش رفته است. پاکت تجربه‌های پراکنده و شخصی را در بستری مشترک گرد می‌آورد تا زندگی روزمره از منظر افراد مختلف دیده شود؛ آرشیوی که به‌مرور به سندی از حافظهٔ جمعی بدل می‌شود."
+        ]
+      },
+      {
+        "id": "3",
+        "title": "زمینه و بستر اجرا",
+        "paragraphs": [
+          "بستر اصلی کار از آغاز فضای آنلاین بوده است. این انتخاب امکان مشارکت افراد را از شهرها و موقعیت‌های مختلف فراهم می‌کرد و با ماهیت آرشیوی و جمعی پروژه هم‌خوانی داشت؛ با کنارگذاشته‌شدن محدودیت‌های جغرافیایی، تنوع تجربه‌ها، نگاه‌ها و روایت‌های گردآمده نیز بیشتر شد. در کنار گردآوری آنلاین، پس از هر دوره رونمایی‌هایی در فضاهای هنری برگزار شد. این رویدادها نمایشگاه به معنای متعارف نبودند؛ مجالی بودند برای ارائهٔ نتایج هر دوره، دیدار با مخاطبان و آشنایی افراد تازه با کار. مخاطبان در بازه‌ای کوتاه، معمولاً دوروزه، مجموعهٔ تصاویر و روایت‌های گردآمده را می‌دیدند و با ایده و روند شکل‌گیری آرشیو آشنا می‌شدند.",
+          "پس از پایان پنج دورهٔ نخست، کار به‌شکل کامل‌تری به فضای آنلاین منتقل شد و وب‌سایت آرشیو به بستر اصلی ارائه و توسعهٔ آن بدل شد. در این مرحله، خودِ آرشیو دیجیتال به مهم‌ترین فضای وقوع پروژه تبدیل شد و دسترسی و مشارکت بلندمدت را ممکن کرد."
+        ]
+      },
+      {
+        "id": "5",
+        "title": "انگیزه‌ها و پرسش‌ها",
+        "paragraphs": [
+          "پاکت از تأملی مشترک دربارهٔ نقش تصویر در حافظه و در ثبت تجربه‌های روزمره آغاز شد. در سال‌های اخیر حجم عظیمی از تصاویر تولید می‌شود که بخش بزرگی از آن‌ها هرگز از حافظهٔ شخصی فراتر نمی‌روند. پرسشی که کار از آن آغاز شد همین بود:",
+          "به روایت حسینی و فتوحی کار در پاسخ به فقدان آرشیوهایی شکل گرفت که تجربه‌های عادی و روزمره را ثبت کنند. بسیاری از آنچه زندگی روزانه را می‌سازد در روایت‌های رسمی تاریخی ثبت نمی‌شود، حال‌آنکه همین جزئیات می‌توانند در آینده به منابعی برای فهم جامعه، فرهنگ و تجربهٔ زیسته بدل شوند. شکل مشارکتی کار نیز از همین دغدغه بیرون آمد: هیچ فرد یا گروهی به‌تنهایی نمی‌تواند تصویری جامع از زندگی امروز ارائه دهد و تنها از خلال مشارکت افراد متعدد با تجربه‌ها، موقعیت‌ها و نگاه‌های متفاوت است که روایتی چندصدایی و باز شکل می‌گیرد."
+        ],
+        "quotes": [
+          {
+            "text": "اگر تصاویر پراکنده‌ای که افراد هر روز از زندگی خود ثبت می‌کنند در بستری مشترک کنار یکدیگر قرار گیرند، چه تصویری از زندگی معاصر پدید خواهد آمد؟",
+            "attribution": "کالکتیو پاکت",
+            "afterParagraph": 0
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "title": "محدودیت‌ها و راهبردها",
+        "paragraphs": [
+          "اختلال‌ها و قطعی‌های طولانی‌مدت اینترنت کار را از ریتم معمول خود خارج کرد و برخی دوره‌ها با تأخیر پیش رفتند. تصاویر و روایت‌های یکی از دوره‌ها در سه بازهٔ زمانی گردآوری شد: پیش از قطعی‌ها، در خلال آن‌ها و پس از برقراری نسبی ارتباطات. آنچه در آغاز محدودیتی اجرایی بود به بخشی از همان واقعیتی بدل شد که پروژه در حال ثبتش بود، و رد آن را هم در روند شکل‌گیری آرشیو می‌توان دید و هم در تجربه‌های ثبت‌شدهٔ مشارکت‌کنندگان. در کنار این، توسعهٔ زیرساخت آرشیوی و حفظ تداوم مشارکت از مسائل همیشگی کار بوده است و پرسشی باز مانده: چگونه می‌توان چارچوبی برای آرشیو ساخت و در همان حال تنوع و چندصدایی مشارکت‌کنندگان را حفظ کرد."
+        ]
+      },
+      { "id": "7", "title": "گالری", "paragraphs": [] },
+      {
+        "id": "8",
+        "title": "همکاران / حامیان",
+        "paragraphs": [
+          "پاکت کار مشترک هنگامه حسینی و نسترن فتوحی است و در کنار آن‌ها مشارکت‌کنندگان هر دوره در شکل‌گیری آرشیو سهم دارند. کار به‌صورت مستقل شکل گرفته است: بدون بودجهٔ تولید و بدون حامی نقدی، و تاکنون با اتکا به منابع شخصی بنیان‌گذاران.",
+          "رونمایی از پاکت شمارهٔ ۱ «چرخه زندگی» در فروردین ۱۴۰۴ به دعوت EMOP Berlin در ویلا کوریوزیوم برلین با همکاری محل تردید به نمایش درآمد. پاکت شمارهٔ ۲ «بی‌خوابی» در مهر ۱۴۰۴ با همکاری مؤسسهٔ خوانش برگزار شد. پاکت شمارهٔ ۳ «تکراری» در آذر ۱۴۰۴ و پاکت شمارهٔ ۴ «چشم به راهی» در تیر ۱۴۰۵ در گالری دیدار ارائه شدند."
+        ]
+      },
+      {
+        "id": "10",
+        "title": "منابع بیشتر",
+        "paragraphs": [
+          "[وبسایت پاکت](https://pckt.cc)",
+          "[اینستاگرام پاکت](https://www.instagram.com/pocket.collective/)",
+          "[نشریه پاکت ۱](https://pckt.cc/pocket-magazine/)",
+          "[نمایشگاه پاکت ۱ در برلین](https://emop-berlin.eu/en/exhibition/pocket-1/1242858a-69af-4371-bb41-9e87949da521/)"
+        ]
+      },
+      {
+        "id": "11",
+        "title": "درباره هنرمند",
+        "paragraphs": [
+          "پاکت پروژه‌ای مشترک از هنگامه حسینی و نسترن فتوحی است که در تقاطع پژوهش، هنر و آرشیو شکل گرفته است. کار از علاقه به نسبت میان تصویر، حافظه، زمان و تجربهٔ زیستهٔ روزمره آغاز شد و می‌کوشد از خلال گردآوری عکس‌های موبایلی و روایت‌های همراه آن‌ها بستری برای ثبت و بازخوانی زندگی روزمره در ایران فراهم کند. پاکت بر این ایده استوار است که تصاویر شخصی، فراتر از اسناد فردی، می‌توانند در کنار یکدیگر به روایتی جمعی از یک دورهٔ تاریخی و اجتماعی بدل شوند. پروژه با مشارکت افراد مختلف شکل می‌گیرد و به‌عنوان آرشیوی زنده و در حال گسترش، امکان مطالعه و تأمل بر تجربه‌های متکثر زیسته را فراهم می‌کند."
+        ]
+      }
+    ],
+    "Participation & Process": {
+      "subsections": [
+        {
+          "title": "",
+          "paragraphs": [
+            "دعوت به مشارکت در هر دوره حول موضوعی مشخص انجام می‌شد و از راه شبکه‌های اجتماعی پروژه و شبکه‌های ارتباطی مرتبط با آن منتشر می‌شد. مشارکت‌کنندگان، افرادی از زمینه‌ها، شهرها و گروه‌های مختلف، بر پایهٔ همان موضوع یک عکس و یک روایت کوتاه می‌فرستادند. انتخاب عکس، زاویهٔ نگاه و شیوهٔ روایت بر عهدهٔ خودِ فرد بود و میزان درگیری او با موضوع به تجربه و برداشت شخصی‌اش بستگی داشت. این ساختار در طول دوره‌ها تغییر نکرد. در هر دوره، آنچه به آرشیو سپرده می‌شود لحظه‌ای است که عکس از آن گرفته شده و روایتی که در کنارش نوشته می‌شود. با پایان هر دوره، گردآوری دورهٔ بعد آغاز می‌شد.",
+            "ارتباط مستمر با شماری از مشارکت‌کنندگان که در چند دوره همراه ماندند، آثارشان را فرستادند و منظم بازخورد دادند، رابطه‌ای فراتر از مشارکت مقطعی ساخت. حسینی و فتوحی در آغاز، آغازگر و طراح کار بودند و چارچوب هر دوره، موضوع و شیوهٔ گردآوری آثار را تعیین می‌کردند؛ با شکل‌گیری این مشارکت مستمر و دریافت بازخوردها، نقششان بیشتر به سمت تسهیل و هدایت روند تغییر کرد."
+          ]
+        }
+      ]
+    },
+    "Visual Documentation": {
+      "items": [
+        { "description": "«پاکت ۱» از افراد دعوت کرد تا آنچه را که زیبا می‌دانند، به اشتراک بگذارند. از میان نزدیک به دویست اثر ارسالی، تصاویری را برگزیدیم که بازتاب‌دهندهٔ چرخهٔ زندگی و لحظات روزمره هستند؛ تصاویری که هم زیبایی و هم جریان طبیعی هستی را در خود ثبت کرده‌اند. این مجموعه در میانهٔ هرج‌ومرج، فرصتی برای ثبات و تأمل فراهم می‌آورد، تجربیات مشترک انسانی را می‌کاود و جوهرهٔ آرام زندگی را گرامی می‌دارد. بدین‌سان، تلفن همراه از ابزاری برای ثبت بحران‌ها، به وسیله‌ای برای نمایش تاب‌آوری بدل می‌شود. تصویر از آرشیو پاکت" },
+        { "description": "تصویر از مشارکت‌کننده" },
+        { "description": "تصویر از مشارکت‌کننده" },
+        { "description": "تصویر از مشارکت‌کننده" },
+        { "description": "تصویر از مشارکت‌کننده" },
+        { "description": "تصویر از مشارکت‌کننده" },
+        { "description": "تصویر از مشارکت‌کننده" },
+        { "description": "تصویر از مشارکت‌کننده" }
+      ]
+    },
+    "Editorial Notes": [
+      "این مدخل بر اساس مستندات و متون ارائه‌شده از سوی هنرمند تهیه شده است."
+    ]
+  },
+  "1. Basic Information": {
+    "Project Title": "Pocket",
+    "Artist / Group / Collective / Organizer / Supervisor / Initiator": [
+      "Pocket Collective (Hengameh Hosseini, Nastaran Fotouhi)"
+    ],
+    "Location": {
+      "text": "Online",
+      "city": "",
+      "country": "",
+      "venue": ""
+    },
+    "Year / Time Period": {
+      "text": "2025–Present"
+    },
+    "Thematic Tags": ["Online & Cross-Border", "Memory & Archive", "Collective Making", "Dialogue & Collective Narrative"],
+    "Featured Project Image": {
+      "url": "/images/pocket/thumb.webp",
+      "alt": "Pocket"
+    }
+  },
+  "sections": [
+    {
+      "id": "2",
+      "title": "Project Overview",
+      "paragraphs": [
+        "*Pocket* is an archival and participatory project built through collecting mobile phone photographs and their accompanying narratives. The project unfolds in consecutive cycles: in each cycle, individuals are invited to respond to a specific theme by submitting a single photograph paired with a short text—which may describe a moment, a brief memory, a fleeting emotion, or any other narrative that expands upon the experience captured in the image. Together, image and text form a single narrative unit, allowing viewers to move beyond what is visible within the frame and draw closer to an individual's lived experience.",
+        "Initiated online in 2024, the project launched publicly in March/April 2025 and continues to evolve through participatory archiving, digital publishing, and collective multimedia documentation. *Pocket* brings scattered, personal experiences together onto a shared platform so that everyday life can be viewed from diverse perspectives—forming an archive that gradually becomes a document of collective memory."
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Context & Site",
+      "paragraphs": [
+        "From the outset, the work's primary site has been online. This choice enabled individuals from different cities and circumstances to participate, aligning naturally with the project's archival and collective ethos. By removing geographical barriers, the diversity of collected experiences, perspectives, and narratives expanded significantly.",
+        "Alongside the online open calls, pop-up launches took place in art spaces after each cycle. Rather than functioning as conventional exhibitions, these events served as occasions to present each cycle's outcomes, meet with audiences, and introduce new viewers to the project. Over a brief span—typically two days—visitors viewed the assembled photographs and narratives while learning about the archive's concept and formation.",
+        "After the first five cycles, the project transitioned more fully into the digital realm, with the archival website becoming its primary platform for presentation and ongoing development. At this stage, the digital archive became the project's central site, enabling long-term accessibility and sustained participation."
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Motivations & Questions",
+      "paragraphs": [
+        "*Pocket* began with a shared reflection on the role of the image in memory and in documenting everyday experiences. In recent years, vast quantities of images have been produced, most of which never move beyond personal storage. The foundational question driving the project was this:",
+        "According to Hosseini and Fotouhi, the project emerged in response to the absence of archives dedicated to recording ordinary, everyday experiences. Much of daily life goes unrecorded in official historical narratives, yet these details can serve as vital sources for understanding society, culture, and lived experience. The participatory structure of the work grew directly out of this concern: no single individual or group can offer a comprehensive portrait of contemporary life, and only through the participation of many individuals—bringing distinct experiences, positions, and gazes—can a polyphonic, open-ended narrative take shape."
+      ],
+      "quotes": [
+        {
+          "text": "If the scattered images that people capture of their lives every day are placed side by side on a shared platform, what image of contemporary life will emerge?",
+          "attribution": "Pocket Collective",
+          "afterParagraph": 0
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Conditions & Negotiations",
+      "paragraphs": [
+        "Prolonged internet disruptions and blackouts interrupted the project's regular rhythm, delaying several cycles. In one cycle, photographs and narratives were collected across three phases: before the blackouts, during them, and after the partial restoration of connectivity. What began as an operational constraint became part of the reality the project was documenting, leaving its trace in both the process of building the archive and the experiences recorded by contributors.",
+        "Alongside this, developing archival infrastructure and sustaining long-term participation have remained ongoing challenges, leaving an open question at the heart of the work: how to construct a coherent archival framework while simultaneously preserving the diversity and polyphony of its contributors."
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Documentation",
+      "paragraphs": []
+    },
+    {
+      "id": "8",
+      "title": "Collaborators & Support",
+      "paragraphs": [
+        "*Pocket* is a collaborative project by Hengameh Hosseini and Nastaran Fotouhi, alongside the contributors of each cycle who shape the archive. The project was established independently—without a production budget or financial sponsors—and has relied on the founders' personal resources to date.",
+        "*Pocket No. 1: \"Life Cycle\"* launched in March/April 2025 at the invitation of EMOP Berlin at Villa Kuriosum, Berlin, in collaboration with Mahal-e Tardid. *Pocket No. 2: \"Insomnia\"* was held in September/October 2025 in collaboration with Khanesh Institute. *Pocket No. 3, \"Repetitive,\"* was presented at Didar Gallery in November/December 2025, and *Pocket No. 4, \"Waiting,\"* in June/July 2026."
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Further Resources",
+      "paragraphs": [
+        "[*Pocket* Website](https://pckt.cc)",
+        "[*Pocket* Instagram](https://www.instagram.com/pocket.collective/)",
+        "[*Pocket* Publication No. 1](https://pckt.cc/pocket-magazine/)",
+        "[*Pocket* No. 1 Exhibition in Berlin](https://emop-berlin.eu/en/exhibition/pocket-1/1242858a-69af-4371-bb41-9e87949da521/)"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "About the Artist",
+      "paragraphs": [
+        "*Pocket* is a collaborative project by Hengameh Hosseini and Nastaran Fotouhi situated at the intersection of research, art, and archiving. Born from an interest in the relationship between image, memory, time, and everyday lived experience, the project creates a platform to document and re-read daily life in Iran through a collection of mobile photographs and accompanying narratives. *Pocket* is grounded in the premise that personal photographs, transcending their role as individual records, can come together to form a collective narrative of a historical and social era. Shaped through broad public participation, the project operates as a living, expanding archive that invites study and reflection on plural lived experiences."
+      ]
+    }
+  ],
+  "Participation & Process": {
+    "subsections": [
+      {
+        "title": "",
+        "paragraphs": [
+          "Open calls for each cycle centered on a specific theme and were circulated via the project's social media channels and affiliated networks. Contributors—individuals from varied backgrounds, cities, and social groups—submitted one photograph and a short narrative based on that theme. Contributors chose the photograph, visual framing, and mode of storytelling, and their depth of engagement depended on their personal experience and interpretation. This structure remained consistent across all cycles.",
+          "In each cycle, the archive received the moment captured in the photograph alongside the narrative written beside it. At the end of one cycle, collection for the next began.",
+          "Sustained communication with a core group of contributors who remained involved across multiple cycles—regularly submitting work and offering feedback—fostered a relationship that went beyond episodic participation. Initially, Hosseini and Fotouhi acted as initiators and designers, setting the framework, theme, and collection methodology for each cycle; as ongoing participation and feedback took root, their role gradually shifted toward facilitating and guiding the process."
+        ]
+      }
+    ]
+  },
+  "Visual Documentation": {
+    "items": [
+      {
+        "type": "photo",
+        "src": "/images/pocket/01.webp",
+        "description": "Pocket/1 invited people to share what they find beautiful. From nearly two hundred submissions, we selected images that reflect life's cycle and ordinary moments, capturing both beauty and the natural flow of existence. This collection offers grounding and reflection amidst chaos, exploring shared human experiences and celebrating life's quiet essence, thus transforming the mobile phone from a device documenting crises to one of resilience. Image courtesy of Pocket Collective"
+      },
+      { "type": "photo", "src": "/images/pocket/02.webp", "description": "Courtesy of the participant" },
+      { "type": "photo", "src": "/images/pocket/03.webp", "description": "Courtesy of the participant" },
+      { "type": "photo", "src": "/images/pocket/04.webp", "description": "Courtesy of the participant" },
+      { "type": "photo", "src": "/images/pocket/05.webp", "description": "Courtesy of the participant" },
+      { "type": "photo", "src": "/images/pocket/06.webp", "description": "Courtesy of the participant" },
+      { "type": "photo", "src": "/images/pocket/07.webp", "description": "Courtesy of the participant" },
+      { "type": "photo", "src": "/images/pocket/08.webp", "description": "Courtesy of the participant" }
+    ]
+  },
+  "Editorial Notes": [
+    "This entry was prepared based on documentation and texts provided by the artists."
+  ]
+}

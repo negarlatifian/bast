@@ -63,7 +63,7 @@ export const mapCities: Record<
 /**
  * Ordered list of cities each project's location text refers to, following
  * the sequence in which the project moved through them. Projects held
- * online with no physical site (`from-afar-i-kiss-you`, `radio-khiaban`)
+ * online with no physical site (`from-afar-i-kiss-you`, `pocket`, `radio-khiaban`)
  * are intentionally omitted.
  */
 export const projectCityLinks: Record<string, MapCityId[]> = {
@@ -71,6 +71,7 @@ export const projectCityLinks: Record<string, MapCityId[]> = {
   'book-reading-in-sanandaj-park': ['sanandaj'],
   'cafe-konj-performances': ['tehran'],
   daab: ['tehran'],
+  doorsoo: ['tehran'],
   'enghelab-azadi': ['tehran'],
   'an-equivalence-of-our-distance': ['tehran'],
   kairos: ['yazd'],
@@ -99,4 +100,8 @@ export const projectCityLinks: Record<string, MapCityId[]> = {
   'workers-dont-go-to-the-factory': ['tehran'],
 };
 
-export const onlineProjectSlugs = ['from-afar-i-kiss-you', 'radio-khiaban'];
+export const onlineProjectSlugs = [
+  'from-afar-i-kiss-you',
+  'pocket',
+  'radio-khiaban',
+];

@@ -8,6 +8,7 @@ import anExperienceInTir from '@/data/projects/an-experience-in-tir.json';
 import bookReadingSanandaj from '@/data/projects/book-reading-sanandaj.json';
 import cafeKonjPerformances from '@/data/projects/cafe-konj-performances.json';
 import daab from '@/data/projects/daab.json';
+import doorsoo from '@/data/projects/doorsoo.json';
 import enghelabAzadi from '@/data/projects/enghelab-azadi.json';
 import equivalenceDistance from '@/data/projects/equivalence-distance.json';
 import fromAfarIKissYou from '@/data/projects/from-afar-i-kiss-you.json';
@@ -17,8 +18,8 @@ import knockout from '@/data/projects/knockout.json';
 import owzar from '@/data/projects/owzar.json';
 import paintYourShadowOrange from '@/data/projects/paint-your-shadow-orange.json';
 import paper from '@/data/projects/paper.json';
-// Hidden for now — re-enable by restoring this import and the entry in `projects` below.
-// import postOnion from '@/data/projects/post-onion.json';
+import pocket from '@/data/projects/pocket.json';
+import postOnion from '@/data/projects/post-onion.json';
 import printingMachine from '@/data/projects/printing-machine.json';
 // Hidden for now — re-enable by restoring this import and the entry in `projects` below.
 // import radioKhiaban from '@/data/projects/radio-khiaban.json';
@@ -136,6 +137,7 @@ export const projects = [
   bookReadingSanandaj,
   cafeKonjPerformances,
   daab,
+  doorsoo,
   enghelabAzadi,
   equivalenceDistance,
   fromAfarIKissYou,
@@ -145,7 +147,8 @@ export const projects = [
   owzar,
   paintYourShadowOrange,
   paper,
-  // postOnion, // hidden for now
+  pocket,
+  postOnion,
   printingMachine,
   // radioKhiaban, // hidden for now
   sameRoots,
